@@ -47,11 +47,11 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.programmeCount, 445);
   assert.equal(summary.majorCount, 687);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 19392);
+  assert.equal(summary.courseCount, 19408);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 19378);
-  assert.equal(summary.programmeWithCoursesCount, 296);
-  assert.equal(summary.pendingProgrammeCount, 148);
+  assert.equal(summary.codedCourseCount, 19394);
+  assert.equal(summary.programmeWithCoursesCount, 297);
+  assert.equal(summary.pendingProgrammeCount, 147);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
@@ -363,6 +363,31 @@ test('CUHK Natural Sciences exposes seven current Concentration required-code po
   assert.match(byCode.CHEM2110.requirementGroups[0], /any 3/);
   assert.match(byCode.PHYS1111.requirementGroups[0], /any 2/);
   assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Workshop on Data Science' }).some((course) => course.courseCode === 'NSCI4051'));
+});
+
+test('CUHK Risk Management Science exposes the current 16-course RMSC list as browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'RMSCN');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-RMSCN-67-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 16);
+  assert.equal(courses.length, 16);
+  assert.equal(courses.filter((course) => course.courseType === 'core').length, 7);
+  assert.equal(courses.filter((course) => course.courseType === 'major_elective').length, 5);
+  assert.equal(courses.filter((course) => course.courseType === 'capstone').length, 4);
+  assert.equal(courses.filter((course) => course.credits === 1).length, 3);
+  assert.equal(courses.filter((course) => course.credits === 3).length, 13);
+  assert.match(byCode.RMSC3001.requirementGroups[0], /may replace FINA3080/);
+  assert.match(byCode.RMSC4002.requirementGroups[0], /Risk Analytics Stream/);
+  assert.match(byCode.RMSC4102.requirementGroups[0], /RMSC4102 or RMSC4202/);
+  assert.match(byCode.RMSC4112.requirementGroups[0], /RMSC4112 or RMSC4212/);
+  assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Machine Learning' }).some((course) => course.courseCode === 'RMSC4002'));
 });
 
 test('CUHK Sociology exposes the 2025-26 62-course Major pool as browse-only', () => {

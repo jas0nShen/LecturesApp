@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-29T16:12:15.657Z",
+  "generatedAt": "2026-07-29T16:48:12.164Z",
   "universities": [
     {
       "id": "HKU",
@@ -4465,9 +4465,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/rmscn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 16,
+      "codedCourseCount": 16,
+      "courseSourceUrl": "https://rmsc.sta.cuhk.edu.hk/rmsc/public_uploads/RMSC_ENG_25.pdf"
     },
     {
       "id": "CUHK-UG-BSCIN-68",
@@ -11261,8 +11262,8 @@ const catalogue = {
       "code": "RISK-MANAGEMENT-SCIENCE",
       "nameEn": "Risk Management Science",
       "nameZh": "Risk Management Science",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 17,
+      "codedCourseCount": 16,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/rmscn/"
     },
     {
@@ -16138,7 +16139,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 1476,
+    "CUHK": 1492,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16146,7 +16147,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 19378
+  "codedCourseCount": 19394
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

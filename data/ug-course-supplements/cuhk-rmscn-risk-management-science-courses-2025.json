@@ -1,0 +1,40 @@
+{
+  "provider": "CUHK Risk Management Science Programme 2025-26 Study Scheme and current Course List",
+  "academicYear": "Applicable to students admitted in 2025-26; reviewed for 2026 entry on 2026-07-30",
+  "sourceUrl": "https://rmsc.sta.cuhk.edu.hk/rmsc/public_uploads/RMSC_ENG_25.pdf",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/rmscn/",
+  "additionalSourceUrls": [
+    "https://rmsc.sta.cuhk.edu.hk/curriculum.php",
+    "https://rmsc.sta.cuhk.edu.hk/rmsc/public_uploads/RMSC_Admissions_Handbook_2026_Entry_.pdf"
+  ],
+  "note": "The official 2025-26 Study Scheme publishes two 72-unit Major paths. The regular Risk Management Science path contains a 9-unit Faculty Package, 42 units of Required Courses and 21 units of Elective Courses; its five-course main elective choice must include at least two RMSC courses and ends with one of RMSC4102 or RMSC4202. The Risk Analytics Stream contains the same 9-unit Faculty Package, 48 units of Required Courses and 15 units of Elective Courses; it adds two CSCI choice groups, requires two courses from a CSCI/ENGG pool and two from the named RMSC/STAT pool, and ends with one of RMSC4112 or RMSC4212. RMSC3001 may substitute for FINA3080 in either path. This supplement exposes all 16 RMSC courses in the Programme's current official Course List, whose titles and per-course units are closed by the same official page and Study Scheme. The Study Scheme also names closed ACCT, CHEM, CSCI, DOTE, ECON, ENGG, FINA, HTMG, LSCI, MATH, MGNT, PHYS and STAT pools, but the RMSC Course List does not publish their titles and individual units; those cross-department rows, the University Core, free electives and the separate CUHK-Edinburgh transfer pattern are not imported here. The resulting RMSC-only list is intentionally browse-only and must not be presented as a complete 72-unit graduation audit or produce a completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "RMSCN",
+      "jupasCode": "JS4719",
+      "programmeId": "CUHK-UG-RMSCN-67",
+      "majorId": "CUHK-UG-RMSCN-67-M1",
+      "courses": [
+        { "code": "RMSC1101", "title": "Elementary Concepts in Risk Management", "credits": 1, "recommendedYear": 1, "semester": "Term 1", "courseType": "core", "group": "Major Required · regular Major and Risk Analytics Stream" },
+        { "code": "RMSC2001", "title": "Introduction to Risk Management", "credits": 3, "recommendedYear": 2, "semester": "Term 1", "courseType": "core", "group": "Major Required · regular Major and Risk Analytics Stream" },
+        { "code": "RMSC2101", "title": "Introductory Topics in Risk Management", "credits": 1, "recommendedYear": 2, "semester": "Term 2", "courseType": "core", "group": "Major Required · regular Major and Risk Analytics Stream" },
+        { "code": "RMSC3001", "title": "Principles of Credit Risk Management", "credits": 3, "recommendedYear": 3, "semester": "Term 2", "courseType": "core", "group": "Major Required substitute · may replace FINA3080 in the regular Major and Risk Analytics Stream" },
+        { "code": "RMSC3101", "title": "Special Topics in Risk Management", "credits": 1, "recommendedYear": 3, "semester": "Term 2", "courseType": "core", "group": "Major Required · regular Major and Risk Analytics Stream" },
+        { "code": "RMSC4001", "title": "Simulation Methods for Risk Management Science and Finance", "credits": 3, "recommendedYear": 3, "semester": "Term 2", "courseType": "core", "group": "Major Required · regular Major and Risk Analytics Stream" },
+        { "code": "RMSC4003", "title": "Statistical Modelling in Financial Markets", "credits": 3, "recommendedYear": 3, "semester": "Term 1", "courseType": "core", "group": "Major Required · regular Major and Risk Analytics Stream" },
+
+        { "code": "RMSC4002", "title": "Financial Data Analytics with Machine Learning", "credits": 3, "courseType": "major_elective", "group": "Major Elective · regular Major five-course pool with at least two RMSC courses · Risk Analytics Stream two-course RMSC/STAT pool" },
+        { "code": "RMSC4004", "title": "Theory of Risk and Insurance", "credits": 3, "courseType": "major_elective", "group": "Major Elective · regular Major five-course pool with at least two RMSC courses · Risk Analytics Stream two-course RMSC/STAT pool" },
+        { "code": "RMSC4005", "title": "Stochastic Calculus for Finance and Risk", "credits": 3, "courseType": "major_elective", "group": "Major Elective · regular Major five-course pool with at least two RMSC courses · Risk Analytics Stream two-course RMSC/STAT pool" },
+        { "code": "RMSC4006", "title": "Operational Risk Management", "credits": 3, "courseType": "major_elective", "group": "Major Elective · regular Major five-course pool with at least two RMSC courses · Risk Analytics Stream two-course RMSC/STAT pool" },
+        { "code": "RMSC4007", "title": "Risk Management with Derivatives Concepts", "credits": 3, "courseType": "major_elective", "group": "Major Elective · regular Major five-course pool with at least two RMSC courses · Risk Analytics Stream two-course RMSC/STAT pool" },
+
+        { "code": "RMSC4102", "title": "Research Project", "credits": 3, "recommendedYear": 4, "semester": "Term 2", "courseType": "capstone", "group": "Major Elective · regular Major Capstone/Research choice · choose RMSC4102 or RMSC4202" },
+        { "code": "RMSC4202", "title": "Practicum", "credits": 3, "recommendedYear": 4, "semester": "Term 1", "courseType": "capstone", "group": "Major Elective · regular Major Capstone/Research choice · choose RMSC4102 or RMSC4202" },
+        { "code": "RMSC4112", "title": "Research Project in Risk Analytics", "credits": 3, "recommendedYear": 4, "semester": "Term 2", "courseType": "capstone", "group": "Major Elective · Risk Analytics Stream Capstone/Research choice · choose RMSC4112 or RMSC4212" },
+        { "code": "RMSC4212", "title": "Practicum in Risk Analytics", "credits": 3, "recommendedYear": 4, "semester": "Term 1", "courseType": "capstone", "group": "Major Elective · Risk Analytics Stream Capstone/Research choice · choose RMSC4112 or RMSC4212" }
+      ]
+    }
+  ]
+}
