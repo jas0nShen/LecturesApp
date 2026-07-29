@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-29T16:48:12.164Z",
+  "generatedAt": "2026-07-29T18:05:10.315Z",
   "universities": [
     {
       "id": "HKU",
@@ -3675,9 +3675,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/qfinn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 136,
+      "codedCourseCount": 136,
+      "courseSourceUrl": "https://www.qfin.cuhk.edu.hk/site/assets/files/1024/qfinn_eng_25.pdf"
     },
     {
       "id": "CUHK-UG-QFRMN-27",
@@ -4407,9 +4408,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/mathn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 54,
+      "codedCourseCount": 54,
+      "courseSourceUrl": "https://www.math.cuhk.edu.hk/student-centre/academic-advice/GenReq-Enrichment-2026-27"
     },
     {
       "id": "CUHK-UG-PHYSN-ERP-65",
@@ -10852,8 +10854,8 @@ const catalogue = {
       "code": "QUANTITATIVE-FINANCE",
       "nameEn": "Quantitative Finance",
       "nameZh": "Quantitative Finance",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 137,
+      "codedCourseCount": 136,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/qfinn/"
     },
     {
@@ -11232,8 +11234,8 @@ const catalogue = {
       "code": "ENRICHMENT-MATHEMATICS",
       "nameEn": "Enrichment Mathematics",
       "nameZh": "Enrichment Mathematics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 55,
+      "codedCourseCount": 54,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/mathn/"
     },
     {
@@ -16139,7 +16141,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 1492,
+    "CUHK": 1682,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16147,7 +16149,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 19394
+  "codedCourseCount": 19584
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

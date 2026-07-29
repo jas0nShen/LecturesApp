@@ -47,11 +47,11 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.programmeCount, 445);
   assert.equal(summary.majorCount, 687);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 19408);
+  assert.equal(summary.courseCount, 19598);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 19394);
-  assert.equal(summary.programmeWithCoursesCount, 297);
-  assert.equal(summary.pendingProgrammeCount, 147);
+  assert.equal(summary.codedCourseCount, 19584);
+  assert.equal(summary.programmeWithCoursesCount, 299);
+  assert.equal(summary.pendingProgrammeCount, 145);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
@@ -388,6 +388,55 @@ test('CUHK Risk Management Science exposes the current 16-course RMSC list as br
   assert.match(byCode.RMSC4102.requirementGroups[0], /RMSC4102 or RMSC4202/);
   assert.match(byCode.RMSC4112.requirementGroups[0], /RMSC4112 or RMSC4212/);
   assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Machine Learning' }).some((course) => course.courseCode === 'RMSC4002'));
+});
+
+test('CUHK Enrichment Mathematics exposes the current named MATH scope as browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'MATHN-ERM');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-MATHN-ERM-64-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 54);
+  assert.equal(courses.length, 54);
+  assert.equal(courses.filter((course) => course.courseType === 'core').length, 22);
+  assert.equal(courses.filter((course) => course.courseType === 'major_elective').length, 30);
+  assert.equal(courses.filter((course) => course.courseType === 'capstone').length, 2);
+  assert.equal(courses.filter((course) => course.credits === 2).length, 1);
+  assert.equal(courses.filter((course) => course.credits === 3).length, 53);
+  assert.match(byCode.MATH1018.requirementGroups[0], /MATH1010/);
+  assert.match(byCode.MATH2078.requirementGroups[0], /MATH2230 is required/);
+  assert.match(byCode.MATH4400.requirementGroups[0], /MATH4400 or MATH4900/);
+  assert.match(byCode.MATH5011.requirementGroups[0], /Department permission/);
+  assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Galois' }).some((course) => course.courseCode === 'MATH3040'));
+});
+
+test('CUHK Quantitative Finance exposes the complete 2025-26 named course scope as browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'QFINN');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-QFINN-26-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 136);
+  assert.equal(courses.length, 136);
+  assert.equal(courses.filter((course) => course.courseType === 'core').length, 31);
+  assert.equal(courses.filter((course) => course.courseType === 'major_elective').length, 96);
+  assert.equal(courses.filter((course) => course.courseType === 'capstone').length, 9);
+  assert.equal(courses.filter((course) => course.credits === 1).length, 17);
+  assert.equal(courses.filter((course) => course.credits === 4).length, 1);
+  assert.match(byCode.MATH1530.requirementGroups[0], /Placement Test/);
+  assert.match(byCode.DOTE2011.requirementGroups[0], /STAT2001 plus STAT2006/);
+  assert.match(byCode.FINA4130.requirementGroups[0], /official Capstone course/);
+  assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Algorithmic Trading' }).some((course) => course.courseCode === 'FINA4380'));
 });
 
 test('CUHK Sociology exposes the 2025-26 62-course Major pool as browse-only', () => {

@@ -1,0 +1,974 @@
+{
+  "provider": "CUHK Quantitative Finance Programme 2025-26 Study Scheme",
+  "academicYear": "Applicable to students admitted in 2025-26; reviewed on 2026-07-30",
+  "sourceUrl": "https://www.qfin.cuhk.edu.hk/site/assets/files/1024/qfinn_eng_25.pdf",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/qfinn/",
+  "additionalSourceUrls": [
+    "https://www.qfin.cuhk.edu.hk/about-qfin/curriculum/",
+    "https://www.math.cuhk.edu.hk/course/math1530"
+  ],
+  "note": "The official 2025-26 Study Scheme closes a 72-unit Major: 9 Faculty Package units, 3 Faculty Co-curricular units, 27 Required units and 33 Elective units. The PDF publishes 135 unique course-list rows with code, title and units; MATH1530 is additionally named as a conditional prerequisite for specified entrants and its title and 3 units are confirmed by the linked official Mathematics course page. The Elective requirement has at least 9 Quantitative Methods units, at least 12 Business units including at least 6 FINA units and at most six one-unit courses, and at least 12 Core-pool units. Nine Core-pool courses are explicitly marked as Capstone courses. The alternative Required paths, conditional MATH1530 waiver, eligible second-major/minor substitution for the Quantitative Methods area, Co-operative Education substitution for FINA4390, prerequisites and annual offering require manual review. This 136-course official list is intentionally browse-only and must not produce a graduation completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "QFINN",
+      "jupasCode": "JS4252",
+      "programmeId": "CUHK-UG-QFINN-26",
+      "majorId": "CUHK-UG-QFINN-26-M1",
+      "courses": [
+        {
+          "code": "ACCT1111",
+          "title": "Foundations in Financial Accounting",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · all three courses required"
+        },
+        {
+          "code": "DOTE1030",
+          "title": "Economics for Business Studies I",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · all three courses required"
+        },
+        {
+          "code": "DOTE1040",
+          "title": "Economics for Business Studies II",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · all three courses required"
+        },
+        {
+          "code": "IBBA3040",
+          "title": "Business Lecture Series",
+          "credits": 1,
+          "courseType": "core",
+          "group": "Faculty Co-curricular · all three courses required"
+        },
+        {
+          "code": "MGNT2511",
+          "title": "Global Experiential Learning I",
+          "credits": 1,
+          "courseType": "core",
+          "group": "Faculty Co-curricular · all three courses required"
+        },
+        {
+          "code": "MGNT2512",
+          "title": "Global Experiential Learning II",
+          "credits": 1,
+          "courseType": "core",
+          "group": "Faculty Co-curricular · all three courses required"
+        },
+        {
+          "code": "ACCT3142",
+          "title": "Contemporary Accounting Information Systems",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · choose one of ACCT3142, CSCI2100, CSCI2520, DOTE2051 or SEEM3550"
+        },
+        {
+          "code": "CSCI1510",
+          "title": "Computer Principles and C Programming",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · choose one of CSCI1510, CSCI1520, CSCI1530, CSCI1540, CSCI1550 or CSCI1580"
+        },
+        {
+          "code": "CSCI1520",
+          "title": "Computer Principles and C++ Programming",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · choose one of CSCI1510, CSCI1520, CSCI1530, CSCI1540, CSCI1550 or CSCI1580"
+        },
+        {
+          "code": "CSCI1530",
+          "title": "Computer Principles and Java Programming",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · choose one of CSCI1510, CSCI1520, CSCI1530, CSCI1540, CSCI1550 or CSCI1580"
+        },
+        {
+          "code": "CSCI1540",
+          "title": "Fundamental Computing with C++",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · choose one of CSCI1510, CSCI1520, CSCI1530, CSCI1540, CSCI1550 or CSCI1580"
+        },
+        {
+          "code": "CSCI1550",
+          "title": "Computer Principles and Python Programming",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · choose one of CSCI1510, CSCI1520, CSCI1530, CSCI1540, CSCI1550 or CSCI1580"
+        },
+        {
+          "code": "CSCI1580",
+          "title": "Visual Programming",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · choose one of CSCI1510, CSCI1520, CSCI1530, CSCI1540, CSCI1550 or CSCI1580"
+        },
+        {
+          "code": "CSCI2100",
+          "title": "Data Structures",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · choose one of ACCT3142, CSCI2100, CSCI2520, DOTE2051 or SEEM3550"
+        },
+        {
+          "code": "CSCI2520",
+          "title": "Data Structures and Applications",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · choose one of ACCT3142, CSCI2100, CSCI2520, DOTE2051 or SEEM3550"
+        },
+        {
+          "code": "DOTE2011",
+          "title": "Statistical Analysis for Business Decisions",
+          "credits": 4,
+          "courseType": "core",
+          "group": "Major Required · choose DOTE2011 plus DOTE2021 or FINA2020, or choose STAT2001 plus STAT2006"
+        },
+        {
+          "code": "DOTE2021",
+          "title": "Applied Econometrics for Business Decisions",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · choose DOTE2011 plus DOTE2021 or FINA2020, or choose STAT2001 plus STAT2006"
+        },
+        {
+          "code": "DOTE2051",
+          "title": "Business Information Systems",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · choose one of ACCT3142, CSCI2100, CSCI2520, DOTE2051 or SEEM3550"
+        },
+        {
+          "code": "FINA2010",
+          "title": "Financial Management",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · fixed course"
+        },
+        {
+          "code": "FINA2020",
+          "title": "Introduction to Empirical Methods in Finance",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · choose DOTE2011 plus DOTE2021 or FINA2020, or choose STAT2001 plus STAT2006"
+        },
+        {
+          "code": "FINA3080",
+          "title": "Investment Analysis and Portfolio Management",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · fixed course"
+        },
+        {
+          "code": "MATH1010",
+          "title": "University Mathematics",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · choose MATH1010 or MATH1018"
+        },
+        {
+          "code": "MATH1018",
+          "title": "Honours University Mathematics",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · choose MATH1010 or MATH1018"
+        },
+        {
+          "code": "MATH1030",
+          "title": "Linear Algebra I",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · choose MATH1030 or MATH1038"
+        },
+        {
+          "code": "MATH1038",
+          "title": "Honours Linear Algebra I",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · choose MATH1030 or MATH1038"
+        },
+        {
+          "code": "MATH2010",
+          "title": "Advanced Calculus I",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · choose MATH2010 or MATH2018"
+        },
+        {
+          "code": "MATH2018",
+          "title": "Honours Advanced Calculus I",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · choose MATH2010 or MATH2018"
+        },
+        {
+          "code": "SEEM3550",
+          "title": "Fundamentals in Information Systems",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · choose one of ACCT3142, CSCI2100, CSCI2520, DOTE2051 or SEEM3550"
+        },
+        {
+          "code": "STAT2001",
+          "title": "Basic Concepts in Statistics and Probability I",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · choose DOTE2011 plus DOTE2021 or FINA2020, or choose STAT2001 plus STAT2006"
+        },
+        {
+          "code": "STAT2006",
+          "title": "Basic Concepts in Statistics and Probability II",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · choose DOTE2011 plus DOTE2021 or FINA2020, or choose STAT2001 plus STAT2006"
+        },
+        {
+          "code": "CSCI3150",
+          "title": "Introduction to Operating Systems",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "MATH1530",
+          "title": "Basic Mathematics for Business and Social Sciences",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Conditional Major Required · required before MATH1010 or MATH1018 for specified entrants unless the Mathematics Placement Test is passed"
+        },
+        {
+          "code": "CSCI3160",
+          "title": "Design and Analysis of Algorithms",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "CSCI3170",
+          "title": "Introduction to Database Systems",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "CSCI3230",
+          "title": "Fundamentals of Artificial Intelligence",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "CSCI3320",
+          "title": "Fundamentals of Machine Learning",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "CSCI4130",
+          "title": "Introduction to Cyber Security",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "CSCI4160",
+          "title": "Distributed and Parallel Computing",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "CSCI4180",
+          "title": "Introduction to Cloud Computing and Storage",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "CSCI4190",
+          "title": "Introduction to Social Networks",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "CSCI4230",
+          "title": "Computational Learning Theory",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "DOTE4070",
+          "title": "Data Management and Big Data Analytics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "DOTE4220",
+          "title": "Data Mining for Business Intelligence",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "ECON3121",
+          "title": "Introductory Econometrics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "ECON4120",
+          "title": "Applied Forecasting Methods",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "FINA3221",
+          "title": "Basic Long-term Actuarial Mathematics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "FINA3222",
+          "title": "Basic Short-term Actuarial Mathematics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "FINA3290",
+          "title": "Linear Models for Actuaries",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "FINA3295",
+          "title": "Advanced Statistical Modeling for Insurance and Finance",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "FINA4211",
+          "title": "Advanced Long-term Actuarial Mathematics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "FINA4221",
+          "title": "Advanced Short-term Actuarial Mathematics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "MATH3215",
+          "title": "Operations Research",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "MATH3230",
+          "title": "Numerical Analysis",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "MATH3240",
+          "title": "Numerical Methods for Differential Equations",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "MATH3270",
+          "title": "Ordinary Differential Equations",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "MATH3280",
+          "title": "Introductory Probability",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "MATH3290",
+          "title": "Mathematical Modeling",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "MATH3310",
+          "title": "Computational and Applied Mathematics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "MATH3320",
+          "title": "Foundation of Data Analytics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "MATH3330",
+          "title": "Big Data Computing",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "MATH4220",
+          "title": "Partial Differential Equations",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "MATH4230",
+          "title": "Optimization Theory",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "MATH4240",
+          "title": "Stochastic Processes",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "MATH4280",
+          "title": "Innovation and Design in Big Data Analytics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "SEEM3440",
+          "title": "Operations Research II",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "STAT3006",
+          "title": "Statistical Computing",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "STAT3007",
+          "title": "Introduction to Stochastic Processes",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "STAT3008",
+          "title": "Applied Regression Analysis",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "STAT4001",
+          "title": "Data Mining and Statistical Learning",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "STAT4002",
+          "title": "Applied Multivariate Analysis",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "STAT4003",
+          "title": "Statistical Inference",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "STAT4004",
+          "title": "Actuarial Science",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "STAT4005",
+          "title": "Time Series",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "STAT4006",
+          "title": "Categorical Data Analysis",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "STAT4008",
+          "title": "Survival Modelling",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "STAT4010",
+          "title": "Bayesian Learning",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "STAT4012",
+          "title": "Statistical Principles of Deep Learning with Business Applications",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Quantitative Methods · complete at least 9 units"
+        },
+        {
+          "code": "ACCT2121",
+          "title": "Introductory Management Accounting",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "ACCT2151",
+          "title": "Legal Environment for Business",
+          "credits": 2,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "ACCT3151",
+          "title": "Business Law",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "ACCT4212",
+          "title": "China Business Valuation and Analysis",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "ACCT4213",
+          "title": "Financial Statement Analysis and Valuation",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "ACCT4214",
+          "title": "Applied Financial Statement Analysis",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "ACCT4251",
+          "title": "Regulation and Compliance in the Financial Markets",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "DOTE3010",
+          "title": "Artificial Intelligence Empowered Business",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA2210",
+          "title": "Interest Theory and Finance",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA3010",
+          "title": "Financial Markets",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA3020",
+          "title": "International Finance",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA3030",
+          "title": "Management of Financial Institutions",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA3040",
+          "title": "Central Banking and Regulations of Financial Institutions",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA3060",
+          "title": "Real Estate Finance and Investment",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA3070",
+          "title": "Corporate Finance: Theory and Practice",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA3090",
+          "title": "Understanding China’s Financial System",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA3110",
+          "title": "Issues in Finance",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA3210",
+          "title": "Risk Management and Insurance",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA3230",
+          "title": "Life and Health Insurance",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA3240",
+          "title": "Corporate Property and Liability Insurance",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA3310",
+          "title": "Introduction to Investment Banking",
+          "credits": 1,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA3320",
+          "title": "Introduction to Credit Rating",
+          "credits": 1,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA3330",
+          "title": "Introduction to Alternative Investment",
+          "credits": 1,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA3340",
+          "title": "Trading Strategies: Behavioral and Technical Analysis",
+          "credits": 1,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA3350",
+          "title": "Foreign Exchange Market Practices",
+          "credits": 1,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA3360",
+          "title": "Derivative Warrants, Proprietary and Arbitrage Trading Concepts",
+          "credits": 1,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA3370",
+          "title": "Introduction to Bloomberg and Reuters",
+          "credits": 1,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA3398",
+          "title": "Special Issues in Finance",
+          "credits": 1,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA3399",
+          "title": "Current Issues in Finance",
+          "credits": 1,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA3420",
+          "title": "Credit Rating in Global Economy",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA4010",
+          "title": "Security Analysis",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA4020",
+          "title": "Fund Management and Asset Allocation",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA4030",
+          "title": "Selected Topics in Finance",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA4040",
+          "title": "Cases in Corporate Finance",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA4050",
+          "title": "Mergers and Acquisitions",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA4060",
+          "title": "China Finance",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA4310",
+          "title": "China Banking and Financial System",
+          "credits": 1,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA4320",
+          "title": "China Equity Securities Market",
+          "credits": 1,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA4330",
+          "title": "China Derivative Securities Market",
+          "credits": 1,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA4340",
+          "title": "Structured Products: Fundamentals and Analysis",
+          "credits": 1,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA4350",
+          "title": "Bond Markets: Analysis and Strategies",
+          "credits": 1,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "MGNT1020",
+          "title": "Management",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "MGNT2611",
+          "title": "Business Sustainability",
+          "credits": 2,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "MGNT4010",
+          "title": "Strategic Management",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "MKTG2010",
+          "title": "Marketing Management",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business · complete at least 12 units including at least 6 FINA units; at most 6 one-unit courses"
+        },
+        {
+          "code": "FINA4110",
+          "title": "Options and Futures",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Core pool · complete at least 12 units"
+        },
+        {
+          "code": "FINA4120",
+          "title": "Fixed Income Securities Analysis",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Core pool · complete at least 12 units"
+        },
+        {
+          "code": "FINA4130",
+          "title": "Empirical Finance",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Major Elective · Core pool · complete at least 12 units · official Capstone course"
+        },
+        {
+          "code": "FINA4140",
+          "title": "Computational Finance",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Major Elective · Core pool · complete at least 12 units · official Capstone course"
+        },
+        {
+          "code": "FINA4150",
+          "title": "Quantitative Methods for Financial Derivatives",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Major Elective · Core pool · complete at least 12 units · official Capstone course"
+        },
+        {
+          "code": "FINA4160",
+          "title": "Intermediate Financial Theory",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Major Elective · Core pool · complete at least 12 units · official Capstone course"
+        },
+        {
+          "code": "FINA4190",
+          "title": "Research Project in Quantitative Finance",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Major Elective · Core pool · complete at least 12 units · official Capstone course"
+        },
+        {
+          "code": "FINA4370",
+          "title": "Derivatives Trading: Analysis and Strategies",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Major Elective · Core pool · complete at least 12 units · official Capstone course"
+        },
+        {
+          "code": "FINA4380",
+          "title": "Algorithmic Trading Strategies, Arbitrage and HFT",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Major Elective · Core pool · complete at least 12 units · official Capstone course"
+        },
+        {
+          "code": "FINA4390",
+          "title": "Banking and Finance Practicum",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Major Elective · Core pool · complete at least 12 units · official Capstone course"
+        },
+        {
+          "code": "FINA4400",
+          "title": "Behavioral Finance",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Core pool · complete at least 12 units"
+        },
+        {
+          "code": "FINA4410",
+          "title": "Current Developments in FinTec",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Core pool · complete at least 12 units"
+        },
+        {
+          "code": "FINA4420",
+          "title": "Financial Markets from Macro Perspective",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Core pool · complete at least 12 units"
+        },
+        {
+          "code": "FINA4430",
+          "title": "Computerized Trading and Big Data",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Major Elective · Core pool · complete at least 12 units · official Capstone course"
+        }
+      ]
+    }
+  ]
+}

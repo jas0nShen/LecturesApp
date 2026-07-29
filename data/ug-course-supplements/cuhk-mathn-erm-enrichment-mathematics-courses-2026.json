@@ -1,0 +1,80 @@
+{
+  "provider": "CUHK Department of Mathematics 2026 Enrichment entrants advice and current Stream requirements",
+  "academicYear": "Applicable to Enrichment Mathematics entrants in 2026; Stream requirements in force since August 2025",
+  "sourceUrl": "https://www.math.cuhk.edu.hk/student-centre/academic-advice/GenReq-Enrichment-2026-27",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/mathn/",
+  "additionalSourceUrls": [
+    "https://www.math.cuhk.edu.hk/undergraduates/streams/pagec",
+    "https://www.math.cuhk.edu.hk/undergraduates/courses"
+  ],
+  "note": "The official 2026 entrants advice assigns Enrichment Mathematics entrants to four first-year Honours MATH courses, permits the published non-Honours counterparts, and then requires the common Table C0 courses plus Table C1 for students remaining in the Enrichment Stream. The current Stream page states that Enrichment entrants are automatically placed in the Enrichment Stream and publishes a 33-unit Stream structure: both MATH2070/2078 and MATH2230, then 27 units across named pools including 15-21 units from the main advanced pool. This supplement exposes 54 unique, explicitly named MATH courses from those first-year, C0, C1, Capstone and Enrichment Stream pools. Titles and units are confirmed by the current official Course List or the linked official course pages; MATH2221 is 2 units and every other imported course is 3 units. The Stream also permits up to 6 units from any otherwise-unused MATH course at level 3000 or above, and entrants may migrate to or combine other Streams. That open elective universe, double-Stream rules, University and Faculty requirements, prerequisites and permission for level-5000 courses are not closed here. The resulting list is intentionally browse-only and must not produce a graduation completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "MATHN-ERM",
+      "jupasCode": "JS4682",
+      "programmeId": "CUHK-UG-MATHN-ERM-64",
+      "majorId": "CUHK-UG-MATHN-ERM-64-M1",
+      "courses": [
+        { "code": "MATH1018", "title": "Honours University Mathematics", "credits": 3, "recommendedYear": 1, "semester": "Term 1", "courseType": "core", "group": "First-year MATH Required · pre-assigned Honours course · may opt out to MATH1010" },
+        { "code": "MATH1010", "title": "University Mathematics", "credits": 3, "recommendedYear": 1, "semester": "Term 1", "courseType": "core", "group": "First-year MATH Required alternative · non-Honours counterpart of MATH1018" },
+        { "code": "MATH1028", "title": "Honours Essential Mathematical Methods", "credits": 3, "recommendedYear": 1, "semester": "Term 1", "courseType": "core", "group": "First-year MATH Required · pre-assigned Honours course · may opt out to MATH1025" },
+        { "code": "MATH1025", "title": "Essential Mathematical Methods", "credits": 3, "recommendedYear": 1, "semester": "Term 1", "courseType": "core", "group": "First-year MATH Required alternative · non-Honours counterpart of MATH1028" },
+        { "code": "MATH1038", "title": "Honours Linear Algebra I", "credits": 3, "recommendedYear": 1, "semester": "Term 2", "courseType": "core", "group": "First-year MATH Required · Honours continuation · may take MATH1030 instead" },
+        { "code": "MATH1030", "title": "Linear Algebra I", "credits": 3, "recommendedYear": 1, "semester": "Term 2", "courseType": "core", "group": "First-year MATH Required alternative · non-Honours counterpart of MATH1038" },
+        { "code": "MATH1098", "title": "Honours Introduction to Set Theory", "credits": 3, "recommendedYear": 1, "semester": "Term 2", "courseType": "core", "group": "First-year MATH Required · Honours continuation · may take MATH1090 instead" },
+        { "code": "MATH1090", "title": "Introduction to Set Theory", "credits": 3, "recommendedYear": 1, "semester": "Term 2", "courseType": "core", "group": "First-year MATH Required alternative · non-Honours counterpart of MATH1098" },
+
+        { "code": "MATH2018", "title": "Honours Advanced Calculus I", "credits": 3, "recommendedYear": 2, "semester": "Term 1", "courseType": "core", "group": "MATH Required · Table C0 · choose MATH2018 or MATH2010" },
+        { "code": "MATH2010", "title": "Advanced Calculus I", "credits": 3, "recommendedYear": 2, "semester": "Term 1", "courseType": "core", "group": "MATH Required · Table C0 · choose MATH2018 or MATH2010" },
+        { "code": "MATH2028", "title": "Honours Advanced Calculus II", "credits": 3, "recommendedYear": 2, "semester": "Term 2", "courseType": "core", "group": "MATH Required · Table C0 · choose MATH2028 or MATH2020" },
+        { "code": "MATH2020", "title": "Advanced Calculus II", "credits": 3, "recommendedYear": 2, "semester": "Term 2", "courseType": "core", "group": "MATH Required · Table C0 · choose MATH2028 or MATH2020" },
+        { "code": "MATH2048", "title": "Honours Linear Algebra II", "credits": 3, "recommendedYear": 2, "semester": "Term 1", "courseType": "core", "group": "MATH Required · Table C0 · choose MATH2048 or MATH2040" },
+        { "code": "MATH2040", "title": "Linear Algebra II", "credits": 3, "recommendedYear": 2, "semester": "Term 1", "courseType": "core", "group": "MATH Required · Table C0 · choose MATH2048 or MATH2040" },
+        { "code": "MATH2221", "title": "Mathematical Laboratory II", "credits": 2, "recommendedYear": 2, "semester": "Term 2", "courseType": "core", "group": "MATH Required · Table C0" },
+        { "code": "MATH4400", "title": "Project", "credits": 3, "recommendedYear": 4, "courseType": "capstone", "group": "MATH Required · Table C0 Capstone · choose MATH4400 or MATH4900" },
+        { "code": "MATH4900", "title": "Seminar", "credits": 3, "recommendedYear": 4, "courseType": "capstone", "group": "MATH Required · Table C0 Capstone · choose MATH4400 or MATH4900" },
+
+        { "code": "MATH2058", "title": "Honours Mathematical Analysis I", "credits": 3, "courseType": "core", "group": "Enrichment Stream Required · Table C1 · choose MATH2058 or MATH2050" },
+        { "code": "MATH2050", "title": "Mathematical Analysis I", "credits": 3, "courseType": "core", "group": "Enrichment Stream Required · Table C1 · choose MATH2058 or MATH2050" },
+        { "code": "MATH2068", "title": "Honours Mathematical Analysis II", "credits": 3, "courseType": "core", "group": "Enrichment Stream Required · Table C1 · choose MATH2068 or MATH2060" },
+        { "code": "MATH2060", "title": "Mathematical Analysis II", "credits": 3, "courseType": "core", "group": "Enrichment Stream Required · Table C1 · choose MATH2068 or MATH2060" },
+        { "code": "MATH2078", "title": "Honours Algebraic Structures", "credits": 3, "courseType": "core", "group": "Enrichment Stream Required · Table C1 and Stream requirement A · choose MATH2078 or MATH2070; one counterpart plus MATH2230 is required" },
+        { "code": "MATH2070", "title": "Algebraic Structures", "credits": 3, "courseType": "core", "group": "Enrichment Stream Required · Table C1 and Stream requirement A · choose MATH2078 or MATH2070; one counterpart plus MATH2230 is required" },
+        { "code": "MATH2230", "title": "Complex Variables with Applications", "credits": 3, "courseType": "core", "group": "Enrichment Stream Required · Table C1 and Stream requirement A · required together with one of MATH2078 or MATH2070" },
+
+        { "code": "MATH3030", "title": "Abstract Algebra", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(a) · take 15-21 units from the named advanced pool" },
+        { "code": "MATH3040", "title": "Fields and Galois Theory", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(a) · take 15-21 units from the named advanced pool" },
+        { "code": "MATH3060", "title": "Mathematical Analysis III", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(a) · take 15-21 units from the named advanced pool" },
+        { "code": "MATH3070", "title": "Introduction to Topology", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(a) · take 15-21 units from the named advanced pool" },
+        { "code": "MATH3093", "title": "Fourier Analysis", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(a) · take 15-21 units from the named advanced pool" },
+        { "code": "MATH3230", "title": "Numerical Analysis", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(a) · take 15-21 units from the named advanced pool" },
+        { "code": "MATH3340", "title": "Mathematics of Machine Learning", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(a) · take 15-21 units from the named advanced pool" },
+        { "code": "MATH4010", "title": "Functional Analysis", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(a) · take 15-21 units from the named advanced pool" },
+        { "code": "MATH4030", "title": "Differential Geometry", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(a) · take 15-21 units from the named advanced pool" },
+        { "code": "MATH4050", "title": "Real Analysis", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(a) · take 15-21 units from the named advanced pool" },
+        { "code": "MATH4060", "title": "Complex Analysis", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(a) · take 15-21 units from the named advanced pool" },
+        { "code": "MATH4080", "title": "Modules and Representation Theory", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(a) · take 15-21 units from the named advanced pool" },
+        { "code": "MATH4220", "title": "Partial Differential Equations", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(a) · take 15-21 units from the named advanced pool" },
+        { "code": "MATH5011", "title": "Real Analysis I", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(a) · take 15-21 units from the named advanced pool · Department permission required for level-5000 courses" },
+        { "code": "MATH5012", "title": "Real Analysis II", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(a) · take 15-21 units from the named advanced pool · Department permission required for level-5000 courses" },
+        { "code": "MATH5021", "title": "Theory of Partial Differential Equations I", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(a) · take 15-21 units from the named advanced pool · Department permission required for level-5000 courses" },
+        { "code": "MATH5022", "title": "Theory of Partial Differential Equations II", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(a) · take 15-21 units from the named advanced pool · Department permission required for level-5000 courses" },
+        { "code": "MATH5031", "title": "Complex Analysis I", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(a) · take 15-21 units from the named advanced pool · Department permission required for level-5000 courses" },
+        { "code": "MATH5032", "title": "Complex Analysis II", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(a) · take 15-21 units from the named advanced pool · Department permission required for level-5000 courses" },
+        { "code": "MATH5051", "title": "Abstract Algebra I", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(a) · take 15-21 units from the named advanced pool · Department permission required for level-5000 courses" },
+        { "code": "MATH5052", "title": "Abstract Algebra II", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(a) · take 15-21 units from the named advanced pool · Department permission required for level-5000 courses" },
+        { "code": "MATH5061", "title": "Riemannian Geometry I", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(a) · take 15-21 units from the named advanced pool · Department permission required for level-5000 courses" },
+        { "code": "MATH5062", "title": "Riemannian Geometry II", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(a) · take 15-21 units from the named advanced pool · Department permission required for level-5000 courses" },
+        { "code": "MATH5070", "title": "Topology of Manifolds", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(a) · take 15-21 units from the named advanced pool · Department permission required for level-5000 courses" },
+
+        { "code": "MATH3240", "title": "Numerical Methods for Differential Equations", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(b) · take 0-3 units from MATH3240 and MATH4280" },
+        { "code": "MATH4280", "title": "Innovation and Design in Big Data Analytics", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(b) · take 0-3 units from MATH3240 and MATH4280" },
+        { "code": "MATH3320", "title": "Foundation of Data Analytics", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(c) · take 0-3 units from MATH3320 and MATH4230" },
+        { "code": "MATH4230", "title": "Optimization Theory", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(c) · take 0-3 units from MATH3320 and MATH4230" },
+        { "code": "MATH3270", "title": "Ordinary Differential Equations", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(d) · take 0-6 units from MATH3270 and MATH3280" },
+        { "code": "MATH3280", "title": "Introductory Probability", "credits": 3, "courseType": "major_elective", "group": "Enrichment Stream requirement B(d) · take 0-6 units from MATH3270 and MATH3280" }
+      ]
+    }
+  ]
+}
