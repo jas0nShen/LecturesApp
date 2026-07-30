@@ -50,15 +50,15 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.programmeCount, 445);
   assert.equal(summary.majorCount, 687);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 20289);
+  assert.equal(summary.courseCount, 20395);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 20275);
-  assert.equal(summary.programmeWithCoursesCount, 307);
-  assert.equal(summary.pendingProgrammeCount, 137);
+  assert.equal(summary.codedCourseCount, 20381);
+  assert.equal(summary.programmeWithCoursesCount, 309);
+  assert.equal(summary.pendingProgrammeCount, 135);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
-  assert.equal(summary.coveragePercent, 69);
+  assert.equal(summary.coveragePercent, 70);
   assert.match(summary.generatedAt, /^\d{4}-\d{2}-\d{2}T/);
   assert.match(summary.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
 });
@@ -525,6 +525,73 @@ test('CUHK Computational Data Science exposes the official 33-code required scop
   assert.equal(byCode.CDAS4999.courseType, 'capstone');
   assert.match(byCode.MATH1030.requirementGroups.join(' '), /Faculty Package/);
   assert.equal(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Machine Learning' }).length, 2);
+});
+
+test('CUHK Insurance, Financial and Actuarial Analysis exposes the complete 57-code scope as browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'IFAAB');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-IFAAB-22-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 57);
+  assert.equal(courses.length, 57);
+  assert.equal(courses.filter((course) => course.courseType === 'foundation').length, 4);
+  assert.equal(courses.filter((course) => course.courseType === 'core').length, 19);
+  assert.equal(courses.filter((course) => course.courseType === 'major_elective').length, 30);
+  assert.equal(courses.filter((course) => course.courseType === 'capstone').length, 4);
+  assert.match(byCode.MATH1530.requirementGroups.join(' '), /not counted in the 78-unit Major/);
+  assert.match(byCode.MATH1010.requirementGroups.join(' '), /Placement Test/);
+  assert.match(byCode.CSCI1580.requirementGroups.join(' '), /choose one of/);
+  assert.equal(byCode.DOTE3010.titleEn, 'Artificial Intelligence Empowered Business');
+  assert.equal(byCode.FINA3260.credits, 1);
+  assert.equal(byCode.MGNT2611.credits, 2);
+  assert.equal(byCode.FINA4291.courseType, 'capstone');
+  assert.equal(
+    ugService.listMajorCourses(programme.id, major.id, { keyword: 'Actuarial Internship' }).length,
+    1
+  );
+});
+
+test('CUHK Professional Accountancy exposes the official PACC Curriculum 2025 as browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'PACCN');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-PACCN-25-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+  const standardRequiredCredits = courses
+    .filter(
+      (course) =>
+        course.courseType !== 'major_elective' &&
+        course.courseCode !== 'ACCT3004'
+    )
+    .reduce((sum, course) => sum + course.credits, 0);
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 49);
+  assert.equal(courses.length, 49);
+  assert.equal(courses.filter((course) => course.courseType === 'foundation').length, 3);
+  assert.equal(courses.filter((course) => course.courseType === 'core').length, 19);
+  assert.equal(courses.filter((course) => course.courseType === 'capstone').length, 1);
+  assert.equal(courses.filter((course) => course.courseType === 'major_elective').length, 26);
+  assert.equal(standardRequiredCredits, 60);
+  assert.equal(byCode.ACCT3004.credits, 2);
+  assert.match(byCode.ACCT3004.requirementGroups.join(' '), /Global Accounting Stream only/);
+  assert.equal(byCode.ACCT4001.courseType, 'capstone');
+  assert.equal(byCode.DOTE2011.credits, 4);
+  assert.equal(byCode.ACCT3005.credits, 2);
+  assert.match(byCode.ACCT4215.requirementGroups.join(' '), /Global Accounting Stream only/);
+  assert.equal(
+    ugService.listMajorCourses(programme.id, major.id, { keyword: 'Blockchain Fundamentals' }).length,
+    1
+  );
 });
 
 test('CUHK Information Engineering exposes the current 135-course named scope as browse-only', () => {

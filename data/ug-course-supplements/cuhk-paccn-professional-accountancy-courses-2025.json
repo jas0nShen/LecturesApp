@@ -1,0 +1,464 @@
+{
+  "provider": "CUHK Professional Accountancy Programme",
+  "academicYear": "PACC Curriculum 2025; suggested pattern for 2025 entrants; reviewed on 2026-07-30",
+  "sourceUrl": "https://pacc.bschool.cuhk.edu.hk/wp-content/uploads/2025/08/2025-PACC-Curriculum.jpg",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/paccn/",
+  "additionalSourceUrls": [
+    "https://pacc.bschool.cuhk.edu.hk/academic/",
+    "https://pacc.bschool.cuhk.edu.hk/recommended-pattern-of-study/",
+    "https://pacc.bschool.cuhk.edu.hk/wp-content/uploads/2025/08/Freshmen-Handbook_2025-26-39.jpg"
+  ],
+  "note": "The official PACC Curriculum 2025 image (500,028 bytes, 1,654 x 2,339 pixels; SHA-256 522be32c183c6e702a71b36dde5f83fc22ab1ce9295350f2510be933da633a07) was visually reviewed and agrees with the live curriculum table. It publishes 49 unique codes: 23 rows in the Major Required column and 26 in the Major Elective pool. Excluding ACCT3004, which is explicitly required only for the Global Accounting Stream, the standard Required rows total exactly 60 units; ACCT3004 is an additional 2-unit Stream-only Practicum. The official suggested pattern image for 2025 entrants (290,381 bytes, 2,200 x 1,700 pixels; SHA-256 3e8faa97a2cef37db1d1c8f2655b9f4e4373d90e83f6fca94315e3ff7e36efab) confirms the standard Required course years, compulsory 2-unit ACCT4001 Capstone and three 3-unit Major Elective slots. The published Elective pool requires 9 units but contains 2-unit ACCT3005, includes Stream-only ACCT4215, and is explicitly not guaranteed to be fully offered in each academic year. Because the current local rule engine cannot prove the Stream-specific additions, low-unit elective combinations, annual offerings and prerequisites, this complete 49-code course list remains browse-only with totalCreditRequired=0 and must not produce a graduation completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "PACCN",
+      "jupasCode": "JS4240",
+      "programmeId": "CUHK-UG-PACCN-25",
+      "majorId": "CUHK-UG-PACCN-25-M1",
+      "courses": [
+        {
+          "code": "ACCT2111",
+          "title": "Introductory Financial Accounting",
+          "credits": 3,
+          "recommendedYear": 1,
+          "semester": "",
+          "courseType": "core",
+          "group": "Major Required Courses · standard 60-unit path"
+        },
+        {
+          "code": "ACCT2121",
+          "title": "Introductory Management Accounting",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "",
+          "courseType": "core",
+          "group": "Major Required Courses · standard 60-unit path"
+        },
+        {
+          "code": "ACCT3003",
+          "title": "Professional Seminar Series",
+          "credits": 1,
+          "recommendedYear": 2,
+          "semester": "",
+          "courseType": "core",
+          "group": "Major Required Courses · standard 60-unit path"
+        },
+        {
+          "code": "ACCT3004",
+          "title": "Accounting Practicum & Experiential Learning",
+          "credits": 2,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "core",
+          "group": "Major Required Courses · Global Accounting Stream only · additional to the standard 60-unit path"
+        },
+        {
+          "code": "ACCT3005",
+          "title": "Accounting Field Study & Experiential Learning",
+          "credits": 2,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 9 units · annual offering not guaranteed"
+        },
+        {
+          "code": "ACCT3111",
+          "title": "Financial Reporting I",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "",
+          "courseType": "core",
+          "group": "Major Required Courses · standard 60-unit path"
+        },
+        {
+          "code": "ACCT3112",
+          "title": "Financial Reporting II",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "",
+          "courseType": "core",
+          "group": "Major Required Courses · standard 60-unit path"
+        },
+        {
+          "code": "ACCT3121",
+          "title": "Cost and Management Accounting",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "",
+          "courseType": "core",
+          "group": "Major Required Courses · standard 60-unit path"
+        },
+        {
+          "code": "ACCT3142",
+          "title": "Contemporary Accounting Information Systems",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "",
+          "courseType": "core",
+          "group": "Major Required Courses · standard 60-unit path"
+        },
+        {
+          "code": "ACCT3151",
+          "title": "Business Law",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "",
+          "courseType": "core",
+          "group": "Major Required Courses · standard 60-unit path"
+        },
+        {
+          "code": "ACCT3152",
+          "title": "Company Law",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "",
+          "courseType": "core",
+          "group": "Major Required Courses · standard 60-unit path"
+        },
+        {
+          "code": "ACCT3161",
+          "title": "Taxation",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "",
+          "courseType": "core",
+          "group": "Major Required Courses · standard 60-unit path"
+        },
+        {
+          "code": "ACCT3241",
+          "title": "Introduction to Python for Business and Accounting Analytics",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 9 units · available as of 01/07/2024 · annual offering not guaranteed"
+        },
+        {
+          "code": "ACCT4001",
+          "title": "Capstone Project: Business Ethics & Entrepreneurship",
+          "credits": 2,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "capstone",
+          "group": "Major Required Courses · compulsory Capstone within the standard 60-unit path"
+        },
+        {
+          "code": "ACCT4111",
+          "title": "Advanced Financial Accounting",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "core",
+          "group": "Major Required Courses · standard 60-unit path"
+        },
+        {
+          "code": "ACCT4131",
+          "title": "Auditing",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "",
+          "courseType": "core",
+          "group": "Major Required Courses · standard 60-unit path"
+        },
+        {
+          "code": "ACCT4211",
+          "title": "Accounting Information in Capital Market",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 9 units · annual offering not guaranteed"
+        },
+        {
+          "code": "ACCT4212",
+          "title": "China Business Valuation and Analysis",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 9 units · annual offering not guaranteed"
+        },
+        {
+          "code": "ACCT4213",
+          "title": "Financial Statement Analysis and Valuation",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 9 units · annual offering not guaranteed"
+        },
+        {
+          "code": "ACCT4215",
+          "title": "Contemporary Accounting Issues in Global Market",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · Global Accounting Stream only · annual offering not guaranteed"
+        },
+        {
+          "code": "ACCT4221",
+          "title": "Strategic Management Accounting",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 9 units · annual offering not guaranteed"
+        },
+        {
+          "code": "ACCT4231",
+          "title": "Internal Auditing and Risk Management",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 9 units · annual offering not guaranteed"
+        },
+        {
+          "code": "ACCT4232",
+          "title": "Forensic Accounting and Audit Analytics",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 9 units · annual offering not guaranteed"
+        },
+        {
+          "code": "ACCT4242",
+          "title": "Accounting Data Analytics for Business",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 9 units · annual offering not guaranteed"
+        },
+        {
+          "code": "ACCT4243",
+          "title": "Data Visualisation in Accounting",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 9 units · annual offering not guaranteed"
+        },
+        {
+          "code": "ACCT4244",
+          "title": "Blockchain Fundamentals for Accountants",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 9 units · annual offering not guaranteed"
+        },
+        {
+          "code": "ACCT4251",
+          "title": "Regulation and Compliance in the Financial Markets",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 9 units · annual offering not guaranteed"
+        },
+        {
+          "code": "ACCT4252",
+          "title": "Corporate Restructuring and Insolvency",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 9 units · annual offering not guaranteed"
+        },
+        {
+          "code": "ACCT4253",
+          "title": "Chinese Legal Environment for Business",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 9 units · annual offering not guaranteed"
+        },
+        {
+          "code": "ACCT4261",
+          "title": "Taxes and Business Strategy",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 9 units · annual offering not guaranteed"
+        },
+        {
+          "code": "ACCT4262",
+          "title": "China Taxation",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 9 units · annual offering not guaranteed"
+        },
+        {
+          "code": "ACCT4263",
+          "title": "International Taxation",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 9 units · annual offering not guaranteed"
+        },
+        {
+          "code": "ACCT4271",
+          "title": "Corporate Governance",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 9 units · annual offering not guaranteed"
+        },
+        {
+          "code": "ACCT4272",
+          "title": "ESG and Sustainability Accounting",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 9 units · annual offering not guaranteed"
+        },
+        {
+          "code": "ACCT4281",
+          "title": "Applied Accounting & Financial Strategy",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 9 units · annual offering not guaranteed"
+        },
+        {
+          "code": "ACCT4282",
+          "title": "Reporting Issues in the Financial Service Industry",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 9 units · annual offering not guaranteed"
+        },
+        {
+          "code": "ACCT4290",
+          "title": "Professional Accounting Internship",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 9 units · annual offering not guaranteed"
+        },
+        {
+          "code": "DOTE1030",
+          "title": "Economics for Business Studies I",
+          "credits": 3,
+          "recommendedYear": 1,
+          "semester": "",
+          "courseType": "foundation",
+          "group": "Faculty Package · fixed course within the standard 60-unit Major requirement"
+        },
+        {
+          "code": "DOTE1040",
+          "title": "Economics for Business Studies II",
+          "credits": 3,
+          "recommendedYear": 1,
+          "semester": "",
+          "courseType": "foundation",
+          "group": "Faculty Package · fixed course within the standard 60-unit Major requirement"
+        },
+        {
+          "code": "DOTE2011",
+          "title": "Statistical Analysis for Business Decisions",
+          "credits": 4,
+          "recommendedYear": 2,
+          "semester": "",
+          "courseType": "core",
+          "group": "Major Required Courses · standard 60-unit path"
+        },
+        {
+          "code": "DOTE3010",
+          "title": "Artificial Intelligence Empowered Business",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 9 units · annual offering not guaranteed"
+        },
+        {
+          "code": "FINA2010",
+          "title": "Financial Management",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "",
+          "courseType": "core",
+          "group": "Major Required Courses · standard 60-unit path"
+        },
+        {
+          "code": "MATH1610",
+          "title": "Linear Algebra for Advanced Accounting Analytics",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 9 units · annual offering not guaranteed"
+        },
+        {
+          "code": "MATH1620",
+          "title": "Calculus for Advanced Accounting Analytics",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 9 units · annual offering not guaranteed"
+        },
+        {
+          "code": "MGNT1020",
+          "title": "Management",
+          "credits": 3,
+          "recommendedYear": 1,
+          "semester": "",
+          "courseType": "foundation",
+          "group": "Faculty Package · fixed course within the standard 60-unit Major requirement"
+        },
+        {
+          "code": "MGNT2511",
+          "title": "Global Experiential Learning I",
+          "credits": 1,
+          "recommendedYear": 1,
+          "semester": "",
+          "courseType": "core",
+          "group": "Major Required Courses · standard 60-unit path"
+        },
+        {
+          "code": "MGNT2512",
+          "title": "Global Experiential Learning II",
+          "credits": 1,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "core",
+          "group": "Major Required Courses · standard 60-unit path"
+        },
+        {
+          "code": "MGNT4010",
+          "title": "Strategic Management",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "",
+          "courseType": "core",
+          "group": "Major Required Courses · standard 60-unit path"
+        },
+        {
+          "code": "MKTG2010",
+          "title": "Marketing Management",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "",
+          "courseType": "core",
+          "group": "Major Required Courses · standard 60-unit path"
+        }
+      ]
+    }
+  ]
+}

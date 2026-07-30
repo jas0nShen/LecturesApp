@@ -1,0 +1,535 @@
+{
+  "provider": "CUHK Insurance, Financial and Actuarial Analysis Programme",
+  "academicYear": "2025-26 intake and thereafter; reviewed on 2026-07-30",
+  "sourceUrl": "https://ifaa.bschool.cuhk.edu.hk/wp-content/uploads/2025/04/IFAAB_ENG_25.docx",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/ifaab/",
+  "additionalSourceUrls": [
+    "https://ifaa.bschool.cuhk.edu.hk/curriculum/",
+    "https://ifaa.bschool.cuhk.edu.hk/wp-content/uploads/2025/11/IFAA-Brochure_2025_Online.pdf"
+  ],
+  "note": "The official 2025-26 Student Scheme (39,685 bytes; SHA-256 dc1d963011c5d6661ac9978388006e679757cce5723ae1d438c111656f9c18b3) publishes a minimum 78-unit Major: a fixed 9-unit Faculty Package, 48 units of fixed Required Courses plus one 3-unit programming choice, 18 units selected from the published Major Elective pool, and one 3-unit Capstone choice. MATH1530 is a conditional prerequisite before MATH1010 unless the student passes the Programme Mathematics Placement Test; it is not counted in the 78-unit Major, so the recommended path may total 78-81 units. The current official curriculum page (68,936 bytes; SHA-256 eca72935f3dbca84102fbc32f9689914972471bb64c9d9606cae6fabbd58b749) and Student Scheme agree on all 57 unique course codes, titles and units, including current elective DOTE3010. The 20-page 2025 brochure (4,865,544 bytes; SHA-256 bf275481205b7bb9dbb7d041b581426a605e5905302ec3ddd8170a9cc41f749e) was visually reviewed on curriculum pages 3-4 and confirms the programming choice, conditional mathematics sequence, internship/exchange plans, elective pool and four Capstone options. Because the current local rule engine cannot prove the MATH1530 placement-test exception, 1/2-unit elective combinations, pairwise elective alternatives, internship/exchange plans and Capstone path without manual review, this complete 57-code course list remains browse-only with totalCreditRequired=0 and must not produce a graduation completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "IFAAB",
+      "jupasCode": "JS4238",
+      "programmeId": "CUHK-UG-IFAAB-22",
+      "majorId": "CUHK-UG-IFAAB-22-M1",
+      "courses": [
+        {
+          "code": "ACCT1111",
+          "title": "Foundations in Financial Accounting",
+          "credits": 3,
+          "recommendedYear": 1,
+          "semester": "Term 1",
+          "courseType": "foundation",
+          "group": "Faculty Package · fixed 9-unit package"
+        },
+        {
+          "code": "ACCT2121",
+          "title": "Introductory Management Accounting",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "Term 2",
+          "courseType": "core",
+          "group": "Required Courses · fixed course"
+        },
+        {
+          "code": "ACCT3151",
+          "title": "Business Law",
+          "credits": 3,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units"
+        },
+        {
+          "code": "ACCT3161",
+          "title": "Taxation",
+          "credits": 3,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units"
+        },
+        {
+          "code": "CSCI1510",
+          "title": "Computer Principles and C Programming",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "Term 1",
+          "courseType": "core",
+          "group": "Required Courses · programming · choose one of CSCI1510, CSCI1520, CSCI1540 or CSCI1580"
+        },
+        {
+          "code": "CSCI1520",
+          "title": "Computer Principles and C++ Programming",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "Term 1",
+          "courseType": "core",
+          "group": "Required Courses · programming · choose one of CSCI1510, CSCI1520, CSCI1540 or CSCI1580"
+        },
+        {
+          "code": "CSCI1540",
+          "title": "Fundamental Computing With C++",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "Term 1",
+          "courseType": "core",
+          "group": "Required Courses · programming · choose one of CSCI1510, CSCI1520, CSCI1540 or CSCI1580"
+        },
+        {
+          "code": "CSCI1580",
+          "title": "Visual Programming",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "Term 1",
+          "courseType": "core",
+          "group": "Required Courses · programming · choose one of CSCI1510, CSCI1520, CSCI1540 or CSCI1580"
+        },
+        {
+          "code": "CSCI2100",
+          "title": "Data Structures",
+          "credits": 3,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units · CSCI2100 or CSCI2520"
+        },
+        {
+          "code": "CSCI2520",
+          "title": "Data Structures and Applications",
+          "credits": 3,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units · CSCI2100 or CSCI2520"
+        },
+        {
+          "code": "DOTE1030",
+          "title": "Economics for Business Studies I",
+          "credits": 3,
+          "recommendedYear": 1,
+          "semester": "Term 1",
+          "courseType": "foundation",
+          "group": "Faculty Package · fixed 9-unit package"
+        },
+        {
+          "code": "DOTE1040",
+          "title": "Economics for Business Studies II",
+          "credits": 3,
+          "recommendedYear": 1,
+          "semester": "Term 2",
+          "courseType": "foundation",
+          "group": "Faculty Package · fixed 9-unit package"
+        },
+        {
+          "code": "DOTE2051",
+          "title": "Business Information Systems",
+          "credits": 3,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units"
+        },
+        {
+          "code": "DOTE3010",
+          "title": "Artificial Intelligence Empowered Business",
+          "credits": 3,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units"
+        },
+        {
+          "code": "FINA2010",
+          "title": "Financial Management",
+          "credits": 3,
+          "recommendedYear": 1,
+          "semester": "Term 2",
+          "courseType": "core",
+          "group": "Required Courses · fixed course"
+        },
+        {
+          "code": "FINA2200",
+          "title": "Introduction to Actuarial Science",
+          "credits": 3,
+          "recommendedYear": 1,
+          "semester": "Term 2",
+          "courseType": "core",
+          "group": "Required Courses · fixed course"
+        },
+        {
+          "code": "FINA2220",
+          "title": "Quantitative Methods for Actuarial Analysis I",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "Term 1",
+          "courseType": "core",
+          "group": "Required Courses · fixed course"
+        },
+        {
+          "code": "FINA2230",
+          "title": "Quantitative Methods for Actuarial Analysis II",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "Term 2",
+          "courseType": "core",
+          "group": "Required Courses · fixed course"
+        },
+        {
+          "code": "FINA3010",
+          "title": "Financial Markets",
+          "credits": 3,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units"
+        },
+        {
+          "code": "FINA3030",
+          "title": "Management of Financial Institutions",
+          "credits": 3,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units"
+        },
+        {
+          "code": "FINA3070",
+          "title": "Corporate Finance: Theory and Practice",
+          "credits": 3,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units"
+        },
+        {
+          "code": "FINA3080",
+          "title": "Investment Analysis and Portfolio Management",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "Term 2",
+          "courseType": "core",
+          "group": "Required Courses · fixed course"
+        },
+        {
+          "code": "FINA3210",
+          "title": "Risk Management and Insurance",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "Term 1",
+          "courseType": "core",
+          "group": "Required Courses · fixed course"
+        },
+        {
+          "code": "FINA3221",
+          "title": "Basic Long-term Actuarial Mathematics",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "Term 2",
+          "courseType": "core",
+          "group": "Required Courses · fixed course"
+        },
+        {
+          "code": "FINA3222",
+          "title": "Basic Short-term Actuarial Mathematics",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "Term 1",
+          "courseType": "core",
+          "group": "Required Courses · fixed course"
+        },
+        {
+          "code": "FINA3230",
+          "title": "Life and Health Insurance",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "Term 2",
+          "courseType": "core",
+          "group": "Required Courses · fixed course"
+        },
+        {
+          "code": "FINA3240",
+          "title": "Corporate Property and Liability Insurance",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "Term 1",
+          "courseType": "core",
+          "group": "Required Courses · fixed course"
+        },
+        {
+          "code": "FINA3250",
+          "title": "Derivatives for Actuaries I",
+          "credits": 3,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units · FINA3250 or FINA4110"
+        },
+        {
+          "code": "FINA3260",
+          "title": "Internship Experience",
+          "credits": 1,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units"
+        },
+        {
+          "code": "FINA3290",
+          "title": "Linear Models for Actuaries",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "Term 1",
+          "courseType": "core",
+          "group": "Required Courses · fixed course"
+        },
+        {
+          "code": "FINA3295",
+          "title": "Advanced Statistical Modeling for Insurance and Finance",
+          "credits": 3,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units"
+        },
+        {
+          "code": "FINA4030",
+          "title": "Selected Topics in Finance",
+          "credits": 3,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units"
+        },
+        {
+          "code": "FINA4110",
+          "title": "Options and Futures",
+          "credits": 3,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units · FINA3250 or FINA4110"
+        },
+        {
+          "code": "FINA4120",
+          "title": "Fixed Income Securities Analysis",
+          "credits": 3,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units"
+        },
+        {
+          "code": "FINA4140",
+          "title": "Computational Finance",
+          "credits": 3,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units"
+        },
+        {
+          "code": "FINA4150",
+          "title": "Quantitative Methods for Financial Derivatives",
+          "credits": 3,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units"
+        },
+        {
+          "code": "FINA4160",
+          "title": "Intermediate Financial Theory",
+          "credits": 3,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units"
+        },
+        {
+          "code": "FINA4211",
+          "title": "Advanced Long-term Actuarial Mathematics",
+          "credits": 3,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units"
+        },
+        {
+          "code": "FINA4215",
+          "title": "Introduction to Actuarial Computing Using Prophet",
+          "credits": 1,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units"
+        },
+        {
+          "code": "FINA4221",
+          "title": "Advanced Short-term Actuarial Mathematics",
+          "credits": 3,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units"
+        },
+        {
+          "code": "FINA4270",
+          "title": "Research Project in Insurance, Financial and Actuarial Analysis",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "Term 1 / Term 2",
+          "courseType": "capstone",
+          "group": "Capstone Courses · choose one 3-unit course"
+        },
+        {
+          "code": "FINA4280",
+          "title": "Derivatives for Actuaries II",
+          "credits": 3,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units"
+        },
+        {
+          "code": "FINA4290",
+          "title": "Actuarial Internship",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "Term 1 / Term 2",
+          "courseType": "capstone",
+          "group": "Capstone Courses · choose one 3-unit course"
+        },
+        {
+          "code": "FINA4291",
+          "title": "Internship in Insurance and Financial Institutions",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "Term 1 / Term 2",
+          "courseType": "capstone",
+          "group": "Capstone Courses · choose one 3-unit course"
+        },
+        {
+          "code": "IBBA3040",
+          "title": "Business Lectures Series",
+          "credits": 1,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units"
+        },
+        {
+          "code": "MATH1010",
+          "title": "University Mathematics",
+          "credits": 3,
+          "recommendedYear": 1,
+          "semester": "Term 1 / Term 2",
+          "courseType": "core",
+          "group": "Required Courses · fixed course · take after MATH1530 unless the Mathematics Placement Test is passed"
+        },
+        {
+          "code": "MATH1530",
+          "title": "Basic Mathematics for Business and Social Sciences",
+          "credits": 3,
+          "recommendedYear": 1,
+          "semester": "Term 1",
+          "courseType": "foundation",
+          "group": "Conditional prerequisite · required before MATH1010 unless the Mathematics Placement Test is passed · not counted in the 78-unit Major"
+        },
+        {
+          "code": "MATH1540",
+          "title": "University Mathematics for Financial Studies",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "Term 1",
+          "courseType": "core",
+          "group": "Required Courses · fixed course"
+        },
+        {
+          "code": "MATH2010",
+          "title": "Advanced Calculus I",
+          "credits": 3,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units"
+        },
+        {
+          "code": "MGNT1020",
+          "title": "Management",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "Term 1",
+          "courseType": "core",
+          "group": "Required Courses · fixed course"
+        },
+        {
+          "code": "MGNT2511",
+          "title": "Global Experiential Learning I",
+          "credits": 1,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units"
+        },
+        {
+          "code": "MGNT2512",
+          "title": "Global Experiential Learning II",
+          "credits": 1,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units"
+        },
+        {
+          "code": "MGNT2611",
+          "title": "Business Sustainability",
+          "credits": 2,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units"
+        },
+        {
+          "code": "MGNT4010",
+          "title": "Strategic Management",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "Term 1 / Term 2",
+          "courseType": "capstone",
+          "group": "Capstone Courses · choose one 3-unit course"
+        },
+        {
+          "code": "MKTG2010",
+          "title": "Marketing Management",
+          "credits": 3,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units"
+        },
+        {
+          "code": "RMSC4001",
+          "title": "Simulation Methods for Risk Management Science and Finance",
+          "credits": 3,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units"
+        },
+        {
+          "code": "STAT3007",
+          "title": "Introduction to Stochastic Processes",
+          "credits": 3,
+          "recommendedYear": 0,
+          "semester": "",
+          "courseType": "major_elective",
+          "group": "Major Elective Courses · choose 18 units"
+        }
+      ]
+    }
+  ]
+}

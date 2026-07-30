@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-30T09:10:33.571Z",
+  "generatedAt": "2026-07-30T09:59:50.229Z",
   "universities": [
     {
       "id": "HKU",
@@ -3599,9 +3599,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/ifaab/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 57,
+      "codedCourseCount": 57,
+      "courseSourceUrl": "https://ifaa.bschool.cuhk.edu.hk/wp-content/uploads/2025/04/IFAAB_ENG_25.docx"
     },
     {
       "id": "CUHK-UG-IBBAC-23",
@@ -3656,9 +3657,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/paccn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 49,
+      "codedCourseCount": 49,
+      "courseSourceUrl": "https://pacc.bschool.cuhk.edu.hk/wp-content/uploads/2025/08/2025-PACC-Curriculum.jpg"
     },
     {
       "id": "CUHK-UG-QFINN-26",
@@ -10822,8 +10824,8 @@ const catalogue = {
       "code": "INSURANCE-FINANCIAL-AND-ACTUARIAL-ANALYSIS",
       "nameEn": "Insurance, Financial and Actuarial Analysis",
       "nameZh": "Insurance, Financial and Actuarial Analysis",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 58,
+      "codedCourseCount": 57,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/ifaab/"
     },
     {
@@ -10852,8 +10854,8 @@ const catalogue = {
       "code": "PROFESSIONAL-ACCOUNTANCY",
       "nameEn": "Professional Accountancy",
       "nameZh": "Professional Accountancy",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 50,
+      "codedCourseCount": 49,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/paccn/"
     },
     {
@@ -16149,7 +16151,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 2373,
+    "CUHK": 2479,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16157,7 +16159,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 20275
+  "codedCourseCount": 20381
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
