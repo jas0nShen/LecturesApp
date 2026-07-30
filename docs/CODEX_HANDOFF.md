@@ -8,7 +8,7 @@
 
 当前产品边界是：先保证离线发布、数据可追溯和规则不误导，再继续补课程覆盖与规划能力。未经明确产品决定，不引入登录、云同步、统计、敏感权限或生产 API。
 
-当前仓库发布资料已统一为 `1.0.14`（`package.json`、运行时 `releaseInfo`、`docs/MVP_SPEC.md`、`docs/RELEASE_CHECKLIST.md`、`docs/REVIEW_SUBMISSION.md`）。Git 课程提交 `5487dd5` 已推送到 `origin/main`，并已通过微信官方 CLI 成功上传 `1.0.14`。没有提交审核或发布正式版。
+当前仓库发布资料已统一为 `1.0.14`（`package.json`、运行时 `releaseInfo`、`docs/MVP_SPEC.md`、`docs/RELEASE_CHECKLIST.md`、`docs/REVIEW_SUBMISSION.md`）。Git 课程提交 `38091e2` 已推送到 `origin/main`，并已通过微信官方 CLI 成功上传 `1.0.14`。没有提交审核或发布正式版。
 
 ## 可验证的仓库快照
 
@@ -17,7 +17,7 @@
 - 1.0.12 已补充 HKU 商科、经济、统计、会计及法学双学位官方课程清单，并对规则未闭合 Programme 保持只读浏览，不显示未经核验的毕业完成比例。
 - HKU 商科与法学批次由提交 `7c2e66f` 发布；HKU `6688 Science Master Class` 与 `6901 Bachelor of Science` 批次由提交 `c1076cf` 发布；HKU `6987 Computer Engineering / Electrical Engineering / Electronic Engineering` 三 Major 与 HKU `6925` / `6858` / `6897` 来源审查由提交 `8fa7ce8 Expand HKU engineering curricula for 1.0.12` 发布。
 - 包版本：`1.0.14`
-- 当前课程提交 `5487dd5` 已推送到 `origin/main`，并对应当前微信 `1.0.14` 开发版。
+- 当前课程提交 `38091e2` 已推送到 `origin/main`，并对应当前微信 `1.0.14` 开发版。
 - 当前 Git 代码已包含 CUHK `JASPN Japanese Studies` 58 门 Major-assigned JASP 课程；标准、Local、Stream、senior-entry 与 double-Major 路径未完整闭合，因此保持只读浏览，不生成毕业完成百分比。
 - 当前 Git 代码也已包含 CUHK `RELSN Religious Studies` 63 门 Religious Studies Area 课程；标准与 senior-entry 路径因 Cultural Studies 和跨院 Concentration 开放池未闭合而保持只读浏览。
 - 当前 Git 代码还包含 CUHK `PUHSN Public Humanities` 88 门 2025-26 intake-specific 课程；标准与 senior-entry 路径、外系 Faculty Package、Religious Studies Areas、Concentration 替代及课程复用规则未闭合，因此保持只读浏览，不生成毕业完成百分比。
@@ -40,10 +40,10 @@
 - 当前 Git 代码新增 CUHK `IERGN Information Engineering` 135 门唯一课程：41 门 Core、92 门 Major Elective、2 门 Capstone；官方 PDF Course List 的 122 条 code/title/unit 与 builder 自动比对无缺失、多余或差异。开放高年级 Engineering elective universe、替代路径、条件桥接课、五个 Stream、ELITE、senior-entry 与双学位路径未闭合，因此保持只读浏览，不生成毕业完成百分比。
 - 当前 Git 代码新增 CUHK `MASEN Materials Science and Engineering` 官方课程页展开后的 58 个唯一课程代码：25 门 Core、30 门 Major Elective、2 门 Capstone、1 门 Internship。官方只发布 Faculty Package、Foundation、Required 与 Elective 的分组总额，没有逐课学分，因此 58 门课程均以 0 表示未知学分；slash alternatives、三选一计算机课、Elective 选课限制、学习顺序及双主修路径仍需人工复核，保持只读浏览且不生成毕业完成百分比。
 - 当前 Git 代码新增 CUHK `MIEGN Mathematics and Information Engineering` 178 门 2025-26 官方可核验课程：52 门 Core、123 门 Major Elective、2 门 Capstone、1 门 Internship。两条 87-unit Major 入学路径的 Faculty Package、Foundation 与 Elective 配额不同，且开放高年级课程池、slash alternatives、学习顺序、ELITE substitutions 与 double counting 未由本地规则闭合，因此保持只读浏览，`totalCreditRequired=0`，不生成毕业完成百分比。
-- 当前工作区新增 CUHK `EEENN Energy and Environmental Engineering` 官方 2025 Programme leaflet 的 66 门唯一课程：20 门 Core、42 门 Major Elective、2 门 Capstone、2 门 Internship/Practicum。4 页 PDF 已逐页渲染核验；课程表明确除另有标示外均为 3 units，本地保留 0、1、2-unit 例外及三条 Stream。Core/Non-Core elective、至少 6 units Core Elective、Stream 12-unit 条件、开放选修池和 University Core/Free Elective 未由本地规则闭合，因此保持只读浏览，`totalCreditRequired=0`，不生成毕业完成百分比。
-- 当前工作区新增 CUHK `SEEMN Systems Engineering and Engineering Management` 官方 2025 Programme leaflet 的 83 门唯一课程：44 门 Core、35 门 Major Elective、2 门 Capstone、2 门 Internship/Practicum。6 页 PDF 已完成文本提取和逐页渲染核验；推荐学习计划总额为 75 units，但除 `ENGG1111=0`、`ENGG1820=1` 外未逐课标示学分，因此其余课程均以 0 表示未知。Business Information Systems / Decision Analytics Stream、slash alternatives、组别归属和 adviser-defined no-Stream 路径未由本地规则闭合，因此保持只读浏览，`totalCreditRequired=0`，不生成毕业完成百分比。
+- 当前 Git 代码新增 CUHK `EEENN Energy and Environmental Engineering` 官方 2025 Programme leaflet 的 66 门唯一课程：20 门 Core、42 门 Major Elective、2 门 Capstone、2 门 Internship/Practicum。4 页 PDF 已逐页渲染核验；课程表明确除另有标示外均为 3 units，本地保留 0、1、2-unit 例外及三条 Stream。Core/Non-Core elective、至少 6 units Core Elective、Stream 12-unit 条件、开放选修池和 University Core/Free Elective 未由本地规则闭合，因此保持只读浏览，`totalCreditRequired=0`，不生成毕业完成百分比。
+- 当前 Git 代码新增 CUHK `SEEMN Systems Engineering and Engineering Management` 官方 2025 Programme leaflet 的 83 门唯一课程：44 门 Core、35 门 Major Elective、2 门 Capstone、2 门 Internship/Practicum。6 页 PDF 已完成文本提取和逐页渲染核验；推荐学习计划总额为 75 units，但除 `ENGG1111=0`、`ENGG1820=1` 外未逐课标示学分，因此其余课程均以 0 表示未知。Business Information Systems / Decision Analytics Stream、slash alternatives、组别归属和 adviser-defined no-Stream 路径未由本地规则闭合，因此保持只读浏览，`totalCreditRequired=0`，不生成毕业完成百分比。
 - 新增 EEENN / SEEMN 后，生成器已将原 `ug-data-cuhk` 拆为 `ug-data-cuhk-a` / `ug-data-cuhk-b`；稳定的 `CUHK` registry key 会聚合加载两个分包。旧单一分包已由生成脚本删除，不要手工恢复。
-- 当前 1.0.14 微信开发版已上传至课程提交 `5487dd5`，包含 CUHK `MATHN-ERM`、`QFINN`、`IERGN`、`MASEN`、`MIEGN` 以及此前已发布的课程数据。
+- 当前 1.0.14 微信开发版已上传至课程提交 `38091e2`，包含 CUHK `MATHN-ERM`、`QFINN`、`IERGN`、`MASEN`、`MIEGN`、`EEENN`、`SEEMN` 以及此前已发布的课程数据。
 - 本批开放 HKU `6755` 其余 BBA Major、`6767` Economics、`6779` Statistical Decision Sciences、`6781` Accounting、`6896` IBGM、Asset Management and Private Banking、Quantitative Finance、Business Analytics、Marketing Analytics and Technology，以及 `6808` / `6810` 两个 Law double degree 的官方可核验课程。
 - `6808` 与 `6810` 的 Law elective universe 未由 Programme-specific 来源闭合，因此只发布已核验代码供只读浏览，不生成完整毕业结构或完成百分比。
 - 旧单一 `ug-data-hku`、`ug-data-hkbu` 已由生成脚本替换；当前工作区 HKU 使用 `ug-data-hku-a` / `ug-data-hku-b` / `ug-data-hku-c` 三分包，HKBU 使用 `ug-data-hkbu-a` / `ug-data-hkbu-b` 双分包。不要手工恢复旧 loader。
@@ -63,11 +63,14 @@
 - 2026-07-30 已将版本资料升级为 `1.0.14`，并用课程与发布提交 `17d5ad8` 上传，备注为 `1.0.14: Add CUHK Information Engineering curriculum`，命令返回 `✔ upload`；实际上传包 18,200,292 bytes，主包 1,484,476 bytes，所有 22 个分包均低于 2 MB。
 - 2026-07-30 已用课程提交 `772fda3` 覆盖上传同版本 `1.0.14`，备注为 `1.0.14: Add CUHK Materials Science curriculum`，命令返回 `✔ upload`；实际上传包 18,241,915 bytes，主包 1,484,555 bytes，所有 22 个分包均低于 2 MB。
 - 2026-07-30 已用课程提交 `5487dd5` 覆盖上传同版本 `1.0.14`，备注为 `1.0.14: Add CUHK Mathematics and Information Engineering curriculum`，命令返回 `✔ upload`；实际上传包 18,379,048 bytes，主包 1,484,652 bytes，所有 22 个分包均低于 2 MB。
+- 2026-07-30 已用课程提交 `38091e2` 覆盖上传同版本 `1.0.14`，备注为 `1.0.14: Add CUHK energy and systems engineering curricula`，命令返回 `✔ upload`；实际上传包 18,484,108 bytes，主包 1,485,044 bytes，所有 23 个分包均低于 2 MB。
 - `.playwright-cli/` 为 96 KB 的本地浏览器诊断产物，共有 console log 和 page YAML；本次没有删除、覆盖或暂存。
 
 最近关键提交（本次交接提交前）：
 
 ```text
+38091e2 Add CUHK energy and systems engineering curricula
+caa3fc7 Document CUHK MIEGN upload status
 5487dd5 Add CUHK mathematics and information engineering curriculum
 a099171 Document CUHK materials science upload
 772fda3 Add CUHK materials science curriculum
@@ -323,7 +326,7 @@ df91815 Add PolyU Design curriculum and source evidence
 
 ### 发布与验收缺口
 
-- 仓库版本资料、Git 课程提交与当前微信开发版均已同步为 `1.0.14`；微信开发版对应提交 `5487dd5`。上传不等于已提交审核，当前仍未提交审核或发布正式版。
+- 仓库版本资料、Git 课程提交与当前微信开发版均已同步为 `1.0.14`；微信开发版对应提交 `38091e2`。上传不等于已提交审核，当前仍未提交审核或发布正式版。
 - `docs/RELEASE_CHECKLIST.md` 的 iOS/Android 真机矩阵没有完成记录。
 - 微信后台隐私声明、服务类目、备案、审核材料核对尚未在仓库中记录为完成。
 - 尚未提交微信审核，也没有发布正式版。
@@ -434,28 +437,11 @@ npm run status:ug-sources -- --missing-only --priority launch --missing-limit 10
 
 ## 当前工作区
 
-当前 1.0.14 微信开发版已覆盖至课程提交 `5487dd5`。`MATHN-ERM Enrichment Mathematics`、`QFINN Quantitative Finance`、`IERGN Information Engineering`、`MASEN Materials Science and Engineering` 与 `MIEGN Mathematics and Information Engineering` source supplements、生成 catalogue/shard、专项与运行时测试均已推送并上传。当前工作区另有尚未提交或上传的 `EEENN Energy and Environmental Engineering`、`SEEMN Systems Engineering and Engineering Management` source supplements、builders、专项测试、CUHK 双分包生成改造及重新生成的 catalogue/shards/runtime tests：
+当前 1.0.14 微信开发版已覆盖至课程提交 `38091e2`。`EEENN Energy and Environmental Engineering`、`SEEMN Systems Engineering and Engineering Management` source supplements、builders、专项测试、CUHK 双分包生成改造及重新生成的 catalogue/shards/runtime tests 均已提交、推送并上传。交接文档提交前，工作区只保留本文件改动和用户本地诊断目录：
 
 ```text
  M docs/CODEX_HANDOFF.md
- M miniprogram/app.json
- D miniprogram/subpackages/ug-data-cuhk/
- M miniprogram/utils/ugCatalogue.js
- M miniprogram/utils/ugCourseShards.js
- M miniprogram/utils/ugLoadService.test.js
- M miniprogram/utils/ugService.test.js
- M scripts/check-release-readiness.test.js
- M scripts/generate-ug-catalog.js
- M scripts/generate-ug-catalog.test.js
 ?? .playwright-cli/
-?? data/ug-course-supplements/cuhk-eeenn-energy-environmental-engineering-courses-2025.json
-?? data/ug-course-supplements/cuhk-seemn-systems-engineering-management-courses-2025.json
-?? miniprogram/subpackages/ug-data-cuhk-a/
-?? miniprogram/subpackages/ug-data-cuhk-b/
-?? scripts/build-cuhk-eeenn-energy-environmental-engineering-supplement.js
-?? scripts/build-cuhk-seemn-systems-engineering-management-supplement.js
-?? scripts/cuhk-eeenn-energy-environmental-engineering-supplement.test.js
-?? scripts/cuhk-seemn-systems-engineering-management-supplement.test.js
 ```
 
 `.playwright-cli/` 仍保持未跟踪；本次没有重置、删除、覆盖或清理该目录。
@@ -487,7 +473,7 @@ npm run status:ug-sources -- --school cuhk --missing-only --missing-summary --mi
 
 - 当前代码主包预估：1,844,503 bytes。
 - 当前代码总估算包体：23,341,451 bytes，201 个上传文件。
-- 最新上传 1.0.14 的 CLI 实际包：18,379,048 bytes；实际主包：1,484,652 bytes。
+- 最新上传 1.0.14 的 CLI 实际包：18,484,108 bytes；实际主包：1,485,044 bytes。
 - 当前 23 个 UG/TPG 分包均低于 2 MB；`ug-data-cuhk-a` 为 961,134 bytes，`ug-data-cuhk-b` 为 1,000,028 bytes，最大分包为 `ug-data-hku-a` 1,869,435 bytes。
 - 页面：17；敏感 API：0。
 - release warnings 仅为人工微信后台检查尚需完成，以及未配置生产 HTTPS（体验/正式版按设计离线）。
@@ -496,7 +482,7 @@ npm run status:ug-sources -- --school cuhk --missing-only --missing-summary --mi
 
 ## 已知问题、风险和不要做的事情
 
-- 微信已通过官方 CLI 用课程提交 `5487dd5` 上传 `1.0.14`。这只表示开发版上传成功，不等于已提审或已发布。
+- 微信已通过官方 CLI 用课程提交 `38091e2` 上传 `1.0.14`。这只表示开发版上传成功，不等于已提审或已发布。
 - 不要把“上传成功”写成“已提审”或“已发布”。这两个外部动作尚未执行。
 - 不要删除或提交 `.playwright-cli/`，除非用户明确决定如何处理该诊断目录。
 - 不要手改生成的 catalogue、course shard 或 loader；从 source/supplement 和 builder 修改后重新生成。
