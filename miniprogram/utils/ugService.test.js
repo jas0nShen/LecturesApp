@@ -50,11 +50,11 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.programmeCount, 445);
   assert.equal(summary.majorCount, 687);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 20634);
+  assert.equal(summary.courseCount, 20655);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 20620);
-  assert.equal(summary.programmeWithCoursesCount, 311);
-  assert.equal(summary.pendingProgrammeCount, 133);
+  assert.equal(summary.codedCourseCount, 20641);
+  assert.equal(summary.programmeWithCoursesCount, 312);
+  assert.equal(summary.pendingProgrammeCount, 132);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
@@ -772,6 +772,31 @@ test('CUHK Global Economics and Finance exposes the complete 117-code Course Lis
   assert.match(byCode.FINA3310.requirementGroups[0], /no more than six 1-unit FINA courses/);
   assert.match(byCode.GLEF4070.requirementGroups[0], /Co-operative Education/);
   assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Global Financial Markets' }).some((course) => course.courseCode === 'GLEF3030'));
+});
+
+test('CUHK Global Business Studies exposes its 21 named local courses as browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'IBBAC-GBS');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-IBBAC-GBS-19-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 21);
+  assert.equal(courses.length, 21);
+  assert.equal(courses.filter((course) => course.courseType === 'core').length, 20);
+  assert.equal(courses.filter((course) => course.courseType === 'capstone').length, 1);
+  assert.equal(byCode.IBBA4010.credits, 3);
+  assert.equal(byCode.DOTE2030.credits, 3);
+  assert.equal(byCode.MGNT4510.titleEn, 'China Business');
+  assert.equal(byCode.MGNT4510.credits, 3);
+  assert.equal(byCode.MKTG3010.credits, 3);
+  assert.equal(byCode.MKTG4070.credits, 3);
+  assert.match(byCode.ACCT2151.requirementGroups[0], /ACCT2151 or ACCT3151/);
+  assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'China Business' }).some((course) => course.courseCode === 'MGNT4510'));
 });
 
 test('CUHK Sociology exposes the 2025-26 62-course Major pool as browse-only', () => {

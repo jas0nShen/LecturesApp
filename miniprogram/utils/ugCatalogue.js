@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-30T11:12:50.952Z",
+  "generatedAt": "2026-07-30T13:46:05.154Z",
   "universities": [
     {
       "id": "HKU",
@@ -3542,9 +3542,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/ibbac-gbs/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 21,
+      "codedCourseCount": 21,
+      "courseSourceUrl": "https://gbs.bschool.cuhk.edu.hk/internationally-oriented-curriculum/"
     },
     {
       "id": "CUHK-UG-GLEFN-20",
@@ -10796,8 +10797,8 @@ const catalogue = {
       "code": "GLOBAL-BUSINESS-STUDIES",
       "nameEn": "Global Business Studies",
       "nameZh": "Global Business Studies",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 22,
+      "codedCourseCount": 21,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/ibbac-gbs/"
     },
     {
@@ -16153,7 +16154,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 2718,
+    "CUHK": 2739,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16161,7 +16162,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 20620
+  "codedCourseCount": 20641
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

@@ -1,0 +1,173 @@
+{
+  "provider": "CUHK Global Business Studies Programme",
+  "academicYear": "2026-27 brochure and current curriculum; reviewed on 2026-07-30",
+  "sourceUrl": "https://gbs.bschool.cuhk.edu.hk/internationally-oriented-curriculum/",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/ibbac-gbs/",
+  "additionalSourceUrls": [
+    "https://ug.bschool.cuhk.edu.hk/wp-content/uploads/2025/10/GBS-Brochure-26-27.pdf",
+    "http://rgsntl.rgs.cuhk.edu.hk/aqs_prd_applx/Public/tt_dsp_crse_catalog.aspx",
+    "https://www.glef.cuhk.edu.hk/site/assets/files/1672/glefn_eng_25_formatted.pdf",
+    "https://ifaa.bschool.cuhk.edu.hk/wp-content/uploads/2025/04/IFAAB_ENG_25.docx",
+    "https://pacc.bschool.cuhk.edu.hk/wp-content/uploads/2025/08/2025-PACC-Curriculum.jpg",
+    "https://www.qfrm.cuhk.edu.hk/wp-content/uploads/2025/10/QFRM_ENG_25.pdf"
+  ],
+  "note": "The current Programme curriculum page (last modified 2025-09-26) publishes a 123-unit curriculum: 39 University Core units, 9 Faculty Package units, 44-45 Major Required units, and 12 units of approved business-related courses at overseas universities in North America and Europe. Its fixed local named scope contains 21 unique codes: 3 Faculty Package courses and 18 Major Required codes, including both sides of the ACCT2151/ACCT3151 alternative. The official 12-page 2026-27 brochure (3,906,724 bytes; SHA-256 bd71261ecf592d34a6b9ea0f0ec40717ea21c4b1e4edccfb719aa601273fe841) was text-extracted and visually reviewed page by page; page 5 confirms the suggested study sequence and leaves overseas business-related courses open. Current CUSIS Course Catalogue results confirm IBBA4010, DOTE2030, MKTG3010 and MKTG4070 as 3-unit courses and resolve the Programme page typo \"MGTNT 4510\" to MGNT4510 China Business, 3 units. Credits for the remaining named courses are cross-checked against current-year official CUHK Programme schemes already maintained in this repository and linked as additional sources. Because the overseas course identities are approval-dependent, electives and other foundation courses are open, and the current local rule engine cannot prove the alternative and exchange paths, the 21-code local named scope remains browse-only with totalCreditRequired=0 and must not produce a graduation completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "IBBAC-GBS",
+      "jupasCode": "JS4214",
+      "programmeId": "CUHK-UG-IBBAC-GBS-19",
+      "majorId": "CUHK-UG-IBBAC-GBS-19-M1",
+      "courses": [
+        {
+          "code": "ACCT2111",
+          "title": "Introductory Financial Accounting",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · Accounting · fixed course"
+        },
+        {
+          "code": "ACCT2121",
+          "title": "Introductory Management Accounting",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · Accounting · fixed course"
+        },
+        {
+          "code": "ACCT2151",
+          "title": "Legal Environment for Business",
+          "credits": 2,
+          "courseType": "core",
+          "group": "Major Required · Accounting · choose ACCT2151 or ACCT3151"
+        },
+        {
+          "code": "ACCT3151",
+          "title": "Business Law",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · Accounting · choose ACCT2151 or ACCT3151"
+        },
+        {
+          "code": "DOTE1030",
+          "title": "Economics for Business Studies I",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · fixed course"
+        },
+        {
+          "code": "DOTE1040",
+          "title": "Economics for Business Studies II",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · fixed course"
+        },
+        {
+          "code": "DOTE2011",
+          "title": "Statistical Analysis for Business Decisions",
+          "credits": 4,
+          "courseType": "core",
+          "group": "Major Required · Decisions, Operations and Technology · fixed course"
+        },
+        {
+          "code": "DOTE2030",
+          "title": "Operations Management",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · Decisions, Operations and Technology · fixed course"
+        },
+        {
+          "code": "DOTE2051",
+          "title": "Business Information Systems",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · Decisions, Operations and Technology · fixed course"
+        },
+        {
+          "code": "FINA2010",
+          "title": "Financial Management",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · Finance · fixed course"
+        },
+        {
+          "code": "IBBA3040",
+          "title": "Business Lecture Series",
+          "credits": 1,
+          "courseType": "core",
+          "group": "Major Required · Business Seminar and Study Trip · fixed course"
+        },
+        {
+          "code": "IBBA4010",
+          "title": "Issues in Asian Business",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · Business Seminar and Study Trip · study trip"
+        },
+        {
+          "code": "MGNT1020",
+          "title": "Management",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · fixed course"
+        },
+        {
+          "code": "MGNT2511",
+          "title": "Global Experiential Learning I",
+          "credits": 1,
+          "courseType": "core",
+          "group": "Major Required · Management · fixed course"
+        },
+        {
+          "code": "MGNT2512",
+          "title": "Global Experiential Learning II",
+          "credits": 1,
+          "courseType": "core",
+          "group": "Major Required · Management · fixed course"
+        },
+        {
+          "code": "MGNT2611",
+          "title": "Business Sustainability",
+          "credits": 2,
+          "courseType": "core",
+          "group": "Major Required · Management · fixed course"
+        },
+        {
+          "code": "MGNT4010",
+          "title": "Strategic Management",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Major Required · Management · Capstone Course"
+        },
+        {
+          "code": "MGNT4510",
+          "title": "China Business",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · Management · fixed course"
+        },
+        {
+          "code": "MKTG2010",
+          "title": "Marketing Management",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · Marketing · fixed course"
+        },
+        {
+          "code": "MKTG3010",
+          "title": "Marketing Research",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · Marketing · fixed course"
+        },
+        {
+          "code": "MKTG4070",
+          "title": "Marketing in China",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · Marketing · fixed course"
+        }
+      ]
+    }
+  ]
+}
