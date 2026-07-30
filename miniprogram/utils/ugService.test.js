@@ -50,11 +50,11 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.programmeCount, 445);
   assert.equal(summary.majorCount, 687);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 20256);
+  assert.equal(summary.courseCount, 20289);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 20242);
-  assert.equal(summary.programmeWithCoursesCount, 306);
-  assert.equal(summary.pendingProgrammeCount, 138);
+  assert.equal(summary.codedCourseCount, 20275);
+  assert.equal(summary.programmeWithCoursesCount, 307);
+  assert.equal(summary.pendingProgrammeCount, 137);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
@@ -501,6 +501,30 @@ test('CUHK Biomedical Engineering exposes the official 53-course list as browse-
   assert.match(byCode.BMEG3440.requirementGroups.join(' '), /Biomedical Imaging, Informatics and Modeling/);
   assert.match(byCode.BMEG3440.requirementGroups.join(' '), /Molecular, Cell and Tissue Engineering/);
   assert.equal(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Biomedical Imaging' }).length, 1);
+});
+
+test('CUHK Computational Data Science exposes the official 33-code required scope as browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'CDASN');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-CDASN-40-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 33);
+  assert.equal(courses.length, 33);
+  assert.equal(courses.filter((course) => course.courseType === 'foundation').length, 16);
+  assert.equal(courses.filter((course) => course.courseType === 'core').length, 15);
+  assert.equal(courses.filter((course) => course.courseType === 'capstone').length, 2);
+  assert.equal(byCode.ENGG1111.credits, 0);
+  assert.equal(byCode.STAT3010.titleEn, 'Optimization for Statistics and Data Science');
+  assert.equal(byCode.STAT4010, undefined);
+  assert.equal(byCode.CDAS4999.courseType, 'capstone');
+  assert.match(byCode.MATH1030.requirementGroups.join(' '), /Faculty Package/);
+  assert.equal(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Machine Learning' }).length, 2);
 });
 
 test('CUHK Information Engineering exposes the current 135-course named scope as browse-only', () => {

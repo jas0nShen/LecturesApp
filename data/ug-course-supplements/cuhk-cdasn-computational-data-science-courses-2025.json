@@ -1,0 +1,321 @@
+{
+  "provider": "CUHK Computational Data Science Programme",
+  "academicYear": "2025 entry only; reviewed on 2026-07-30",
+  "sourceUrl": "https://www.cdas.cuhk.edu.hk/en/curriculum",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/cdasn/",
+  "additionalSourceUrls": [
+    "https://www.cdas.cuhk.edu.hk/en/admission",
+    "https://www.cse.cuhk.edu.hk/academics/ug-course-list/",
+    "https://www.math.cuhk.edu.hk/undergraduates/courses",
+    "https://rmsc.sta.cuhk.edu.hk/curriculum.php"
+  ],
+  "note": "The official current curriculum page explicitly labels this structure for 2025 entry only and publishes a 75-unit Major: 9 Faculty Package units, 18 Foundation units, 24 Required units, 6 Research Component units and 18 Elective units. This supplement preserves the 33 unique codes explicitly named in the Faculty Package, Foundation, Required and Research Component sections, including all slash alternatives, their official titles, units and recommended-year roles. The page names four 18-unit elective options—Computational Data Science, Computational Physics, Computational Medicine and Computational Social Science—but does not publish closed course-code lists for those streams, so no stream elective is inferred or copied from another Programme. The recommended pattern says STAT4010 once, while the authoritative Course List and curriculum overview both name STAT3010 Optimization for Statistics and Data Science; this supplement keeps STAT3010 and does not import STAT4010. Because the four elective paths and their course pools are not publicly closed, this 33-course list is intentionally browse-only with totalCreditRequired=0 and must not produce a graduation completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "CDASN",
+      "jupasCode": "JS4416",
+      "programmeId": "CUHK-UG-CDASN-40",
+      "majorId": "CUHK-UG-CDASN-40-M1",
+      "courses": [
+        {
+          "code": "AIST3020",
+          "title": "Introduction to Computer Systems",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "Term 2",
+          "courseType": "core",
+          "group": "Required Courses · Algorithms and Computer Systems · fixed course"
+        },
+        {
+          "code": "CDAS4998",
+          "title": "Final Year Project I",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "Term 1",
+          "courseType": "capstone",
+          "group": "Research Component Courses · fixed course"
+        },
+        {
+          "code": "CDAS4999",
+          "title": "Final Year Project II",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "Term 2",
+          "courseType": "capstone",
+          "group": "Research Component Courses · fixed course"
+        },
+        {
+          "code": "CSCI1120",
+          "title": "Introduction to Computing Using C++",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "Term 1",
+          "courseType": "foundation",
+          "group": "Foundation Courses · choose CSCI1120 or ESTR1100"
+        },
+        {
+          "code": "CSCI2100",
+          "title": "Data Structures",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "Term 2",
+          "courseType": "foundation",
+          "group": "Foundation Courses · choose CSCI2100 or ESTR2102"
+        },
+        {
+          "code": "CSCI3160",
+          "title": "Design and Analysis of Algorithms",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "Term 1",
+          "courseType": "core",
+          "group": "Required Courses · Algorithms and Computer Systems · choose CSCI3160 or ESTR3104"
+        },
+        {
+          "code": "CSCI3230",
+          "title": "Fundamentals of Artificial Intelligence",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "",
+          "courseType": "core",
+          "group": "Required Courses · Machine Learning · choose 3 units"
+        },
+        {
+          "code": "CSCI3320",
+          "title": "Fundamentals of Machine Learning",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "",
+          "courseType": "core",
+          "group": "Required Courses · Machine Learning · choose 3 units"
+        },
+        {
+          "code": "ENGG1110",
+          "title": "Problem Solving By Programming",
+          "credits": 3,
+          "recommendedYear": 1,
+          "semester": "Term 1",
+          "courseType": "foundation",
+          "group": "Faculty Package · choose ENGG1110 or ESTR1002"
+        },
+        {
+          "code": "ENGG1111",
+          "title": "AI Literacy Workshop",
+          "credits": 0,
+          "recommendedYear": 1,
+          "semester": "Term 1",
+          "courseType": "foundation",
+          "group": "Faculty Package · fixed zero-unit workshop"
+        },
+        {
+          "code": "ENGG1120",
+          "title": "Linear Algebra for Engineers",
+          "credits": 3,
+          "recommendedYear": 1,
+          "semester": "Term 2",
+          "courseType": "foundation",
+          "group": "Faculty Package · choose ENGG1120, ESTR1005 or MATH1030"
+        },
+        {
+          "code": "ENGG2440",
+          "title": "Discrete Mathematics for Engineers",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "Term 1",
+          "courseType": "foundation",
+          "group": "Foundation Courses · choose ENGG2440 or ESTR2004"
+        },
+        {
+          "code": "ESTR1002",
+          "title": "Problem Solving By Programming",
+          "credits": 3,
+          "recommendedYear": 1,
+          "semester": "Term 1",
+          "courseType": "foundation",
+          "group": "Faculty Package · choose ENGG1110 or ESTR1002"
+        },
+        {
+          "code": "ESTR1005",
+          "title": "Linear Algebra for Engineers",
+          "credits": 3,
+          "recommendedYear": 1,
+          "semester": "Term 2",
+          "courseType": "foundation",
+          "group": "Faculty Package · choose ENGG1120, ESTR1005 or MATH1030"
+        },
+        {
+          "code": "ESTR1100",
+          "title": "Introduction to Computing Using C++",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "Term 1",
+          "courseType": "foundation",
+          "group": "Foundation Courses · choose CSCI1120 or ESTR1100"
+        },
+        {
+          "code": "ESTR2004",
+          "title": "Discrete Mathematics for Engineers",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "Term 1",
+          "courseType": "foundation",
+          "group": "Foundation Courses · choose ENGG2440 or ESTR2004"
+        },
+        {
+          "code": "ESTR2102",
+          "title": "Data Structures",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "Term 2",
+          "courseType": "foundation",
+          "group": "Foundation Courses · choose CSCI2100 or ESTR2102"
+        },
+        {
+          "code": "ESTR3104",
+          "title": "Design and Analysis of Algorithms",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "Term 1",
+          "courseType": "core",
+          "group": "Required Courses · Algorithms and Computer Systems · choose CSCI3160 or ESTR3104"
+        },
+        {
+          "code": "ESTR3108",
+          "title": "Fundamentals of Artificial Intelligence",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "",
+          "courseType": "core",
+          "group": "Required Courses · Machine Learning · choose 3 units"
+        },
+        {
+          "code": "MATH1010",
+          "title": "University Mathematics",
+          "credits": 3,
+          "recommendedYear": 1,
+          "semester": "",
+          "courseType": "foundation",
+          "group": "Faculty Package · fixed course"
+        },
+        {
+          "code": "MATH1030",
+          "title": "Linear Algebra I",
+          "credits": 3,
+          "recommendedYear": 1,
+          "semester": "Term 2",
+          "courseType": "foundation",
+          "group": "Faculty Package · choose ENGG1120, ESTR1005 or MATH1030"
+        },
+        {
+          "code": "RMSC4002",
+          "title": "Financial Data Analytics with Machine Learning",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "",
+          "courseType": "core",
+          "group": "Required Courses · Machine Learning · choose 3 units"
+        },
+        {
+          "code": "STAT2001",
+          "title": "Basic Concepts in Statistics and Probability I",
+          "credits": 3,
+          "recommendedYear": 1,
+          "semester": "Term 1",
+          "courseType": "foundation",
+          "group": "Foundation Courses · fixed course"
+        },
+        {
+          "code": "STAT2005",
+          "title": "Programming Languages for Statistics (R and SAS)",
+          "credits": 3,
+          "recommendedYear": 1,
+          "semester": "Term 2",
+          "courseType": "foundation",
+          "group": "Foundation Courses · fixed course"
+        },
+        {
+          "code": "STAT2006",
+          "title": "Basic Concepts in Statistics and Probability II",
+          "credits": 3,
+          "recommendedYear": 1,
+          "semester": "Term 2",
+          "courseType": "foundation",
+          "group": "Foundation Courses · fixed course"
+        },
+        {
+          "code": "STAT3003",
+          "title": "Survey Methods",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "",
+          "courseType": "core",
+          "group": "Required Courses · Sampling and Computing Methods · choose 6 units"
+        },
+        {
+          "code": "STAT3005",
+          "title": "Nonparametric Statistics",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "Term 1",
+          "courseType": "core",
+          "group": "Required Courses · Statistical Modeling · choose STAT3005 or STAT4006"
+        },
+        {
+          "code": "STAT3006",
+          "title": "Statistical Computing",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "",
+          "courseType": "core",
+          "group": "Required Courses · Sampling and Computing Methods · choose 6 units"
+        },
+        {
+          "code": "STAT3008",
+          "title": "Applied Regression Analysis",
+          "credits": 3,
+          "recommendedYear": 2,
+          "semester": "Term 1",
+          "courseType": "core",
+          "group": "Required Courses · Statistical Inference · fixed course"
+        },
+        {
+          "code": "STAT3010",
+          "title": "Optimization for Statistics and Data Science",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "",
+          "courseType": "core",
+          "group": "Required Courses · Sampling and Computing Methods · choose 6 units"
+        },
+        {
+          "code": "STAT4001",
+          "title": "Data Mining and Statistical Learning",
+          "credits": 3,
+          "recommendedYear": 3,
+          "semester": "",
+          "courseType": "core",
+          "group": "Required Courses · Machine Learning · choose 3 units"
+        },
+        {
+          "code": "STAT4003",
+          "title": "Statistical Inference",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "Term 1",
+          "courseType": "core",
+          "group": "Required Courses · Statistical Inference · fixed course"
+        },
+        {
+          "code": "STAT4006",
+          "title": "Categorical Data Analysis",
+          "credits": 3,
+          "recommendedYear": 4,
+          "semester": "Term 1",
+          "courseType": "core",
+          "group": "Required Courses · Statistical Modeling · choose STAT3005 or STAT4006"
+        }
+      ]
+    }
+  ]
+}

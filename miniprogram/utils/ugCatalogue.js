@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-30T08:09:39.752Z",
+  "generatedAt": "2026-07-30T09:10:33.571Z",
   "universities": [
     {
       "id": "HKU",
@@ -3948,9 +3948,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/cdasn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 33,
+      "codedCourseCount": 33,
+      "courseSourceUrl": "https://www.cdas.cuhk.edu.hk/en/curriculum"
     },
     {
       "id": "CUHK-UG-CENGN-41",
@@ -11001,8 +11002,8 @@ const catalogue = {
       "code": "COMPUTATIONAL-DATA-SCIENCE",
       "nameEn": "Computational Data Science",
       "nameZh": "Computational Data Science",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 34,
+      "codedCourseCount": 33,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/cdasn/"
     },
     {
@@ -16148,7 +16149,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 2340,
+    "CUHK": 2373,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16156,7 +16157,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 20242
+  "codedCourseCount": 20275
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
