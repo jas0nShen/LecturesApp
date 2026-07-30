@@ -50,11 +50,11 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.programmeCount, 445);
   assert.equal(summary.majorCount, 687);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 20655);
+  assert.equal(summary.courseCount, 20688);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 20641);
-  assert.equal(summary.programmeWithCoursesCount, 312);
-  assert.equal(summary.pendingProgrammeCount, 132);
+  assert.equal(summary.codedCourseCount, 20674);
+  assert.equal(summary.programmeWithCoursesCount, 313);
+  assert.equal(summary.pendingProgrammeCount, 131);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
@@ -797,6 +797,33 @@ test('CUHK Global Business Studies exposes its 21 named local courses as browse-
   assert.equal(byCode.MKTG4070.credits, 3);
   assert.match(byCode.ACCT2151.requirementGroups[0], /ACCT2151 or ACCT3151/);
   assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'China Business' }).some((course) => course.courseCode === 'MGNT4510'));
+});
+
+test('CUHK Hospitality and Real Estate exposes its 33 coded core, stream and internship courses as browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'HTMGB');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-HTMGB-21-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 33);
+  assert.equal(courses.length, 33);
+  assert.equal(courses.filter((course) => course.courseType === 'core').length, 30);
+  assert.equal(courses.filter((course) => course.courseType === 'capstone').length, 1);
+  assert.equal(courses.filter((course) => course.courseType === 'internship').length, 2);
+  assert.equal(courses.filter((course) => course.credits === 0).length, 4);
+  assert.equal(courses.filter((course) => course.credits === 1).length, 7);
+  assert.equal(courses.filter((course) => course.credits === 3).length, 22);
+  assert.equal(byCode.HTMG4900.courseType, 'capstone');
+  assert.equal(byCode.HTMG2900.courseType, 'internship');
+  assert.match(byCode.HTMG3020.requirementGroups[0], /Hospitality/);
+  assert.match(byCode.HTMG3502.requirementGroups[0], /Real Estate/);
+  assert.match(byCode.HTMG4600.requirementGroups[0], /Hospitality and Real Estate shared/);
+  assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Revenue Management' }).some((course) => course.courseCode === 'HTMG3521'));
 });
 
 test('CUHK Sociology exposes the 2025-26 62-course Major pool as browse-only', () => {

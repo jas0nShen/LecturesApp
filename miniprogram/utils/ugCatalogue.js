@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-30T13:46:05.154Z",
+  "generatedAt": "2026-07-30T17:45:12.130Z",
   "universities": [
     {
       "id": "HKU",
@@ -3582,9 +3582,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/htmgb/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 33,
+      "codedCourseCount": 33,
+      "courseSourceUrl": "https://hre.bschool.cuhk.edu.hk/academics/curriculum/"
     },
     {
       "id": "CUHK-UG-IFAAB-22",
@@ -10817,8 +10818,8 @@ const catalogue = {
       "code": "HOSPITALITY-AND-REAL-ESTATE",
       "nameEn": "Hospitality and Real Estate",
       "nameZh": "Hospitality and Real Estate",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 34,
+      "codedCourseCount": 33,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/htmgb/"
     },
     {
@@ -16154,7 +16155,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 2739,
+    "CUHK": 2772,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16162,7 +16163,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 20641
+  "codedCourseCount": 20674
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

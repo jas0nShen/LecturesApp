@@ -1,6 +1,6 @@
 {
   "name": "hong-kong-course-planner-mvp",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "private": true,
   "description": "A local-first WeChat mini program helping Hong Kong university students plan courses.",
   "scripts": {

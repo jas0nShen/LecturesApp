@@ -1,0 +1,252 @@
+{
+  "provider": "CUHK School of Hotel and Tourism Management",
+  "academicYear": "2026-entry brochure and current curriculum; reviewed on 2026-07-31",
+  "sourceUrl": "https://hre.bschool.cuhk.edu.hk/academics/curriculum/",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/htmgb/",
+  "additionalSourceUrls": [
+    "https://hre.bschool.cuhk.edu.hk/wp-content/uploads/2025/09/CUHK-HRE_brochure-2026-Entry.pdf"
+  ],
+  "note": "The official 13-page 2026-entry brochure (24,956,061 bytes; SHA-256 b42f44b8d7e0ca40dab2358be889181a82ffcbb2800e8f552381b4cc943014f4) was text-extracted and visually reviewed page by page. Its Curriculum spread publishes 33 unique fixed codes with titles and units: 22 Core codes, nine unique Stream codes and two Summer Internship codes. Hospitality and Real Estate each require four stream-specific courses plus shared HTMG4600. The current Curriculum page, last modified 2025-05-28, corroborates the Faculty Package, Core and Stream roles and names 22 three-unit module electives, but neither source publishes codes for those electives; the three one-unit Executive-in-Residence slots also have no fixed codes. The brochure wording controls the coded rows where minor title wording differs from the older page. Because the elective and Executive-in-Residence identities are open and the local rule engine cannot prove the two stream completion paths, only the 33-code fixed scope is published for browse-only use with totalCreditRequired=0 and no graduation completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "HTMGB",
+      "jupasCode": "JS4226",
+      "programmeId": "CUHK-UG-HTMGB-21",
+      "majorId": "CUHK-UG-HTMGB-21-M1",
+      "courses": [
+        {
+          "code": "ACCT1111",
+          "title": "Foundations in Financial Accounting",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · fixed course"
+        },
+        {
+          "code": "DOTE1021",
+          "title": "Basic Quantitative Methods for the Hospitality and Tourism Industry",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Core · fixed course"
+        },
+        {
+          "code": "DOTE1031",
+          "title": "Basic Economics for the Hospitality and Tourism Industry",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · fixed course"
+        },
+        {
+          "code": "DOTE2051",
+          "title": "Business Information Systems",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Core · fixed course"
+        },
+        {
+          "code": "FINA2010",
+          "title": "Financial Management",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Core · fixed course"
+        },
+        {
+          "code": "HTMG1010",
+          "title": "Management of Hospitality Businesses",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · fixed course"
+        },
+        {
+          "code": "HTMG1091",
+          "title": "Distinguished Speaker Series I",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Core · Distinguished Speaker Series"
+        },
+        {
+          "code": "HTMG1092",
+          "title": "Distinguished Speaker Series II",
+          "credits": 1,
+          "courseType": "core",
+          "group": "Core · Distinguished Speaker Series"
+        },
+        {
+          "code": "HTMG2000",
+          "title": "International Experience",
+          "credits": 1,
+          "courseType": "core",
+          "group": "Core · International Experience"
+        },
+        {
+          "code": "HTMG2070",
+          "title": "Food and Beverage Management",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Core · fixed course"
+        },
+        {
+          "code": "HTMG2091",
+          "title": "Distinguished Speaker Series III",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Core · Distinguished Speaker Series"
+        },
+        {
+          "code": "HTMG2092",
+          "title": "Distinguished Speaker Series IV",
+          "credits": 1,
+          "courseType": "core",
+          "group": "Core · Distinguished Speaker Series"
+        },
+        {
+          "code": "HTMG2900",
+          "title": "Summer Internship I",
+          "credits": 1,
+          "courseType": "internship",
+          "group": "Summer Internship · fixed course"
+        },
+        {
+          "code": "HTMG3010",
+          "title": "Management of Lodging Facilities",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Core · fixed course"
+        },
+        {
+          "code": "HTMG3020",
+          "title": "Hospitality Organisation Behaviour",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Stream Required · Hospitality"
+        },
+        {
+          "code": "HTMG3030",
+          "title": "Hospitality Real Estate Economics",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Core · fixed course"
+        },
+        {
+          "code": "HTMG3041",
+          "title": "Law for Hospitality and Real Estate Industry",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Core · fixed course"
+        },
+        {
+          "code": "HTMG3060",
+          "title": "Hospitality Service Management and Innovation",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Stream Required · Hospitality"
+        },
+        {
+          "code": "HTMG3091",
+          "title": "Distinguished Speaker Series V",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Core · Distinguished Speaker Series"
+        },
+        {
+          "code": "HTMG3092",
+          "title": "Distinguished Speaker Series VI",
+          "credits": 1,
+          "courseType": "core",
+          "group": "Core · Distinguished Speaker Series"
+        },
+        {
+          "code": "HTMG3502",
+          "title": "Real Estate Finance",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Stream Required · Real Estate"
+        },
+        {
+          "code": "HTMG3521",
+          "title": "Hospitality Revenue Management and Analytics",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Stream Required · Hospitality"
+        },
+        {
+          "code": "HTMG3523",
+          "title": "Introduction to Real Estate Investment",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Stream Required · Real Estate"
+        },
+        {
+          "code": "HTMG3527",
+          "title": "Designing and Managing Customer Experience",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Stream Required · Hospitality"
+        },
+        {
+          "code": "HTMG3900",
+          "title": "Summer Internship II",
+          "credits": 1,
+          "courseType": "internship",
+          "group": "Summer Internship · fixed course"
+        },
+        {
+          "code": "HTMG4091",
+          "title": "Distinguished Speaker Series VII",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Core · Distinguished Speaker Series"
+        },
+        {
+          "code": "HTMG4092",
+          "title": "Distinguished Speaker Series VIII",
+          "credits": 1,
+          "courseType": "core",
+          "group": "Core · Distinguished Speaker Series"
+        },
+        {
+          "code": "HTMG4100",
+          "title": "Real Estate Valuation",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Stream Required · Real Estate"
+        },
+        {
+          "code": "HTMG4190",
+          "title": "Global Real Estate Asset Management",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Stream Required · Real Estate"
+        },
+        {
+          "code": "HTMG4600",
+          "title": "Facilities Development and Management for HRE",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Stream Required · Hospitality and Real Estate shared"
+        },
+        {
+          "code": "HTMG4800",
+          "title": "Hospitality Strategic Management",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Core · fixed course"
+        },
+        {
+          "code": "HTMG4900",
+          "title": "Hospitality and Real Estate Capstone Project",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Core · Capstone Project"
+        },
+        {
+          "code": "MKTG2010",
+          "title": "Marketing Management",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Core · fixed course"
+        }
+      ]
+    }
+  ]
+}
