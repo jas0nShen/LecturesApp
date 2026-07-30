@@ -5,7 +5,7 @@
 - 版本号：`1.0.14`
 - 目标用户：香港高校本科及授课硕士学生
 - 核心能力：选择 Programme、浏览已开放课程、把本科或授课硕士课程加入本机计划、本科按 Year / Term 排期并标记已修、查看数据状态与隐私说明
-- 本次数据更新：扩充 CUHK 数学、量化金融与信息工程官方课程清单；开放或审批依赖的选修范围继续保留人工核对边界
+- 本次数据更新：扩充 CUHK 数学、量化金融、信息工程、能源环境及系统工程官方课程清单；开放或审批依赖的选修范围继续保留人工核对边界
 - 数据边界：TPG Programme 索引已导入；课程组按 Programme 逐步开放。课程组尚未开放的 Programme 只展示索引与资料来源，暂不生成毕业判断。本科目录用于选择学校、Programme 与 Major；未复核课程规则前不生成本科毕业进度
 - 发布模式：体验版和正式版读取随包发布的离线数据，不依赖开发环境服务
 
@@ -72,7 +72,7 @@ npm run status:ug-sources -- --school HKU --missing-only --missing-limit 10 --re
 1. 通过“项目 → 重新打开项目”确认导入目录是本仓库的 `miniprogram/`；
 2. 在“详情 / 本地设置”清除全部缓存；
 3. 完全退出并重启开发者工具，再重新编译；
-4. 在资源管理器确认 `subpackages` 下存在 `ug-data-cityu-a`、`ug-data-cityu-b`、`ug-data-polyu-a`、`ug-data-polyu-b`，而不是旧的 `ug-data` 或 `ug-data-polyu`；
+4. 在资源管理器确认 `subpackages` 下存在 `ug-data-cityu-a`、`ug-data-cityu-b`、`ug-data-cuhk-a`、`ug-data-cuhk-b`、`ug-data-polyu-a`、`ug-data-polyu-b`，而不是旧的 `ug-data`、`ug-data-cuhk` 或 `ug-data-polyu`；
 5. 重新执行 `npm run check:ship`，确认每个 `subpackageBytes` 都不超过 2MB 后再上传。
 
 ## 微信后台人工检查
@@ -117,6 +117,7 @@ npm run status:ug-sources -- --school HKU --missing-only --missing-limit 10 --re
 | --- | --- | --- |
 | HKU 本科（已开放） | 保存一个已开放课程的 Major，进入课程页和任一课程详情 | 显示对应 Major 的课程，不混入其他学校；详情可显示来源 |
 | CityU 本科（双分包） | 保存 CityU 已开放 Major，进入课程页 | 两个课程 shard 作为一个学校资料集加载；课程数量与列表完整，无半截列表 |
+| CUHK 本科（双分包） | 保存 CUHK 已开放 Major，进入课程页 | 两个课程 shard 作为一个学校资料集加载；课程数量与列表完整，无半截列表 |
 | HKUST 本科（双分包） | 保存 HKUST 已开放 Major，进入课程页 | 两个课程 shard 作为一个学校资料集加载；课程数量与列表完整，无半截列表 |
 | PolyU 本科（双分包） | 保存 PolyU 已开放 Major，进入课程页 | 两个课程 shard 作为一个学校资料集加载；切换后不保留 HKU/CityU 课程 |
 | HKBU 或 EdUHK 本科（仅索引） | 保存 Programme / Major 后进入课程和毕业检查 | 明确显示课程清单待开放；不报加载失败，也不显示虚假的毕业进度 |

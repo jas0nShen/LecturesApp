@@ -1,0 +1,483 @@
+{
+  "provider": "CUHK Energy and Environmental Engineering Programme",
+  "academicYear": "2025 official programme leaflet; reviewed on 2026-07-30",
+  "sourceUrl": "https://www4.mae.cuhk.edu.hk/wp-content/uploads/2025/10/EEEN_2025Sep17_A4.pdf",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/eeenn/",
+  "additionalSourceUrls": [
+    "https://www4.mae.cuhk.edu.hk/energy-and-environmental-engineering/"
+  ],
+  "note": "The official four-page 2025 Programme leaflet (7,237,631 bytes) was rendered and visually reviewed page by page. Page 3 publishes 66 unique named course codes across the 9-unit Faculty Package, 11-unit Foundation block, 36-unit Required block, 13-unit Major Elective requirement and 6-unit Final Year Projects; it states that every course is 3 units unless another value is printed. The local list preserves the printed 0-, 1- and 2-unit exceptions and the three named Streams. Core versus Non-Core elective eligibility, the minimum 6 Core Elective units, the 12-unit Stream qualification rule, open elective choices, Year/Semester sequencing and University Core/Free Elective requirements still require manual review. The evidence-backed 66-course union is intentionally browse-only with totalCreditRequired=0 and must not produce a graduation completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "EEENN",
+      "jupasCode": "JS4462",
+      "programmeId": "CUHK-UG-EEENN-45",
+      "majorId": "CUHK-UG-EEENN-45-M1",
+      "courses": [
+        {
+          "code": "CHEM1380",
+          "title": "Basic Chemistry for Engineers",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Core or Non-Core pool"
+        },
+        {
+          "code": "CHEM4280",
+          "title": "Chemistry in Biofuel",
+          "credits": 2,
+          "courseType": "major_elective",
+          "group": "Major Elective · Sustainable Energy Technology Stream"
+        },
+        {
+          "code": "CSCI1020",
+          "title": "Hands-on Introduction to C++",
+          "credits": 1,
+          "courseType": "major_elective",
+          "group": "Major Elective · Core or Non-Core pool"
+        },
+        {
+          "code": "CSCI2040",
+          "title": "Introduction to Python",
+          "credits": 2,
+          "courseType": "major_elective",
+          "group": "Major Elective · Core or Non-Core pool"
+        },
+        {
+          "code": "CSCI2100",
+          "title": "Data Structures",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Core or Non-Core pool"
+        },
+        {
+          "code": "EEEN2020",
+          "title": "Renewable Energy Technologies",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses · 36 units"
+        },
+        {
+          "code": "EEEN2030",
+          "title": "Energy and Environmental Economics and Management",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses · 36 units"
+        },
+        {
+          "code": "EEEN2040",
+          "title": "Heating, Ventilation and Air-Conditioning (HVAC) I",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses · 36 units"
+        },
+        {
+          "code": "EEEN2602",
+          "title": "Engineering Practicum",
+          "credits": 1,
+          "courseType": "internship",
+          "group": "Required Courses · 36 units"
+        },
+        {
+          "code": "EEEN3010",
+          "title": "Heating, Ventilation and Air-Conditioning (HVAC) II",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Green Building Technology Stream"
+        },
+        {
+          "code": "EEEN3020",
+          "title": "Energy Utilization and Human Behavior",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Green Building Technology Stream"
+        },
+        {
+          "code": "EEEN3030",
+          "title": "Engineering Materials",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses · 36 units"
+        },
+        {
+          "code": "EEEN4010",
+          "title": "Kinetic Energy Harvesting Devices and Systems",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Sustainable Energy Technology Stream"
+        },
+        {
+          "code": "EEEN4020",
+          "title": "Solar Energy and Photovoltaic Technology",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Sustainable Energy Technology Stream"
+        },
+        {
+          "code": "EEEN4030",
+          "title": "Nuclear Energy and Risk Assessment",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Sustainable Energy Technology Stream"
+        },
+        {
+          "code": "EEEN4050",
+          "title": "Energy Storage Devices and Systems",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Sustainable Energy Technology Stream"
+        },
+        {
+          "code": "EEEN4060",
+          "title": "Energy Distribution",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Sustainable Energy Technology Stream"
+        },
+        {
+          "code": "EEEN4070",
+          "title": "Green Building and Sustainable Technologies",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses · 36 units"
+        },
+        {
+          "code": "EEEN4998",
+          "title": "Final Year Project I",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Final Year Projects · 6 units"
+        },
+        {
+          "code": "EEEN4999",
+          "title": "Final Year Project II",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Final Year Projects · 6 units"
+        },
+        {
+          "code": "EESC2020",
+          "title": "Climate System Dynamics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Environmental Engineering Stream"
+        },
+        {
+          "code": "EESC2515",
+          "title": "Environmental Chemistry",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Core or Non-Core pool"
+        },
+        {
+          "code": "EESC2800",
+          "title": "Introduction to Environmental Engineering",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses · 36 units"
+        },
+        {
+          "code": "EESC3200",
+          "title": "Atmospheric Dynamics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Core or Non-Core pool"
+        },
+        {
+          "code": "EESC3220",
+          "title": "Atmospheric Chemistry",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Core or Non-Core pool"
+        },
+        {
+          "code": "EESC3230",
+          "title": "Principles of Environmental Protection and Pollution Control",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Environmental Engineering Stream"
+        },
+        {
+          "code": "EESC3320",
+          "title": "Hydrogeology",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Core or Non-Core pool"
+        },
+        {
+          "code": "EESC3600",
+          "title": "Ecosystems and Climate",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Core or Non-Core pool"
+        },
+        {
+          "code": "EESC3800",
+          "title": "Global Environmental Change",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Core or Non-Core pool"
+        },
+        {
+          "code": "EESC4240",
+          "title": "Air Pollution Science and Engineering",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Environmental Engineering Stream"
+        },
+        {
+          "code": "EESC4335",
+          "title": "Chemical Treatment Processes",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Core or Non-Core pool"
+        },
+        {
+          "code": "EESC4340",
+          "title": "Environmental Impact Assessment",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Environmental Engineering Stream"
+        },
+        {
+          "code": "EESC4540",
+          "title": "Remote Sensing - Principles and Applications",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Core or Non-Core pool"
+        },
+        {
+          "code": "ELEG2202",
+          "title": "Fundamentals of Electric Circuits",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses · 36 units"
+        },
+        {
+          "code": "ELEG3207",
+          "title": "Introduction to Power Electronics",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses · 36 units"
+        },
+        {
+          "code": "ELEG3601",
+          "title": "Introduction to Electric Power Systems",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Sustainable Energy Technology Stream"
+        },
+        {
+          "code": "ENGG1110",
+          "title": "Problem Solving By Programming",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · 9 units"
+        },
+        {
+          "code": "ENGG1111",
+          "title": "AI Literacy Workshop",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Faculty Package · 9 units"
+        },
+        {
+          "code": "ENGG1120",
+          "title": "Linear Algebra for Engineers",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · 9 units"
+        },
+        {
+          "code": "ENGG1125",
+          "title": "Single Variable Calculus for Engineers",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · 9 units"
+        },
+        {
+          "code": "ENGG1130",
+          "title": "Multivariable Calculus for Engineers",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Foundation Courses · 11 units"
+        },
+        {
+          "code": "ENGG1820",
+          "title": "Engineering Internship",
+          "credits": 1,
+          "courseType": "internship",
+          "group": "Major Elective · Core or Non-Core pool"
+        },
+        {
+          "code": "ENGG2720",
+          "title": "Complex Variables for Engineers",
+          "credits": 2,
+          "courseType": "major_elective",
+          "group": "Major Elective · Core or Non-Core pool"
+        },
+        {
+          "code": "ENGG2740",
+          "title": "Differential Equations for Engineers",
+          "credits": 2,
+          "courseType": "core",
+          "group": "Foundation Courses · 11 units"
+        },
+        {
+          "code": "ENGG2760",
+          "title": "Probability for Engineers",
+          "credits": 2,
+          "courseType": "major_elective",
+          "group": "Major Elective · Core or Non-Core pool"
+        },
+        {
+          "code": "ENGG2780",
+          "title": "Statistics for Engineers",
+          "credits": 2,
+          "courseType": "major_elective",
+          "group": "Major Elective · Core or Non-Core pool"
+        },
+        {
+          "code": "GRMD2404",
+          "title": "Energy and Society",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Core or Non-Core pool"
+        },
+        {
+          "code": "GRMD3202",
+          "title": "Environmental Management",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Core or Non-Core pool"
+        },
+        {
+          "code": "GRMD3203",
+          "title": "Urban Environmental Problems",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Environmental Engineering Stream"
+        },
+        {
+          "code": "GRMD3401",
+          "title": "Energy Resources for Carbon Neutrality",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Core or Non-Core pool"
+        },
+        {
+          "code": "GRMD3403",
+          "title": "Methods for Resource Evaluation and Planning",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Core or Non-Core pool"
+        },
+        {
+          "code": "GRMD4202",
+          "title": "Hydrology and Water Resources",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Environmental Engineering Stream"
+        },
+        {
+          "code": "GRMD4204",
+          "title": "Environmental Planning and Assessment",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Environmental Engineering Stream"
+        },
+        {
+          "code": "MAEG1020",
+          "title": "Computational Design and Fabrication",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Foundation Courses · 11 units"
+        },
+        {
+          "code": "MAEG2030",
+          "title": "Thermodynamics",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses · 36 units"
+        },
+        {
+          "code": "MAEG2601",
+          "title": "Technology, Society and Engineering Practice",
+          "credits": 2,
+          "courseType": "core",
+          "group": "Required Courses · 36 units"
+        },
+        {
+          "code": "MAEG3030",
+          "title": "Fluid Mechanics",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses · 36 units"
+        },
+        {
+          "code": "MAEG3050",
+          "title": "Introduction to Control Systems",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Green Building Technology Stream"
+        },
+        {
+          "code": "MAEG3920",
+          "title": "Engineering Design and Applications",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Green Building Technology Stream"
+        },
+        {
+          "code": "MAEG4030",
+          "title": "Heat Transfer",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses · 36 units"
+        },
+        {
+          "code": "MAEG4080",
+          "title": "Introduction to Combustion",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Environmental Engineering Stream"
+        },
+        {
+          "code": "MAEG5120",
+          "title": "Nanomaterials and Nanotechnology: Fundamentals and Applications",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Sustainable Energy Technology Stream"
+        },
+        {
+          "code": "MAEG5140",
+          "title": "Materials Characterization Techniques",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Environmental Engineering Stream"
+        },
+        {
+          "code": "MAEG5150",
+          "title": "Advanced Heat Transfer and Fluid Mechanics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Green Building Technology Stream"
+        },
+        {
+          "code": "PHYS1110",
+          "title": "Engineering Physics: Mechanics and Thermodynamics",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Foundation Courses · 11 units"
+        },
+        {
+          "code": "PHYS4420",
+          "title": "Physics in Meteorology",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Core or Non-Core pool"
+        }
+      ]
+    }
+  ]
+}

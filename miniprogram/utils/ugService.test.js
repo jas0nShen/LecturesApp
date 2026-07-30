@@ -21,6 +21,7 @@ function getIndexOnlyMajorProfile() {
 test('runtime UG shards are registered inside their own subpackage instead of statically required by the main package', () => {
   const shardIndex = fs.readFileSync(path.join(__dirname, 'ugCourseShards.js'), 'utf8');
   const hkuLoader = fs.readFileSync(path.join(__dirname, '..', 'subpackages', 'ug-data-hku-a', 'pages', 'loader', 'index.js'), 'utf8');
+  const cuhkLoader = fs.readFileSync(path.join(__dirname, '..', 'subpackages', 'ug-data-cuhk-a', 'pages', 'loader', 'index.js'), 'utf8');
 
   assert.doesNotMatch(shardIndex, /require\(['"]\.\.\/subpackages\//);
   assert.doesNotMatch(shardIndex, /eval\s*\(/);
@@ -30,6 +31,8 @@ test('runtime UG shards are registered inside their own subpackage instead of st
   assert.match(hkuLoader, /buildPageUrl\(pages\[pages\.length - 2\]\)/);
   assert.match(hkuLoader, /wx\.reLaunch\(\{/);
   assert.doesNotMatch(hkuLoader, /wx\.navigateBack\(\{/);
+  assert.match(cuhkLoader, /registerUgCourseShard\(\{ universityCode, packageName, courses \}\)/);
+  assert.match(cuhkLoader, /completeUgCourseShardActivation\(packageName\)/);
 
   const runtimeModule = { exports: {} };
   vm.runInNewContext(shardIndex, {
@@ -47,11 +50,11 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.programmeCount, 445);
   assert.equal(summary.majorCount, 687);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 19969);
+  assert.equal(summary.courseCount, 20118);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 19955);
-  assert.equal(summary.programmeWithCoursesCount, 302);
-  assert.equal(summary.pendingProgrammeCount, 142);
+  assert.equal(summary.codedCourseCount, 20104);
+  assert.equal(summary.programmeWithCoursesCount, 304);
+  assert.equal(summary.pendingProgrammeCount, 140);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
@@ -60,24 +63,28 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.match(summary.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
 });
 
-test('split CityU, HKBU, HKU, HKUST and PolyU course shards aggregate through their stable university keys', () => {
+test('split CityU, CUHK, HKBU, HKU, HKUST and PolyU course shards aggregate through their stable university keys', () => {
   const cityuCourses = ugCourseShards.getCoursesByUniversityCode('CITYU');
+  const cuhkCourses = ugCourseShards.getCoursesByUniversityCode('CUHK');
   const hkbuCourses = ugCourseShards.getCoursesByUniversityCode('HKBU');
   const hkuCourses = ugCourseShards.getCoursesByUniversityCode('HKU');
   const hkustCourses = ugCourseShards.getCoursesByUniversityCode('HKUST');
   const polyuCourses = ugCourseShards.getCoursesByUniversityCode('POLYU');
 
   assert(cityuCourses.length > 1000);
+  assert(cuhkCourses.length > 1000);
   assert(hkbuCourses.length > 1000);
   assert(hkuCourses.length > 1000);
   assert(hkustCourses.length > 1000);
   assert(polyuCourses.length > 1000);
   assert.equal(ugCourseShards.getCourseCount('CITYU'), cityuCourses.length);
+  assert.equal(ugCourseShards.getCourseCount('CUHK'), cuhkCourses.length);
   assert.equal(ugCourseShards.getCourseCount('HKBU'), hkbuCourses.length);
   assert.equal(ugCourseShards.getCourseCount('HKU'), hkuCourses.length);
   assert.equal(ugCourseShards.getCourseCount('HKUST'), hkustCourses.length);
   assert.equal(ugCourseShards.getCourseCount('POLYU'), polyuCourses.length);
   ['CS2115', 'GE2401'].forEach((courseCode) => assert(cityuCourses.some((course) => course.courseCode === courseCode)));
+  ['MUSC1000', 'SEEM4999'].forEach((courseCode) => assert(cuhkCourses.some((course) => course.courseCode === courseCode)));
   ['ACCT1005', 'DIFH4899'].forEach((courseCode) => assert(hkbuCourses.some((course) => course.courseCode === courseCode)));
   ['COMP1117', 'LLAW1001'].forEach((courseCode) => assert(hkuCourses.some((course) => course.courseCode === courseCode)));
   ['COMP1021', 'MGMT2130'].forEach((courseCode) => assert(hkustCourses.some((course) => course.courseCode === courseCode)));
@@ -388,6 +395,59 @@ test('CUHK Risk Management Science exposes the current 16-course RMSC list as br
   assert.match(byCode.RMSC4102.requirementGroups[0], /RMSC4102 or RMSC4202/);
   assert.match(byCode.RMSC4112.requirementGroups[0], /RMSC4112 or RMSC4212/);
   assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Machine Learning' }).some((course) => course.courseCode === 'RMSC4002'));
+});
+
+test('CUHK Energy and Environmental Engineering exposes the official 66-course scope as browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'EEENN');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-EEENN-45-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 66);
+  assert.equal(courses.length, 66);
+  assert.equal(courses.filter((course) => course.courseType === 'core').length, 20);
+  assert.equal(courses.filter((course) => course.courseType === 'major_elective').length, 42);
+  assert.equal(courses.filter((course) => course.courseType === 'capstone').length, 2);
+  assert.equal(courses.filter((course) => course.courseType === 'internship').length, 2);
+  assert.equal(byCode.ENGG1111.credits, 0);
+  assert.equal(byCode.EEEN2602.credits, 1);
+  assert.equal(byCode.CHEM4280.credits, 2);
+  assert.match(byCode.EEEN4020.requirementGroups[0], /Sustainable Energy Technology Stream/);
+  assert.match(byCode.EEEN3010.requirementGroups[0], /Green Building Technology Stream/);
+  assert.match(byCode.EESC4240.requirementGroups[0], /Environmental Engineering Stream/);
+  assert.equal(byCode.EEEN4998.courseType, 'capstone');
+  assert.equal(byCode.ENGG1820.courseType, 'internship');
+});
+
+test('CUHK Systems Engineering and Engineering Management exposes the official 83-course scope as browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'SEEMN');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-SEEMN-51-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 83);
+  assert.equal(courses.length, 83);
+  assert.equal(courses.filter((course) => course.courseType === 'core').length, 44);
+  assert.equal(courses.filter((course) => course.courseType === 'major_elective').length, 35);
+  assert.equal(courses.filter((course) => course.courseType === 'capstone').length, 2);
+  assert.equal(courses.filter((course) => course.courseType === 'internship').length, 2);
+  assert.equal(courses.filter((course) => course.credits === 1).length, 1);
+  assert.equal(courses.filter((course) => course.credits === 0).length, 82);
+  assert.match(byCode.SEEM3430.requirementGroups[0], /Business Information Systems Stream/);
+  assert.match(byCode.SEEM3620.requirementGroups[0], /Decision Analytics Stream/);
+  assert.match(byCode.FTEC4005.requirementGroups[0], /Business Information Systems and Decision Analytics Streams/);
+  assert.equal(byCode.SEEM4998.courseType, 'capstone');
+  assert.equal(byCode.ENGG1820.courseType, 'internship');
 });
 
 test('CUHK Information Engineering exposes the current 135-course named scope as browse-only', () => {

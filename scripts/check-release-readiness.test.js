@@ -33,12 +33,14 @@ test('current mini-program passes automated release readiness checks', () => {
   assert.equal(result.metrics.ugSchoolCount, 8);
   assert.equal(result.metrics.ugProgrammeCount, 444);
   assert.equal(result.metrics.ugMajorCount, 686);
-  assert.equal(result.metrics.ugCodedCourseCount, 19955);
-  assert.equal(result.metrics.ugProgrammeWithCoursesCount, 302);
+  assert.equal(result.metrics.ugCodedCourseCount, 20104);
+  assert.equal(result.metrics.ugProgrammeWithCoursesCount, 304);
   assert(result.metrics.packageBytes > 0);
   assert(result.metrics.mainPackageBytes > 0);
   assert(result.metrics.mainPackageBytes <= 2 * 1024 * 1024);
-  assert.equal(result.metrics.subpackageBytes.length, 22);
+  assert.equal(result.metrics.subpackageBytes.length, 23);
+  assert(result.metrics.subpackageBytes.some((subpackage) => subpackage.root === 'subpackages/ug-data-cuhk-a'));
+  assert(result.metrics.subpackageBytes.some((subpackage) => subpackage.root === 'subpackages/ug-data-cuhk-b'));
   assert(result.metrics.subpackageBytes.some((subpackage) => subpackage.root === 'subpackages/ug-data-hku-c'));
   assert(result.metrics.subpackageBytes.some((subpackage) => subpackage.root === 'subpackages/ug-data-eduhk'));
   assert(result.metrics.subpackageBytes.some((subpackage) => subpackage.root === 'subpackages/ug-data-hkust-a'));

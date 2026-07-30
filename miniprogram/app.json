@@ -34,8 +34,15 @@
       ]
     },
     {
-      "root": "subpackages/ug-data-cuhk",
-      "name": "ug-data-cuhk",
+      "root": "subpackages/ug-data-cuhk-a",
+      "name": "ug-data-cuhk-a",
+      "pages": [
+        "pages/loader/index"
+      ]
+    },
+    {
+      "root": "subpackages/ug-data-cuhk-b",
+      "name": "ug-data-cuhk-b",
       "pages": [
         "pages/loader/index"
       ]

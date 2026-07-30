@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-30T04:41:20.347Z",
+  "generatedAt": "2026-07-30T06:00:40.997Z",
   "universities": [
     {
       "id": "HKU",
@@ -4045,9 +4045,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/eeenn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 66,
+      "codedCourseCount": 66,
+      "courseSourceUrl": "https://www4.mae.cuhk.edu.hk/wp-content/uploads/2025/10/EEEN_2025Sep17_A4.pdf"
     },
     {
       "id": "CUHK-UG-FTECN-46",
@@ -4163,9 +4164,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/seemn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 83,
+      "codedCourseCount": 83,
+      "courseSourceUrl": "https://www.se.cuhk.edu.hk/wp-content/uploads/2025/09/2025-SEEM-Leaflet_final.pdf"
     },
     {
       "id": "CUHK-UG-DIPLN-52",
@@ -11047,8 +11049,8 @@ const catalogue = {
       "code": "ENERGY-AND-ENVIRONMENTAL-ENGINEERING",
       "nameEn": "Energy and Environmental Engineering",
       "nameZh": "Energy and Environmental Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 67,
+      "codedCourseCount": 66,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/eeenn/"
     },
     {
@@ -11107,8 +11109,8 @@ const catalogue = {
       "code": "SYSTEMS-ENGINEERING-AND-ENGINEERING-MANAGEMENT",
       "nameEn": "Systems Engineering and Engineering Management",
       "nameZh": "Systems Engineering and Engineering Management",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 84,
+      "codedCourseCount": 83,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/seemn/"
     },
     {
@@ -16144,7 +16146,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 2053,
+    "CUHK": 2202,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16152,7 +16154,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 19955
+  "codedCourseCount": 20104
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

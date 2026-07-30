@@ -1,0 +1,603 @@
+{
+  "provider": "CUHK Systems Engineering and Engineering Management Department",
+  "academicYear": "2025 official programme leaflet; reviewed on 2026-07-30",
+  "sourceUrl": "https://www.se.cuhk.edu.hk/wp-content/uploads/2025/09/2025-SEEM-Leaflet_final.pdf",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/seemn/",
+  "additionalSourceUrls": [
+    "https://seem.se.cuhk.edu.hk/",
+    "https://www.se.cuhk.edu.hk/"
+  ],
+  "note": "The official six-page 2025 SEEM leaflet (2,264,700 bytes) was text-extracted, rendered and visually reviewed page by page. Page 3 publishes a recommended 75-unit study plan plus the Business Information Systems and Decision Analytics Stream lists. Expanding every slash-separated alternative and merging repeated cross-Stream courses produces 83 unique course codes: 44 Core, 35 Major Elective, 2 Final Year Project and 2 Internship/Practicum records. The leaflet prints ENGG1111 as 0 unit and ENGG1820 as 1 unit; it does not print a direct per-code value for the remaining courses, so those keep credits=0 rather than inferring values from term or group totals. Slash alternatives, the choice between PHYS1003 and PHYS1110, Stream required-versus-elective ownership, the six-course Stream rule, the adviser-defined no-Stream path and Faculty/Foundation/Required allocation require manual review. This evidence-backed union is intentionally browse-only with totalCreditRequired=0 and must not produce a graduation completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "SEEMN",
+      "jupasCode": "JS4458",
+      "programmeId": "CUHK-UG-SEEMN-51",
+      "majorId": "CUHK-UG-SEEMN-51-M1",
+      "courses": [
+        {
+          "code": "AIST3510",
+          "title": "Human and Computer Interaction",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business Information Systems Stream"
+        },
+        {
+          "code": "CSCI1120",
+          "title": "Introduction to Computing Using C++",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "CSCI1130",
+          "title": "Introduction to Computing Using Java",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "CSCI2040",
+          "title": "Introduction to Python",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "CSCI2100",
+          "title": "Data Structures",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "CSCI4140",
+          "title": "Open Source Software Project Development",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business Information Systems Stream"
+        },
+        {
+          "code": "ENGG1110",
+          "title": "Problem Solving By Programming",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ENGG1111",
+          "title": "AI Literacy Workshop",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ENGG1120",
+          "title": "Linear Algebra for Engineers",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ENGG1125",
+          "title": "Single Variable Calculus for Engineers",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ENGG1130",
+          "title": "Multivariable Calculus for Engineers",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ENGG1310",
+          "title": "Engineering Physics: Electromagnetics, Optics and Modern Physics",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ENGG1820",
+          "title": "Engineering Internship",
+          "credits": 1,
+          "courseType": "internship",
+          "group": "Major Elective · Business Information Systems and Decision Analytics Streams"
+        },
+        {
+          "code": "ENGG2440",
+          "title": "Discrete Mathematics for Engineers",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ENGG2720",
+          "title": "Complex Variables for Engineers",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ENGG2740",
+          "title": "Differential Equations for Engineers",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ENGG2760",
+          "title": "Probability for Engineers",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ENGG2780",
+          "title": "Statistics for Engineers",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ESTR1002",
+          "title": "Problem Solving By Programming",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ESTR1003",
+          "title": "Engineering Physics: Electromagnetics, Optics and Modern Physics",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ESTR1005",
+          "title": "Linear Algebra for Engineers",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ESTR1006",
+          "title": "Multivariable Calculus for Engineers",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ESTR1007",
+          "title": "Single Variable Calculus for Engineers",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ESTR1100",
+          "title": "Introduction to Computing Using C++",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ESTR1102",
+          "title": "Introduction to Computing Using Java",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ESTR2004",
+          "title": "Discrete Mathematics for Engineers",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ESTR2014",
+          "title": "Complex Variables for Engineers",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ESTR2016",
+          "title": "Differential Equations for Engineers",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ESTR2018",
+          "title": "Probability for Engineers",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ESTR2020",
+          "title": "Statistics for Engineers",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ESTR2102",
+          "title": "Data Structures",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ESTR2500",
+          "title": "Engineering Economics",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ESTR2540",
+          "title": "Introduction to Data Science",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ESTR3500",
+          "title": "Operations Research II",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ESTR3502",
+          "title": "Engineering Innovation and Entrepreneurship",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ESTR3504",
+          "title": "Computer Processing System Concepts",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business Information Systems Stream"
+        },
+        {
+          "code": "ESTR3506",
+          "title": "Fundamentals in Information Systems",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ESTR3509",
+          "title": "Investment Science",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Decision Analytics Stream"
+        },
+        {
+          "code": "ESTR3510",
+          "title": "Service Management",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Decision Analytics Stream"
+        },
+        {
+          "code": "ESTR3512",
+          "title": "Technology, Consulting and Analytics in Practice",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business Information Systems Stream"
+        },
+        {
+          "code": "ESTR3514",
+          "title": "Introduction to Logistics and Supply Chain Management",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Decision Analytics Stream"
+        },
+        {
+          "code": "ESTR3516",
+          "title": "Fundamentals in Decision and Data Analytics",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "ESTR4506",
+          "title": "Computational Finance",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Decision Analytics Stream"
+        },
+        {
+          "code": "ESTR4508",
+          "title": "Data Analytics Models and Methods for Financial Engineering and Fintech",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Decision Analytics Stream"
+        },
+        {
+          "code": "ESTR4510",
+          "title": "Advances in Logistics and Supply Chain Management",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Decision Analytics Stream"
+        },
+        {
+          "code": "ESTR4512",
+          "title": "Stochastic Models for Decision Analytics",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Decision Analytics Stream"
+        },
+        {
+          "code": "FTEC4001",
+          "title": "Advanced Database Technologies",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business Information Systems Stream"
+        },
+        {
+          "code": "FTEC4002",
+          "title": "Behavioral Analytics",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Decision Analytics Stream"
+        },
+        {
+          "code": "FTEC4005",
+          "title": "Financial Informatics",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business Information Systems and Decision Analytics Streams"
+        },
+        {
+          "code": "FTEC4007",
+          "title": "Introduction to Blockchain and Distributed Ledger Technology",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business Information Systems Stream"
+        },
+        {
+          "code": "MKTG2010",
+          "title": "Marketing Management",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Decision Analytics Stream"
+        },
+        {
+          "code": "PHYS1003",
+          "title": "General Physics for Engineers",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "PHYS1110",
+          "title": "Engineering Physics: Mechanics and Thermodynamics",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "SEEM2420",
+          "title": "Operations Research I",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "SEEM2440",
+          "title": "Engineering Economics",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "SEEM2460",
+          "title": "Introduction to Data Science",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "SEEM2520",
+          "title": "Fundamentals in Financial Engineering and Financial Technology",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Decision Analytics Stream"
+        },
+        {
+          "code": "SEEM2602",
+          "title": "Systems Engineering Practicum",
+          "credits": 0,
+          "courseType": "internship",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "SEEM3410",
+          "title": "System Simulation",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "SEEM3430",
+          "title": "Information Systems Analysis and Design",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business Information Systems Stream"
+        },
+        {
+          "code": "SEEM3440",
+          "title": "Operations Research II",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "SEEM3450",
+          "title": "Engineering Innovation and Entrepreneurship",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "SEEM3460",
+          "title": "Computer Processing System Concepts",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business Information Systems Stream"
+        },
+        {
+          "code": "SEEM3490",
+          "title": "Information Systems Management",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business Information Systems Stream"
+        },
+        {
+          "code": "SEEM3500",
+          "title": "Quality Control and Management",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Decision Analytics Stream"
+        },
+        {
+          "code": "SEEM3510",
+          "title": "Human and Computer Interaction",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business Information Systems Stream"
+        },
+        {
+          "code": "SEEM3550",
+          "title": "Fundamentals in Information Systems",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "SEEM3580",
+          "title": "Risk Analysis for Financial Engineering",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Decision Analytics Stream"
+        },
+        {
+          "code": "SEEM3590",
+          "title": "Investment Science",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Decision Analytics Stream"
+        },
+        {
+          "code": "SEEM3620",
+          "title": "Introduction to Logistics and Supply Chain Management",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Decision Analytics Stream"
+        },
+        {
+          "code": "SEEM3630",
+          "title": "Service Management",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Decision Analytics Stream"
+        },
+        {
+          "code": "SEEM3650",
+          "title": "Fundamentals in Decision and Data Analytics",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Recommended Study Plan · Faculty Package, Foundation or Required course"
+        },
+        {
+          "code": "SEEM3680",
+          "title": "Technology, Consulting and Analytics in Practice",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business Information Systems Stream"
+        },
+        {
+          "code": "SEEM4540",
+          "title": "Open Systems for E-Commerce",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business Information Systems Stream"
+        },
+        {
+          "code": "SEEM4570",
+          "title": "System Design and Implementation",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business Information Systems Stream"
+        },
+        {
+          "code": "SEEM4630",
+          "title": "E-Commerce Data Mining",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Business Information Systems and Decision Analytics Streams"
+        },
+        {
+          "code": "SEEM4670",
+          "title": "Service Systems",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Decision Analytics Stream"
+        },
+        {
+          "code": "SEEM4720",
+          "title": "Computational Finance",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Decision Analytics Stream"
+        },
+        {
+          "code": "SEEM4730",
+          "title": "Data Analytics Models and Methods for Financial Engineering and Fintech",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Decision Analytics Stream"
+        },
+        {
+          "code": "SEEM4750",
+          "title": "Advances in Logistics and Supply Chain Management",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Decision Analytics Stream"
+        },
+        {
+          "code": "SEEM4760",
+          "title": "Stochastic Models for Decision Analytics",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Decision Analytics Stream"
+        },
+        {
+          "code": "SEEM4998",
+          "title": "Final Year Project I",
+          "credits": 0,
+          "courseType": "capstone",
+          "group": "Final Year Projects · SEEM4998 and SEEM4999"
+        },
+        {
+          "code": "SEEM4999",
+          "title": "Final Year Project II",
+          "credits": 0,
+          "courseType": "capstone",
+          "group": "Final Year Projects · SEEM4998 and SEEM4999"
+        }
+      ]
+    }
+  ]
+}

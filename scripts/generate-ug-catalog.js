@@ -12,6 +12,7 @@ const SUBPACKAGES_DIR = path.join(__dirname, '..', 'miniprogram', 'subpackages')
 // subpackage limit. The loader still exposes one key per university.
 const SHARD_COUNT_BY_UNIVERSITY = {
   CITYU: 2,
+  CUHK: 2,
   HKBU: 2,
   HKU: 3,
   HKUST: 2,
