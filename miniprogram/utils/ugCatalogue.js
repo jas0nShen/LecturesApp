@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-30T10:36:09.535Z",
+  "generatedAt": "2026-07-30T11:12:50.952Z",
   "universities": [
     {
       "id": "HKU",
@@ -3561,9 +3561,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/glefn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 117,
+      "codedCourseCount": 117,
+      "courseSourceUrl": "https://www.glef.cuhk.edu.hk/site/assets/files/1672/glefn_eng_25_formatted.pdf"
     },
     {
       "id": "CUHK-UG-HTMGB-21",
@@ -10805,8 +10806,8 @@ const catalogue = {
       "code": "GLOBAL-ECONOMICS-AND-FINANCE",
       "nameEn": "Global Economics and Finance",
       "nameZh": "Global Economics and Finance",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 118,
+      "codedCourseCount": 117,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/glefn/"
     },
     {
@@ -16152,7 +16153,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 2601,
+    "CUHK": 2718,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16160,7 +16161,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 20503
+  "codedCourseCount": 20620
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

@@ -50,11 +50,11 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.programmeCount, 445);
   assert.equal(summary.majorCount, 687);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 20517);
+  assert.equal(summary.courseCount, 20634);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 20503);
-  assert.equal(summary.programmeWithCoursesCount, 310);
-  assert.equal(summary.pendingProgrammeCount, 134);
+  assert.equal(summary.codedCourseCount, 20620);
+  assert.equal(summary.programmeWithCoursesCount, 311);
+  assert.equal(summary.pendingProgrammeCount, 133);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
@@ -748,6 +748,30 @@ test('CUHK Quantitative Finance and Risk Management Science exposes the current 
   assert.equal(byCode.FINA6232.courseType, 'capstone');
   assert.equal(byCode.MATH1050, undefined);
   assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Bayesian Learning' }).some((course) => course.courseCode === 'STAT4010'));
+});
+
+test('CUHK Global Economics and Finance exposes the complete 117-code Course List as browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'GLEFN');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-GLEFN-20-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2025');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 117);
+  assert.equal(courses.length, 117);
+  assert.equal(courses.filter((course) => course.courseType === 'core').length, 47);
+  assert.equal(courses.filter((course) => course.courseType === 'major_elective').length, 68);
+  assert.equal(courses.filter((course) => course.courseType === 'capstone').length, 2);
+  assert.equal(byCode.DOTE2011.credits, 4);
+  assert.equal(byCode.ECON1101.credits, 2);
+  assert.match(byCode.DOTE1030.requirementGroups[0], /ECON2011/);
+  assert.match(byCode.FINA3310.requirementGroups[0], /no more than six 1-unit FINA courses/);
+  assert.match(byCode.GLEF4070.requirementGroups[0], /Co-operative Education/);
+  assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Global Financial Markets' }).some((course) => course.courseCode === 'GLEF3030'));
 });
 
 test('CUHK Sociology exposes the 2025-26 62-course Major pool as browse-only', () => {
