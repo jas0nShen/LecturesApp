@@ -8,7 +8,7 @@
 
 当前产品边界是：先保证离线发布、数据可追溯和规则不误导，再继续补课程覆盖与规划能力。未经明确产品决定，不引入登录、云同步、统计、敏感权限或生产 API。
 
-当前仓库发布资料已统一为 `1.0.14`（`package.json`、运行时 `releaseInfo`、`docs/MVP_SPEC.md`、`docs/RELEASE_CHECKLIST.md`、`docs/REVIEW_SUBMISSION.md`）。CUHK `QFRMN Quantitative Finance and Risk Management Science` 课程提交 `67fc14b` 已推送到 `origin/main`；微信上传因登录态过期返回 `code 10`，随后二维码登录因未完成扫码确认返回 `code 25`，因此当前微信 `1.0.14` 开发版仍对应上一批课程提交 `ba1e028`。当前工作区另有尚未提交、推送或上传的 `GLEFN Global Economics and Finance` 课程批次。没有提交审核或发布正式版。
+当前仓库发布资料已统一为 `1.0.14`（`package.json`、运行时 `releaseInfo`、`docs/MVP_SPEC.md`、`docs/RELEASE_CHECKLIST.md`、`docs/REVIEW_SUBMISSION.md`）。CUHK `GLEFN Global Economics and Finance` 课程提交 `60e98df` 已推送到 `origin/main`；微信上传因登录态过期返回 `code 10`，随后二维码登录持续等待但未完成手机端确认，因此当前微信 `1.0.14` 开发版仍对应上一批课程提交 `ba1e028`。没有提交审核或发布正式版。
 
 ## 可验证的仓库快照
 
@@ -17,7 +17,7 @@
 - 1.0.12 已补充 HKU 商科、经济、统计、会计及法学双学位官方课程清单，并对规则未闭合 Programme 保持只读浏览，不显示未经核验的毕业完成比例。
 - HKU 商科与法学批次由提交 `7c2e66f` 发布；HKU `6688 Science Master Class` 与 `6901 Bachelor of Science` 批次由提交 `c1076cf` 发布；HKU `6987 Computer Engineering / Electrical Engineering / Electronic Engineering` 三 Major 与 HKU `6925` / `6858` / `6897` 来源审查由提交 `8fa7ce8 Expand HKU engineering curricula for 1.0.12` 发布。
 - 包版本：`1.0.14`
-- 当前课程提交 `67fc14b` 已推送到 `origin/main`；当前微信 `1.0.14` 开发版仍对应课程提交 `ba1e028`。
+- 当前课程提交 `60e98df` 已推送到 `origin/main`；当前微信 `1.0.14` 开发版仍对应课程提交 `ba1e028`。
 - 当前 Git 代码已包含 CUHK `JASPN Japanese Studies` 58 门 Major-assigned JASP 课程；标准、Local、Stream、senior-entry 与 double-Major 路径未完整闭合，因此保持只读浏览，不生成毕业完成百分比。
 - 当前 Git 代码也已包含 CUHK `RELSN Religious Studies` 63 门 Religious Studies Area 课程；标准与 senior-entry 路径因 Cultural Studies 和跨院 Concentration 开放池未闭合而保持只读浏览。
 - 当前 Git 代码还包含 CUHK `PUHSN Public Humanities` 88 门 2025-26 intake-specific 课程；标准与 senior-entry 路径、外系 Faculty Package、Religious Studies Areas、Concentration 替代及课程复用规则未闭合，因此保持只读浏览，不生成毕业完成百分比。
@@ -320,6 +320,7 @@ df91815 Add PolyU Design curriculum and source evidence
 - 2026-07-30 提交 `73d20e2` 的 CUHK `BMEGN Biomedical Engineering` 53 门课程与提交 `f07a14f` 的 `CDASN Computational Data Science` 33 门课程均已推送到 GitHub，并以备注 `1.0.14: Add CUHK biomedical and computational data science curricula` 成功覆盖上传微信开发版，命令返回 `✔ upload`；实际上传包 18,601,300 bytes、主包 1,485,325 bytes，所有 23 个分包均低于 2 MB。
 - 2026-07-30 提交 `ba1e028` 的 CUHK `IFAAB Insurance, Financial and Actuarial Analysis` 57 门课程与 `PACCN Professional Accountancy` 49 门课程已推送到 GitHub，并以备注 `1.0.14: Add CUHK actuarial and accountancy curricula` 成功覆盖上传微信开发版，命令返回 `✔ upload`；实际上传包 18,676,360 bytes、主包 1,485,532 bytes，所有 23 个分包均低于 2 MB。
 - 2026-07-30 提交 `67fc14b` 的 CUHK `QFRMN Quantitative Finance and Risk Management Science` 122 门课程已推送到 GitHub。以备注 `1.0.14: Add CUHK quantitative finance and risk management curriculum` 上传时返回登录过期 `code 10`；随后官方 CLI 二维码登录因未完成扫码确认返回 `code 25`，因此该提交尚未上传微信。
+- 2026-07-30 提交 `60e98df` 的 CUHK `GLEFN Global Economics and Finance` 117 门课程已推送到 GitHub。以备注 `1.0.14: Add CUHK global economics and finance curriculum` 上传时返回登录过期 `code 10`；随后官方 CLI 二维码登录持续等待约 3 分钟但未完成手机端确认，已停止等待，因此包含 `QFRMN` 与 `GLEFN` 的当前代码仍未上传微信。
 - 当前工作区完整检查：1010/1010 测试通过、`ready=true`、20,620 条 UG coded courses、311 个已开放 Programme、主包预估 1,845,264 bytes、总估算包体 23,789,936 bytes，所有 23 个分包低于 2 MB，敏感 API 为 0。
 - 微信开发者工具确认 PolyU Computer Science 可加载 83 门课程，首页入口序号为 `01 / 02 / 03 / 04`；模拟器测试结束后已恢复原 Architectural Studies 资料，`plannedUgCourseKeys`、`ugCoursePlanAssignments`、`completedUgCourseKeys` 均为空。
 - 微信官方 automation 已完成普通 `POLYU-TPG-090` 闭环：36 门课程、`COMP5521` 加入计划、列表状态、官方分组、标记已修、复制与移除均通过。
@@ -338,7 +339,7 @@ df91815 Add PolyU Design curriculum and source evidence
 
 ### 发布与验收缺口
 
-- 仓库版本资料、Git `main` 与当前微信开发版均为 `1.0.14`；Git 已包含 QFRMN 提交 `67fc14b`，当前微信开发版仍对应课程提交 `ba1e028`，QFRMN 尚未上传；GLEFN 批次尚未提交或上传。上传不等于已提交审核，当前仍未提交审核或发布正式版。
+- 仓库版本资料、Git `main` 与当前微信开发版均为 `1.0.14`；Git 已包含 GLEFN 提交 `60e98df`，当前微信开发版仍对应课程提交 `ba1e028`，QFRMN 与 GLEFN 尚未上传。上传不等于已提交审核，当前仍未提交审核或发布正式版。
 - 用户指定同一天的课程提交继续复用同一版本号：2026-07-30 保持 `1.0.14`，到 2026-07-31 的下一次提交才升为 `1.0.15`。
 - `docs/RELEASE_CHECKLIST.md` 的 iOS/Android 真机矩阵没有完成记录。
 - 微信后台隐私声明、服务类目、备案、审核材料核对尚未在仓库中记录为完成。
@@ -450,20 +451,11 @@ npm run status:ug-sources -- --missing-only --priority launch --missing-limit 10
 
 ## 当前工作区
 
-QFRMN source supplement、builder、专项测试及重新生成的 CUHK 双分包、catalogue/shards/runtime tests 已由提交 `67fc14b` 推送到 `origin/main`。当前 1.0.14 微信开发版仍覆盖至课程提交 `ba1e028`；QFRMN 上传因微信登录未完成而失败。当前工作区的 GLEFN source supplement、builder、专项测试及重新生成的 CUHK 双分包、catalogue/shards/runtime tests 均尚未提交、推送或上传：
+QFRMN 与 GLEFN source supplement、builder、专项测试及重新生成的 CUHK 双分包、catalogue/shards/runtime tests 已分别由提交 `67fc14b`、`60e98df` 推送到 `origin/main`。当前 1.0.14 微信开发版仍覆盖至课程提交 `ba1e028`；QFRMN 与 GLEFN 上传均因微信登录未完成而失败。当前工作区预期只保留交接状态修改和用户本地诊断目录：
 
 ```text
  M docs/CODEX_HANDOFF.md
- M miniprogram/subpackages/ug-data-cuhk-a/ugCourseData/cuhk-a.js
- M miniprogram/subpackages/ug-data-cuhk-b/ugCourseData/cuhk-b.js
- M miniprogram/utils/ugCatalogue.js
- M miniprogram/utils/ugCourseShards.js
- M miniprogram/utils/ugService.test.js
- M scripts/check-release-readiness.test.js
 ?? .playwright-cli/
-?? data/ug-course-supplements/cuhk-glefn-global-economics-finance-courses-2025.json
-?? scripts/build-cuhk-glefn-global-economics-finance-supplement.js
-?? scripts/cuhk-glefn-global-economics-finance-supplement.test.js
 ```
 
 `.playwright-cli/` 仍保持未跟踪；本次没有重置、删除、覆盖或清理该目录。
@@ -504,7 +496,7 @@ npm run status:ug-sources -- --school cuhk --missing-only --missing-summary --mi
 
 ## 已知问题、风险和不要做的事情
 
-- 微信已通过官方 CLI 用课程提交 `ba1e028` 上传 `1.0.14`；QFRMN 提交 `67fc14b` 已推送，但因登录态过期和二维码确认超时尚未上传；GLEFN 批次尚未提交或上传。这只表示上一批开发版上传成功，不等于已提审或已发布。
+- 微信已通过官方 CLI 用课程提交 `ba1e028` 上传 `1.0.14`；QFRMN 提交 `67fc14b` 与 GLEFN 提交 `60e98df` 均已推送，但因登录态过期和二维码登录未完成尚未上传。这只表示上一批开发版上传成功，不等于已提审或已发布。
 - 不要把“上传成功”写成“已提审”或“已发布”。这两个外部动作尚未执行。
 - 不要删除或提交 `.playwright-cli/`，除非用户明确决定如何处理该诊断目录。
 - 不要手改生成的 catalogue、course shard 或 loader；从 source/supplement 和 builder 修改后重新生成。
