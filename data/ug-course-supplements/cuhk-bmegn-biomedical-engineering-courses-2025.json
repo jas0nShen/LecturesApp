@@ -1,0 +1,393 @@
+{
+  "provider": "CUHK Department of Biomedical Engineering",
+  "academicYear": "2025-26 intake Study Scheme; reviewed on 2026-07-30",
+  "sourceUrl": "https://www.bme.cuhk.edu.hk/new/files/undergraduatestd/new/StudyScheme2025-26.pdf",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/bmegn/",
+  "additionalSourceUrls": [
+    "https://www.bme.cuhk.edu.hk/new/bachelor.php",
+    "https://www.bme.cuhk.edu.hk/new/files/CUHKBMEBooklet_2024_25.pdf"
+  ],
+  "note": "The official 17-page Study Scheme applicable to students admitted in 2025-26 (363,024 bytes; SHA-256 1c008f46cf95a2318d9adf61fb61862448081427b3027400460f65a95762ee4f) was text-extracted, rendered and visually reviewed page by page. Pages 1-15 publish the 75-unit standard Major, 54-unit Associate Degree senior-entry path, 51-unit Higher Diploma senior-entry path, three optional Biomedical Engineering Streams, the ELITE Stream and the BME-BBA double-degree option. Pages 16-17 publish an explicit 53-course Course List with code, title and units; those 53 rows are preserved here and assigned Core, Elective, Capstone, Practicum and Stream roles only where the Major Requirement names them. Faculty Package courses, PHYS/CHEM/LSCI/SBMS/STAT requirements, CMBI4101-4103, ELEG3201/ESTR3200, MAEG5080, MBTE4320, the open CSCI allowance, ELITE substitutions and the BBA second-degree curriculum are not part of the explicit Course List and are not imported from similar Programmes. Because those external pools, alternative codes, senior-entry paths and double-degree rules are not closed in this local supplement, it is intentionally browse-only with totalCreditRequired=0 and must not produce a graduation completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "BMEGN",
+      "jupasCode": "JS4460",
+      "programmeId": "CUHK-UG-BMEGN-39",
+      "majorId": "CUHK-UG-BMEGN-39-M1",
+      "courses": [
+        {
+          "code": "BMEG2001",
+          "title": "Introduction to Biomedical Engineering",
+          "credits": 1,
+          "courseType": "core",
+          "group": "Required Courses"
+        },
+        {
+          "code": "BMEG2012",
+          "title": "Biomedical Engineering Laboratory",
+          "credits": 2,
+          "courseType": "core",
+          "group": "Required Courses"
+        },
+        {
+          "code": "BMEG2210",
+          "title": "Orthopaedic Biomechanics and Musculoskeletal Injury",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses"
+        },
+        {
+          "code": "BMEG2218",
+          "title": "Ethical Practice in Bionic Human",
+          "credits": 2,
+          "courseType": "core",
+          "group": "Required Courses"
+        },
+        {
+          "code": "BMEG2300",
+          "title": "Circuits and Signals for Biomedical Engineering",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses"
+        },
+        {
+          "code": "BMEG2410",
+          "title": "Complex Analysis and Differential Equations",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses"
+        },
+        {
+          "code": "BMEG2603",
+          "title": "Hospital Experience and Engineering Practicum",
+          "credits": 2,
+          "courseType": "internship",
+          "group": "Required Courses · Hospital Experience and Engineering Practicum"
+        },
+        {
+          "code": "BMEG3102",
+          "title": "Bioinformatics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · Biomedical Imaging, Informatics and Modeling"
+        },
+        {
+          "code": "BMEG3103",
+          "title": "Big Data in HealthCare",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · Medical Instrumentation and Biosensors / Biomedical Imaging, Informatics and Modeling"
+        },
+        {
+          "code": "BMEG3105",
+          "title": "Data Analytics for Personalized Genomics and Precision Medicine",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · Biomedical Imaging, Informatics and Modeling / Molecular, Cell and Tissue Engineering"
+        },
+        {
+          "code": "BMEG3111",
+          "title": "Medical Instrumentation and Design",
+          "credits": 2,
+          "courseType": "core",
+          "group": "Required Courses"
+        },
+        {
+          "code": "BMEG3130",
+          "title": "Tele-Medicine and Mobile Healthcare",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · Medical Instrumentation and Biosensors"
+        },
+        {
+          "code": "BMEG3140",
+          "title": "Molecular and Cellular Engineering Laboratory",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · Molecular, Cell and Tissue Engineering"
+        },
+        {
+          "code": "BMEG3210",
+          "title": "Biofluids",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · Medical Instrumentation and Biosensors / Molecular, Cell and Tissue Engineering"
+        },
+        {
+          "code": "BMEG3320",
+          "title": "Biomedical Imaging",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses"
+        },
+        {
+          "code": "BMEG3330",
+          "title": "Neuroengineering",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · Medical Instrumentation and Biosensors"
+        },
+        {
+          "code": "BMEG3420",
+          "title": "Medical Robotics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · Medical Instrumentation and Biosensors"
+        },
+        {
+          "code": "BMEG3430",
+          "title": "Biomaterials and Tissue Engineering",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses"
+        },
+        {
+          "code": "BMEG3440",
+          "title": "Global Engineering Medical Innovation",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · Medical Instrumentation and Biosensors / Biomedical Imaging, Informatics and Modeling / Molecular, Cell and Tissue Engineering"
+        },
+        {
+          "code": "BMEG3910",
+          "title": "Undergraduate Research in Biomedical Engineering",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · General Major pool"
+        },
+        {
+          "code": "BMEG3920",
+          "title": "Cross-Cultural Biomedical Collaboration for Global Health Challenges",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · General Major pool"
+        },
+        {
+          "code": "BMEG4010",
+          "title": "Global Medical Device Regulatory Affairs",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses"
+        },
+        {
+          "code": "BMEG4220",
+          "title": "Wearable Biomedical Devices and Personalized Healthcare",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · Medical Instrumentation and Biosensors / Biomedical Imaging, Informatics and Modeling"
+        },
+        {
+          "code": "BMEG4320",
+          "title": "AI & Imaging for Biomedical Engineering",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · Biomedical Imaging, Informatics and Modeling"
+        },
+        {
+          "code": "BMEG4410",
+          "title": "BioMEMS",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · Medical Instrumentation and Biosensors / Molecular, Cell and Tissue Engineering"
+        },
+        {
+          "code": "BMEG4450",
+          "title": "Bionanotechnology",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · Medical Instrumentation and Biosensors / Molecular, Cell and Tissue Engineering"
+        },
+        {
+          "code": "BMEG4510",
+          "title": "Biomolecular Engineering",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · Molecular, Cell and Tissue Engineering"
+        },
+        {
+          "code": "BMEG4520",
+          "title": "Cardiovascular Engineering",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · Medical Instrumentation and Biosensors / Biomedical Imaging, Informatics and Modeling / Molecular, Cell and Tissue Engineering"
+        },
+        {
+          "code": "BMEG4530",
+          "title": "Musculoskeletal Tissue Engineering",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · Molecular, Cell and Tissue Engineering"
+        },
+        {
+          "code": "BMEG4998",
+          "title": "Final Year Project I",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Research Component Courses · 6 units"
+        },
+        {
+          "code": "BMEG4999",
+          "title": "Final Year Project II",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Research Component Courses · 6 units"
+        },
+        {
+          "code": "BMEG5530",
+          "title": "Tissue Engineering",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · General Major pool"
+        },
+        {
+          "code": "BMEG5610",
+          "title": "Research Methods in Biomedical Engineering",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · General Major pool"
+        },
+        {
+          "code": "ENGG1130",
+          "title": "Multivariable Calculus for Engineers",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Foundation Courses"
+        },
+        {
+          "code": "ENGG1310",
+          "title": "Engineering Physics: Electromagnetics, Optics and Modern Physics",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Foundation Courses"
+        },
+        {
+          "code": "ESTR1003",
+          "title": "Engineering Physics: Electromagnetics, Optics and Modern Physics",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Foundation Courses"
+        },
+        {
+          "code": "ESTR1006",
+          "title": "Multivariable Calculus for Engineers",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Foundation Courses"
+        },
+        {
+          "code": "ESTR2201",
+          "title": "Introduction to Biomedical Engineering",
+          "credits": 1,
+          "courseType": "core",
+          "group": "Required Courses"
+        },
+        {
+          "code": "ESTR2204",
+          "title": "Orthopaedic Biomechanics and Musculoskeletal Injury",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses"
+        },
+        {
+          "code": "ESTR2601",
+          "title": "Circuits and Signals for Biomedical Engineering",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses"
+        },
+        {
+          "code": "ESTR2602",
+          "title": "Biomedical Engineering Laboratory",
+          "credits": 2,
+          "courseType": "core",
+          "group": "Required Courses"
+        },
+        {
+          "code": "ESTR3208",
+          "title": "Biomaterials and Tissue Engineering",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses"
+        },
+        {
+          "code": "ESTR3212",
+          "title": "Biofluids",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · Medical Instrumentation and Biosensors / Molecular, Cell and Tissue Engineering"
+        },
+        {
+          "code": "ESTR3602",
+          "title": "Neuroengineering",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · Medical Instrumentation and Biosensors"
+        },
+        {
+          "code": "ESTR3603",
+          "title": "Medical Instrumentation and Design",
+          "credits": 2,
+          "courseType": "core",
+          "group": "Required Courses"
+        },
+        {
+          "code": "ESTR3604",
+          "title": "Molecular and Cellular Engineering Laboratory",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · Molecular, Cell and Tissue Engineering"
+        },
+        {
+          "code": "ESTR3605",
+          "title": "Data Analytics for Personalized Genomics and Precision Medicine",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · Biomedical Imaging, Informatics and Modeling / Molecular, Cell and Tissue Engineering"
+        },
+        {
+          "code": "ESTR4200",
+          "title": "AI & Imaging for Biomedical Engineering",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · Biomedical Imaging, Informatics and Modeling"
+        },
+        {
+          "code": "ESTR4202",
+          "title": "Bionanotechnology",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · Medical Instrumentation and Biosensors / Molecular, Cell and Tissue Engineering"
+        },
+        {
+          "code": "ESTR4203",
+          "title": "BioMEMS",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · Medical Instrumentation and Biosensors / Molecular, Cell and Tissue Engineering"
+        },
+        {
+          "code": "ESTR4204",
+          "title": "Biomolecular Engineering",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · Molecular, Cell and Tissue Engineering"
+        },
+        {
+          "code": "ESTR4214",
+          "title": "Musculoskeletal Tissue Engineering",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · Molecular, Cell and Tissue Engineering"
+        },
+        {
+          "code": "ESTR4601",
+          "title": "Global Medical Device Regulatory Affairs",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses"
+        }
+      ]
+    }
+  ]
+}

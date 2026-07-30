@@ -50,11 +50,11 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.programmeCount, 445);
   assert.equal(summary.majorCount, 687);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 20203);
+  assert.equal(summary.courseCount, 20256);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 20189);
-  assert.equal(summary.programmeWithCoursesCount, 305);
-  assert.equal(summary.pendingProgrammeCount, 139);
+  assert.equal(summary.codedCourseCount, 20242);
+  assert.equal(summary.programmeWithCoursesCount, 306);
+  assert.equal(summary.pendingProgrammeCount, 138);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
@@ -474,6 +474,33 @@ test('CUHK Financial Technology exposes the official 85-course scope as browse-o
   assert.equal(byCode.FTEC4998.courseType, 'capstone');
   assert.equal(byCode.ENGG1820.courseType, 'internship');
   assert.equal(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Blockchain' }).length, 1);
+});
+
+test('CUHK Biomedical Engineering exposes the official 53-course list as browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'BMEGN');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-BMEGN-39-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 53);
+  assert.equal(courses.length, 53);
+  assert.equal(courses.filter((course) => course.courseType === 'core').length, 21);
+  assert.equal(courses.filter((course) => course.courseType === 'major_elective').length, 29);
+  assert.equal(courses.filter((course) => course.courseType === 'capstone').length, 2);
+  assert.equal(courses.filter((course) => course.courseType === 'internship').length, 1);
+  assert.equal(byCode.BMEG2001.credits, 1);
+  assert.equal(byCode.BMEG2603.courseType, 'internship');
+  assert.equal(byCode.BMEG4998.courseType, 'capstone');
+  assert.equal(byCode.ESTR4601.titleEn, 'Global Medical Device Regulatory Affairs');
+  assert.match(byCode.BMEG3440.requirementGroups.join(' '), /Medical Instrumentation and Biosensors/);
+  assert.match(byCode.BMEG3440.requirementGroups.join(' '), /Biomedical Imaging, Informatics and Modeling/);
+  assert.match(byCode.BMEG3440.requirementGroups.join(' '), /Molecular, Cell and Tissue Engineering/);
+  assert.equal(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Biomedical Imaging' }).length, 1);
 });
 
 test('CUHK Information Engineering exposes the current 135-course named scope as browse-only', () => {

@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-30T07:18:36.267Z",
+  "generatedAt": "2026-07-30T08:09:39.752Z",
   "universities": [
     {
       "id": "HKU",
@@ -3928,9 +3928,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/bmegn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 53,
+      "codedCourseCount": 53,
+      "courseSourceUrl": "https://www.bme.cuhk.edu.hk/new/files/undergraduatestd/new/StudyScheme2025-26.pdf"
     },
     {
       "id": "CUHK-UG-CDASN-40",
@@ -10990,8 +10991,8 @@ const catalogue = {
       "code": "BIOMEDICAL-ENGINEERING",
       "nameEn": "Biomedical Engineering",
       "nameZh": "Biomedical Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 54,
+      "codedCourseCount": 53,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/bmegn/"
     },
     {
@@ -16147,7 +16148,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 2287,
+    "CUHK": 2340,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16155,7 +16156,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 20189
+  "codedCourseCount": 20242
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
