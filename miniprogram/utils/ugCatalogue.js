@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-29T18:05:10.315Z",
+  "generatedAt": "2026-07-30T02:33:04.343Z",
   "universities": [
     {
       "id": "HKU",
@@ -4083,9 +4083,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/iergn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 135,
+      "codedCourseCount": 135,
+      "courseSourceUrl": "https://www.ie.cuhk.edu.hk/wp-content/uploads/2025/08/IERGN_ENG_25.pdf"
     },
     {
       "id": "CUHK-UG-MASEN-48",
@@ -11064,8 +11065,8 @@ const catalogue = {
       "code": "INFORMATION-ENGINEERING",
       "nameEn": "Information Engineering",
       "nameZh": "Information Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 136,
+      "codedCourseCount": 135,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/iergn/"
     },
     {
@@ -16141,7 +16142,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 1682,
+    "CUHK": 1817,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16149,7 +16150,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 19584
+  "codedCourseCount": 19719
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
