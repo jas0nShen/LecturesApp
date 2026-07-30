@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-30T03:05:40.783Z",
+  "generatedAt": "2026-07-30T04:41:20.347Z",
   "universities": [
     {
       "id": "HKU",
@@ -4123,9 +4123,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/miegn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 178,
+      "codedCourseCount": 178,
+      "courseSourceUrl": "https://www.ie.cuhk.edu.hk/wp-content/uploads/2025/08/MIEGN_ENG_25.pdf"
     },
     {
       "id": "CUHK-UG-MAEGN-50",
@@ -11086,8 +11087,8 @@ const catalogue = {
       "code": "MATHEMATICS-AND-INFORMATION-ENGINEERING",
       "nameEn": "Mathematics and Information Engineering",
       "nameZh": "Mathematics and Information Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 179,
+      "codedCourseCount": 178,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/miegn/"
     },
     {
@@ -16143,7 +16144,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 1875,
+    "CUHK": 2053,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16151,7 +16152,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 19777
+  "codedCourseCount": 19955
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

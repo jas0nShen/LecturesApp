@@ -47,11 +47,11 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.programmeCount, 445);
   assert.equal(summary.majorCount, 687);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 19791);
+  assert.equal(summary.courseCount, 19969);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 19777);
-  assert.equal(summary.programmeWithCoursesCount, 301);
-  assert.equal(summary.pendingProgrammeCount, 143);
+  assert.equal(summary.codedCourseCount, 19955);
+  assert.equal(summary.programmeWithCoursesCount, 302);
+  assert.equal(summary.pendingProgrammeCount, 142);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
@@ -443,6 +443,30 @@ test('CUHK Materials Science and Engineering exposes the current 58-code departm
     byCode.MASE4202.titleEn,
     'Semiconductor Microfabrication Principles and Technologies'
   );
+});
+
+test('CUHK Mathematics and Information Engineering exposes the 2025-26 named course scope as browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'MIEGN');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-MIEGN-49-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 178);
+  assert.equal(courses.length, 178);
+  assert.equal(courses.filter((course) => course.courseType === 'core').length, 52);
+  assert.equal(courses.filter((course) => course.courseType === 'major_elective').length, 123);
+  assert.equal(courses.filter((course) => course.courseType === 'capstone').length, 2);
+  assert.equal(courses.filter((course) => course.courseType === 'internship').length, 1);
+  assert.match(byCode.CSCI2100.requirementGroups[0], /54-unit block/);
+  assert.equal(byCode.CSCI5030.titleEn, 'Machine Learning Theory');
+  assert.equal(byCode.IERG4998.courseType, 'capstone');
+  assert.equal(byCode.MATH3250.titleEn, 'Discrete Mathematics');
+  assert.equal(byCode.MIEG2440.titleEn, 'Discrete Structures and Probability');
 });
 
 test('CUHK Enrichment Mathematics exposes the current named MATH scope as browse-only', () => {

@@ -1,0 +1,1272 @@
+{
+  "provider": "CUHK Mathematics and Information Engineering 2025-26 Major Programme Requirement",
+  "academicYear": "Applicable to students admitted in 2025-26; reviewed on 2026-07-30",
+  "sourceUrl": "https://www.ie.cuhk.edu.hk/wp-content/uploads/2025/08/MIEGN_ENG_25.pdf",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/miegn/",
+  "additionalSourceUrls": [
+    "https://www.ie.cuhk.edu.hk/wp-content/uploads/2025/08/Study_Plan_for_MIEG_Entrants_2025.pdf",
+    "https://www.ie.cuhk.edu.hk/programmes/bsc-in-mieg/major-programme-requirements/",
+    "https://www.ie.cuhk.edu.hk/courses-mieg/",
+    "https://www.cse.cuhk.edu.hk/academics/ug-course-list/",
+    "https://www.cse.cuhk.edu.hk/academics/pg-course-list/",
+    "https://www.ie.cuhk.edu.hk/mieg-leaflet"
+  ],
+  "note": "The current official 2025-26 Major Programme Requirement was text-extracted and visually reviewed page by page. It publishes an 87-unit Major for both direct entrants and students admitted through the Faculty of Science Mathematics Enrichment Stream, with route-specific Faculty Package, Foundation and Elective totals, a common 54-unit Required block and a 6-unit Research Component. Its five-page Course List contains 160 unique code-title-unit rows. The current official CUHK CSE undergraduate and research-postgraduate course lists close another 18 explicitly named AIST/CSCI/ESTR code-title-unit rows from the MIEG requirement, producing 178 evidence-backed unique courses. The four-page official programme leaflet was also text-extracted and visually reviewed; it confirms the 87-unit Major, broad Year 1-4 sequence and 80+ elective description but does not add a coded completion path. PHYS1001/1002/1111, STAT1011, the Science Faculty Package alternatives, CSCI5320 and FTEC4004 remain outside this supplement because the reviewed MIEG course table does not publish their direct code-title-unit rows and the current linked departmental lists do not close every identity. Open AIST/CSCI/FTEC/SEEM/STAT 3000-level-or-above pools, ENGG 5000-level courses, slash alternatives, route-specific sequencing, ELITE substitutions and double counting require manual review. This evidence-backed course scope is intentionally browse-only and must not produce a graduation completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "MIEGN",
+      "jupasCode": "JS4733",
+      "programmeId": "CUHK-UG-MIEGN-49",
+      "majorId": "CUHK-UG-MIEGN-49-M1",
+      "courses": [
+        {
+          "code": "AIST1110",
+          "title": "Introduction to Computing using Python",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Foundation choice · direct-entry and Science-route placements differ · slash-separated CSCI/ESTR codes are alternatives"
+        },
+        {
+          "code": "CSCI1120",
+          "title": "Introduction to Computing Using C++",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Foundation choice · direct-entry and Science-route placements differ · slash-separated CSCI/ESTR codes are alternatives"
+        },
+        {
+          "code": "CSCI1130",
+          "title": "Introduction to Computing Using Java",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Foundation choice · direct-entry and Science-route placements differ · slash-separated CSCI/ESTR codes are alternatives"
+        },
+        {
+          "code": "CSCI2100",
+          "title": "Data Structures",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "CSCI3130",
+          "title": "Formal Languages and Automata Theory",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "CSCI3150",
+          "title": "Introduction to Operating Systems",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "CSCI3160",
+          "title": "Design and Analysis of Algorithms",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "CSCI3230",
+          "title": "Fundamentals of Artificial Intelligence",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "CSCI3320",
+          "title": "Fundamentals of Machine Learning",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "CSCI4130",
+          "title": "Introduction to Cyber Security",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "CSCI5030",
+          "title": "Machine Learning Theory",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "CSCI5150",
+          "title": "Machine Learning Algorithms and Applications",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "ENGG1110",
+          "title": "Problem Solving By Programming",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Direct-entry Faculty Package / Science-route Foundation · slash-separated MATH and ENGG/ESTR codes are alternatives"
+        },
+        {
+          "code": "ENGG1310",
+          "title": "Engineering Physics: Electromagnetics, Optics and Modern Physics",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Foundation choice · direct-entry and Science-route placements differ · slash-separated CSCI/ESTR codes are alternatives"
+        },
+        {
+          "code": "ENGG1820",
+          "title": "Engineering Internship",
+          "credits": 1,
+          "courseType": "internship",
+          "group": "Named MIEG Course List · Engineering Internship"
+        },
+        {
+          "code": "ENGG5301",
+          "title": "Information Theory",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "ENGG5302",
+          "title": "Random Processes",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "ENGG5303",
+          "title": "Advanced Wireless Communications",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "ENGG5383",
+          "title": "Applied Cryptography",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "ENGG5392",
+          "title": "Lightwave System Technologies",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "ENGG5501",
+          "title": "Foundations of Optimization",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "ESTR1002",
+          "title": "Problem Solving By Programming",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Direct-entry Faculty Package / Science-route Foundation · slash-separated MATH and ENGG/ESTR codes are alternatives"
+        },
+        {
+          "code": "ESTR1003",
+          "title": "Engineering Physics: Electromagnetics, Optics and Modern Physics",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Foundation choice · direct-entry and Science-route placements differ · slash-separated CSCI/ESTR codes are alternatives"
+        },
+        {
+          "code": "ESTR1100",
+          "title": "Introduction to Computing Using C++",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Foundation choice · direct-entry and Science-route placements differ · slash-separated CSCI/ESTR codes are alternatives"
+        },
+        {
+          "code": "ESTR1102",
+          "title": "Introduction to Computing Using Java",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Foundation choice · direct-entry and Science-route placements differ · slash-separated CSCI/ESTR codes are alternatives"
+        },
+        {
+          "code": "ESTR2002",
+          "title": "Probability and Statistics for Engineers",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "ESTR2004",
+          "title": "Discrete Mathematics for Engineers",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "ESTR2102",
+          "title": "Data Structures",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "ESTR2300",
+          "title": "Principles of Communication Systems",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "ESTR2304",
+          "title": "Basic Analog and Digital Circuits",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "ESTR2306",
+          "title": "Introduction to Systems Programming",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "ESTR2360",
+          "title": "Fourier Analysis with Engineering Applications",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "ESTR2362",
+          "title": "Discrete Structures and Probability",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "ESTR3102",
+          "title": "Introduction to Operating Systems",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "ESTR3104",
+          "title": "Design and Analysis of Algorithms",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "ESTR3108",
+          "title": "Fundamentals of Artificial Intelligence",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "ESTR3300",
+          "title": "Digital Communications",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "ESTR3302",
+          "title": "Networks: Technology, Economics, and Social Interactions",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "ESTR3304",
+          "title": "Introduction to Stochastic Processes",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "ESTR3306",
+          "title": "Social Media and Human Information Interaction",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "ESTR3308",
+          "title": "Information and Software Engineering Practice",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "ESTR3310",
+          "title": "Computer Networks",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "ESTR4300",
+          "title": "Web-scale Information Analytics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "ESTR4302",
+          "title": "Networking Protocols and Systems",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "ESTR4304",
+          "title": "Wireless Communication Systems",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "ESTR4306",
+          "title": "Introduction to Cyber Security",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "ESTR4308",
+          "title": "Network Software Design and Programming",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "ESTR4312",
+          "title": "Building Scalable Internet-based Services",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "ESTR4314",
+          "title": "Hands-on Wireless Communication",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "ESTR4316",
+          "title": "Programming Big Data Systems",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "ESTR4320",
+          "title": "Optical Communications",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "ESTR4322",
+          "title": "Introduction to Cryptography",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "ESTR4324",
+          "title": "Data Science in Practice",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "ESTR4326",
+          "title": "Blockchain and Applications",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "ESTR4328",
+          "title": "Functional Programming",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG1080",
+          "title": "Introduction to Python for Engineering Applications",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Foundation choice · direct-entry and Science-route placements differ · slash-separated CSCI/ESTR codes are alternatives"
+        },
+        {
+          "code": "IERG2060",
+          "title": "Basic Analog and Digital Circuits",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "IERG2080",
+          "title": "Introduction to Systems Programming",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "IERG2310",
+          "title": "Principles of Communication Systems",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "IERG2820",
+          "title": "Electronic Circuit Design Laboratory",
+          "credits": 1,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "IERG3010",
+          "title": "Digital Communications",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG3050",
+          "title": "Simulation and Statistical Analysis",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG3060",
+          "title": "Microcontrollers and Embedded Systems",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG3080",
+          "title": "Information and Software Engineering Practice",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "IERG3280",
+          "title": "Networks: Technology, Economics, and Social Interactions",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG3300",
+          "title": "Introduction to Stochastic Processes",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG3310",
+          "title": "Computer Networks",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "IERG3320",
+          "title": "Social Media and Human Information Interaction",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG3800",
+          "title": "Information Infrastructure Design Laboratory",
+          "credits": 1,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "IERG3810",
+          "title": "Microcontrollers and Embedded Systems Laboratory",
+          "credits": 1,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG3820",
+          "title": "Communications Laboratory",
+          "credits": 1,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "IERG3830",
+          "title": "Product Design and Development",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG4004",
+          "title": "E-payment Systems and Cryptocurrency Technologies",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG4030",
+          "title": "Optical Communications",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG4060",
+          "title": "Real-time Embedded Systems",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG4080",
+          "title": "Building Scalable Internet-based Services",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG4090",
+          "title": "Networking Protocols and Systems",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG4100",
+          "title": "Wireless Communication Systems",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG4110",
+          "title": "Hands-on Wireless Communication",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG4120",
+          "title": "Functional Programming",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG4130",
+          "title": "Introduction to Cyber Security",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG4150",
+          "title": "Introduction to Cryptography",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG4160",
+          "title": "Image Processing and Visual Understanding",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG4180",
+          "title": "Network Software Design and Programming",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG4190",
+          "title": "Multimedia Coding and Processing",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG4210",
+          "title": "Web Programming and Security",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG4220",
+          "title": "Secure Software Engineering",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG4230",
+          "title": "Introduction to Internet of Things",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG4240",
+          "title": "Positioning Principles and Technologies",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG4300",
+          "title": "Web-scale Information Analytics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG4320",
+          "title": "Data Science in Practice",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG4330",
+          "title": "Programming Big Data Systems",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG4340",
+          "title": "Emerging Technologies in Information Engineering",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG4350",
+          "title": "Cloud Computing Security",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG4360",
+          "title": "Blockchain and Applications",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG4831",
+          "title": "Networking Laboratory I",
+          "credits": 2,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG4841",
+          "title": "Networking Laboratory II",
+          "credits": 2,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG4851",
+          "title": "Cyber Security Laboratory",
+          "credits": 1,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG4998",
+          "title": "Final Year Project I",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Research Component Courses · IERG4998 and IERG4999 · 6 units required; ELITE uses ESTR4998 and ESTR4999"
+        },
+        {
+          "code": "IERG4999",
+          "title": "Final Year Project II",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Research Component Courses · IERG4998 and IERG4999 · 6 units required; ELITE uses ESTR4998 and ESTR4999"
+        },
+        {
+          "code": "IERG5020",
+          "title": "Telecommunication Switching and Network Systems",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5040",
+          "title": "Lightwave System Technologies",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5050",
+          "title": "AI Foundation Models, Systems and Applications",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5090",
+          "title": "Advanced Networking Protocols and Systems",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5100",
+          "title": "Advanced Wireless Communications",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5110",
+          "title": "Signal Processing in Wireless Communications and Sensing",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5130",
+          "title": "Probabilistic Models and Inference Algorithms for Machine Learning",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5140",
+          "title": "Lightwave Networks",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5154",
+          "title": "Information Theory",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5200",
+          "title": "Channel Coding and Modulation",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5230",
+          "title": "Algorithms and Realization of Internet of Things Systems",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5240",
+          "title": "Applied Cryptography",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5250",
+          "title": "Edge AI and Applications",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5254",
+          "title": "Network Information Theory",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5280",
+          "title": "Wireless and Mobile Networking",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5290",
+          "title": "Network Coding Theory",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5300",
+          "title": "Random Processes",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5310",
+          "title": "Security and Privacy in Cyber Systems",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5320",
+          "title": "Digital Forensics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5330",
+          "title": "Network Economics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5340",
+          "title": "IT Innovation and Entrepreneurship",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5350",
+          "title": "Reinforcement Learning",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5360",
+          "title": "Program Representation, Modeling and Understanding for Software Security",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5380",
+          "title": "Quantum Information Processing",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5400",
+          "title": "Theory of Probability",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5450",
+          "title": "AI for Science",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5460",
+          "title": "Multimodal Machine Learning",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5470",
+          "title": "Convex and Stochastic Optimization and their Applications",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5590",
+          "title": "Advanced Topics in Blockchain",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "IERG5670",
+          "title": "Computational Imaging Systems and Algorithms",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "MATH1010",
+          "title": "University Mathematics",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Foundation choice · direct-entry and Science-route placements differ · slash-separated CSCI/ESTR codes are alternatives"
+        },
+        {
+          "code": "MATH1018",
+          "title": "Honours University Mathematics",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Foundation choice · direct-entry and Science-route placements differ · slash-separated CSCI/ESTR codes are alternatives"
+        },
+        {
+          "code": "MATH1025",
+          "title": "Essential Mathematical Methods",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Direct-entry Faculty Package / Science-route Foundation · slash-separated MATH and ENGG/ESTR codes are alternatives"
+        },
+        {
+          "code": "MATH1028",
+          "title": "Honours Essential Mathematical Methods",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Direct-entry Faculty Package / Science-route Foundation · slash-separated MATH and ENGG/ESTR codes are alternatives"
+        },
+        {
+          "code": "MATH1030",
+          "title": "Linear Algebra I",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Direct-entry Faculty Package / Science-route Foundation · slash-separated MATH and ENGG/ESTR codes are alternatives"
+        },
+        {
+          "code": "MATH1038",
+          "title": "Honours Linear Algebra I",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Direct-entry Faculty Package / Science-route Foundation · slash-separated MATH and ENGG/ESTR codes are alternatives"
+        },
+        {
+          "code": "MATH1090",
+          "title": "Introduction to Set Theory",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "MATH1098",
+          "title": "Honours Introduction to Set Theory",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "MATH2010",
+          "title": "Advanced Calculus I",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "MATH2018",
+          "title": "Honours Advanced Calculus I",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "MATH2020",
+          "title": "Advanced Calculus II",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "MATH2028",
+          "title": "Honours Advanced Calculus II",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "MATH2040",
+          "title": "Linear Algebra II",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "MATH2048",
+          "title": "Honours Linear Algebra II",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "MATH2050",
+          "title": "Mathematical Analysis I",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "MATH2058",
+          "title": "Honours Mathematical Analysis I",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "MATH2060",
+          "title": "Mathematical Analysis II",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "MATH2068",
+          "title": "Honours Mathematical Analysis II",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "MATH2070",
+          "title": "Algebraic Structures",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "MATH2078",
+          "title": "Honours Algebraic Structures",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "MATH2230",
+          "title": "Complex Variables with Applications",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "MATH3020",
+          "title": "Axiomatic Set Theory and Applications",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "MATH3030",
+          "title": "Abstract Algebra",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "MATH3040",
+          "title": "Fields and Galois Theory",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "MATH3060",
+          "title": "Mathematical Analysis III",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "MATH3070",
+          "title": "Introduction to Topology",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "MATH3080",
+          "title": "Number Theory",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "MATH3093",
+          "title": "Fourier Analysis",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "MATH3215",
+          "title": "Operations Research",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "MATH3230",
+          "title": "Numerical Analysis",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "MATH3250",
+          "title": "Discrete Mathematics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "MATH3260",
+          "title": "Graph Theory",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "MATH3270",
+          "title": "Ordinary Differential Equations",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "MATH3290",
+          "title": "Mathematical Modeling",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "MATH3310",
+          "title": "Computational and Applied Mathematics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "MATH3320",
+          "title": "Foundation of Data Analytics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "MATH3330",
+          "title": "Big Data Computing",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "MATH3340",
+          "title": "Mathematics of Machine Learning",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "MATH3360",
+          "title": "Mathematical Imaging",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "MATH4010",
+          "title": "Functional Analysis",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "MATH4020",
+          "title": "Calculus of Variations",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "MATH4030",
+          "title": "Differential Geometry",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "MATH4230",
+          "title": "Optimization Theory",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "MATH4240",
+          "title": "Stochastic Processes",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "MATH4260",
+          "title": "Coding Theory and Cryptography",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "MATH4280",
+          "title": "Data Analytics in Design and Innovation",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Named Major Elective scope · direct entry completes 9 units and Science-route entry completes 6 units"
+        },
+        {
+          "code": "MIEG2051",
+          "title": "Fourier Analysis with Engineering Applications",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        },
+        {
+          "code": "MIEG2440",
+          "title": "Discrete Structures and Probability",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · 54-unit block · slash-separated standard/Honours/ESTR codes are alternatives"
+        }
+      ]
+    }
+  ]
+}
