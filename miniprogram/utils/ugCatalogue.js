@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-30T06:00:40.997Z",
+  "generatedAt": "2026-07-30T07:18:36.267Z",
   "universities": [
     {
       "id": "HKU",
@@ -4065,9 +4065,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/ftecn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 85,
+      "codedCourseCount": 85,
+      "courseSourceUrl": "https://www.se.cuhk.edu.hk/wp-content/uploads/2025/09/2025-SEEM-FinTech-Leaflet_final.pdf"
     },
     {
       "id": "CUHK-UG-IERGN-47",
@@ -11059,8 +11060,8 @@ const catalogue = {
       "code": "FINANCIAL-TECHNOLOGY",
       "nameEn": "Financial Technology",
       "nameZh": "Financial Technology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 86,
+      "codedCourseCount": 85,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/ftecn/"
     },
     {
@@ -16146,7 +16147,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 2202,
+    "CUHK": 2287,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16154,7 +16155,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 20104
+  "codedCourseCount": 20189
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
