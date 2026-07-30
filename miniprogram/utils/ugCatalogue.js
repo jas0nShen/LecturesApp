@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-30T09:59:50.229Z",
+  "generatedAt": "2026-07-30T10:36:09.535Z",
   "universities": [
     {
       "id": "HKU",
@@ -3697,9 +3697,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/qfrmn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 122,
+      "codedCourseCount": 122,
+      "courseSourceUrl": "https://www.qfrm.cuhk.edu.hk/wp-content/uploads/2025/10/QFRM_ENG_25.pdf"
     },
     {
       "id": "CUHK-UG-CLEDN-28",
@@ -10874,8 +10875,8 @@ const catalogue = {
       "code": "QUANTITATIVE-FINANCE-AND-RISK-MANAGEMENT-SCIENCE",
       "nameEn": "Quantitative Finance and Risk Management Science",
       "nameZh": "Quantitative Finance and Risk Management Science",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 123,
+      "codedCourseCount": 122,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/qfrmn/"
     },
     {
@@ -16151,7 +16152,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 2479,
+    "CUHK": 2601,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16159,7 +16160,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 20381
+  "codedCourseCount": 20503
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
