@@ -8,7 +8,7 @@
 
 当前产品边界是：先保证离线发布、数据可追溯和规则不误导，再继续补课程覆盖与规划能力。未经明确产品决定，不引入登录、云同步、统计、敏感权限或生产 API。
 
-当前仓库发布资料已统一为 `1.0.14`（`package.json`、运行时 `releaseInfo`、`docs/MVP_SPEC.md`、`docs/RELEASE_CHECKLIST.md`、`docs/REVIEW_SUBMISSION.md`）。Git 课程提交 `38091e2` 已推送到 `origin/main`，并已通过微信官方 CLI 成功上传 `1.0.14`；当前工作区另有待提交、待上传的 CUHK `FTECN Financial Technology` 数据批次。没有提交审核或发布正式版。
+当前仓库发布资料已统一为 `1.0.14`（`package.json`、运行时 `releaseInfo`、`docs/MVP_SPEC.md`、`docs/RELEASE_CHECKLIST.md`、`docs/REVIEW_SUBMISSION.md`）。CUHK `FTECN Financial Technology` 课程提交 `57b98e3` 已推送到 `origin/main`，并已通过微信官方 CLI 成功覆盖上传 `1.0.14`。没有提交审核或发布正式版。
 
 ## 可验证的仓库快照
 
@@ -17,7 +17,7 @@
 - 1.0.12 已补充 HKU 商科、经济、统计、会计及法学双学位官方课程清单，并对规则未闭合 Programme 保持只读浏览，不显示未经核验的毕业完成比例。
 - HKU 商科与法学批次由提交 `7c2e66f` 发布；HKU `6688 Science Master Class` 与 `6901 Bachelor of Science` 批次由提交 `c1076cf` 发布；HKU `6987 Computer Engineering / Electrical Engineering / Electronic Engineering` 三 Major 与 HKU `6925` / `6858` / `6897` 来源审查由提交 `8fa7ce8 Expand HKU engineering curricula for 1.0.12` 发布。
 - 包版本：`1.0.14`
-- 当前课程提交 `38091e2` 已推送到 `origin/main`，并对应当前微信 `1.0.14` 开发版。
+- 当前课程提交 `57b98e3` 已推送到 `origin/main`，并对应当前微信 `1.0.14` 开发版。
 - 当前 Git 代码已包含 CUHK `JASPN Japanese Studies` 58 门 Major-assigned JASP 课程；标准、Local、Stream、senior-entry 与 double-Major 路径未完整闭合，因此保持只读浏览，不生成毕业完成百分比。
 - 当前 Git 代码也已包含 CUHK `RELSN Religious Studies` 63 门 Religious Studies Area 课程；标准与 senior-entry 路径因 Cultural Studies 和跨院 Concentration 开放池未闭合而保持只读浏览。
 - 当前 Git 代码还包含 CUHK `PUHSN Public Humanities` 88 门 2025-26 intake-specific 课程；标准与 senior-entry 路径、外系 Faculty Package、Religious Studies Areas、Concentration 替代及课程复用规则未闭合，因此保持只读浏览，不生成毕业完成百分比。
@@ -309,6 +309,7 @@ df91815 Add PolyU Design curriculum and source evidence
 - 2026-07-28 提交 `27a9ac1` 的 CUHK `SOWKN Social Work` 32 门课程已推送到 GitHub；拟用备注为 `1.0.12: Add CUHK Social Work curriculum`。`npm run check:ship` 通过 973/973 测试且 `ready=true`；微信开发者工具登录状态为 `false`，新二维码登录因 Mac 锁屏未完成扫码确认并返回 code 25，因此当前代码仍未上传。
 - 2026-07-28 提交 `656203c` 的 CUHK `SOCIN Sociology` 62 门课程已推送到 GitHub。以备注 `1.0.12: Add CUHK Sociology curriculum` 执行微信上传时先返回登录过期 `code 10`，随后两次官方 CLI 二维码登录均因未完成扫码确认返回 `code 25`，因此包含该批次的当前代码仍未上传。
 - 2026-07-28 提交 `40253ca` 的 CUHK `ECONN Economics` 61 门课程已推送到 GitHub，并以备注 `1.0.12: Add CUHK Economics curriculum` 成功覆盖上传微信开发版，命令返回 `✔ upload`；本次上传已包含上述此前尚未上传的 CUHK 课程批次。
+- 2026-07-30 提交 `57b98e3` 的 CUHK `FTECN Financial Technology` 85 门课程已推送到 GitHub，并以备注 `1.0.14: Add CUHK Financial Technology curriculum` 成功覆盖上传微信开发版，命令返回 `✔ upload`；实际上传包 18,544,348 bytes、主包 1,485,156 bytes，所有 23 个分包均低于 2 MB。
 - 当前工作区完整检查：998/998 测试通过、`ready=true`、20,189 条 UG coded courses、305 个已开放 Programme、主包预估 1,844,625 bytes、总估算包体 23,415,471 bytes，所有 23 个分包低于 2 MB，敏感 API 为 0。
 - 微信开发者工具确认 PolyU Computer Science 可加载 83 门课程，首页入口序号为 `01 / 02 / 03 / 04`；模拟器测试结束后已恢复原 Architectural Studies 资料，`plannedUgCourseKeys`、`ugCoursePlanAssignments`、`completedUgCourseKeys` 均为空。
 - 微信官方 automation 已完成普通 `POLYU-TPG-090` 闭环：36 门课程、`COMP5521` 加入计划、列表状态、官方分组、标记已修、复制与移除均通过。
@@ -327,7 +328,7 @@ df91815 Add PolyU Design curriculum and source evidence
 
 ### 发布与验收缺口
 
-- 仓库版本资料与当前微信开发版均为 `1.0.14`；微信开发版暂对应提交 `38091e2`，当前 FTECN 批次尚未提交、推送或上传。上传不等于已提交审核，当前仍未提交审核或发布正式版。
+- 仓库版本资料、Git 课程提交与当前微信开发版均已同步为 `1.0.14`；微信开发版对应提交 `57b98e3`。上传不等于已提交审核，当前仍未提交审核或发布正式版。
 - `docs/RELEASE_CHECKLIST.md` 的 iOS/Android 真机矩阵没有完成记录。
 - 微信后台隐私声明、服务类目、备案、审核材料核对尚未在仓库中记录为完成。
 - 尚未提交微信审核，也没有发布正式版。
@@ -438,23 +439,11 @@ npm run status:ug-sources -- --missing-only --priority launch --missing-limit 10
 
 ## 当前工作区
 
-当前 1.0.14 微信开发版已覆盖至课程提交 `38091e2`。本轮 FTECN source supplement、builder、专项测试及重新生成的 CUHK 双分包、catalogue/shards/runtime tests 尚未提交、推送或上传。工作区应包含：
+当前 1.0.14 微信开发版已覆盖至课程提交 `57b98e3`。本轮 FTECN source supplement、builder、专项测试及重新生成的 CUHK 双分包、catalogue/shards/runtime tests 均已提交、推送并上传。交接文档提交前，工作区只保留本文件改动和用户本地诊断目录：
 
 ```text
  M docs/CODEX_HANDOFF.md
- M docs/MVP_SPEC.md
- M docs/RELEASE_CHECKLIST.md
- M docs/REVIEW_SUBMISSION.md
- M miniprogram/subpackages/ug-data-cuhk-a/ugCourseData/cuhk-a.js
- M miniprogram/subpackages/ug-data-cuhk-b/ugCourseData/cuhk-b.js
- M miniprogram/utils/ugCatalogue.js
- M miniprogram/utils/ugCourseShards.js
- M miniprogram/utils/ugService.test.js
- M scripts/check-release-readiness.test.js
 ?? .playwright-cli/
-?? data/ug-course-supplements/cuhk-ftecn-financial-technology-courses-2025.json
-?? scripts/build-cuhk-ftecn-financial-technology-supplement.js
-?? scripts/cuhk-ftecn-financial-technology-supplement.test.js
 ```
 
 `.playwright-cli/` 仍保持未跟踪；本次没有重置、删除、覆盖或清理该目录。
@@ -486,7 +475,7 @@ npm run status:ug-sources -- --school cuhk --missing-only --missing-summary --mi
 
 - 当前代码主包预估：1,844,625 bytes。
 - 当前代码总估算包体：23,415,471 bytes，201 个上传文件。
-- 最新已上传 1.0.14 的 CLI 实际包仍为上一批：18,484,108 bytes；实际主包 1,485,044 bytes。本轮 FTECN 尚未上传。
+- 最新上传 1.0.14 的 CLI 实际包：18,544,348 bytes；实际主包 1,485,156 bytes。
 - 当前 23 个 UG/TPG 分包均低于 2 MB；`ug-data-cuhk-a` 为 997,013 bytes，`ug-data-cuhk-b` 为 1,038,047 bytes，最大分包为 `ug-data-hku-a` 1,869,435 bytes。
 - 页面：17；敏感 API：0。
 - release warnings 仅为人工微信后台检查尚需完成，以及未配置生产 HTTPS（体验/正式版按设计离线）。
@@ -495,7 +484,7 @@ npm run status:ug-sources -- --school cuhk --missing-only --missing-summary --mi
 
 ## 已知问题、风险和不要做的事情
 
-- 微信已通过官方 CLI 用课程提交 `38091e2` 上传 `1.0.14`；当前 FTECN 批次尚未上传。这只表示上一批开发版上传成功，不等于已提审或已发布。
+- 微信已通过官方 CLI 用课程提交 `57b98e3` 上传 `1.0.14`。这只表示开发版上传成功，不等于已提审或已发布。
 - 不要把“上传成功”写成“已提审”或“已发布”。这两个外部动作尚未执行。
 - 不要删除或提交 `.playwright-cli/`，除非用户明确决定如何处理该诊断目录。
 - 不要手改生成的 catalogue、course shard 或 loader；从 source/supplement 和 builder 修改后重新生成。
