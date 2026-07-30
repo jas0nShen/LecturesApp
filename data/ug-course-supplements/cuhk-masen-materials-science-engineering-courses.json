@@ -1,0 +1,429 @@
+{
+  "provider": "CUHK Materials Science and Engineering Undergraduate Programme",
+  "academicYear": "Current department course list; reviewed on 2026-07-30",
+  "sourceUrl": "https://mase.ee.cuhk.edu.hk/course-list-and-descriptions",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/masen/",
+  "additionalSourceUrls": [
+    "https://mase.ee.cuhk.edu.hk/programme-information",
+    "https://mase.ee.cuhk.edu.hk/programme-structure",
+    "https://mase.erg.cuhk.edu.hk/sites/default/files/2025-10/MASE%20Leaflet%20_20251009.pdf"
+  ],
+  "note": "The current official department course page publishes 46 named rows that expand to 58 unique course codes: 6 Faculty Package alternatives, 7 Foundation codes, 15 Required codes and 30 Elective codes. The Programme Information page states a 76-unit programme structure comprising 9 Faculty Package units, 14 Foundation units, 38 Required units including compulsory internship and research project, and 15 Elective units. The four-page official programme brochure was text-extracted and visually reviewed page by page; it confirms the broad Year 1-5 sequence, 20+ electives and compulsory internship but does not add per-code units. The department page does not publish a direct per-code unit value, so every course keeps credits=0 rather than inferring individual units from group totals. Slash-separated alternatives, the three-way CSCI1120/ESTR1100/IERG1080 computing choice, the relation between the stated 15 elective units and the minimum 12 non-project units, study sequencing, the separate MASE & X double-major routes and university requirements require manual review. This evidence-backed course-code union is intentionally browse-only and must not produce a graduation completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "MASEN",
+      "jupasCode": "JS4470",
+      "programmeId": "CUHK-UG-MASEN-48",
+      "majorId": "CUHK-UG-MASEN-48-M1",
+      "courses": [
+        {
+          "code": "BMEG3430",
+          "title": "Biomaterials and Tissue Engineering",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "CHEM1070",
+          "title": "Principles of Modern Chemistry",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Foundation Courses · 14 units · slash-separated ENGG/ESTR codes are alternatives"
+        },
+        {
+          "code": "CHEM4303",
+          "title": "Introduction to Nanoscience and Nanotechnology",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "CSCI1120",
+          "title": "Introduction to Computing Using C++ or Introduction to Python for Engineering Applications",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "CSCI3230",
+          "title": "Fundamentals of Artificial Intelligence",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "EEEN4020",
+          "title": "Solar Energy and Photovoltaic Technology",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "EEEN4050",
+          "title": "Energy Storage Devices and Systems",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "EESC4240",
+          "title": "Air Pollution Science and Engineering",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "ELEG2202",
+          "title": "Fundamentals of Electric Circuits",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Required Courses · 38 units including compulsory internship and research project"
+        },
+        {
+          "code": "ELEG3301",
+          "title": "Principles of Semiconductor Devices",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Required Courses · 38 units including compulsory internship and research project"
+        },
+        {
+          "code": "ELEG4304",
+          "title": "Wearable Devices",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "ENGG1110",
+          "title": "Problem Solving by Programming",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Faculty Package · 9 units · slash-separated ENGG/ESTR codes are alternatives"
+        },
+        {
+          "code": "ENGG1125",
+          "title": "Single Variable Calculus for Engineers",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Faculty Package · 9 units · slash-separated ENGG/ESTR codes are alternatives"
+        },
+        {
+          "code": "ENGG1130",
+          "title": "Multivariable Calculus for Engineers",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Faculty Package · 9 units · slash-separated ENGG/ESTR codes are alternatives"
+        },
+        {
+          "code": "ENGG1310",
+          "title": "Engineering Physics: Electromagnetics, Optics and Modern Physics",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Foundation Courses · 14 units · slash-separated ENGG/ESTR codes are alternatives"
+        },
+        {
+          "code": "ENGG1820",
+          "title": "Engineering Internship",
+          "credits": 0,
+          "courseType": "internship",
+          "group": "Required Courses · 38 units including compulsory internship and research project"
+        },
+        {
+          "code": "ENGG2780",
+          "title": "Statistics for Engineers",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Foundation Courses · 14 units · slash-separated ENGG/ESTR codes are alternatives"
+        },
+        {
+          "code": "ESTR1002",
+          "title": "Problem Solving by Programming",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Faculty Package · 9 units · slash-separated ENGG/ESTR codes are alternatives"
+        },
+        {
+          "code": "ESTR1003",
+          "title": "Engineering Physics: Electromagnetics, Optics and Modern Physics",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Foundation Courses · 14 units · slash-separated ENGG/ESTR codes are alternatives"
+        },
+        {
+          "code": "ESTR1006",
+          "title": "Multivariable Calculus for Engineers",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Faculty Package · 9 units · slash-separated ENGG/ESTR codes are alternatives"
+        },
+        {
+          "code": "ESTR1007",
+          "title": "Single Variable Calculus for Engineers",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Faculty Package · 9 units · slash-separated ENGG/ESTR codes are alternatives"
+        },
+        {
+          "code": "ESTR1100",
+          "title": "Introduction to Computing Using C++ or Introduction to Python for Engineering Applications",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "ESTR2020",
+          "title": "Statistics for Engineers",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Foundation Courses · 14 units · slash-separated ENGG/ESTR codes are alternatives"
+        },
+        {
+          "code": "ESTR3108",
+          "title": "Fundamentals of Artificial Intelligence",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "ESTR3404",
+          "title": "Manufacturing Technology",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Required Courses · 38 units including compulsory internship and research project"
+        },
+        {
+          "code": "ESTR4402",
+          "title": "Solar Energy and Photovoltaic Technology",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "ESTR4410",
+          "title": "Finite Element Modelling and Analysis",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "ESTR4422",
+          "title": "Energy Storage Devices and Systems",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "IERG1080",
+          "title": "Introduction to Computing Using C++ or Introduction to Python for Engineering Applications",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "LSCI1002",
+          "title": "Introduction to Biological Sciences",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Foundation Courses · 14 units · slash-separated ENGG/ESTR codes are alternatives"
+        },
+        {
+          "code": "MAEG3010",
+          "title": "Mechanics of Materials",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Required Courses · 38 units including compulsory internship and research project"
+        },
+        {
+          "code": "MAEG3020",
+          "title": "Manufacturing Technology",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Required Courses · 38 units including compulsory internship and research project"
+        },
+        {
+          "code": "MAEG4020",
+          "title": "Finite Element Modelling and Analysis",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "MASE1001",
+          "title": "Introduction to Materials Science and Engineering I",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Required Courses · 38 units including compulsory internship and research project"
+        },
+        {
+          "code": "MASE1002",
+          "title": "Introduction to Materials Science and Engineering II",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Required Courses · 38 units including compulsory internship and research project"
+        },
+        {
+          "code": "MASE1801",
+          "title": "Materials Laboratory",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Required Courses · 38 units including compulsory internship and research project"
+        },
+        {
+          "code": "MASE2002",
+          "title": "Introduction to Polymer Science",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Required Courses · 38 units including compulsory internship and research project"
+        },
+        {
+          "code": "MASE2202",
+          "title": "Fundamentals of Inorganic Materials Processing",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Required Courses · 38 units including compulsory internship and research project"
+        },
+        {
+          "code": "MASE2601",
+          "title": "Technology, Society and Engineering Practice",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Required Courses · 38 units including compulsory internship and research project"
+        },
+        {
+          "code": "MASE3002",
+          "title": "Characterization of Materials",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Required Courses · 38 units including compulsory internship and research project"
+        },
+        {
+          "code": "MASE3102",
+          "title": "Microelectronic Materials",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "MASE3104",
+          "title": "Solid-State Sensors",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "MASE3202",
+          "title": "Additive Manufacturing of Materials",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "MASE4102",
+          "title": "Photonic Materials and Devices",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "MASE4202",
+          "title": "Semiconductor Microfabrication Principles and Technologies",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "MASE4204",
+          "title": "AI Assisted Design and Manufacturing",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "MASE4206",
+          "title": "Electrochemical Corrosion",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "MASE4208",
+          "title": "Introduction to Materials Simulation",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "MASE4302",
+          "title": "Materials and Sustainability",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "MASE4998",
+          "title": "Final Year Project I",
+          "credits": 0,
+          "courseType": "capstone",
+          "group": "Required Courses · 38 units including compulsory internship and research project"
+        },
+        {
+          "code": "MASE4999",
+          "title": "Final Year Project II",
+          "credits": 0,
+          "courseType": "capstone",
+          "group": "Required Courses · 38 units including compulsory internship and research project"
+        },
+        {
+          "code": "PHYS1110",
+          "title": "Engineering Physics: Mechanics and Thermodynamics",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Foundation Courses · 14 units · slash-separated ENGG/ESTR codes are alternatives"
+        },
+        {
+          "code": "PHYS3021",
+          "title": "Quantum Mechanics I",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "PHYS3023",
+          "title": "Introduction to Quantum Information Physics",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "PHYS4031",
+          "title": "Statistical Mechanics",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "PHYS4050",
+          "title": "Solid State Physics",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "PHYS4440",
+          "title": "Topics in Nanoscience and Technology",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        },
+        {
+          "code": "SEEM3500",
+          "title": "Quality Control and Management",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Elective Courses · 15 units shown by the department · minimum 12 non-project units"
+        }
+      ]
+    }
+  ]
+}

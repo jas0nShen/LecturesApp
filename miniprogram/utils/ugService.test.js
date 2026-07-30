@@ -47,11 +47,11 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.programmeCount, 445);
   assert.equal(summary.majorCount, 687);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 19733);
+  assert.equal(summary.courseCount, 19791);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 19719);
-  assert.equal(summary.programmeWithCoursesCount, 300);
-  assert.equal(summary.pendingProgrammeCount, 144);
+  assert.equal(summary.codedCourseCount, 19777);
+  assert.equal(summary.programmeWithCoursesCount, 301);
+  assert.equal(summary.pendingProgrammeCount, 143);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
@@ -416,6 +416,32 @@ test('CUHK Information Engineering exposes the current 135-course named scope as
   assert.equal(
     byCode.IERG5360.titleEn,
     'Program Representation, Modeling and Understanding for Software Security'
+  );
+});
+
+test('CUHK Materials Science and Engineering exposes the current 58-code department list as browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'MASEN');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-MASEN-48-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 58);
+  assert.equal(courses.length, 58);
+  assert.equal(courses.filter((course) => course.courseType === 'core').length, 25);
+  assert.equal(courses.filter((course) => course.courseType === 'major_elective').length, 30);
+  assert.equal(courses.filter((course) => course.courseType === 'capstone').length, 2);
+  assert.equal(courses.filter((course) => course.courseType === 'internship').length, 1);
+  assert(courses.every((course) => course.credits === 0));
+  assert.match(byCode.ENGG1110.requirementGroups[0], /slash-separated ENGG\/ESTR codes are alternatives/);
+  assert.match(byCode.CSCI1120.titleEn, /Introduction to Computing Using C\+\+/);
+  assert.equal(
+    byCode.MASE4202.titleEn,
+    'Semiconductor Microfabrication Principles and Technologies'
   );
 });
 

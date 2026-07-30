@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-30T02:33:04.343Z",
+  "generatedAt": "2026-07-30T03:05:40.783Z",
   "universities": [
     {
       "id": "HKU",
@@ -4103,9 +4103,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/masen/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 58,
+      "codedCourseCount": 58,
+      "courseSourceUrl": "https://mase.ee.cuhk.edu.hk/course-list-and-descriptions"
     },
     {
       "id": "CUHK-UG-MIEGN-49",
@@ -11075,8 +11076,8 @@ const catalogue = {
       "code": "MATERIALS-SCIENCE-AND-ENGINEERING",
       "nameEn": "Materials Science and Engineering",
       "nameZh": "Materials Science and Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 59,
+      "codedCourseCount": 58,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/masen/"
     },
     {
@@ -16142,7 +16143,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 1817,
+    "CUHK": 1875,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16150,7 +16151,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 19719
+  "codedCourseCount": 19777
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
