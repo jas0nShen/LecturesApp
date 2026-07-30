@@ -8,7 +8,7 @@
 
 当前产品边界是：先保证离线发布、数据可追溯和规则不误导，再继续补课程覆盖与规划能力。未经明确产品决定，不引入登录、云同步、统计、敏感权限或生产 API。
 
-当前仓库发布资料已统一为 `1.0.14`（`package.json`、运行时 `releaseInfo`、`docs/MVP_SPEC.md`、`docs/RELEASE_CHECKLIST.md`、`docs/REVIEW_SUBMISSION.md`）。Git 课程提交 `772fda3` 已推送到 `origin/main`，并已通过微信官方 CLI 成功上传 `1.0.14`。没有提交审核或发布正式版。
+当前仓库发布资料已统一为 `1.0.14`（`package.json`、运行时 `releaseInfo`、`docs/MVP_SPEC.md`、`docs/RELEASE_CHECKLIST.md`、`docs/REVIEW_SUBMISSION.md`）。Git 课程提交 `5487dd5` 已推送到 `origin/main`，并已通过微信官方 CLI 成功上传 `1.0.14`。没有提交审核或发布正式版。
 
 ## 可验证的仓库快照
 
@@ -17,7 +17,7 @@
 - 1.0.12 已补充 HKU 商科、经济、统计、会计及法学双学位官方课程清单，并对规则未闭合 Programme 保持只读浏览，不显示未经核验的毕业完成比例。
 - HKU 商科与法学批次由提交 `7c2e66f` 发布；HKU `6688 Science Master Class` 与 `6901 Bachelor of Science` 批次由提交 `c1076cf` 发布；HKU `6987 Computer Engineering / Electrical Engineering / Electronic Engineering` 三 Major 与 HKU `6925` / `6858` / `6897` 来源审查由提交 `8fa7ce8 Expand HKU engineering curricula for 1.0.12` 发布。
 - 包版本：`1.0.14`
-- 当前课程提交 `772fda3` 已推送到 `origin/main`，并对应当前微信 `1.0.14` 开发版。
+- 当前课程提交 `5487dd5` 已推送到 `origin/main`，并对应当前微信 `1.0.14` 开发版。
 - 当前 Git 代码已包含 CUHK `JASPN Japanese Studies` 58 门 Major-assigned JASP 课程；标准、Local、Stream、senior-entry 与 double-Major 路径未完整闭合，因此保持只读浏览，不生成毕业完成百分比。
 - 当前 Git 代码也已包含 CUHK `RELSN Religious Studies` 63 门 Religious Studies Area 课程；标准与 senior-entry 路径因 Cultural Studies 和跨院 Concentration 开放池未闭合而保持只读浏览。
 - 当前 Git 代码还包含 CUHK `PUHSN Public Humanities` 88 门 2025-26 intake-specific 课程；标准与 senior-entry 路径、外系 Faculty Package、Religious Studies Areas、Concentration 替代及课程复用规则未闭合，因此保持只读浏览，不生成毕业完成百分比。
@@ -39,7 +39,8 @@
 - 当前 Git 代码包含 CUHK `QFINN Quantitative Finance` 2025-26 Study Scheme 的 135 门唯一代码课程，并加入说明条款明确要求、由数学系课程页核验的条件课 `MATH1530`，合计 136 门。PDF 对应的代码、标题和学分逐项自动比对为 `missing=[]`、`extra=[]`；Required alternatives、MATH1530 waiver、second-major/minor 与 Co-op substitution、先修及年度开课规则未闭合，因此保持只读浏览，不生成毕业完成百分比。
 - 当前 Git 代码新增 CUHK `IERGN Information Engineering` 135 门唯一课程：41 门 Core、92 门 Major Elective、2 门 Capstone；官方 PDF Course List 的 122 条 code/title/unit 与 builder 自动比对无缺失、多余或差异。开放高年级 Engineering elective universe、替代路径、条件桥接课、五个 Stream、ELITE、senior-entry 与双学位路径未闭合，因此保持只读浏览，不生成毕业完成百分比。
 - 当前 Git 代码新增 CUHK `MASEN Materials Science and Engineering` 官方课程页展开后的 58 个唯一课程代码：25 门 Core、30 门 Major Elective、2 门 Capstone、1 门 Internship。官方只发布 Faculty Package、Foundation、Required 与 Elective 的分组总额，没有逐课学分，因此 58 门课程均以 0 表示未知学分；slash alternatives、三选一计算机课、Elective 选课限制、学习顺序及双主修路径仍需人工复核，保持只读浏览且不生成毕业完成百分比。
-- 当前 1.0.14 微信开发版已上传至课程提交 `772fda3`，包含 CUHK `MATHN-ERM`、`QFINN`、`IERGN`、`MASEN` 以及此前已发布的课程数据。
+- 当前 Git 代码新增 CUHK `MIEGN Mathematics and Information Engineering` 178 门 2025-26 官方可核验课程：52 门 Core、123 门 Major Elective、2 门 Capstone、1 门 Internship。两条 87-unit Major 入学路径的 Faculty Package、Foundation 与 Elective 配额不同，且开放高年级课程池、slash alternatives、学习顺序、ELITE substitutions 与 double counting 未由本地规则闭合，因此保持只读浏览，`totalCreditRequired=0`，不生成毕业完成百分比。
+- 当前 1.0.14 微信开发版已上传至课程提交 `5487dd5`，包含 CUHK `MATHN-ERM`、`QFINN`、`IERGN`、`MASEN`、`MIEGN` 以及此前已发布的课程数据。
 - 本批开放 HKU `6755` 其余 BBA Major、`6767` Economics、`6779` Statistical Decision Sciences、`6781` Accounting、`6896` IBGM、Asset Management and Private Banking、Quantitative Finance、Business Analytics、Marketing Analytics and Technology，以及 `6808` / `6810` 两个 Law double degree 的官方可核验课程。
 - `6808` 与 `6810` 的 Law elective universe 未由 Programme-specific 来源闭合，因此只发布已核验代码供只读浏览，不生成完整毕业结构或完成百分比。
 - 旧单一 `ug-data-hku`、`ug-data-hkbu` 已由生成脚本替换；当前工作区 HKU 使用 `ug-data-hku-a` / `ug-data-hku-b` / `ug-data-hku-c` 三分包，HKBU 使用 `ug-data-hkbu-a` / `ug-data-hkbu-b` 双分包。不要手工恢复旧 loader。
@@ -58,11 +59,14 @@
 - 2026-07-30 课程更新提交 `3355041` 已推送到 GitHub。以备注 `1.0.13: Add CUHK mathematics and quantitative finance curricula` 上传时返回登录过期 `code 10`；随后官方 CLI 二维码登录持续等待但未完成手机端确认，已停止等待。因此该提交尚未上传微信。
 - 2026-07-30 已将版本资料升级为 `1.0.14`，并用课程与发布提交 `17d5ad8` 上传，备注为 `1.0.14: Add CUHK Information Engineering curriculum`，命令返回 `✔ upload`；实际上传包 18,200,292 bytes，主包 1,484,476 bytes，所有 22 个分包均低于 2 MB。
 - 2026-07-30 已用课程提交 `772fda3` 覆盖上传同版本 `1.0.14`，备注为 `1.0.14: Add CUHK Materials Science curriculum`，命令返回 `✔ upload`；实际上传包 18,241,915 bytes，主包 1,484,555 bytes，所有 22 个分包均低于 2 MB。
+- 2026-07-30 已用课程提交 `5487dd5` 覆盖上传同版本 `1.0.14`，备注为 `1.0.14: Add CUHK Mathematics and Information Engineering curriculum`，命令返回 `✔ upload`；实际上传包 18,379,048 bytes，主包 1,484,652 bytes，所有 22 个分包均低于 2 MB。
 - `.playwright-cli/` 为 96 KB 的本地浏览器诊断产物，共有 console log 和 page YAML；本次没有删除、覆盖或暂存。
 
 最近关键提交（本次交接提交前）：
 
 ```text
+5487dd5 Add CUHK mathematics and information engineering curriculum
+a099171 Document CUHK materials science upload
 772fda3 Add CUHK materials science curriculum
 7ac9633 Document 1.0.14 upload status
 17d5ad8 Release 1.0.14 with CUHK Information Engineering curriculum
@@ -298,7 +302,7 @@ df91815 Add PolyU Design curriculum and source evidence
 - 2026-07-28 提交 `27a9ac1` 的 CUHK `SOWKN Social Work` 32 门课程已推送到 GitHub；拟用备注为 `1.0.12: Add CUHK Social Work curriculum`。`npm run check:ship` 通过 973/973 测试且 `ready=true`；微信开发者工具登录状态为 `false`，新二维码登录因 Mac 锁屏未完成扫码确认并返回 code 25，因此当前代码仍未上传。
 - 2026-07-28 提交 `656203c` 的 CUHK `SOCIN Sociology` 62 门课程已推送到 GitHub。以备注 `1.0.12: Add CUHK Sociology curriculum` 执行微信上传时先返回登录过期 `code 10`，随后两次官方 CLI 二维码登录均因未完成扫码确认返回 `code 25`，因此包含该批次的当前代码仍未上传。
 - 2026-07-28 提交 `40253ca` 的 CUHK `ECONN Economics` 61 门课程已推送到 GitHub，并以备注 `1.0.12: Add CUHK Economics curriculum` 成功覆盖上传微信开发版，命令返回 `✔ upload`；本次上传已包含上述此前尚未上传的 CUHK 课程批次。
-- 当前工作区完整检查：990/990 测试通过、`ready=true`、19,777 条 UG coded courses、301 个已开放 Programme、主包预估 1,843,919 bytes、总估算包体 23,045,686 bytes，所有 22 个分包低于 2 MB，敏感 API 为 0。
+- 当前工作区完整检查：992/992 测试通过、`ready=true`、19,955 条 UG coded courses、302 个已开放 Programme、主包预估 1,844,026 bytes、总估算包体 23,211,665 bytes，所有 22 个分包低于 2 MB，敏感 API 为 0。
 - 微信开发者工具确认 PolyU Computer Science 可加载 83 门课程，首页入口序号为 `01 / 02 / 03 / 04`；模拟器测试结束后已恢复原 Architectural Studies 资料，`plannedUgCourseKeys`、`ugCoursePlanAssignments`、`completedUgCourseKeys` 均为空。
 - 微信官方 automation 已完成普通 `POLYU-TPG-090` 闭环：36 门课程、`COMP5521` 加入计划、列表状态、官方分组、标记已修、复制与移除均通过。
 - 多 Track `HKU-TPG-031` 验收通过：Generalist 计 1 门，Chinese Language Education 计 2 门；两条记录均保留，旧 Track 课程不计入 Generalist 当前统计。
@@ -311,12 +315,12 @@ df91815 Add PolyU Design curriculum and source evidence
 
 - 八校 TPG 已达到 100% source reviewed；没有剩余 `unreviewed` Programme。
 - 仍有 101 个 Programme 因官方公开来源缺代码、学分、Track 归属、最终审批或规则冲突而标记 `blocked`。除非出现新的官方证据，不应把它们当作待猜测补全项。
-- UG 来源覆盖报告仍有 143 个缺口：35 个 index-only、25 个 reviewed-no-codes、83 个 no-source。CUHK 仍有 47 个缺口，其中 3 个 reviewed-no-codes、44 个 no-source。下一批继续从官方课程手册或部门课程页取证，不从 Programme 简介反推代码或规则。
+- UG 来源覆盖报告仍有 142 个缺口：35 个 index-only、25 个 reviewed-no-codes、82 个 no-source。CUHK 仍有 46 个缺口，其中 3 个 reviewed-no-codes、43 个 no-source。下一批继续从官方课程手册或部门课程页取证，不从 Programme 简介反推代码或规则。
 - 多个已核验 TPG Programme 仍标记 `manual_review_required`，表示课程池可发布，但复杂路径/跨组最低要求不能由当前规则引擎自动证明。
 
 ### 发布与验收缺口
 
-- 仓库版本资料、Git 发布提交与微信开发版均已同步为 `1.0.14`；上传不等于已提交审核，当前仍未提交审核或发布正式版。
+- 仓库版本资料、Git 课程提交与当前微信开发版均已同步为 `1.0.14`；微信开发版对应提交 `5487dd5`。上传不等于已提交审核，当前仍未提交审核或发布正式版。
 - `docs/RELEASE_CHECKLIST.md` 的 iOS/Android 真机矩阵没有完成记录。
 - 微信后台隐私声明、服务类目、备案、审核材料核对尚未在仓库中记录为完成。
 - 尚未提交微信审核，也没有发布正式版。
@@ -427,9 +431,10 @@ npm run status:ug-sources -- --missing-only --priority launch --missing-limit 10
 
 ## 当前工作区
 
-当前 1.0.14 微信开发版已覆盖至课程提交 `772fda3`。`MATHN-ERM Enrichment Mathematics`、`QFINN Quantitative Finance`、`IERGN Information Engineering` 与 `MASEN Materials Science and Engineering` source supplements、生成 catalogue/shard、专项与运行时测试均已推送并上传。交接文档提交前，工作区只保留用户本地诊断目录：
+当前 1.0.14 微信开发版已覆盖至课程提交 `5487dd5`。`MATHN-ERM Enrichment Mathematics`、`QFINN Quantitative Finance`、`IERGN Information Engineering`、`MASEN Materials Science and Engineering` 与 `MIEGN Mathematics and Information Engineering` source supplements、生成 catalogue/shard、专项与运行时测试均已推送并上传。交接文档提交前，工作区只保留本文件改动和用户本地诊断目录：
 
 ```text
+ M docs/CODEX_HANDOFF.md
 ?? .playwright-cli/
 ```
 
@@ -437,7 +442,7 @@ npm run status:ug-sources -- --missing-only --priority launch --missing-limit 10
 
 ## 已运行的测试及结果
 
-2026-07-30 在 `1.0.14` 课程提交 `772fda3` 上重新运行：
+2026-07-30 在当前 `1.0.14` MIEGN 工作区重新运行：
 
 ```text
 npm run check:ship: PASS
@@ -446,22 +451,22 @@ npm run check:ship: PASS
   check:tpg-course-sync: PASS (250 files, 448 Programmes)
   check:tpg-catalog-sync: PASS (8 schools, 448 Programmes, 8 packages, 347 browsable course structures)
   seed/data validation: PASS
-  UG supplement validation: PASS (355 supplements)
+  UG supplement validation: PASS (356 supplements)
   directory audit: PASS, blockingErrors=[]
   server --check: PASS
-  Node tests: PASS, 990/990
+  Node tests: PASS, 992/992
   check:release: PASS, ready=true
 
 git diff --check: PASS
 npm run status:tpg-courses -- --school=HKU: PASS (448/448 reviewed, 0 unreviewed)
-npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 0: PASS (143 Programme-level source gaps: 35 index-only, 25 reviewed-no-codes, 83 no-source)
+npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 0: PASS (142 Programme-level source gaps: 35 index-only, 25 reviewed-no-codes, 82 no-source)
 ```
 
 发布指标：
 
-- 当前代码主包预估：1,843,919 bytes。
-- 当前代码总估算包体：23,045,686 bytes，196 个上传文件。
-- 最新上传 1.0.14 的 CLI 实际包：18,241,915 bytes；实际主包：1,484,555 bytes。
+- 当前代码主包预估：1,844,026 bytes。
+- 当前代码总估算包体：23,211,665 bytes，196 个上传文件。
+- 最新上传 1.0.14 的 CLI 实际包：18,379,048 bytes；实际主包：1,484,652 bytes。
 - 当前 22 个 UG/TPG 分包均低于 2 MB；最大为 `ug-data-hku-a` 1,869,435 bytes。
 - 页面：17；敏感 API：0。
 - release warnings 仅为人工微信后台检查尚需完成，以及未配置生产 HTTPS（体验/正式版按设计离线）。
@@ -470,7 +475,7 @@ npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 0:
 
 ## 已知问题、风险和不要做的事情
 
-- 微信已通过官方 CLI 用课程提交 `772fda3` 上传 `1.0.14`。这只表示开发版上传成功，不等于已提审或已发布。
+- 微信已通过官方 CLI 用课程提交 `5487dd5` 上传 `1.0.14`。这只表示开发版上传成功，不等于已提审或已发布。
 - 不要把“上传成功”写成“已提审”或“已发布”。这两个外部动作尚未执行。
 - 不要删除或提交 `.playwright-cli/`，除非用户明确决定如何处理该诊断目录。
 - 不要手改生成的 catalogue、course shard 或 loader；从 source/supplement 和 builder 修改后重新生成。
