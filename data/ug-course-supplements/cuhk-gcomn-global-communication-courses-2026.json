@@ -1,0 +1,984 @@
+{
+  "provider": "CUHK School of Journalism and Communication",
+  "academicYear": "Applicable to students admitted in 2026-27; reviewed on 2026-08-10",
+  "sourceUrl": "https://www.com.cuhk.edu.hk/programs/applicable-to-students-admitted-in-2026-27/",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/gcomn/",
+  "additionalSourceUrls": [
+    "https://www.com.cuhk.edu.hk/programmes/undergraduate/course-list/",
+    "https://www.com.cuhk.edu.hk/programs/global-communication/",
+    "https://www.com.cuhk.edu.hk/pdf/GCOMN-online.pdf",
+    "https://www.glef.cuhk.edu.hk/site/assets/files/1672/glefn_eng_25_formatted.pdf",
+    "https://admission.econ.cuhk.edu.hk/ug/wp-content/uploads/2025/07/ECONN_ENG_24.pdf"
+  ],
+  "note": "The official 2026-27 Study Scheme page (117,411 bytes; SHA-256 89a8323be3ec9971f4b77281dd39b21c79a93d7ded2582d999eba0912be982ed; last modified 2026-05-19) publishes a minimum 72-unit Major and 137 unique named course codes: 99 COMM courses, 27 non-COMM Faculty Package candidates and 11 GLSD/CSAT electives. The fixed local structure is a 9-unit Faculty Package, an 18-unit coded Required block with COMM2160/COMM3650 as an alternative, and at least 33 elective units across five published groups with no more than 6 units of non-COMM courses. It separately requires at least 12 units of approved global-communication courses during compulsory resident study at one or two overseas institutions and permits approved CUHK make-up courses without publishing a fixed code list. The current School Course List supplies code-title-unit rows for the 99 COMM courses; the maintained official GLEFN scheme and official ECONN Course List cross-check the 27 Faculty Package candidates. The Study Scheme itself supplies code and title for the 11 GLSD/CSAT electives but not explicit per-course units, so those keep credits=0 rather than inferring values from group totals. The official 20-page 2025 brochure (14,225,425 bytes; SHA-256 8fcc03215d9173321a214fc8a7ea7bc668a2fa90c0a82b60907b2d8803dc6b94; last modified 2025-09-25) was text-extracted and curriculum pages 8-11 were rendered and visually reviewed. Because overseas course identities, approved make-up courses, cross-group no-double-counting, the non-COMM maximum and the COMM2160/COMM3650 alternative are not closed by the local rule engine, the complete 137-code named local pool remains browse-only with totalCreditRequired=0 and no graduation completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "GCOMN",
+      "jupasCode": "JS4858",
+      "programmeId": "CUHK-UG-GCOMN-75",
+      "majorId": "CUHK-UG-GCOMN-75-M1",
+      "courses": [
+        {
+          "code": "ARCH1001",
+          "title": "Introduction to Architecture",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · choose two courses from different Programme/Departments/Schools · 9-unit group"
+        },
+        {
+          "code": "ARCH1002",
+          "title": "Understanding Cities",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · choose two courses from different Programme/Departments/Schools · 9-unit group"
+        },
+        {
+          "code": "ARCH1003",
+          "title": "Visual Studies",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · choose two courses from different Programme/Departments/Schools · 9-unit group"
+        },
+        {
+          "code": "COMM1120",
+          "title": "Development of Media and Communication",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Global Communication · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM1150",
+          "title": "Introduction to Media Industries and Practices",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Global Communication · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM1500",
+          "title": "Perspectives in Global Communication",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · fixed course · 9-unit group"
+        },
+        {
+          "code": "COMM2120",
+          "title": "English News Production I",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Journalism · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2140",
+          "title": "Media and Social Development in Mainland China",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Communication Studies · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2160",
+          "title": "Communication Research Methods",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · choose COMM2160 or COMM3650 · 18-unit coded block"
+        },
+        {
+          "code": "COMM2180",
+          "title": "English News Production II",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Journalism · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2210",
+          "title": "News and Society",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Journalism · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2440",
+          "title": "Photojournalism",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Journalism · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2510",
+          "title": "Media Research: Psychological and Sociological Perspectives",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Global Communication · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2540",
+          "title": "Public Sphere and Global Media",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Global Communication · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2560",
+          "title": "Field Study in Global Communication",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · fixed course · 18-unit coded block"
+        },
+        {
+          "code": "COMM2570",
+          "title": "Hong Kong Cinema",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2590",
+          "title": "Global Cinema",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Global Communication · at least 33 elective units overall · Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2600",
+          "title": "Introduction to Chinese Journalism",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Journalism · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2601",
+          "title": "Introduction to English Journalism",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Journalism · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2610",
+          "title": "Foreign News Desk Practice",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Journalism · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2620",
+          "title": "Feature Writing",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Journalism · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2733",
+          "title": "Radio and Podcast Production",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2740",
+          "title": "Chinese Broadcast News",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Journalism · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2741",
+          "title": "English Broadcast News",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Global Communication · at least 33 elective units overall · Major Elective · Journalism · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2811",
+          "title": "English Writing for Public Relations",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Global Communication · at least 33 elective units overall · Major Elective · Advertising and Public Relations · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2812",
+          "title": "Chinese Writing for Public Relations",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Advertising and Public Relations · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2813",
+          "title": "Social Media and Crisis Communication",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Advertising and Public Relations · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2814",
+          "title": "Integrated Public Relations Campaign and Event Management",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Advertising and Public Relations · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2830",
+          "title": "Account Planning and Management",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Advertising and Public Relations · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2840",
+          "title": "Advertising and Society",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Advertising and Public Relations · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2850",
+          "title": "Introduction to Integrated Marketing Communications",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Global Communication · at least 33 elective units overall · Major Elective · Advertising and Public Relations · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2910",
+          "title": "News Analysis",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Journalism · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2920",
+          "title": "Media, Sex and Violence",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Communication Studies · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2922",
+          "title": "Introduction to Creative and New Media",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · fixed course · 18-unit coded block"
+        },
+        {
+          "code": "COMM2925",
+          "title": "Principles of Editing in Creative Media",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2926",
+          "title": "Creative Design and Layout",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2928",
+          "title": "Art Direction",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2930",
+          "title": "Understanding Movies",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Communication Studies · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2932",
+          "title": "Film Genres: Love, Death and Laughs",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Communication Studies · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2940",
+          "title": "Internet, Digital Media and Information Society",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM2962",
+          "title": "Photography",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3130",
+          "title": "Media and Cultural Criticism",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Communication Studies · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3131",
+          "title": "Special Topic in Communication Studies I",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Communication Studies · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3132",
+          "title": "Special Topic in Communication Studies II",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Communication Studies · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3191",
+          "title": "Film, Television and Hong Kong Culture",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Communication Studies · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3193",
+          "title": "Media and Gender",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Communication Studies · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3200",
+          "title": "Communication Professional Internship",
+          "credits": 3,
+          "courseType": "internship",
+          "group": "Major Elective · Global Communication · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3510",
+          "title": "Critical Communication Theories and Research",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Global Communication · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3550",
+          "title": "Global Finance for Communication Professionals",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Global Communication · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3610",
+          "title": "English News Content Management",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Journalism · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3620",
+          "title": "Investigative Reporting",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Journalism · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3630",
+          "title": "Digital Journalism",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Journalism · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3640",
+          "title": "China News Reporting",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Journalism · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3650",
+          "title": "Social Media Analytics for Communication Professionals",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · choose COMM2160 or COMM3650 · 18-unit coded block · Major Elective · Journalism · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3660",
+          "title": "Infographics and Data Visualization",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Journalism · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3680",
+          "title": "Business and Financial Reporting",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Journalism · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3681",
+          "title": "Special Topic in Journalism I",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Journalism · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3682",
+          "title": "Special Topic in Journalism II",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Journalism · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3690",
+          "title": "User Interface Design: Socio-cultural Perspectives and Practices",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Global Communication · at least 33 elective units overall · Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3700",
+          "title": "Diversity Issues in Communication",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Global Communication · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3710",
+          "title": "Legal and Ethical Issues in Digital Media",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · fixed course · 18-unit coded block"
+        },
+        {
+          "code": "COMM3711",
+          "title": "Script Writing and Screenplay",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3721",
+          "title": "Special Topic in Global Communication I",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Global Communication · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3722",
+          "title": "Special Topic in Global Communication II",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Global Communication · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3733",
+          "title": "Television Studio Production",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3740",
+          "title": "Advanced Broadcast News",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Journalism · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3750",
+          "title": "Visual Storytelling in Journalism",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Journalism · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3760",
+          "title": "Health and Environmental Journalism",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Journalism · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3800",
+          "title": "Digital Media Design and Application",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3810",
+          "title": "Public Relations and Social Theory",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Advertising and Public Relations · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3811",
+          "title": "Special Topic in Public Relations I",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Advertising and Public Relations · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3812",
+          "title": "Special Topic in Public Relations II",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Advertising and Public Relations · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3820",
+          "title": "Media Management for Public Relations",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Advertising and Public Relations · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3830",
+          "title": "Legal Issues in Public Relations and Advertising",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Advertising and Public Relations · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3831",
+          "title": "Special Topic in Advertising I",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Advertising and Public Relations · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3832",
+          "title": "Special Topic in Advertising II",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Advertising and Public Relations · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3840",
+          "title": "Chinese Copywriting for Advertising",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Advertising and Public Relations · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3841",
+          "title": "English Copywriting for Advertising",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Global Communication · at least 33 elective units overall · Major Elective · Advertising and Public Relations · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3850",
+          "title": "Advertising Art Direction",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Advertising and Public Relations · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3855",
+          "title": "Media Investment and Performance Marketing",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Advertising and Public Relations · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3860",
+          "title": "Strategic Communication for Entrepreneurs",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Advertising and Public Relations · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3870",
+          "title": "Social Responsibility and Sustainability Communication",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Advertising and Public Relations · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3888",
+          "title": "Financial Public Relations",
+          "credits": 2,
+          "courseType": "major_elective",
+          "group": "Major Elective · Advertising and Public Relations · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3910",
+          "title": "Sound Production",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3920",
+          "title": "Creative Writing in Media",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3921",
+          "title": "Special Topic in Creative and New Media I",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3922",
+          "title": "Special Topic in Creative and New Media II",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3930",
+          "title": "Digital Video Production",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Global Communication · at least 33 elective units overall · Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3933",
+          "title": "Music Industry, Production and Marketing",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3939",
+          "title": "Film Directors",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3940",
+          "title": "Immersive Storytelling",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM3941",
+          "title": "New Media and Entertainment Business",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM4040",
+          "title": "Directed Studies in Communication",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Communication Studies · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM4150",
+          "title": "Senior Research Project",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Major Required · fixed course · 18-unit coded block"
+        },
+        {
+          "code": "COMM4191",
+          "title": "Cultural Studies and Popular Culture",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Communication Studies · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM4250",
+          "title": "Global Digital Platforms: Culture, Power and Politics",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · fixed course · 18-unit coded block"
+        },
+        {
+          "code": "COMM4730",
+          "title": "Documentary",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM4733",
+          "title": "Advanced Television Studio Production",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM4848",
+          "title": "New Media Advertising",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Advertising and Public Relations · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM4935",
+          "title": "Cinematography",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM4956",
+          "title": "Fundamentals of Computer Animation",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "COMM4962",
+          "title": "Advanced Photography",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "CSAT2001",
+          "title": "Media and Representation: History and Theory",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "CSAT2002",
+          "title": "Creative Dialogue",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "CSAT3001",
+          "title": "Technological Practices in Arts and Design",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "CSAT3002",
+          "title": "Field Study in Arts Technology",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Creative and New Media · at least 33 elective units overall"
+        },
+        {
+          "code": "DSPS1001",
+          "title": "Introduction to Policy Sciences",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · choose two courses from different Programme/Departments/Schools · 9-unit group"
+        },
+        {
+          "code": "DSPS1003",
+          "title": "Foundation of Data Science",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · choose two courses from different Programme/Departments/Schools · 9-unit group"
+        },
+        {
+          "code": "DSPS1004",
+          "title": "Statistics for Data Science and Policy Studies",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · choose two courses from different Programme/Departments/Schools · 9-unit group"
+        },
+        {
+          "code": "ECON1210",
+          "title": "Economics and Society",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · choose two courses from different Programme/Departments/Schools · 9-unit group"
+        },
+        {
+          "code": "ECON1220",
+          "title": "Contemporary Economic Thinking",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · choose two courses from different Programme/Departments/Schools · 9-unit group"
+        },
+        {
+          "code": "ECON2011",
+          "title": "Basic Microeconomics",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · choose two courses from different Programme/Departments/Schools · 9-unit group"
+        },
+        {
+          "code": "GLSD1001",
+          "title": "Theoretical Perspectives on Globalization",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · choose two courses from different Programme/Departments/Schools · 9-unit group"
+        },
+        {
+          "code": "GLSD3106",
+          "title": "The Rise of China in the Global Context I: Diplomacy, Trade and Soft Power",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Global Communication · at least 33 elective units overall"
+        },
+        {
+          "code": "GLSD3111",
+          "title": "Special Topic in Global Media",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Global Communication · at least 33 elective units overall"
+        },
+        {
+          "code": "GLSD3303",
+          "title": "Understanding Global Issues from Movies",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Global Communication · at least 33 elective units overall"
+        },
+        {
+          "code": "GLSD3402",
+          "title": "Korea and the World: Politics, Economy and Culture",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Global Communication · at least 33 elective units overall"
+        },
+        {
+          "code": "GLSD3403",
+          "title": "European Union and the World",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Global Communication · at least 33 elective units overall"
+        },
+        {
+          "code": "GLSD3404",
+          "title": "Japan and Global Political Economy",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Global Communication · at least 33 elective units overall"
+        },
+        {
+          "code": "GLSD3405",
+          "title": "International Relations in Southeast Asia",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Global Communication · at least 33 elective units overall"
+        },
+        {
+          "code": "GPAD1020",
+          "title": "Fundamentals of Government",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · choose two courses from different Programme/Departments/Schools · 9-unit group"
+        },
+        {
+          "code": "GPAD1076",
+          "title": "Thinking Politically",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · choose two courses from different Programme/Departments/Schools · 9-unit group"
+        },
+        {
+          "code": "GPAD1077",
+          "title": "Critical Debates in Hong Kong",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · choose two courses from different Programme/Departments/Schools · 9-unit group"
+        },
+        {
+          "code": "GRMD1302",
+          "title": "People, Space and Place",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · choose two courses from different Programme/Departments/Schools · 9-unit group"
+        },
+        {
+          "code": "GRMD1401",
+          "title": "A World of Diversity",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · choose two courses from different Programme/Departments/Schools · 9-unit group"
+        },
+        {
+          "code": "GRMD1402",
+          "title": "Global Change and Environmental Sustainability",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · choose two courses from different Programme/Departments/Schools · 9-unit group"
+        },
+        {
+          "code": "PSYC1000",
+          "title": "General Psychology",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · choose two courses from different Programme/Departments/Schools · 9-unit group"
+        },
+        {
+          "code": "PSYC1630",
+          "title": "Communication for Healthy Relationship",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · choose two courses from different Programme/Departments/Schools · 9-unit group"
+        },
+        {
+          "code": "SOCI1001",
+          "title": "Introduction to Sociology",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · choose two courses from different Programme/Departments/Schools · 9-unit group"
+        },
+        {
+          "code": "SOCI1201",
+          "title": "Hong Kong Society: Identities and Boundaries",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · choose two courses from different Programme/Departments/Schools · 9-unit group"
+        },
+        {
+          "code": "SOSC1001",
+          "title": "Design Thinking in Social Innovation",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · choose two courses from different Programme/Departments/Schools · 9-unit group"
+        },
+        {
+          "code": "SOSC1002",
+          "title": "Managing Creativity and Group Dynamics in Innovation Teams",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · choose two courses from different Programme/Departments/Schools · 9-unit group"
+        },
+        {
+          "code": "SOSC1003",
+          "title": "Introduction to Art Tech Design and Interactivity",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · choose two courses from different Programme/Departments/Schools · 9-unit group"
+        },
+        {
+          "code": "SOWK1001",
+          "title": "Introduction to Social Work and Social Welfare",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · choose two courses from different Programme/Departments/Schools · 9-unit group"
+        },
+        {
+          "code": "SOWK1113",
+          "title": "Self-development in Changing Society",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · choose two courses from different Programme/Departments/Schools · 9-unit group"
+        },
+        {
+          "code": "SOWK1114",
+          "title": "From Understanding to Empowering the Socially Disadvantaged",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · choose two courses from different Programme/Departments/Schools · 9-unit group"
+        },
+        {
+          "code": "URSP1001",
+          "title": "Introduction to Urban Studies",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · choose two courses from different Programme/Departments/Schools · 9-unit group"
+        }
+      ]
+    }
+  ]
+}

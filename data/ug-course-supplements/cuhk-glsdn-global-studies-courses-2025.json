@@ -1,0 +1,287 @@
+{
+  "provider": "CUHK School of Governance and Policy Science",
+  "academicYear": "2025-26 brochure and current official Course List; reviewed on 2026-08-10",
+  "sourceUrl": "https://sgps.cuhk.edu.hk/study-programmes/undergraduate-programmes/bssc-in-global-studies/",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/glsdn/",
+  "additionalSourceUrls": [
+    "https://sgps.cuhk.edu.hk/wp-content/uploads/Web-GLSD_Ug-Admission_202526_FN.pdf"
+  ],
+  "note": "The current official Programme page snapshot (59,460 bytes; SHA-256 35b63a466bb8765bab829248dced5d63e80478aa9542e506d7bfe1045aa6d228) publishes 38 unique GLSD course codes, titles and explicit 3-unit values. The official image-based 2025-26 brochure (23,539,417 bytes; 8 pages; SHA-256 514b0aedd3791bceddb537018bb18e4f6b22da003a70dce69ef73946aa1e4fd9) was rendered in full and visually reviewed; page 4 publishes a 60-unit Major comprising a 9-unit Faculty Package, 30 Major Required units and 21 Major Elective units. The required structure is Globalization: Issues and Debates 3 units, Research Methods for Global Studies 3, Language Courses 6, Resident Study Overseas 9, Internship 3 and Capstone Courses 6. The Programme page incorrectly labels that 30-unit fixed composition as Major Elective Courses (21 units); the brochure identifies it as Major Required Courses. The page describes the 21-unit Major Elective requirement through five interdisciplinary clusters but does not publish a closed Programme-specific code pool, while its separate Minor lists cannot be substituted for the Major pool. Language Courses and Resident Study Overseas have no fixed codes, and the Course List exposes two 6-unit Capstone sequences, Thesis I/II and Project I/II. Therefore the 38-course official GLSD list is published for browse-only planning, with conservative course roles, totalCreditRequired=0 and no graduation completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "GLSDN",
+      "jupasCode": "JS4892",
+      "programmeId": "CUHK-UG-GLSDN-76",
+      "majorId": "CUHK-UG-GLSDN-76-M1",
+      "courses": [
+        {
+          "code": "GLSD1001",
+          "title": "Theoretical Perspectives on Globalization",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · fixed GLSD course · 9-unit package"
+        },
+        {
+          "code": "GLSD1003",
+          "title": "Globalization: Issues and Debates",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · fixed coded course · 30-unit required block"
+        },
+        {
+          "code": "GLSD2001",
+          "title": "Research Methods for Global Studies",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · fixed coded course · 30-unit required block"
+        },
+        {
+          "code": "GLSD2101",
+          "title": "Global Communication",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD2201",
+          "title": "Globalization, Cultures, and Societies",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD2301",
+          "title": "Global Politics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD2401",
+          "title": "Global Sustainability",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD2501",
+          "title": "World Economic Order",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD2701",
+          "title": "Field Studies",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD3101",
+          "title": "Internet, Multimedia and Information Society",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD3102",
+          "title": "Analysis of Global Popular Culture",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD3105",
+          "title": "Understanding Global Cities and Urban Space",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD3106",
+          "title": "The Rise of China in the Global Context I: Diplomacy, Trade and Soft Power",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD3111",
+          "title": "Special Topic in Global Media",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD3201",
+          "title": "Cultural Psychology and Globalization",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD3211",
+          "title": "Special Topic in Cultures and Societies",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD3301",
+          "title": "International Relations and International Law",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD3302",
+          "title": "Sports and World Politics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD3303",
+          "title": "Understanding Global Issues from Movies",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD3311",
+          "title": "Special Topic in World Politics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD3401",
+          "title": "Global Environmental Challenges",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD3402",
+          "title": "Korea and the World: Politics, Economy and Culture",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD3403",
+          "title": "European Union and the World",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD3404",
+          "title": "Japan and Global Political Economy",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD3405",
+          "title": "International Relations in Southeast Asia",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD3411",
+          "title": "Special Topic in Sustainability and Environment",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD3501",
+          "title": "Global Business Organizations",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD3511",
+          "title": "Special Topic in Global Economy",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD3601",
+          "title": "Internship",
+          "credits": 3,
+          "courseType": "internship",
+          "group": "Major Required · Internship · 30-unit required block"
+        },
+        {
+          "code": "GLSD3701",
+          "title": "Collaborative Project on Global Issues",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD4001",
+          "title": "Global Studies Capstone Thesis I",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Major Required · choose the 6-unit Thesis I/II or Project I/II sequence"
+        },
+        {
+          "code": "GLSD4002",
+          "title": "Global Studies Capstone Thesis II",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Major Required · choose the 6-unit Thesis I/II or Project I/II sequence"
+        },
+        {
+          "code": "GLSD4003",
+          "title": "Global Studies Capstone Project I",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Major Required · choose the 6-unit Thesis I/II or Project I/II sequence"
+        },
+        {
+          "code": "GLSD4004",
+          "title": "Global Studies Capstone Project II",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Major Required · choose the 6-unit Thesis I/II or Project I/II sequence"
+        },
+        {
+          "code": "GLSD4102",
+          "title": "Developmental Study: Poverty, Inequality and Welfare of the World",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD4104",
+          "title": "Global Development: Markets, States, Societies and IOs",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD4401",
+          "title": "Traditional Security: Military, War and Peace",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        },
+        {
+          "code": "GLSD4402",
+          "title": "New Security Challenges: Terrorism, Ethnic Conflicts and Human Trafficking",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official GLSD Course List · candidate for the interdisciplinary Major Elective structure"
+        }
+      ]
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-08-10T02:35:10.168Z",
+  "generatedAt": "2026-08-10T02:57:23.701Z",
   "universities": [
     {
       "id": "HKU",
@@ -4638,9 +4638,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/gcomn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 137,
+      "codedCourseCount": 137,
+      "courseSourceUrl": "https://www.com.cuhk.edu.hk/programs/applicable-to-students-admitted-in-2026-27/"
     },
     {
       "id": "CUHK-UG-GLSDN-76",
@@ -4657,9 +4658,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/glsdn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 38,
+      "codedCourseCount": 38,
+      "courseSourceUrl": "https://sgps.cuhk.edu.hk/study-programmes/undergraduate-programmes/bssc-in-global-studies/"
     },
     {
       "id": "CUHK-UG-GPADN-77",
@@ -11360,8 +11362,8 @@ const catalogue = {
       "code": "GLOBAL-COMMUNICATION",
       "nameEn": "Global Communication",
       "nameZh": "Global Communication",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 138,
+      "codedCourseCount": 137,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/gcomn/"
     },
     {
@@ -11370,8 +11372,8 @@ const catalogue = {
       "code": "GLOBAL-STUDIES",
       "nameEn": "Global Studies",
       "nameZh": "Global Studies",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 39,
+      "codedCourseCount": 38,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/glsdn/"
     },
     {
@@ -16157,7 +16159,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 2903,
+    "CUHK": 3078,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16165,7 +16167,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 20805
+  "codedCourseCount": 20980
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

@@ -50,11 +50,11 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.programmeCount, 445);
   assert.equal(summary.majorCount, 687);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 20819);
+  assert.equal(summary.courseCount, 20994);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 20805);
-  assert.equal(summary.programmeWithCoursesCount, 315);
-  assert.equal(summary.pendingProgrammeCount, 129);
+  assert.equal(summary.codedCourseCount, 20980);
+  assert.equal(summary.programmeWithCoursesCount, 317);
+  assert.equal(summary.pendingProgrammeCount, 127);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
@@ -876,6 +876,59 @@ test('CUHK Journalism and Communication exposes the current 114-course School li
   assert.match(byCode.COMM3600.requirementGroups[0], /COMM3600 or COMM3710/);
   assert.equal(byCode.COMM3888.credits, 2);
   assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Advanced Photography' }).some((course) => course.courseCode === 'COMM4962'));
+});
+
+test('CUHK Global Communication exposes the complete 2026-27 named local pool as browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'GCOMN');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-GCOMN-75-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 137);
+  assert.equal(courses.length, 137);
+  assert.equal(courses.filter((course) => course.courseCode.startsWith('COMM')).length, 99);
+  assert.equal(courses.filter((course) => course.courseType === 'core').length, 34);
+  assert.equal(courses.filter((course) => course.courseType === 'capstone').length, 1);
+  assert.equal(courses.filter((course) => course.courseType === 'internship').length, 1);
+  assert.equal(courses.filter((course) => course.credits === 0).length, 11);
+  assert.equal(byCode.COMM1500.courseType, 'core');
+  assert.match(byCode.COMM2160.requirementGroups[0], /COMM2160 or COMM3650/);
+  assert.match(byCode.COMM3650.requirementGroups[0], /Journalism/);
+  assert.equal(byCode.COMM4150.courseType, 'capstone');
+  assert.equal(byCode.ECON1210.titleEn, 'Economics and Society');
+  assert.equal(byCode.GLSD3106.credits, 0);
+  assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Field Study in Arts Technology' }).some((course) => course.courseCode === 'CSAT3002'));
+});
+
+test('CUHK Global Studies exposes the official 38-course GLSD list as browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'GLSDN');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-GLSDN-76-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 38);
+  assert.equal(courses.length, 38);
+  assert.equal(courses.filter((course) => course.courseType === 'core').length, 3);
+  assert.equal(courses.filter((course) => course.courseType === 'internship').length, 1);
+  assert.equal(courses.filter((course) => course.courseType === 'capstone').length, 4);
+  assert.equal(courses.filter((course) => course.courseType === 'major_elective').length, 30);
+  assert(courses.every((course) => course.credits === 3));
+  assert.match(byCode.GLSD1001.requirementGroups[0], /Faculty Package/);
+  assert.match(byCode.GLSD1003.requirementGroups[0], /Major Required/);
+  assert.equal(byCode.GLSD3601.courseType, 'internship');
+  assert.equal(byCode.GLSD4001.courseType, 'capstone');
+  assert.equal(byCode.GLSD4004.courseType, 'capstone');
+  assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Human Trafficking' }).some((course) => course.courseCode === 'GLSD4402'));
 });
 
 test('CUHK Sociology exposes the 2025-26 62-course Major pool as browse-only', () => {
