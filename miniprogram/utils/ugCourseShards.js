@@ -11,7 +11,7 @@ const nodeLoaders = {
 };
 const counts = {
   "CITYU": 3056,
-  "CUHK": 2772,
+  "CUHK": 2789,
   "EDUHK": 547,
   "HKBU": 2664,
   "HKU": 6033,

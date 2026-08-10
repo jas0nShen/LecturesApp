@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-07-30T17:45:12.130Z",
+  "generatedAt": "2026-08-10T02:15:30.410Z",
   "universities": [
     {
       "id": "HKU",
@@ -3523,9 +3523,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/behmn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 17,
+      "codedCourseCount": 17,
+      "courseSourceUrl": "https://behm.cuhk.edu.hk/curriculum.html"
     },
     {
       "id": "CUHK-UG-IBBAC-GBS-19",
@@ -10788,8 +10789,8 @@ const catalogue = {
       "code": "BIOTECHNOLOGY-ENTREPRENEURSHIP-AND-HEALTHCARE-MA",
       "nameEn": "Biotechnology, Entrepreneurship and Healthcare Management",
       "nameZh": "Biotechnology, Entrepreneurship and Healthcare Management",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 18,
+      "codedCourseCount": 17,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/behmn/"
     },
     {
@@ -16155,7 +16156,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 2772,
+    "CUHK": 2789,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16163,7 +16164,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 20674
+  "codedCourseCount": 20691
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

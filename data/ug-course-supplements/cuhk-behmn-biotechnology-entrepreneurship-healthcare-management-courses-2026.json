@@ -1,0 +1,146 @@
+{
+  "provider": "CUHK Biotechnology, Entrepreneurship and Healthcare Management Programme",
+  "academicYear": "Current curriculum and 2025 brochure; reviewed on 2026-08-10",
+  "sourceUrl": "https://behm.cuhk.edu.hk/curriculum.html",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/behmn/",
+  "additionalSourceUrls": [
+    "https://www.sci.cuhk.edu.hk/wp-content/uploads/BEHM_UG.pdf",
+    "https://gbs.bschool.cuhk.edu.hk/internationally-oriented-curriculum/",
+    "https://www.sci.cuhk.edu.hk/nsci/curriculum/",
+    "https://www.pharmacy.cuhk.edu.hk/1/education/ug/bpharm/",
+    "https://spe.cuhk.edu.hk/programmes/bachelor-of-education-in-physical-education-exercise-science-and-health-js4329/",
+    "https://www4.mae.cuhk.edu.hk/wp-content/uploads/2026/07/MAEGN_study-scheme_20260710.pdf",
+    "https://www.qfin.cuhk.edu.hk/site/assets/files/1024/qfinn_eng_25.pdf"
+  ],
+  "note": "The current official Curriculum page (47,441 bytes; SHA-256 e952459f19cfc814214f1cf5af99d96afdd669c61a31412b241c13157bd5d165; Last-Modified 2025-07-03) publishes a minimum 68-unit Major with 53 unique visible course titles: three Faculty Package courses, 16 Major Required courses, two Concentrations and their Required/Elective pools. The official nine-page brochure (1,871,409 bytes; SHA-256 bc633cf5ff35ece38de3c3f2f5be930a9c8b28b9d133ffa5b0f269849d63435e) was text-extracted and visually reviewed page by page; it confirms the Programme identity and an earlier shorter title-only curriculum. Neither source publishes course codes or individual units. Exact title mappings for 17 current rows are cross-checked against the linked current official CUHK Programme schemes already maintained in this repository. The remaining 36 named rows have no unambiguous current code-and-unit evidence and are intentionally omitted. Because most named courses, both Concentration pools and the complete 68-unit path remain unresolved, only this 17-code evidence-backed subset is published for browse-only use with totalCreditRequired=0 and no graduation completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "BEHMN",
+      "jupasCode": "JS4725",
+      "programmeId": "CUHK-UG-BEHMN-18",
+      "majorId": "CUHK-UG-BEHMN-18-M1",
+      "courses": [
+        {
+          "code": "ACCT2111",
+          "title": "Introductory Financial Accounting",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · current named course"
+        },
+        {
+          "code": "ACCT2151",
+          "title": "Legal Environment for Business",
+          "credits": 2,
+          "courseType": "core",
+          "group": "Concentration A Required · Biotechnology Entrepreneurship and Innovation"
+        },
+        {
+          "code": "ACCT3151",
+          "title": "Business Law",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Concentration A Required · Biotechnology Entrepreneurship and Innovation"
+        },
+        {
+          "code": "DOTE1030",
+          "title": "Economics for Business Studies I",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · current named course"
+        },
+        {
+          "code": "DOTE2011",
+          "title": "Statistical Analysis for Business Decisions",
+          "credits": 4,
+          "courseType": "core",
+          "group": "Major Required · current named course"
+        },
+        {
+          "code": "DOTE2030",
+          "title": "Operations Management",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · current named course"
+        },
+        {
+          "code": "DOTE4220",
+          "title": "Data Mining for Business Intelligence",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Concentration B Elective · Healthcare and Biomedicine Analytics"
+        },
+        {
+          "code": "FINA2010",
+          "title": "Financial Management",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · current named course"
+        },
+        {
+          "code": "FINA3080",
+          "title": "Investment Analysis and Portfolio Management",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Concentration A Required · Biotechnology Entrepreneurship and Innovation"
+        },
+        {
+          "code": "LSCI1002",
+          "title": "Introduction to Biological Sciences",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · current named course"
+        },
+        {
+          "code": "MBTE2000",
+          "title": "Introduction to Molecular Biotechnology",
+          "credits": 2,
+          "courseType": "core",
+          "group": "Major Required · current named course"
+        },
+        {
+          "code": "MEDF1012",
+          "title": "Foundation Course for Health Sciences II",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · current named course"
+        },
+        {
+          "code": "MGNT1020",
+          "title": "Management",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · current named course"
+        },
+        {
+          "code": "MGNT4010",
+          "title": "Strategic Management",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Concentration B Elective · Healthcare and Biomedicine Analytics"
+        },
+        {
+          "code": "MGNT4090",
+          "title": "Technology and Innovation Management",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Concentration A Required · Biotechnology Entrepreneurship and Innovation"
+        },
+        {
+          "code": "PHPC1001",
+          "title": "Foundations in Public Health",
+          "credits": 2,
+          "courseType": "core",
+          "group": "Major Required · current named course"
+        },
+        {
+          "code": "PHPC2016",
+          "title": "Theories and Concepts of Health Behaviours",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · current named course"
+        }
+      ]
+    }
+  ]
+}

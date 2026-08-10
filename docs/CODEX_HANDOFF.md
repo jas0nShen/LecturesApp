@@ -1,6 +1,6 @@
 # Codex 项目交接
 
-最后核验时间：2026-07-31（Asia/Shanghai）
+最后核验时间：2026-08-10（Asia/Shanghai）
 
 ## 当前项目目标
 
@@ -8,7 +8,7 @@
 
 当前产品边界是：先保证离线发布、数据可追溯和规则不误导，再继续补课程覆盖与规划能力。未经明确产品决定，不引入登录、云同步、统计、敏感权限或生产 API。
 
-当前仓库发布资料已统一为 `1.0.15`（`package.json`、运行时 `releaseInfo`、`docs/MVP_SPEC.md`、`docs/RELEASE_CHECKLIST.md`、`docs/REVIEW_SUBMISSION.md`）。CUHK `IBBAC-GBS Global Business Studies` 课程提交 `3ae39f7` 已推送到 `origin/main`；微信上传因登录态过期返回 `code 10`，随后二维码登录持续等待但未完成手机端确认，因此当前微信 `1.0.14` 开发版仍对应上一批课程提交 `ba1e028`。当前工作区另有待提交、推送和上传的 `HTMGB Hospitality and Real Estate` 课程批次；按用户指定的逐日版本规则，本次 2026-07-31 发布使用 `1.0.15`。没有提交审核或发布正式版。
+当前仓库发布资料已统一为 `1.0.16`（`package.json`、运行时 `releaseInfo`、`docs/MVP_SPEC.md`、`docs/RELEASE_CHECKLIST.md`、`docs/REVIEW_SUBMISSION.md`）。CUHK `HTMGB Hospitality and Real Estate` 发布提交 `3dab741` 已推送到 `origin/main`；当前没有可验证的微信 `1.0.15` 上传成功记录，微信最后明确确认的开发版仍为 `1.0.14`、对应课程提交 `ba1e028`。本次 `1.0.16` 提交包含 `BEHMN Biotechnology, Entrepreneurship and Healthcare Management` 课程批次；按用户指定的发布日递增规则，继 2026-07-31 的 `1.0.15` 后，本次 2026-08-10 发布使用 `1.0.16`。没有推送、微信上传、提交审核或发布正式版。
 
 ## 可验证的仓库快照
 
@@ -16,8 +16,8 @@
 - 分支：`main`
 - 1.0.12 已补充 HKU 商科、经济、统计、会计及法学双学位官方课程清单，并对规则未闭合 Programme 保持只读浏览，不显示未经核验的毕业完成比例。
 - HKU 商科与法学批次由提交 `7c2e66f` 发布；HKU `6688 Science Master Class` 与 `6901 Bachelor of Science` 批次由提交 `c1076cf` 发布；HKU `6987 Computer Engineering / Electrical Engineering / Electronic Engineering` 三 Major 与 HKU `6925` / `6858` / `6897` 来源审查由提交 `8fa7ce8 Expand HKU engineering curricula for 1.0.12` 发布。
-- 包版本：`1.0.15`
-- 当前课程提交 `3ae39f7` 已推送到 `origin/main`；当前微信 `1.0.14` 开发版仍对应课程提交 `ba1e028`。
+- 包版本：`1.0.16`
+- 本次提交前 Git `main` / `origin/main` 为 `3dab741`；当前微信最后明确确认的 `1.0.14` 开发版仍对应课程提交 `ba1e028`。
 - 当前 Git 代码已包含 CUHK `JASPN Japanese Studies` 58 门 Major-assigned JASP 课程；标准、Local、Stream、senior-entry 与 double-Major 路径未完整闭合，因此保持只读浏览，不生成毕业完成百分比。
 - 当前 Git 代码也已包含 CUHK `RELSN Religious Studies` 63 门 Religious Studies Area 课程；标准与 senior-entry 路径因 Cultural Studies 和跨院 Concentration 开放池未闭合而保持只读浏览。
 - 当前 Git 代码还包含 CUHK `PUHSN Public Humanities` 88 门 2025-26 intake-specific 课程；标准与 senior-entry 路径、外系 Faculty Package、Religious Studies Areas、Concentration 替代及课程复用规则未闭合，因此保持只读浏览，不生成毕业完成百分比。
@@ -207,6 +207,7 @@ df91815 Add PolyU Design curriculum and source evidence
 - 当前工作区新增 CUHK `GLEFN Global Economics and Finance` 官方 2025-26 Study Scheme 的全部 117 个唯一 Course List 代码：31 门 Faculty Package 候选、3 门 Faculty of Business Administration Co-curricular、13 门 Required 候选、25 门 Economics Elective、43 门 Finance and Business Elective 与 2 门 Capstone。五页 PDF 为 619,001 bytes，SHA-256 为 `9c0a7f3c108f6dbd0a61179076113aad73e67ed3bbc13168e657831c73b4fadd`，已完成全文提取和逐页视觉核验，builder 与专项测试对官方代码集合自动比对为 `missing=[]`、`extra=[]`。标准 Major 最少 67 units，但 3-unit Overseas Experience 没有固定课程代码，另有 Required alternatives、Elective 分类最低要求、FINA 最低学分、最多六门 1-unit FINA 课及 Co-operative Education 替代规则尚不能由本地规则引擎闭合，因此完整 117-code Course List 保持只读浏览，`totalCreditRequired=0`，不生成毕业完成百分比。
 - 当前工作区新增 CUHK `IBBAC-GBS Global Business Studies` 当前 Programme 页面明确命名的 21 门本地课程：3 门 Faculty Package 与 18 个 Major Required 代码，其中 `ACCT2151` / `ACCT3151` 为二选一，`MGNT4010` 保留 Capstone 角色。官方 12 页 2026-27 brochure 为 3,906,724 bytes，SHA-256 为 `bd71261ecf592d34a6b9ea0f0ec40717ea21c4b1e4edccfb719aa601273fe841`，已完成全文提取和逐页视觉核验；当前 CUSIS 另确认 `IBBA4010`、`DOTE2030`、`MKTG3010`、`MKTG4070` 均为 3 units，并将 Programme 页的 `MGTNT 4510` 拼写错误闭合为 `MGNT4510 China Business` 3 units。Programme 总额为 123 units，但海外大学 12-unit business-related courses、其他 foundation/elective 开放池及 exchange approval 路径没有固定代码，故仅发布 21-code 本地命名范围供只读浏览，`totalCreditRequired=0`，不生成毕业完成百分比。
 - 当前工作区新增 CUHK `HTMGB Hospitality and Real Estate` 2026-entry brochure 明确编码的 33 门课程：22 个 Core 唯一代码、9 个 Stream 唯一代码和 2 门 Summer Internship。Hospitality 与 Real Estate 各有 4 门专属必修，并共享 `HTMG4600`；4 门 Distinguished Speaker Series 为 0 units，另有 7 门 1-unit 与 22 门 3-unit 课程。官方 13 页 brochure 为 24,956,061 bytes，SHA-256 为 `b42f44b8d7e0ca40dab2358be889181a82ffcbb2800e8f552381b4cc943014f4`，已全文提取并逐页视觉核验；当前 Curriculum 页面最后修改于 2025-05-28，另列 22 个三模块选修名称及 3 个 Executive-in-Residence 槽位，但均未发布固定代码。故只发布 33-code 固定范围供只读浏览，`totalCreditRequired=0`，不生成毕业完成百分比。
+- 当前工作区新增 CUHK `BEHMN Biotechnology, Entrepreneurship and Healthcare Management` 的 17 门可交叉核验课程：15 门 Core 与 2 门 Major Elective。当前 Curriculum 页面公开最低 68-unit Major 和 53 个唯一课程名称，但不发布课程代码或逐课 units；官方九页 brochure 同样只有标题级结构。17 门由仓库内可追溯至 CUHK 官方 Programme 文件的精确 title-to-code 记录闭合，其余 36 门没有无歧义的当前代码与学分证据，未猜测补入。两个 Concentration 及完整完成路径未闭合，故仅供只读浏览，`totalCreditRequired=0`，不生成毕业完成百分比。
 - CUHK `BCSEN Computer Science and Engineering` 继续仅索引：官方招生页明确它是 2022 起的 department-based admission 入口，学生完成一年级后才在 `CENGN Computer Engineering` 与 `CSCIN Computer Science` 之间申报 Major。当前目录把 BCSEN 表示为单一占位 Major，不能把两套已独立开放的课程直接合并成一套；在模型支持 Major allocation 前不开放 BCSEN 课程。
 - 已补充 CUHK `RELSN Religious Studies` 适用于 2025-26 入学者的 63 门 Religious Studies Area 课程：19 门 Required/Required-choice、2 门 Capstone 和 42 门 Major Elective，全部由当前 Study Scheme 闭合代码、标题、3-unit 学分、Area 与 Concentration 角色。标准 Major 为 66 units，senior-entry 为 51 units；标准路径要求的两门 Cultural Studies Area Elective、跨院 Faculty Package、四个 Concentration 的外系开放池、课程复用限制及最多五门额外 THEO 规则未完整导入，因此仅提供只读浏览，不生成毕业完成百分比。
 - 已补充 CUHK `JASPN Japanese Studies` 适用于 2025-26 入学者的 58 门 Major-assigned JASP 课程：8 门 Required、2 门 Capstone 和 48 门 Major Elective，并保留三条 Stream、resident-study 前开课、推荐 Year/Term 和逐课 units。标准 Major 与 Local Study Scheme 均为 66 units，Stream 路径为 72 units；51-unit senior-entry、90-unit Japanese Studies and History double Major、跨院系 Faculty Package/Elective、exchange 与语言替代规则未完整闭合，因此仅提供只读浏览，不生成毕业完成百分比。
@@ -324,7 +325,7 @@ df91815 Add PolyU Design curriculum and source evidence
 - 2026-07-30 提交 `67fc14b` 的 CUHK `QFRMN Quantitative Finance and Risk Management Science` 122 门课程已推送到 GitHub。以备注 `1.0.14: Add CUHK quantitative finance and risk management curriculum` 上传时返回登录过期 `code 10`；随后官方 CLI 二维码登录因未完成扫码确认返回 `code 25`，因此该提交尚未上传微信。
 - 2026-07-30 提交 `60e98df` 的 CUHK `GLEFN Global Economics and Finance` 117 门课程已推送到 GitHub。以备注 `1.0.14: Add CUHK global economics and finance curriculum` 上传时返回登录过期 `code 10`；随后官方 CLI 二维码登录持续等待约 3 分钟但未完成手机端确认，已停止等待，因此包含 `QFRMN` 与 `GLEFN` 的当前代码仍未上传微信。
 - 2026-07-30 提交 `3ae39f7` 的 CUHK `IBBAC-GBS Global Business Studies` 21 门课程已推送到 GitHub。以备注 `1.0.14: Add CUHK global business studies curriculum` 上传时返回登录过期 `code 10`；随后官方 CLI 二维码登录持续等待约 3 分钟但未完成手机端确认，已停止等待，因此包含 `QFRMN`、`GLEFN` 与 `IBBAC-GBS` 的当前代码仍未上传微信。
-- 当前工作区完整检查：1014/1014 测试通过、`ready=true`、20,674 条 UG coded courses、313 个已开放 Programme、主包预估 1,845,451 bytes、总估算包体 23,834,048 bytes，所有 23 个分包低于 2 MB，敏感 API 为 0。
+- 当前工作区完整检查：1016/1016 测试通过、`ready=true`、20,691 条 UG coded courses、314 个已开放 Programme、主包预估 1,845,549 bytes、总估算包体 23,848,231 bytes，所有 23 个分包低于 2 MB，敏感 API 为 0。
 - 微信开发者工具确认 PolyU Computer Science 可加载 83 门课程，首页入口序号为 `01 / 02 / 03 / 04`；模拟器测试结束后已恢复原 Architectural Studies 资料，`plannedUgCourseKeys`、`ugCoursePlanAssignments`、`completedUgCourseKeys` 均为空。
 - 微信官方 automation 已完成普通 `POLYU-TPG-090` 闭环：36 门课程、`COMP5521` 加入计划、列表状态、官方分组、标记已修、复制与移除均通过。
 - 多 Track `HKU-TPG-031` 验收通过：Generalist 计 1 门，Chinese Language Education 计 2 门；两条记录均保留，旧 Track 课程不计入 Generalist 当前统计。
@@ -337,13 +338,13 @@ df91815 Add PolyU Design curriculum and source evidence
 
 - 八校 TPG 已达到 100% source reviewed；没有剩余 `unreviewed` Programme。
 - 仍有 101 个 Programme 因官方公开来源缺代码、学分、Track 归属、最终审批或规则冲突而标记 `blocked`。除非出现新的官方证据，不应把它们当作待猜测补全项。
-- UG 来源覆盖报告仍有 131 个缺口：35 个 index-only、25 个 reviewed-no-codes、71 个 no-source。CUHK 仍有 35 个缺口，其中 3 个 reviewed-no-codes、32 个 no-source。下一批继续从官方课程手册或部门课程页取证，不从 Programme 简介反推代码或规则。
+- UG 来源覆盖报告仍有 130 个缺口：35 个 index-only、25 个 reviewed-no-codes、70 个 no-source。CUHK 仍有 34 个缺口，其中 3 个 reviewed-no-codes、31 个 no-source。下一批继续从官方课程手册或部门课程页取证，不从 Programme 简介反推代码或规则。
 - 多个已核验 TPG Programme 仍标记 `manual_review_required`，表示课程池可发布，但复杂路径/跨组最低要求不能由当前规则引擎自动证明。
 
 ### 发布与验收缺口
 
-- 仓库发布资料已更新为 `1.0.15`；Git `main` 当前仍停留在 IBBAC-GBS 提交 `3ae39f7`，微信 `1.0.14` 开发版仍对应课程提交 `ba1e028`。QFRMN、GLEFN 与 IBBAC-GBS 尚未上传；HTMGB 批次尚未提交、推送或上传。上传不等于已提交审核，当前仍未提交审核或发布正式版。
-- 用户指定同一天的课程提交继续复用同一版本号：2026-07-30 保持 `1.0.14`，到 2026-07-31 的下一次提交才升为 `1.0.15`。
+- 仓库发布资料已更新为 `1.0.16`；本次提交包含 BEHMN 批次，提交前 Git `main` / `origin/main` 为 HTMGB 发布提交 `3dab741`。当前没有可验证的微信 `1.0.15` 上传成功记录，微信最后明确确认的 `1.0.14` 开发版仍对应课程提交 `ba1e028`；本次尚未推送或上传。上传不等于已提交审核，当前仍未提交审核或发布正式版。
+- 用户指定同一发布日的课程提交复用同一版本号，新的发布日再加 1：2026-07-31 使用 `1.0.15`，本次 2026-08-10 使用 `1.0.16`。
 - `docs/RELEASE_CHECKLIST.md` 的 iOS/Android 真机矩阵没有完成记录。
 - 微信后台隐私声明、服务类目、备案、审核材料核对尚未在仓库中记录为完成。
 - 尚未提交微信审核，也没有发布正式版。
@@ -454,27 +455,17 @@ npm run status:ug-sources -- --missing-only --priority launch --missing-limit 10
 
 ## 当前工作区
 
-QFRMN、GLEFN 与 IBBAC-GBS source supplement、builder、专项测试及重新生成的 CUHK 双分包、catalogue/shards/runtime tests 已分别由提交 `67fc14b`、`60e98df`、`3ae39f7` 推送到 `origin/main`。当前 1.0.14 微信开发版仍覆盖至课程提交 `ba1e028`；三批上传均因微信登录未完成而失败。当前工作区的 HTMGB source supplement、builder、专项测试、重新生成的 CUHK 双分包、catalogue/shards/runtime tests 及 1.0.15 发布资料均待提交、推送和上传：
+HTMGB source supplement、builder、专项测试、重新生成的 CUHK 双分包、catalogue/shards/runtime tests 及 `1.0.15` 发布资料已由提交 `3dab741` 推送到 `origin/main`。当前没有可验证的微信 `1.0.15` 上传成功记录；微信最后明确确认的 `1.0.14` 开发版仍覆盖至课程提交 `ba1e028`。本次 `1.0.16` 提交包含 BEHMN source supplement、builder、专项测试、重新生成的 CUHK 双分包、catalogue/shards/runtime tests 与发布资料；提交后工作区应只保留用户本地诊断产物：
 
 ```text
- M docs/CODEX_HANDOFF.md
- M miniprogram/subpackages/ug-data-cuhk-a/ugCourseData/cuhk-a.js
- M miniprogram/subpackages/ug-data-cuhk-b/ugCourseData/cuhk-b.js
- M miniprogram/utils/ugCatalogue.js
- M miniprogram/utils/ugCourseShards.js
- M miniprogram/utils/ugService.test.js
- M scripts/check-release-readiness.test.js
 ?? .playwright-cli/
-?? data/ug-course-supplements/cuhk-htmgb-hospitality-real-estate-courses-2026.json
-?? scripts/build-cuhk-htmgb-hospitality-real-estate-supplement.js
-?? scripts/cuhk-htmgb-hospitality-real-estate-supplement.test.js
 ```
 
 `.playwright-cli/` 仍保持未跟踪；本次没有重置、删除、覆盖或清理该目录。
 
 ## 已运行的测试及结果
 
-2026-07-31 在当前 HTMGB 与 CUHK 双分包工作区重新运行：
+2026-08-10 在当前 BEHMN、`1.0.16` 发布资料与 CUHK 双分包工作区重新运行：
 
 ```text
 npm run check:ship: PASS
@@ -483,24 +474,24 @@ npm run check:ship: PASS
   check:tpg-course-sync: PASS (250 files, 448 Programmes)
   check:tpg-catalog-sync: PASS (8 schools, 448 Programmes, 8 packages, 347 browsable course structures)
   seed/data validation: PASS
-  UG supplement validation: PASS (367 supplements)
+  UG supplement validation: PASS (368 supplements)
   directory audit: PASS, blockingErrors=[]
   server --check: PASS
-  Node tests: PASS, 1014/1014
+  Node tests: PASS, 1016/1016
   check:release: PASS, ready=true
 
 git diff --check: PASS
 npm run status:tpg-courses -- --school=HKU: PASS (448/448 reviewed, 0 unreviewed)
-npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 0: PASS (131 Programme-level source gaps: 35 index-only, 25 reviewed-no-codes, 71 no-source)
-npm run status:ug-sources -- --school cuhk --missing-only --missing-summary --missing-limit 0: PASS (35 CUHK gaps: 3 reviewed-no-codes, 32 no-source)
+npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 0: PASS (130 Programme-level source gaps: 35 index-only, 25 reviewed-no-codes, 70 no-source)
+npm run status:ug-sources -- --school cuhk --missing-only --missing-summary --missing-limit 0: PASS (34 CUHK gaps: 3 reviewed-no-codes, 31 no-source)
 ```
 
 发布指标：
 
-- 当前代码主包预估：1,845,451 bytes。
-- 当前代码总估算包体：23,834,048 bytes，201 个上传文件。
+- 当前代码主包预估：1,845,549 bytes。
+- 当前代码总估算包体：23,848,231 bytes，201 个上传文件。
 - 最新上传 1.0.14 的 CLI 实际包：18,676,360 bytes；实际主包 1,485,532 bytes。
-- 当前 23 个 UG/TPG 分包均低于 2 MB；`ug-data-cuhk-a` 为 1,200,634 bytes，`ug-data-cuhk-b` 为 1,252,177 bytes，最大分包为 `ug-data-hku-a` 1,869,435 bytes。
+- 当前 23 个 UG/TPG 分包均低于 2 MB；`ug-data-cuhk-a` 为 1,207,707 bytes，`ug-data-cuhk-b` 为 1,259,189 bytes，最大分包为 `ug-data-hku-a` 1,869,435 bytes。
 - 页面：17；敏感 API：0。
 - release warnings 仅为人工微信后台检查尚需完成，以及未配置生产 HTTPS（体验/正式版按设计离线）。
 
@@ -508,7 +499,7 @@ npm run status:ug-sources -- --school cuhk --missing-only --missing-summary --mi
 
 ## 已知问题、风险和不要做的事情
 
-- 微信已通过官方 CLI 用课程提交 `ba1e028` 上传 `1.0.14`；QFRMN 提交 `67fc14b`、GLEFN 提交 `60e98df` 与 IBBAC-GBS 提交 `3ae39f7` 均已推送，但因登录态过期和二维码登录未完成尚未上传；HTMGB 批次尚未提交或上传，若在 2026-07-31 提交应先将版本统一为 `1.0.15`。这只表示上一批开发版上传成功，不等于已提审或已发布。
+- 微信已通过官方 CLI 用课程提交 `ba1e028` 上传 `1.0.14`；没有可验证的 `1.0.15` 上传成功记录。HTMGB 发布提交 `3dab741` 已推送；本次 BEHMN 与 `1.0.16` 提交尚未推送或上传。这些状态均不等于已提审或已发布。
 - 不要把“上传成功”写成“已提审”或“已发布”。这两个外部动作尚未执行。
 - 不要删除或提交 `.playwright-cli/`，除非用户明确决定如何处理该诊断目录。
 - 不要手改生成的 catalogue、course shard 或 loader；从 source/supplement 和 builder 修改后重新生成。

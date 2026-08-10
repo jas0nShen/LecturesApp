@@ -1,6 +1,6 @@
-# 1.0.15 产品范围说明
+# 1.0.16 产品范围说明
 
-## 1.0.15 正式版范围
+## 1.0.16 正式版范围
 
 当前版本目标是提供边界清晰的香港高校课程规划助手，并为已开放课程清单的本科 Major 提供本机选课与排期闭环：
 
@@ -14,7 +14,7 @@
 8. 提供数据状态、数据来源、数据与隐私说明，便于用户和微信审核理解数据边界；
 9. 体验版和正式版使用随包离线数据，不依赖开发环境服务。
 
-本次 `1.0.15` 数据批次新增 CUHK Hospitality and Real Estate 的 33 门官方明确编码课程，覆盖 Core、Hospitality / Real Estate Stream 与 Summer Internship。官方来源未发布固定代码的模块选修与 Executive-in-Residence 课程槽位，完整 Programme 完成路径尚未闭合，因此仅提供已核验课程的只读浏览，不生成毕业完成比例。
+本次 `1.0.16` 数据批次新增 CUHK Biotechnology, Entrepreneurship and Healthcare Management 的 17 门可由官方 Programme 资料交叉核验代码、标题与学分的课程。当前 Curriculum 公开 53 个唯一课程名称，但未发布课程代码或逐课学分；其余 36 门没有无歧义的当前代码与学分证据，因此没有猜测补入。完整 68-unit Major、两个 Concentration 课程池与完成路径尚未闭合，仅提供这 17 门课程的只读浏览，不生成毕业完成比例。
 
 ## 暂不做
 
