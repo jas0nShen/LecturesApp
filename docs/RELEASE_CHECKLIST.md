@@ -5,7 +5,7 @@
 - 版本号：`1.0.16`
 - 目标用户：香港高校本科及授课硕士学生
 - 核心能力：选择 Programme、浏览已开放课程、把本科或授课硕士课程加入本机计划、本科按 Year / Term 排期并标记已修、查看数据状态与隐私说明
-- 本次数据更新：新增 CUHK Biotechnology, Entrepreneurship and Healthcare Management 17 门、Journalism and Communication 114 门、Global Communication 137 门及 Global Studies 38 门官方课程；海外驻校、跨组选修、非 COMM 上限、语言课与 Capstone 路径继续保留人工核对边界
+- 本次数据更新：新增 CUHK Biotechnology, Entrepreneurship and Healthcare Management 17 门、Journalism and Communication 114 门、Global Communication 137 门、Global Studies 38 门及 Government and Public Administration 82 门官方课程；海外驻校、跨组选修、外系课程及复杂 Capstone 路径继续保留人工核对边界
 - 数据边界：TPG Programme 索引已导入；课程组按 Programme 逐步开放。课程组尚未开放的 Programme 只展示索引与资料来源，暂不生成毕业判断。本科目录用于选择学校、Programme 与 Major；未复核课程规则前不生成本科毕业进度
 - 发布模式：体验版和正式版读取随包发布的离线数据，不依赖开发环境服务
 

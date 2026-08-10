@@ -14,7 +14,7 @@
 8. 提供数据状态、数据来源、数据与隐私说明，便于用户和微信审核理解数据边界；
 9. 体验版和正式版使用随包离线数据，不依赖开发环境服务。
 
-本次 `1.0.16` 数据批次新增 CUHK Biotechnology, Entrepreneurship and Healthcare Management 的 17 门可交叉核验课程、Journalism and Communication School Course List 的 114 门课程、Global Communication 2026-27 Study Scheme 的 137 门唯一命名课程，以及 Global Studies 官方 Course List 的 38 门 GLSD 课程。Global Communication 的海外驻校、跨组计数、非 COMM 上限及替代课规则尚未闭合；Global Studies 的语言课、海外驻校、跨学科选修池和两条 Capstone 路径也没有形成可自动判断的封闭代码结构。因此四个 Programme 均保持只读浏览，不生成毕业完成比例，也没有从组别总额或相似 Programme 猜测缺失学分与规则。
+本次 `1.0.16` 数据批次新增 CUHK Biotechnology, Entrepreneurship and Healthcare Management 17 门、Journalism and Communication 114 门、Global Communication 137 门、Global Studies 38 门，以及 Government and Public Administration 官方 2024-25 Course List 的 82 门 GPAD 课程。GPAD 标准路径为 72 units、senior-entry 为 57 units，但外系 Faculty/Field 课程未在 Course List 发布标题和逐课 units，六领域计数、非 GPAD 上限及多种 Capstone 路径也未由规则引擎闭合。五个 Programme 均保持只读浏览，不生成毕业完成比例，也没有从组别总额或相似 Programme 猜测缺失代码、学分与规则。
 
 ## 暂不做
 

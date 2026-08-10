@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-08-10T02:57:23.701Z",
+  "generatedAt": "2026-08-10T03:11:07.259Z",
   "universities": [
     {
       "id": "HKU",
@@ -4678,9 +4678,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/gpadn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 82,
+      "codedCourseCount": 82,
+      "courseSourceUrl": "https://sgps.cuhk.edu.hk/gpadn_eng_24/"
     },
     {
       "id": "CUHK-UG-COMMN-78",
@@ -11382,8 +11383,8 @@ const catalogue = {
       "code": "GOVERNMENT-AND-PUBLIC-ADMINISTRATION",
       "nameEn": "Government and Public Administration",
       "nameZh": "Government and Public Administration",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 83,
+      "codedCourseCount": 82,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/gpadn/"
     },
     {
@@ -16159,7 +16160,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 3078,
+    "CUHK": 3160,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16167,7 +16168,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 20980
+  "codedCourseCount": 21062
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

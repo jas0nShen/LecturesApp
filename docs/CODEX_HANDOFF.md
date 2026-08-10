@@ -8,7 +8,7 @@
 
 当前产品边界是：先保证离线发布、数据可追溯和规则不误导，再继续补课程覆盖与规划能力。未经明确产品决定，不引入登录、云同步、统计、敏感权限或生产 API。
 
-当前仓库发布资料已统一为 `1.0.16`（`package.json`、运行时 `releaseInfo`、`docs/MVP_SPEC.md`、`docs/RELEASE_CHECKLIST.md`、`docs/REVIEW_SUBMISSION.md`）。CUHK `BEHMN Biotechnology, Entrepreneurship and Healthcare Management`、`COMMN Journalism and Communication`、`GCOMN Global Communication` 与 `GLSDN Global Studies` 已由提交 `a5b7782`、`0838f0b`、`ba2e018` 推送到 `origin/main`；按用户指定的发布日递增规则，2026-08-10 的提交继续使用 `1.0.16`。微信官方 CLI 已以备注 `1.0.16: Expand CUHK global curricula` 成功上传当前 `1.0.16` 开发版，返回 `✔ upload`；没有提交审核或发布正式版。
+当前仓库发布资料继续使用 `1.0.16`（`package.json`、运行时 `releaseInfo`、`docs/MVP_SPEC.md`、`docs/RELEASE_CHECKLIST.md`、`docs/REVIEW_SUBMISSION.md`）。CUHK `BEHMN Biotechnology, Entrepreneurship and Healthcare Management`、`COMMN Journalism and Communication`、`GCOMN Global Communication` 与 `GLSDN Global Studies` 已由提交 `a5b7782`、`0838f0b`、`ba2e018` 推送到 `origin/main`；本次同日未提交工作区继续加入 `GPADN Government and Public Administration`。按用户指定的发布日递增规则，2026-08-10 仍使用 `1.0.16`。微信官方 CLI 已以备注 `1.0.16: Expand CUHK global curricula` 成功上传课程提交 `ba2e018`，但尚未包含本次 GPADN 改动；没有提交审核或发布正式版。
 
 ## 可验证的仓库快照
 
@@ -197,7 +197,7 @@ df91815 Add PolyU Design curriculum and source evidence
 - PolyU `POLYU-TPG-074 Master of Science in Advanced Physiotherapy` 继续 `blocked`：同一 Programme 的 2026/27 官方页面明确 `RS567 Project Study` 为 6 credits，但 2027/28 Programme 页面、现行 2026-or-after Curriculum 图和 v14 leaflet 都未重申代码，且没有公开的当前 51069 PRD/SDF；不跨学年搬运 `RS567`。
 - PolyU `POLYU-TPG-011 Master of Science in Low-altitude Economy` 继续 `blocked`：2027 Programme 页面已闭合 8 门 Core、7 门 Elective 和两条 31-credit 路径，但官方 PRD、当前 AAE Subject List 及 2026/27 leaflet 均未发布 9-credit Dissertation 的课程代码；不从其他 Programme 类推 Dissertation code。
 - 已补充 HKU `HKU-TPG-055 Master of Public Administration` 当前 60-credit 结构：4 门 Compulsory 共 24 credits、24 门内部 Elective 通常选 4 门共 24 credits，以及 12-credit `POLI8012 Dissertation` / `POLI8028 Capstone project` 二选一，共 30 个唯一代码。正式 Regulations 与专用 Course Descriptions 均确认 `POLI8032` 为 6 credits；最多 6 credits 的获批 MIPA 替代及完成路径继续标记 `manual_review_required`。
-- 当前工作区 UG：8 所学校、444 个 Programme、686 个 Major/Track、Programme/Major-local 带代码课程共 20,980 条；317 个 Programme 已开放课程代码。
+- 当前工作区 UG：8 所学校、444 个 Programme、686 个 Major/Track、Programme/Major-local 带代码课程共 21,062 条；318 个 Programme 已开放课程代码。
 - 当前工作区新增 CUHK `FTECN Financial Technology` 85 门唯一课程：35 门 Core、46 门 Major Elective、2 门 Capstone 和 2 门 Internship/Practicum。2025 Programme leaflet 第 2 页明确 Major Programme Requirement 为 75 units，但大部分课程未逐课直接标注学分，斜线替代、选修组合、跨院获批课程及 SJTU/PKU 双学位和 IBBA 双主修路径也未闭合，因此逐课未明示学分保守保存为 0，Programme 保持只读浏览且不生成毕业完成百分比。Leaflet 中截断的 `ENGG110` 与 `ACCT211` 已分别由 CUHK Information Engineering 课程页及 CUHK Business handbook 交叉核验为 `ENGG1110` 与 `ACCT2111`。
 - 当前工作区新增 CUHK `BMEGN Biomedical Engineering` 官方 2025-26 Study Scheme 第 16-17 页明确列出的 53 门 Course List：21 门 Core、29 门 Major Elective、2 门 Capstone 和 1 门 Hospital Experience and Engineering Practicum，全部保留官方代码、标题与 units；前三类 Biomedical Engineering Stream 的重叠课程角色也按第 1-15 页要求表保留。Faculty Package、PHYS/CHEM/LSCI/SBMS/STAT、CMBI、ELEG/ESTR3200、MAEG、MBTE、开放 CSCI、ELITE 替代、54/51-unit senior-entry 及 BME-BBA 双学位路径没有从相似 Programme 拼接，因此该 53 门清单保持只读浏览，不生成毕业完成百分比。
 - 当前工作区新增 CUHK `CDASN Computational Data Science` 官方 Curriculum 页面明确列出的 33 门唯一代码课程：16 门 Faculty Package / Foundation、15 门 Required 和 2 门 Final Year Project。当前页面标明只适用于 2025 entry，并发布 75-unit Major 分组；抓取页面为 68,936 bytes，SHA-256 为 `4700380909ddd6836b5e4366f69da0f8382372e8a1f6901ae1e6bf5ecdf4baff`。四条 18-unit elective option 只发布方向名称，没有封闭代码表，因此未从其他 Programme 复制选修课；Recommended Course Pattern 单处写 `STAT4010`，但 Course List 与 curriculum overview 均写 `STAT3010 Optimization for Statistics and Data Science`，本地保留 `STAT3010` 并显式记录冲突。该 33 门清单保持只读浏览，不生成毕业完成百分比。
@@ -211,6 +211,7 @@ df91815 Add PolyU Design curriculum and source evidence
 - 当前工作区新增 CUHK `COMMN Journalism and Communication` School Course List 的 114 门唯一课程：113 门为 3 units，`COMM3888 Financial Public Relations` 为 2 units。Programme brochure 明确支持 8 个唯一固定代码，其中 6 门标为 Core、`COMM3200` 标为 Internship、`COMM4150` 标为 Capstone，并保留 `COMM3600` / `COMM3710` 二选一；其余 106 门仅作为 School Course List 的 Major Elective 浏览池。Brochure 还要求四条 practicum 路径、至少 11 门选修及跨五个方向的选修，但未发布 practicum 四课序列的完整代码，故 `totalCreditRequired=0`，不生成毕业完成百分比。
 - 当前工作区新增 CUHK `GCOMN Global Communication` 适用于 2026-27 入学者的 137 门唯一命名课程：99 门 COMM、27 门非 COMM Faculty Package 候选及 11 门 GLSD/CSAT Elective。官方 Study Scheme 明确最低 72 units、9-unit Faculty Package、18-unit coded Required block、五个至少 33-unit Elective 分组、非 COMM 最多 6 units，以及至少 12 units 海外驻校课程；brochure 第 8-11 页已完成文本提取、渲染和视觉核验。海外及获批 CUHK make-up 课程没有固定代码，11 门 GLSD/CSAT 课程没有逐课明示学分，跨组不重复计数和 `COMM2160` / `COMM3650` 替代规则也未由本地规则引擎闭合，因此 137-code 本地命名池保持只读浏览，`totalCreditRequired=0`，不生成毕业完成百分比。
 - 当前工作区新增 CUHK `GLSDN Global Studies` 官方 Course List 的 38 门唯一 GLSD 课程，全部由当前 Programme 页面明确代码、标题和 3 units。2025-26 brochure 第 4 页经整份渲染和视觉核验，确认 Major 共 60 units：Faculty Package 9、Major Required 30、Major Elective 21；Programme 页面把 30-unit 固定组成误标为 `Major Elective Courses (21 units)`，以 brochure 的 `Major Required Courses` 为准。Language Courses、9-unit Resident Study Overseas、五个跨学科选修 cluster 和两条 6-unit Capstone 序列没有封闭的 Programme-specific 代码结构，因此 38-code 官方 GLSD 清单保持只读浏览，`totalCreditRequired=0`，不生成毕业完成百分比。
+- 当前工作区新增 CUHK `GPADN Government and Public Administration` 官方 2024-25 Course List 的 82 门唯一 GPAD 课程：80 门为 3 units，`GPAD4701` 为 0 unit，`GPAD4702` 为 6 units。官方 7 页 Major Programme PDF 为 325,428 bytes，SHA-256 为 `52987a25edcd5b2bdf6a034ebf4b214ff41d87af92c21a7188eb2d4337f5468c`，已完成文本提取和逐页视觉核验。标准 Major 为 72 units、senior-entry 为 57 units；外系 Faculty Package / Field candidates 没有在 Course List 发布标题与逐课 units，`GPAD4010` 只出现在 Capstone requirement 而没有 Course List 行，且六领域计数、跨组不重复、非 GPAD 上限、Free Major exclusions、2000-level minimum 及多种 Capstone 路径未由规则引擎闭合。因此只发布完整 82-code GPAD Course List 供只读浏览，`totalCreditRequired=0`，不生成毕业完成百分比。
 - CUHK `BCSEN Computer Science and Engineering` 继续仅索引：官方招生页明确它是 2022 起的 department-based admission 入口，学生完成一年级后才在 `CENGN Computer Engineering` 与 `CSCIN Computer Science` 之间申报 Major。当前目录把 BCSEN 表示为单一占位 Major，不能把两套已独立开放的课程直接合并成一套；在模型支持 Major allocation 前不开放 BCSEN 课程。
 - 已补充 CUHK `RELSN Religious Studies` 适用于 2025-26 入学者的 63 门 Religious Studies Area 课程：19 门 Required/Required-choice、2 门 Capstone 和 42 门 Major Elective，全部由当前 Study Scheme 闭合代码、标题、3-unit 学分、Area 与 Concentration 角色。标准 Major 为 66 units，senior-entry 为 51 units；标准路径要求的两门 Cultural Studies Area Elective、跨院 Faculty Package、四个 Concentration 的外系开放池、课程复用限制及最多五门额外 THEO 规则未完整导入，因此仅提供只读浏览，不生成毕业完成百分比。
 - 已补充 CUHK `JASPN Japanese Studies` 适用于 2025-26 入学者的 58 门 Major-assigned JASP 课程：8 门 Required、2 门 Capstone 和 48 门 Major Elective，并保留三条 Stream、resident-study 前开课、推荐 Year/Term 和逐课 units。标准 Major 与 Local Study Scheme 均为 66 units，Stream 路径为 72 units；51-unit senior-entry、90-unit Japanese Studies and History double Major、跨院系 Faculty Package/Elective、exchange 与语言替代规则未完整闭合，因此仅提供只读浏览，不生成毕业完成百分比。
@@ -329,7 +330,7 @@ df91815 Add PolyU Design curriculum and source evidence
 - 2026-07-30 提交 `60e98df` 的 CUHK `GLEFN Global Economics and Finance` 117 门课程已推送到 GitHub。以备注 `1.0.14: Add CUHK global economics and finance curriculum` 上传时返回登录过期 `code 10`；随后官方 CLI 二维码登录持续等待约 3 分钟但未完成手机端确认，已停止等待，因此包含 `QFRMN` 与 `GLEFN` 的当前代码仍未上传微信。
 - 2026-07-30 提交 `3ae39f7` 的 CUHK `IBBAC-GBS Global Business Studies` 21 门课程已推送到 GitHub。以备注 `1.0.14: Add CUHK global business studies curriculum` 上传时返回登录过期 `code 10`；随后官方 CLI 二维码登录持续等待约 3 分钟但未完成手机端确认，已停止等待，因此包含 `QFRMN`、`GLEFN` 与 `IBBAC-GBS` 的当前代码仍未上传微信。
 - 2026-08-10 提交 `ba2e018` 的 CUHK `GCOMN Global Communication` 137 门课程与 `GLSDN Global Studies` 38 门课程已连同本地 `a5b7782`、`0838f0b` 推送到 GitHub，并以备注 `1.0.16: Expand CUHK global curricula` 成功上传微信开发版，命令返回 `✔ upload`；实际上传包 19,105,118 bytes、主包 1,486,323 bytes，所有 23 个分包均低于 2 MB。
-- 当前工作区完整检查：1022/1022 测试通过、`ready=true`、20,980 条 UG coded courses、317 个已开放 Programme、主包预估 1,845,912 bytes、总估算包体 24,104,503 bytes，所有 23 个分包低于 2 MB，敏感 API 为 0。
+- 当前工作区完整检查：1024/1024 测试通过、`ready=true`、21,062 条 UG coded courses、318 个已开放 Programme、主包预估 1,846,013 bytes、总估算包体 24,182,975 bytes，所有 23 个分包低于 2 MB，敏感 API 为 0。
 - 微信开发者工具确认 PolyU Computer Science 可加载 83 门课程，首页入口序号为 `01 / 02 / 03 / 04`；模拟器测试结束后已恢复原 Architectural Studies 资料，`plannedUgCourseKeys`、`ugCoursePlanAssignments`、`completedUgCourseKeys` 均为空。
 - 微信官方 automation 已完成普通 `POLYU-TPG-090` 闭环：36 门课程、`COMP5521` 加入计划、列表状态、官方分组、标记已修、复制与移除均通过。
 - 多 Track `HKU-TPG-031` 验收通过：Generalist 计 1 门，Chinese Language Education 计 2 门；两条记录均保留，旧 Track 课程不计入 Generalist 当前统计。
@@ -342,12 +343,12 @@ df91815 Add PolyU Design curriculum and source evidence
 
 - 八校 TPG 已达到 100% source reviewed；没有剩余 `unreviewed` Programme。
 - 仍有 101 个 Programme 因官方公开来源缺代码、学分、Track 归属、最终审批或规则冲突而标记 `blocked`。除非出现新的官方证据，不应把它们当作待猜测补全项。
-- UG 来源覆盖报告仍有 127 个缺口：35 个 index-only、25 个 reviewed-no-codes、67 个 no-source。CUHK 仍有 31 个缺口，其中 3 个 reviewed-no-codes、28 个 no-source。下一批继续从官方课程手册或部门课程页取证，不从 Programme 简介反推代码或规则。
+- UG 来源覆盖报告仍有 126 个缺口：35 个 index-only、25 个 reviewed-no-codes、66 个 no-source。CUHK 仍有 30 个缺口，其中 3 个 reviewed-no-codes、27 个 no-source。下一批继续从官方课程手册或部门课程页取证，不从 Programme 简介反推代码或规则。
 - 多个已核验 TPG Programme 仍标记 `manual_review_required`，表示课程池可发布，但复杂路径/跨组最低要求不能由当前规则引擎自动证明。
 
 ### 发布与验收缺口
 
-- 仓库发布资料已更新为 `1.0.16`；BEHMN、COMMN、GCOMN 与 GLSDN 已由提交 `a5b7782`、`0838f0b`、`ba2e018` 推送到 `origin/main`，并已通过微信官方 CLI 成功上传当前 `1.0.16` 开发版。上传不等于已提交审核，当前仍未提交审核或发布正式版。
+- 仓库发布资料继续使用 `1.0.16`；BEHMN、COMMN、GCOMN 与 GLSDN 已由提交 `a5b7782`、`0838f0b`、`ba2e018` 推送并上传微信开发版，本次 GPADN 工作区尚未提交、推送或上传。上传不等于已提交审核，当前仍未提交审核或发布正式版。
 - 用户指定同一发布日的课程提交复用同一版本号，新的发布日再加 1：2026-07-31 使用 `1.0.15`，本次 2026-08-10 使用 `1.0.16`。
 - `docs/RELEASE_CHECKLIST.md` 的 iOS/Android 真机矩阵没有完成记录。
 - 微信后台隐私声明、服务类目、备案、审核材料核对尚未在仓库中记录为完成。
@@ -459,7 +460,7 @@ npm run status:ug-sources -- --missing-only --priority launch --missing-limit 10
 
 ## 当前工作区
 
-HTMGB source supplement、builder、专项测试、重新生成的 CUHK 双分包、catalogue/shards/runtime tests 及 `1.0.15` 发布资料已由提交 `3dab741` 推送到 `origin/main`。BEHMN、COMMN、GCOMN 与 GLSDN 已由提交 `a5b7782`、`0838f0b`、`ba2e018` 推送到 `origin/main`，当前 `1.0.16` 也已成功上传微信开发版。本交接文档记录了本次上传的真实结果。当前仅保留下列用户诊断目录未跟踪：
+BEHMN、COMMN、GCOMN 与 GLSDN 已由提交 `a5b7782`、`0838f0b`、`ba2e018` 推送到 `origin/main`，课程提交 `ba2e018` 已成功上传微信 `1.0.16` 开发版。本次未提交工作区新增 GPADN source supplement、builder、专项测试、重新生成的 CUHK 双分包、catalogue/shards/runtime tests 与更新后的 `1.0.16` 发布资料；该批尚未推送或上传。当前另保留下列用户诊断目录未跟踪：
 
 ```text
 ?? .playwright-cli/
@@ -469,7 +470,7 @@ HTMGB source supplement、builder、专项测试、重新生成的 CUHK 双分�
 
 ## 已运行的测试及结果
 
-2026-08-10 在当前 BEHMN、COMMN、GCOMN、GLSDN、`1.0.16` 发布资料与 CUHK 双分包工作区重新运行：
+2026-08-10 在当前 BEHMN、COMMN、GCOMN、GLSDN、GPADN、`1.0.16` 发布资料与 CUHK 双分包工作区重新运行：
 
 ```text
 npm run check:ship: PASS
@@ -478,24 +479,24 @@ npm run check:ship: PASS
   check:tpg-course-sync: PASS (250 files, 448 Programmes)
   check:tpg-catalog-sync: PASS (8 schools, 448 Programmes, 8 packages, 347 browsable course structures)
   seed/data validation: PASS
-  UG supplement validation: PASS (371 supplements)
+  UG supplement validation: PASS (372 supplements)
   directory audit: PASS, blockingErrors=[]
   server --check: PASS
-  Node tests: PASS, 1022/1022
+  Node tests: PASS, 1024/1024
   check:release: PASS, ready=true
 
 git diff --check: PASS
 npm run status:tpg-courses -- --school=HKU: PASS (448/448 reviewed, 0 unreviewed)
-npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 0: PASS (127 Programme-level source gaps: 35 index-only, 25 reviewed-no-codes, 67 no-source)
-npm run status:ug-sources -- --school cuhk --missing-only --missing-summary --missing-limit 0: PASS (31 CUHK gaps: 3 reviewed-no-codes, 28 no-source)
+npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 0: PASS (126 Programme-level source gaps: 35 index-only, 25 reviewed-no-codes, 66 no-source)
+npm run status:ug-sources -- --school cuhk --missing-only --missing-summary --missing-limit 0: PASS (30 CUHK gaps: 3 reviewed-no-codes, 27 no-source)
 ```
 
 发布指标：
 
-- 当前代码主包预估：1,845,912 bytes。
-- 当前代码总估算包体：24,104,503 bytes，201 个上传文件。
+- 当前代码主包预估：1,846,013 bytes。
+- 当前代码总估算包体：24,182,975 bytes，201 个上传文件。
 - 最新上传 1.0.16 的 CLI 实际包：19,105,118 bytes；实际主包 1,486,323 bytes。
-- 当前 23 个 UG/TPG 分包均低于 2 MB；`ug-data-cuhk-a` 为 1,342,253 bytes，`ug-data-cuhk-b` 为 1,380,552 bytes，最大分包为 `ug-data-hku-a` 1,869,435 bytes。
+- 当前 23 个 UG/TPG 分包均低于 2 MB；`ug-data-cuhk-a` 为 1,384,191 bytes，`ug-data-cuhk-b` 为 1,416,985 bytes，最大分包为 `ug-data-hku-a` 1,869,435 bytes。
 - 页面：17；敏感 API：0。
 - release warnings 仅为人工微信后台检查尚需完成，以及未配置生产 HTTPS（体验/正式版按设计离线）。
 
@@ -503,7 +504,7 @@ npm run status:ug-sources -- --school cuhk --missing-only --missing-summary --mi
 
 ## 已知问题、风险和不要做的事情
 
-- 微信已通过官方 CLI 用课程提交 `ba2e018` 上传 `1.0.16`，命令返回 `✔ upload`；BEHMN、COMMN、GCOMN 与 GLSDN 的提交均已推送到 GitHub。这些状态均不等于已提审或已发布。
+- 微信已通过官方 CLI 用课程提交 `ba2e018` 上传 `1.0.16`，命令返回 `✔ upload`；本次 GPADN 改动尚未提交、推送或上传。这些状态均不等于已提审或已发布。
 - 不要把“上传成功”写成“已提审”或“已发布”。这两个外部动作尚未执行。
 - 不要删除或提交 `.playwright-cli/`，除非用户明确决定如何处理该诊断目录。
 - 不要手改生成的 catalogue、course shard 或 loader；从 source/supplement 和 builder 修改后重新生成。

@@ -50,15 +50,15 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.programmeCount, 445);
   assert.equal(summary.majorCount, 687);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 20994);
+  assert.equal(summary.courseCount, 21076);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 20980);
-  assert.equal(summary.programmeWithCoursesCount, 317);
-  assert.equal(summary.pendingProgrammeCount, 127);
+  assert.equal(summary.codedCourseCount, 21062);
+  assert.equal(summary.programmeWithCoursesCount, 318);
+  assert.equal(summary.pendingProgrammeCount, 126);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
-  assert.equal(summary.coveragePercent, 71);
+  assert.equal(summary.coveragePercent, 72);
   assert.match(summary.generatedAt, /^\d{4}-\d{2}-\d{2}T/);
   assert.match(summary.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
 });
@@ -929,6 +929,34 @@ test('CUHK Global Studies exposes the official 38-course GLSD list as browse-onl
   assert.equal(byCode.GLSD4001.courseType, 'capstone');
   assert.equal(byCode.GLSD4004.courseType, 'capstone');
   assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Human Trafficking' }).some((course) => course.courseCode === 'GLSD4402'));
+});
+
+test('CUHK Government and Public Administration exposes the official 2024-25 GPAD Course List as browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'GPADN');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-GPADN-77-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 82);
+  assert.equal(courses.length, 82);
+  assert.equal(courses.filter((course) => course.courseType === 'core').length, 9);
+  assert.equal(courses.filter((course) => course.courseType === 'major_elective').length, 54);
+  assert.equal(courses.filter((course) => course.courseType === 'capstone').length, 17);
+  assert.equal(courses.filter((course) => course.courseType === 'internship').length, 2);
+  assert.equal(courses.filter((course) => course.credits === 3).length, 80);
+  assert.equal(byCode.GPAD4701.credits, 0);
+  assert.equal(byCode.GPAD4702.credits, 6);
+  assert.equal(byCode.GPAD4010, undefined);
+  assert.match(byCode.GPAD2300.requirementGroups.join(' '), /Comparative Politics/);
+  assert.match(byCode.GPAD2300.requirementGroups.join(' '), /Political Theory/);
+  assert.match(byCode.GPAD2300.requirementGroups.join(' '), /International Relations/);
+  assert.deepEqual([byCode.GPAD1020.recommendedYear, byCode.GPAD1020.semester], [1, 'Term 1']);
+  assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Public Finance' }).some((course) => course.courseCode === 'GPAD2160'));
 });
 
 test('CUHK Sociology exposes the 2025-26 62-course Major pool as browse-only', () => {

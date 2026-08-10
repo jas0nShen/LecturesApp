@@ -1,0 +1,613 @@
+{
+  "provider": "CUHK School of Governance and Policy Science",
+  "academicYear": "Applicable to students admitted in 2024-25; reviewed on 2026-08-10",
+  "sourceUrl": "https://sgps.cuhk.edu.hk/gpadn_eng_24/",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/gpadn/",
+  "additionalSourceUrls": [
+    "https://sgps.cuhk.edu.hk/en/study-programmes/undergraduate-programmes/bssc-in-government-and-public-administration/"
+  ],
+  "note": "The official seven-page 2024-25 Major Programme PDF (325,428 bytes; SHA-256 52987a25edcd5b2bdf6a034ebf4b214ff41d87af92c21a7188eb2d4337f5468c) was text-extracted and every page was rendered and visually reviewed. It publishes an explicit Course List of 82 unique GPAD codes with titles and units: 80 courses at 3 units, GPAD4701 at 0 units and GPAD4702 at 6 units. The standard Major totals 72 units: a 9-unit Faculty Package, 24 fixed Required units, six Field Elective courses across two of six fields for 18 units, five Free Major Electives for 15 units and at least 6 Capstone units. The senior-entry route totals 57 units with a different Faculty Package, Required and Free Elective composition. The current Programme page snapshot (52,414 bytes; SHA-256 229154f78334c6d6206bd23b0d597101a94117e68184616a6e1b3bf11ce003cb) links this as its latest published Major requirement. The requirement pages also list non-GPAD Faculty Package and Field candidates without their titles and per-course units, and list GPAD4010 as a Capstone seminar even though it has no row in the PDF Course List; none of those omitted rows is reconstructed from other Programmes or code arithmetic. Cross-field duplicate counting, the non-GPAD subject-area maximum, exclusion of GPAD1076/GPAD1077 from Free Major Electives, 2000-level minimums, standard versus senior-entry paths and multiple Capstone alternatives are not closed by the local rule engine. Therefore the complete 82-course GPAD Course List remains browse-only with totalCreditRequired=0 and no graduation completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "GPADN",
+      "jupasCode": "JS4848",
+      "programmeId": "CUHK-UG-GPADN-77",
+      "majorId": "CUHK-UG-GPADN-77-M1",
+      "courses": [
+        {
+          "code": "GPAD1000",
+          "title": "Learning GPA",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · fixed course · 24 units",
+          "recommendedYear": 1,
+          "semester": "Term 1"
+        },
+        {
+          "code": "GPAD1010",
+          "title": "Political Debate",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Professional Practicum · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD1015",
+          "title": "Politics and Mass Media",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Professional Practicum · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD1016",
+          "title": "Politics of Sports",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Comparative Politics · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD1020",
+          "title": "Fundamentals of Government",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Faculty Package · fixed GPAD1020 plus two external courses · 9 units",
+          "recommendedYear": 1,
+          "semester": "Term 1"
+        },
+        {
+          "code": "GPAD1030",
+          "title": "Fundamentals of Public Administration",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · fixed course · 24 units",
+          "recommendedYear": 1,
+          "semester": "Term 2"
+        },
+        {
+          "code": "GPAD1046",
+          "title": "The Art of Leadership",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Comparative Politics · choose three courses in each of two fields · Field Elective · Public Administration and Policy · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD1050",
+          "title": "Government of Hong Kong",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · fixed course · 24 units",
+          "recommendedYear": 2,
+          "semester": "Term 1"
+        },
+        {
+          "code": "GPAD1055",
+          "title": "Parliamentary Practices and Procedures",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Comparative Politics · choose three courses in each of two fields · Field Elective · Professional Practicum · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD1056",
+          "title": "Introductory Game Theory",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Comparative Politics · choose three courses in each of two fields · Field Elective · Professional Practicum · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD1066",
+          "title": "China and The World",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Greater China · choose three courses in each of two fields · Field Elective · International Relations · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD1070",
+          "title": "Government and Politics of China",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · fixed course · 24 units",
+          "recommendedYear": 2,
+          "semester": "Term 1"
+        },
+        {
+          "code": "GPAD1073",
+          "title": "Reading Chinese Culture and Politics through Movies",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Greater China · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD1074",
+          "title": "Hong Kong Movies and Politics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Greater China · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD1076",
+          "title": "Thinking Politically",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Political Theory · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD1077",
+          "title": "Critical Debates in Hong Kong",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Greater China · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD1095",
+          "title": "Issues of Political Philosophy",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · fixed course · 24 units",
+          "recommendedYear": 2,
+          "semester": "Term 1"
+        },
+        {
+          "code": "GPAD1100",
+          "title": "Politics, Law and Society",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Political Theory · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD2015",
+          "title": "Selected Topics in Hong Kong Politics I",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Greater China · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD2020",
+          "title": "Politics of Culture",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Political Theory · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD2025",
+          "title": "Selected Topics in Chinese Politics I",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Greater China · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD2035",
+          "title": "Selected Topics in Public Administration I",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Public Administration and Policy · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD2065",
+          "title": "Values and Public Affairs",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Political Theory · choose three courses in each of two fields · Field Elective · Public Administration and Policy · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD2070",
+          "title": "Social Networking Services, Social Listening and Public Affairs",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Public Administration and Policy · choose three courses in each of two fields · Field Elective · Professional Practicum · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD2075",
+          "title": "Selected Topics in Political Theory I",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Political Theory · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD2085",
+          "title": "Public Governance and Civil Service in HK",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Public Administration and Policy · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD2090",
+          "title": "Governance and Public Policy",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Public Administration and Policy · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD2095",
+          "title": "Public Policy Workshop",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Public Administration and Policy · choose three courses in each of two fields · Field Elective · Professional Practicum · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD2111",
+          "title": "Political Research Methodology",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · fixed course · 24 units",
+          "recommendedYear": 2,
+          "semester": "Term 2"
+        },
+        {
+          "code": "GPAD2120",
+          "title": "Democracies in the West",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Comparative Politics · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD2130",
+          "title": "Introductory Comparative Politics",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · fixed course · 24 units",
+          "recommendedYear": 3,
+          "semester": "Term 1"
+        },
+        {
+          "code": "GPAD2140",
+          "title": "Selected Topics in Comparative Politics I",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Comparative Politics · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD2145",
+          "title": "Electoral Studies",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Comparative Politics · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD2150",
+          "title": "Public Human Resources Management",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Public Administration and Policy · choose three courses in each of two fields · Field Elective · Professional Practicum · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD2160",
+          "title": "Public Finance and Budgeting",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Public Administration and Policy · choose three courses in each of two fields · Field Elective · Professional Practicum · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD2170",
+          "title": "Public Organization and Management",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Public Administration and Policy · choose three courses in each of two fields · Field Elective · Professional Practicum · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD2185",
+          "title": "International Organizations",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · International Relations · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD2196",
+          "title": "Public Opinion Research: Theories and Practices",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Comparative Politics · choose three courses in each of two fields · Field Elective · Public Administration and Policy · choose three courses in each of two fields · Field Elective · Professional Practicum · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD2215",
+          "title": "Political Communication in Practice",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Comparative Politics · choose three courses in each of two fields · Field Elective · Public Administration and Policy · choose three courses in each of two fields · Field Elective · Professional Practicum · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD2300",
+          "title": "Understanding Human Rights",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Comparative Politics · choose three courses in each of two fields · Field Elective · Politics - Political Theory · choose three courses in each of two fields · Field Elective · International Relations · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD2345",
+          "title": "International Politics",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · fixed course · 24 units",
+          "recommendedYear": 3,
+          "semester": "Term 2"
+        },
+        {
+          "code": "GPAD2350",
+          "title": "Chinese Foreign Policy",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Greater China · choose three courses in each of two fields · Field Elective · International Relations · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD2355",
+          "title": "Globalization and Politics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · International Relations · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD2370",
+          "title": "Taiwan Studies",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Greater China · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD2375",
+          "title": "Asian International Relations",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · International Relations · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD2395",
+          "title": "Asian Comparative Politics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Comparative Politics · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD2450",
+          "title": "Introduction to Political Economy",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Comparative Politics · choose three courses in each of two fields · Field Elective · Professional Practicum · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD2555",
+          "title": "State-Society Relations in Contemporary China",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Greater China · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD3040",
+          "title": "Democratization",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Comparative Politics · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD3050",
+          "title": "Inter-governmental Relations",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Comparative Politics · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD3070",
+          "title": "Contemporary Political Philosophy",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Political Theory · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD3071",
+          "title": "Gender and Politics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Political Theory · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD3111",
+          "title": "Quantitative Methods in Political Science",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Professional Practicum · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD3146",
+          "title": "The Idea of Freedom",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Political Theory · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD3160",
+          "title": "Governance of European Union",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Comparative Politics · choose three courses in each of two fields · Field Elective · International Relations · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD3161",
+          "title": "The Rise of Populism in Europe",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Comparative Politics · choose three courses in each of two fields · Field Elective · International Relations · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD3190",
+          "title": "Politics of Development",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Comparative Politics · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD3220",
+          "title": "Politics of Space",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Political Theory · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD3255",
+          "title": "Public Policy Analysis",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Public Administration and Policy · choose three courses in each of two fields · Field Elective · Professional Practicum · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD3260",
+          "title": "Public Policy and Administration in China",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Greater China · choose three courses in each of two fields · Field Elective · Public Administration and Policy · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD3360",
+          "title": "Global Environmental Politics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Comparative Politics · choose three courses in each of two fields · Field Elective · International Relations · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD3365",
+          "title": "Ethics and International Affairs",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · Politics - Political Theory · choose three courses in each of two fields · Field Elective · International Relations · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD3451",
+          "title": "International Political Economy",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Field Elective · International Relations · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077"
+        },
+        {
+          "code": "GPAD4020",
+          "title": "Seminar in Public Administration",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Field Elective · Public Administration and Policy · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077 · Capstone candidate · minimum 6 units · no double counting with Field Electives"
+        },
+        {
+          "code": "GPAD4027",
+          "title": "Seminar in Chinese Politics",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Field Elective · Politics - Greater China · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077 · Capstone candidate · minimum 6 units · no double counting with Field Electives"
+        },
+        {
+          "code": "GPAD4030",
+          "title": "Seminar in Hong Kong Studies",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Field Elective · Politics - Greater China · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077 · Capstone candidate · minimum 6 units · no double counting with Field Electives"
+        },
+        {
+          "code": "GPAD4065",
+          "title": "Contentious Politics in China",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Field Elective · Politics - Greater China · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077 · Capstone candidate · minimum 6 units · no double counting with Field Electives"
+        },
+        {
+          "code": "GPAD4077",
+          "title": "Seminar in Political Theory",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Field Elective · Politics - Political Theory · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077 · Capstone candidate · minimum 6 units · no double counting with Field Electives"
+        },
+        {
+          "code": "GPAD4080",
+          "title": "Political Analysis",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Field Elective · Politics - Comparative Politics · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077 · Capstone candidate · minimum 6 units · no double counting with Field Electives"
+        },
+        {
+          "code": "GPAD4111",
+          "title": "Applied Statistical Methods for the Social Sciences",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Field Elective · Professional Practicum · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077 · Capstone candidate · minimum 6 units · no double counting with Field Electives"
+        },
+        {
+          "code": "GPAD4142",
+          "title": "Seminar in Comparative Politics",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Field Elective · Politics - Comparative Politics · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077 · Capstone candidate · minimum 6 units · no double counting with Field Electives"
+        },
+        {
+          "code": "GPAD4200",
+          "title": "Reading Political Philosophy I: John Rawls",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Field Elective · Politics - Political Theory · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077 · Capstone candidate · minimum 6 units · no double counting with Field Electives"
+        },
+        {
+          "code": "GPAD4211",
+          "title": "Philosophy of Social Science",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Field Elective · Politics - Political Theory · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077 · Capstone candidate · minimum 6 units · no double counting with Field Electives"
+        },
+        {
+          "code": "GPAD4225",
+          "title": "Theories of International Relations",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Field Elective · International Relations · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077 · Capstone candidate · minimum 6 units · no double counting with Field Electives"
+        },
+        {
+          "code": "GPAD4335",
+          "title": "Modern Chinese Political Thought",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Field Elective · Politics - Political Theory · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077 · Capstone candidate · minimum 6 units · no double counting with Field Electives"
+        },
+        {
+          "code": "GPAD4385",
+          "title": "Institution and Reform in China",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Field Elective · Politics - Greater China · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077 · Capstone candidate · minimum 6 units · no double counting with Field Electives"
+        },
+        {
+          "code": "GPAD4601",
+          "title": "Independent Studies I",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077 · Capstone candidate · minimum 6 units · no double counting with Field Electives"
+        },
+        {
+          "code": "GPAD4602",
+          "title": "Independent Studies II",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077 · Capstone candidate · minimum 6 units · no double counting with Field Electives"
+        },
+        {
+          "code": "GPAD4701",
+          "title": "Graduation Thesis I",
+          "credits": 0,
+          "courseType": "capstone",
+          "group": "Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077 · Capstone candidate · minimum 6 units · no double counting with Field Electives"
+        },
+        {
+          "code": "GPAD4702",
+          "title": "Graduation Thesis II",
+          "credits": 6,
+          "courseType": "capstone",
+          "group": "Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077 · Capstone candidate · minimum 6 units · no double counting with Field Electives"
+        },
+        {
+          "code": "GPAD4801",
+          "title": "Professional Practicum I",
+          "credits": 3,
+          "courseType": "internship",
+          "group": "Field Elective · Professional Practicum · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077 · Capstone candidate · minimum 6 units · no double counting with Field Electives"
+        },
+        {
+          "code": "GPAD4802",
+          "title": "Professional Practicum II",
+          "credits": 3,
+          "courseType": "internship",
+          "group": "Field Elective · Professional Practicum · choose three courses in each of two fields · Free Major Elective · any five GPAD courses except GPAD1076 and GPAD1077 · Capstone candidate · minimum 6 units · no double counting with Field Electives"
+        }
+      ]
+    }
+  ]
+}
