@@ -14,7 +14,7 @@
 8. 提供数据状态、数据来源、数据与隐私说明，便于用户和微信审核理解数据边界；
 9. 体验版和正式版使用随包离线数据，不依赖开发环境服务。
 
-本次 `1.0.16` 数据批次新增 CUHK Biotechnology, Entrepreneurship and Healthcare Management 的 17 门可由官方 Programme 资料交叉核验代码、标题与学分的课程。当前 Curriculum 公开 53 个唯一课程名称，但未发布课程代码或逐课学分；其余 36 门没有无歧义的当前代码与学分证据，因此没有猜测补入。完整 68-unit Major、两个 Concentration 课程池与完成路径尚未闭合，仅提供这 17 门课程的只读浏览，不生成毕业完成比例。
+本次 `1.0.16` 数据批次新增 CUHK Biotechnology, Entrepreneurship and Healthcare Management 的 17 门可由官方 Programme 资料交叉核验代码、标题与学分的课程，以及 Journalism and Communication School Course List 的 114 门课程。后者仅把 brochure 明确支持的 8 个代码标为 Core、Internship 或 Capstone，其余 106 门作为只读选修浏览池；practicum 四条路径、至少 11 门选修及跨五个方向的完整完成规则尚未闭合。两个 Programme 均不生成毕业完成比例，也没有从标题或相似 Programme 猜测缺失代码、学分与规则。
 
 ## 暂不做
 

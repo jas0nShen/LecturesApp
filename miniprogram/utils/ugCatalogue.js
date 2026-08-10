@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-08-10T02:15:30.410Z",
+  "generatedAt": "2026-08-10T02:35:10.168Z",
   "universities": [
     {
       "id": "HKU",
@@ -4695,9 +4695,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/commn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 114,
+      "codedCourseCount": 114,
+      "courseSourceUrl": "https://www.com.cuhk.edu.hk/programmes/undergraduate/course-list/"
     },
     {
       "id": "CUHK-UG-PSYCN-79",
@@ -11389,8 +11390,8 @@ const catalogue = {
       "code": "JOURNALISM-AND-COMMUNICATION",
       "nameEn": "Journalism and Communication",
       "nameZh": "Journalism and Communication",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 115,
+      "codedCourseCount": 114,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/commn/"
     },
     {
@@ -16156,7 +16157,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 2789,
+    "CUHK": 2903,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16164,7 +16165,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 20691
+  "codedCourseCount": 20805
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

@@ -50,11 +50,11 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.programmeCount, 445);
   assert.equal(summary.majorCount, 687);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 20705);
+  assert.equal(summary.courseCount, 20819);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 20691);
-  assert.equal(summary.programmeWithCoursesCount, 314);
-  assert.equal(summary.pendingProgrammeCount, 130);
+  assert.equal(summary.codedCourseCount, 20805);
+  assert.equal(summary.programmeWithCoursesCount, 315);
+  assert.equal(summary.pendingProgrammeCount, 129);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
@@ -849,6 +849,33 @@ test('CUHK Biotechnology, Entrepreneurship and Healthcare Management exposes onl
   assert.match(byCode.DOTE4220.requirementGroups[0], /Concentration B Elective/);
   assert.equal(byCode.PHPC2016.credits, 3);
   assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Business Intelligence' }).some((course) => course.courseCode === 'DOTE4220'));
+});
+
+test('CUHK Journalism and Communication exposes the current 114-course School list with only brochure-confirmed roles', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'COMMN');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-COMMN-78-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 114);
+  assert.equal(courses.length, 114);
+  assert.equal(courses.filter((course) => course.courseType === 'core').length, 6);
+  assert.equal(courses.filter((course) => course.courseType === 'internship').length, 1);
+  assert.equal(courses.filter((course) => course.courseType === 'capstone').length, 1);
+  assert.equal(courses.filter((course) => course.courseType === 'major_elective').length, 106);
+  assert.equal(courses.filter((course) => course.credits === 2).length, 1);
+  assert.equal(courses.filter((course) => course.credits === 3).length, 113);
+  assert.equal(byCode.COMM1120.titleEn, 'Development of Media and Communication');
+  assert.equal(byCode.COMM3200.courseType, 'internship');
+  assert.equal(byCode.COMM4150.courseType, 'capstone');
+  assert.match(byCode.COMM3600.requirementGroups[0], /COMM3600 or COMM3710/);
+  assert.equal(byCode.COMM3888.credits, 2);
+  assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Advanced Photography' }).some((course) => course.courseCode === 'COMM4962'));
 });
 
 test('CUHK Sociology exposes the 2025-26 62-course Major pool as browse-only', () => {

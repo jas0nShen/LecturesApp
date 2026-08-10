@@ -15,7 +15,7 @@
 ### 提交审核版本描述（200 字以内）
 
 ```text
-1.0.16：新增 CUHK Biotechnology, Entrepreneurship and Healthcare Management 17 门官方资料可交叉核验课程；其余课程代码及完整规则未闭合，仅供只读浏览，不显示未经核验的毕业完成比例。
+1.0.16：新增 CUHK Biotechnology, Entrepreneurship and Healthcare Management 17 门及 Journalism and Communication 114 门官方可核验课程；完整规则未闭合，仅供只读浏览，不显示未经核验的毕业完成比例。
 ```
 
 ### 测试账号
