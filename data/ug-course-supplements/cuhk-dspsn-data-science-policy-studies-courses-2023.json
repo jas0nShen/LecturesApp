@@ -1,0 +1,465 @@
+{
+  "provider": "CUHK School of Governance and Policy Science",
+  "academicYear": "Applicable to students admitted in 2023-24; reviewed on 2026-08-10",
+  "sourceUrl": "https://dsps.ssc.cuhk.edu.hk/programme/curriculum-for-major-students/",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/dspsn/",
+  "additionalSourceUrls": [
+    "https://dsps.ssc.cuhk.edu.hk/programme/dsps-courses/",
+    "https://dsps.ssc.cuhk.edu.hk/site/assets/files/1/dsps_brochure_2026_entry.pdf"
+  ],
+  "note": "The current official Curriculum for Major Students page snapshot (130,076 bytes; SHA-256 e9186a6300981adaa13903ad608c0de93c20a8a8927434ea013e30d5dc1f7782) publishes the complete 2023-24-entry 72-unit Study Scheme and a Course List with code-title pairs for DSPS1001, five fixed Required courses, 18 Methods and Tools candidates and 37 Policy Applications candidates across five areas. These 61 unique code-title pairs are published for browse-only use. The Faculty Package also names 26 external candidate codes, but the DSPS Course List does not publish their titles or per-course units, so they are not reconstructed from other Programmes. The 2026-entry brochure (2,534,909 bytes; SHA-256 36462789a0f03cfa1345d7231a3ad4786ceeccdd95012025bc0c1f2369d362dd) was text-extracted and all eight PDF pages were rendered and visually reviewed: pages 2-5 repeat the same curriculum spread, while pages 1 and 6-8 repeat the same cover/admissions spread. It confirms the same 72-unit category totals and explicitly gives 3 units each for Foundation of Data Science, Statistics for Data Science and Policy Studies and Internship, plus 6 Capstone units; the Study Pattern separately gives DSPS4801 and DSPS4802 as 3 units each. The remaining 56 published rows retain 0 as unknown because the official DSPS sources do not state per-course units and no group-total arithmetic is used. The curriculum-specific Course List labels DSPS2730 Calculus for Data Science and DSPS2830 Linear Algebra for Data Science, while the separate current DSPS Courses page snapshot (49,720 bytes; SHA-256 bd0ccd99ef15c3327b751f21836f779f021f16e5d4e824c4fb6ddd2cc9e1af76) swaps those two titles; this supplement preserves the curriculum-specific titles and records the conflict. The main Study Scheme lists DSPS3202 and DSPS3501 in elective pools, while the Recommended Study Pattern labels both Major Required. Faculty Package choice ownership, the up-to-three non-DSPS courses per subject-area rule, Resident Study Overseas substitutions, the two title conflicts and Required-versus-Elective inconsistency are not closed by the local rule engine. Therefore totalCreditRequired remains 0 and no graduation completion percentage is generated.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "DSPSN",
+      "jupasCode": "JS4893",
+      "programmeId": "CUHK-UG-DSPSN-70",
+      "majorId": "CUHK-UG-DSPSN-70-M1",
+      "courses": [
+        {
+          "code": "COMM3650",
+          "title": "Social Media Analytics for Communication Professionals",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Methods and Tools · choose seven of 18 courses · 21 units"
+        },
+        {
+          "code": "DSPS1001",
+          "title": "Introduction to Policy Sciences",
+          "credits": 0,
+          "courseType": "core",
+          "group": "Faculty Package · fixed DSPS1001 plus two external courses from different academic units · 9 units",
+          "recommendedYear": 1,
+          "semester": "Term 1"
+        },
+        {
+          "code": "DSPS1003",
+          "title": "Foundation of Data Science",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · five fixed courses · 15 units",
+          "recommendedYear": 1,
+          "semester": "Term 1"
+        },
+        {
+          "code": "DSPS1004",
+          "title": "Statistics for Data Science and Policy Studies",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Major Required · five fixed courses · 15 units",
+          "recommendedYear": 1,
+          "semester": "Term 2"
+        },
+        {
+          "code": "DSPS2102",
+          "title": "Statistical Analysis for Policy Decision",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Methods and Tools · choose seven of 18 courses · 21 units"
+        },
+        {
+          "code": "DSPS2104",
+          "title": "Advanced Programming for Data Science",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Methods and Tools · choose seven of 18 courses · 21 units"
+        },
+        {
+          "code": "DSPS2201",
+          "title": "Data Preprocessing for Data Analytics",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Methods and Tools · choose seven of 18 courses · 21 units"
+        },
+        {
+          "code": "DSPS2202",
+          "title": "Database Systems for Data Science",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Methods and Tools · choose seven of 18 courses · 21 units"
+        },
+        {
+          "code": "DSPS2301",
+          "title": "Policy Analysis and Design Thinking",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Policy Science and Public Governance · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "DSPS2320",
+          "title": "AI Governance and Public Policy",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Policy Science and Public Governance · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "DSPS2501",
+          "title": "Managing Technology and Policy Innovation",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Policy Science and Public Governance · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "DSPS2730",
+          "title": "Calculus for Data Science",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Methods and Tools · choose seven of 18 courses · 21 units"
+        },
+        {
+          "code": "DSPS2830",
+          "title": "Linear Algebra for Data Science",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Methods and Tools · choose seven of 18 courses · 21 units"
+        },
+        {
+          "code": "DSPS3190",
+          "title": "Big Data Analytics for Public Policy",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Methods and Tools · choose seven of 18 courses · 21 units"
+        },
+        {
+          "code": "DSPS3202",
+          "title": "Machine Learning for Public Policy",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Methods and Tools · choose seven of 18 courses · 21 units · Source conflict · Recommended Study Pattern labels this course Major Required",
+          "recommendedYear": 3,
+          "semester": "Term 2"
+        },
+        {
+          "code": "DSPS3310",
+          "title": "Collaborative Governance in a Global Context",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Global Relationship · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "DSPS3320",
+          "title": "Data Science and Regulation",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Policy Science and Public Governance · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "DSPS3330",
+          "title": "AR/VR Applications for Policy Design",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Methods and Tools · choose seven of 18 courses · 21 units"
+        },
+        {
+          "code": "DSPS3350",
+          "title": "Computer Simulation for Policymaking",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Methods and Tools · choose seven of 18 courses · 21 units"
+        },
+        {
+          "code": "DSPS3501",
+          "title": "Policy Leadership and Entrepreneurship Workshop",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Policy Science and Public Governance · choose any six courses across five areas · 18 units · Source conflict · Recommended Study Pattern labels this course Major Required",
+          "recommendedYear": 3,
+          "semester": "Term 2"
+        },
+        {
+          "code": "DSPS3790",
+          "title": "Social Network Analysis for Public Policy",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Methods and Tools · choose seven of 18 courses · 21 units"
+        },
+        {
+          "code": "DSPS3791",
+          "title": "Natural Language Processing for Public Policy",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Methods and Tools · choose seven of 18 courses · 21 units"
+        },
+        {
+          "code": "DSPS3801",
+          "title": "Internship",
+          "credits": 3,
+          "courseType": "internship",
+          "group": "Major Required · five fixed courses · 15 units",
+          "recommendedYear": 3,
+          "semester": "Term 2"
+        },
+        {
+          "code": "DSPS3802",
+          "title": "Advanced Data Visualization",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Methods and Tools · choose seven of 18 courses · 21 units"
+        },
+        {
+          "code": "DSPS3803",
+          "title": "AI for Social Good",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Policy Science and Public Governance · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "DSPS4310",
+          "title": "Policy and Programme Evaluation",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Policy Science and Public Governance · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "DSPS4801",
+          "title": "Graduation Capstone Project I",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Major Required · five fixed courses · 15 units",
+          "recommendedYear": 4,
+          "semester": "Term 1"
+        },
+        {
+          "code": "DSPS4802",
+          "title": "Graduation Capstone Project II",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Major Required · five fixed courses · 15 units",
+          "recommendedYear": 4,
+          "semester": "Term 2"
+        },
+        {
+          "code": "ECON2121",
+          "title": "Methods of Economic Statistics",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Methods and Tools · choose seven of 18 courses · 21 units"
+        },
+        {
+          "code": "ECON3121",
+          "title": "Introductory Econometrics",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Methods and Tools · choose seven of 18 courses · 21 units"
+        },
+        {
+          "code": "ECON3630",
+          "title": "Law and Economics",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Social Problems, Deviance, Law and Order · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "GLSD2401",
+          "title": "Global Sustainability",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Global Relationship · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "GLSD2501",
+          "title": "World Economic Order",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Global Relationship · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "GPAD2065",
+          "title": "Values and Public Affairs",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Policy Science and Public Governance · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "GPAD2085",
+          "title": "Public Governance and Civil Service in HK",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Policy Science and Public Governance · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "GPAD2090",
+          "title": "Governance and Public Policy",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Policy Science and Public Governance · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "GPAD2095",
+          "title": "Public Policy Workshop",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Policy Science and Public Governance · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "GPAD2160",
+          "title": "Public Finance and Budgeting",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Policy Science and Public Governance · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "GPAD2170",
+          "title": "Public Organization and Management",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Policy Science and Public Governance · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "GRMD2105",
+          "title": "Introduction to GIS",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Methods and Tools · choose seven of 18 courses · 21 units"
+        },
+        {
+          "code": "GRMD2401",
+          "title": "Sustainable Development",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Sustainable Smart Cities · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "GRMD2403",
+          "title": "Nature Conservation in Hong Kong",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Sustainable Smart Cities · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "GRMD2501",
+          "title": "Theory and Practice of Smart Cities",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Sustainable Smart Cities · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "GRMD3203",
+          "title": "Urban Environmental Problems",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Sustainable Smart Cities · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "GRMD3404",
+          "title": "Natural Hazards and Human Responses",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Sustainable Smart Cities · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "GRMD4401",
+          "title": "Energy Resources for Carbon Neutrality",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Sustainable Smart Cities · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "GRMD4502",
+          "title": "Urban Big Data Analysis and Application",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Sustainable Smart Cities · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "GRMD4503",
+          "title": "Smart City Policies and Governance",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Sustainable Smart Cities · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "PSYC3360",
+          "title": "Human Intelligence",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Human Resources · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "PSYC3370",
+          "title": "Psychology and Law",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Social Problems, Deviance, Law and Order · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "SOCI2216",
+          "title": "Social Problems in China",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Social Problems, Deviance, Law and Order · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "SOCI3002",
+          "title": "Social Stratification",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Social Problems, Deviance, Law and Order · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "SOCI3102",
+          "title": "Social Networks and Social Capital",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Human Resources · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "SOCI3204",
+          "title": "Sociology of Crime and Deviance",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Social Problems, Deviance, Law and Order · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "SOCI3227",
+          "title": "Social Demography",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Human Resources · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "SOCI3241",
+          "title": "Introduction to Global Sociology",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Global Relationship · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "SOCI4201",
+          "title": "Quantitative Method: Survey and Unconventional Data Types",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Major Elective · Methods and Tools · choose seven of 18 courses · 21 units"
+        },
+        {
+          "code": "URSP3100",
+          "title": "Housing Issues and Policy",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Sustainable Smart Cities · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "URSP3300",
+          "title": "Sustainable Urban Transport",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Sustainable Smart Cities · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "URSP3400",
+          "title": "Essentials of the Land Development Process",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Sustainable Smart Cities · choose any six courses across five areas · 18 units"
+        },
+        {
+          "code": "URSP3600",
+          "title": "Designing Smart Cities",
+          "credits": 0,
+          "courseType": "major_elective",
+          "group": "Policy Applications · Sustainable Smart Cities · choose any six courses across five areas · 18 units"
+        }
+      ]
+    }
+  ]
+}

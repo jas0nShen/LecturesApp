@@ -50,11 +50,11 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.programmeCount, 445);
   assert.equal(summary.majorCount, 687);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 21076);
+  assert.equal(summary.courseCount, 21137);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 21062);
-  assert.equal(summary.programmeWithCoursesCount, 318);
-  assert.equal(summary.pendingProgrammeCount, 126);
+  assert.equal(summary.codedCourseCount, 21123);
+  assert.equal(summary.programmeWithCoursesCount, 319);
+  assert.equal(summary.pendingProgrammeCount, 125);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
@@ -957,6 +957,34 @@ test('CUHK Government and Public Administration exposes the official 2024-25 GPA
   assert.match(byCode.GPAD2300.requirementGroups.join(' '), /International Relations/);
   assert.deepEqual([byCode.GPAD1020.recommendedYear, byCode.GPAD1020.semester], [1, 'Term 1']);
   assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Public Finance' }).some((course) => course.courseCode === 'GPAD2160'));
+});
+
+test('CUHK Data Science and Policy Studies exposes the 2023-24 Course List with source conflicts as browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'DSPSN');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-DSPSN-70-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 61);
+  assert.equal(courses.length, 61);
+  assert.equal(courses.filter((course) => course.courseType === 'core').length, 3);
+  assert.equal(courses.filter((course) => course.courseType === 'major_elective').length, 55);
+  assert.equal(courses.filter((course) => course.courseType === 'capstone').length, 2);
+  assert.equal(courses.filter((course) => course.courseType === 'internship').length, 1);
+  assert.equal(courses.filter((course) => course.credits === 3).length, 5);
+  assert.equal(courses.filter((course) => course.credits === 0).length, 56);
+  assert.equal(byCode.DSPS2730.titleEn, 'Calculus for Data Science');
+  assert.equal(byCode.DSPS2830.titleEn, 'Linear Algebra for Data Science');
+  assert.match(byCode.DSPS3202.requirementGroups.join(' '), /Source conflict/);
+  assert.match(byCode.DSPS3501.requirementGroups.join(' '), /Source conflict/);
+  assert.equal(byCode.ARCH1001, undefined);
+  assert.deepEqual([byCode.DSPS4802.recommendedYear, byCode.DSPS4802.semester], [4, 'Term 2']);
+  assert(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Smart Cities' }).some((course) => course.courseCode === 'GRMD2501'));
 });
 
 test('CUHK Sociology exposes the 2025-26 62-course Major pool as browse-only', () => {
