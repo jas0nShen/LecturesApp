@@ -1,0 +1,312 @@
+{
+  "provider": "CUHK Learning Design and Technology 2026-27 Course List",
+  "academicYear": "Applicable to students admitted in 2026-27 and thereafter; reviewed on 2026-08-24",
+  "sourceUrl": "https://www.fed.cuhk.edu.hk/ldte/",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/ldten/",
+  "note": "The official current LDTE Programme page publishes a complete 72-unit Major Programme Requirement for S6 entrants: 9 Faculty Package units, 21 Foundation units, 35 Required units and 7 Elective units. Its Course List, explicitly applicable to students admitted in 2026-27 and thereafter, publishes 42 unique code-title-unit records after expanding CHEM1070/CHEM1072, PHYS1002/PHYS1004 and the cross-listed AIST3510/SEEM3510 into Programme-local records. The downloaded HTML was 109,737 bytes with SHA-256 2664cae9cc34f17e2029afeef994a778a83feea09c656ab15f394a1c13b16238. The seven Foundation courses and all fixed Required components close exactly to 21 and 35 units after selecting one Physics alternative. The Faculty Package closes to 9 units after selecting one Chemistry alternative. The Elective pool contains 1-, 2- and 3-unit courses and requires exactly 7 units; the local rule engine cannot prove every valid low-unit combination or prevent double-counting the AIST3510/SEEM3510 cross-list. Therefore all 42 official rows are exposed for browse-only planning with totalCreditRequired=0 and no graduation completion percentage. University Core requirements and open Free Electives are outside this Programme-specific course list and are not expanded.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "LDTEN",
+      "jupasCode": "JS4386",
+      "programmeId": "CUHK-UG-LDTEN-34",
+      "majorId": "CUHK-UG-LDTEN-34-M1",
+      "courses": [
+        {
+          "code": "CHEM1070",
+          "title": "Principles of Modern Chemistry",
+          "credits": 3,
+          "courseType": "foundation",
+          "group": "Faculty Package · choose CHEM1070 or CHEM1072"
+        },
+        {
+          "code": "CHEM1072",
+          "title": "General Chemistry",
+          "credits": 3,
+          "courseType": "foundation",
+          "group": "Faculty Package · choose CHEM1070 or CHEM1072"
+        },
+        {
+          "code": "ENGG1110",
+          "title": "Problem Solving By Programming",
+          "credits": 3,
+          "courseType": "foundation",
+          "group": "Faculty Package · fixed course"
+        },
+        {
+          "code": "LDTE1300",
+          "title": "Introduction to Learning Sciences",
+          "credits": 3,
+          "courseType": "foundation",
+          "group": "Faculty Package · fixed course"
+        },
+        {
+          "code": "CSCI1130",
+          "title": "Introduction to Computing Using Java",
+          "credits": 3,
+          "courseType": "foundation",
+          "group": "Foundation Courses · fixed course"
+        },
+        {
+          "code": "EDUC2120",
+          "title": "Principles and Implementation of Curriculum and Instructional Design",
+          "credits": 3,
+          "courseType": "foundation",
+          "group": "Foundation Courses · fixed course"
+        },
+        {
+          "code": "ENGG2440",
+          "title": "Discrete Mathematics for Engineers",
+          "credits": 3,
+          "courseType": "foundation",
+          "group": "Foundation Courses · fixed course"
+        },
+        {
+          "code": "LDTE2100",
+          "title": "Learning Design in New and Emerging Educational Contexts",
+          "credits": 3,
+          "courseType": "foundation",
+          "group": "Foundation Courses · fixed course"
+        },
+        {
+          "code": "LSCI1012",
+          "title": "Introduction to Life Forms in the Biosphere",
+          "credits": 3,
+          "courseType": "foundation",
+          "group": "Foundation Courses · fixed course"
+        },
+        {
+          "code": "STAT1011",
+          "title": "Introduction to Statistics",
+          "credits": 3,
+          "courseType": "foundation",
+          "group": "Foundation Courses · fixed course"
+        },
+        {
+          "code": "STAT2005",
+          "title": "Programming Languages for Statistics",
+          "credits": 3,
+          "courseType": "foundation",
+          "group": "Foundation Courses · fixed course"
+        },
+        {
+          "code": "CSCI2040",
+          "title": "Introduction to Python",
+          "credits": 2,
+          "courseType": "core",
+          "group": "Required Courses · Software Design and Application Component"
+        },
+        {
+          "code": "CSCI2100",
+          "title": "Data Structures",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses · Software Design and Application Component"
+        },
+        {
+          "code": "EDUC3330",
+          "title": "Optimizing Learning and Development for students with diverse needs I",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses · Educational Knowledge and Design Component"
+        },
+        {
+          "code": "ENGG1920",
+          "title": "Artificial Intelligence in Action",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses · Software Design and Application Component"
+        },
+        {
+          "code": "MAEG1020",
+          "title": "Computational Design and Fabrication",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses · STEM Education and Lab-based Learning Component"
+        },
+        {
+          "code": "LDTE3100",
+          "title": "Design Thinking as Scientific Inquiry",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses · fixed course"
+        },
+        {
+          "code": "LDTE3110",
+          "title": "Digital Citizenship Education",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses · fixed course"
+        },
+        {
+          "code": "LDTE3120",
+          "title": "Sustainability of Educational Technology",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses · fixed course"
+        },
+        {
+          "code": "LDTE3500",
+          "title": "Internship",
+          "credits": 3,
+          "courseType": "internship",
+          "group": "Required Courses · Internship"
+        },
+        {
+          "code": "LDTE3510",
+          "title": "Educational Design Research (Research Method)",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Required Courses · Research Experience"
+        },
+        {
+          "code": "LDTE4500",
+          "title": "Project in Learning Design and Technology",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Required Courses · Research Experience"
+        },
+        {
+          "code": "PHYS1002",
+          "title": "General Physics",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses · choose PHYS1002 or PHYS1004"
+        },
+        {
+          "code": "PHYS1004",
+          "title": "Exploring the Physical World with STEM",
+          "credits": 3,
+          "courseType": "core",
+          "group": "Required Courses · choose PHYS1002 or PHYS1004"
+        },
+        {
+          "code": "AIST2010",
+          "title": "Introduction to Computer Music: From Analysis to Algorithmic Music",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · complete 7 units from the published pool"
+        },
+        {
+          "code": "AIST3510",
+          "title": "Human-computer Interaction",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · cross-listed AIST3510/SEEM3510 · complete 7 units from the published pool"
+        },
+        {
+          "code": "SEEM3510",
+          "title": "Human-computer Interaction",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · cross-listed AIST3510/SEEM3510 · complete 7 units from the published pool"
+        },
+        {
+          "code": "CSCI2720",
+          "title": "Building Web Applications",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · complete 7 units from the published pool"
+        },
+        {
+          "code": "CSCI3170",
+          "title": "Introduction to Database Systems",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · complete 7 units from the published pool"
+        },
+        {
+          "code": "CSCI3230",
+          "title": "Fundamentals of Artificial Intelligence",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · complete 7 units from the published pool"
+        },
+        {
+          "code": "CSCI3310",
+          "title": "Mobile Computing and Applications Development",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · complete 7 units from the published pool"
+        },
+        {
+          "code": "EDUC2140",
+          "title": "Artificial Intelligence and Data Sciences in Education",
+          "credits": 2,
+          "courseType": "major_elective",
+          "group": "Elective Courses · complete 7 units from the published pool"
+        },
+        {
+          "code": "EDUC3160",
+          "title": "Education for Sustainable Development (ESD): Curriculum, Pedagogies and Practices",
+          "credits": 2,
+          "courseType": "major_elective",
+          "group": "Elective Courses · complete 7 units from the published pool"
+        },
+        {
+          "code": "EDUC4360",
+          "title": "Optimizing Learning and Development for students with diverse needs II",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · complete 7 units from the published pool"
+        },
+        {
+          "code": "LDTE3200",
+          "title": "Leading Innovations in Organizations in the Era of Globalization",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · complete 7 units from the published pool"
+        },
+        {
+          "code": "LDTE4200",
+          "title": "Educational Innovation and Society: A Comparative Perspective",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · complete 7 units from the published pool"
+        },
+        {
+          "code": "LDTE4210",
+          "title": "Education, Technology and Human Development",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · complete 7 units from the published pool"
+        },
+        {
+          "code": "LDTE4300",
+          "title": "Instructional Design for Students with SEN in Technology-Supported Learning Environments",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · complete 7 units from the published pool"
+        },
+        {
+          "code": "LSCI2002",
+          "title": "Basic Laboratory Techniques in Life Sciences",
+          "credits": 2,
+          "courseType": "major_elective",
+          "group": "Elective Courses · complete 7 units from the published pool"
+        },
+        {
+          "code": "MAEG2050",
+          "title": "Robot Development in Practice: From Design to Prototyping",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · complete 7 units from the published pool"
+        },
+        {
+          "code": "PHYS1712",
+          "title": "Physics Laboratory I",
+          "credits": 1,
+          "courseType": "major_elective",
+          "group": "Elective Courses · complete 7 units from the published pool"
+        },
+        {
+          "code": "PHYS2061",
+          "title": "Basic Computational Physics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Elective Courses · complete 7 units from the published pool"
+        }
+      ]
+    }
+  ]
+}

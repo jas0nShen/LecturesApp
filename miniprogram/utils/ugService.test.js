@@ -48,17 +48,17 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.universityCount, 8);
   assert.equal(summary.facultyCount, 70);
   assert.equal(summary.programmeCount, 445);
-  assert.equal(summary.majorCount, 687);
+  assert.equal(summary.majorCount, 688);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 21137);
+  assert.equal(summary.courseCount, 21513);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 21123);
-  assert.equal(summary.programmeWithCoursesCount, 319);
-  assert.equal(summary.pendingProgrammeCount, 125);
+  assert.equal(summary.codedCourseCount, 21499);
+  assert.equal(summary.programmeWithCoursesCount, 325);
+  assert.equal(summary.pendingProgrammeCount, 119);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
-  assert.equal(summary.coveragePercent, 72);
+  assert.equal(summary.coveragePercent, 73);
   assert.match(summary.generatedAt, /^\d{4}-\d{2}-\d{2}T/);
   assert.match(summary.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
 });
@@ -525,6 +525,133 @@ test('CUHK Computational Data Science exposes the official 33-code required scop
   assert.equal(byCode.CDAS4999.courseType, 'capstone');
   assert.match(byCode.MATH1030.requirementGroups.join(' '), /Faculty Package/);
   assert.equal(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Machine Learning' }).length, 2);
+});
+
+test('CUHK BCSE keeps the 2026 CENG and CSCI allocated Majors isolated and browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'BCSEN');
+  const majors = ugService.listMajors(programme.id);
+  const ceng = majors.find((item) => item.code === 'CENGN');
+  const csci = majors.find((item) => item.code === 'CSCIN');
+  const cengProfile = ugService.getMajorProfile(programme.id, ceng.id, '2026');
+  const csciProfile = ugService.getMajorProfile(programme.id, csci.id, '2026');
+  const cengCourses = ugService.listMajorCourses(programme.id, ceng.id);
+  const csciCourses = ugService.listMajorCourses(programme.id, csci.id);
+  const cengByCode = Object.fromEntries(cengCourses.map((course) => [course.courseCode, course]));
+  const csciByCode = Object.fromEntries(csciCourses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.deepEqual(majors.map((major) => major.nameEn), ['Computer Engineering', 'Computer Science']);
+  assert.equal(cengProfile.totalCreditRequired, 0);
+  assert.equal(csciProfile.totalCreditRequired, 0);
+  assert.equal(cengProfile.codedCourseCount, 39);
+  assert.equal(csciProfile.codedCourseCount, 34);
+  assert.equal(cengCourses.length, 39);
+  assert.equal(csciCourses.length, 34);
+  assert.equal(new Set(cengCourses.map((course) => course.courseCode)).size, 39);
+  assert.equal(new Set(csciCourses.map((course) => course.courseCode)).size, 34);
+  assert.equal(cengCourses.filter((course) => course.courseType === 'foundation').length, 19);
+  assert.equal(csciCourses.filter((course) => course.courseType === 'foundation').length, 17);
+  assert.equal(cengCourses.filter((course) => course.courseType === 'capstone').length, 4);
+  assert.equal(csciCourses.filter((course) => course.courseType === 'capstone').length, 4);
+  assert.equal(cengByCode.ELEG2202.titleEn, 'Fundamentals of Electric Circuits');
+  assert.equal(cengByCode.CSCI3160, undefined);
+  assert.equal(csciByCode.ELEG2202, undefined);
+  assert.equal(csciByCode.CSCI3160.titleEn, 'Design and Analysis of Algorithms');
+  assert.equal(cengByCode.ENGG1110.id === csciByCode.ENGG1110.id, false);
+  assert.match(csciByCode.ENGG1110.requirementGroups.join(' '), /ENGG1100 conflict/);
+  assert.equal(cengByCode.ENGG1040, undefined);
+  assert.equal(csciByCode.ENGG1004, undefined);
+  assert.equal(csciByCode.ENGG1100, undefined);
+  assert(cengCourses.every((course) => course.recommendedYear > 0 && course.semester));
+  assert(csciCourses.every((course) => course.recommendedYear > 0 && course.semester));
+});
+
+test('CUHK Theoretical Physics exposes the verified Required and Stream subset as browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'PHYSN-ERP');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-PHYSN-ERP-65-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.jupasCode, 'JS4690');
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 42);
+  assert.equal(courses.length, 42);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 42);
+  assert.equal(courses.filter((course) => course.courseType === 'foundation').length, 4);
+  assert.equal(courses.filter((course) => course.courseType === 'core').length, 17);
+  assert.equal(courses.filter((course) => course.courseType === 'capstone').length, 4);
+  assert.equal(courses.filter((course) => course.courseType === 'major_elective').length, 17);
+  assert.equal(byCode.MATH2530.titleEn, 'Advanced Calculus I for Physical Science and Engineering');
+  assert.equal(byCode.PHYS3430.credits, 2);
+  assert.equal(byCode.PHYS4450.titleEn, 'Optical Physics');
+  assert.match(byCode.PHYS2061.requirementGroups.join(' '), /AI and Computational Physics Stream/);
+  assert.match(byCode.PHYS4031.requirementGroups.join(' '), /AI and Quantum Stream/);
+  assert.equal(byCode.CHEM1070, undefined);
+  assert.equal(byCode.PHYS5061, undefined);
+  assert.equal(byCode.PHYS5562, undefined);
+  assert.equal(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Quantum' }).length, 4);
+});
+
+test('CUHK Mathematics Education exposes its official five-area Course List as browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'BMEDN');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-BMEDN-35-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.jupasCode, 'JS4361');
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 75);
+  assert.equal(courses.length, 75);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 75);
+  assert.equal(courses.filter((course) => course.courseType === 'major_elective').length, 71);
+  assert.equal(courses.filter((course) => course.courseType === 'capstone').length, 2);
+  assert.equal(courses.filter((course) => course.courseType === 'internship').length, 2);
+  assert.equal(courses.reduce((sum, course) => sum + course.credits, 0), 225);
+  assert.equal(byCode.BMED3011.titleEn, 'Mathematics Curriculum and Teaching: Basic Theoryand Practice');
+  assert.equal(byCode.MATH3320.titleEn, 'Foundation of Data Analysis');
+  assert.equal(byCode.MATH4280.titleEn, 'Innovation and Design in Big Data Analysis');
+  assert.deepEqual([byCode.EDUC4030.credits, byCode.EDUC4040.credits], [5, 5]);
+  assert.match(byCode.BMED4510.requirementGroups.join(' '), /Research Experience/);
+  assert.equal(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Mathematics Teaching' }).length, 1);
+});
+
+test('CUHK Learning Design and Technology exposes the complete 2026-27 coded pool as browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'LDTEN');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-LDTEN-34-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.jupasCode, 'JS4386');
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 42);
+  assert.equal(courses.length, 42);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 42);
+  assert.equal(courses.filter((course) => course.courseType === 'foundation').length, 11);
+  assert.equal(courses.filter((course) => course.courseType === 'core').length, 10);
+  assert.equal(courses.filter((course) => course.courseType === 'capstone').length, 2);
+  assert.equal(courses.filter((course) => course.courseType === 'internship').length, 1);
+  assert.equal(courses.filter((course) => course.courseType === 'major_elective').length, 18);
+  assert.equal(byCode.CSCI2040.credits, 2);
+  assert.equal(byCode.PHYS1712.credits, 1);
+  assert.equal(byCode.LDTE4500.courseType, 'capstone');
+  assert.match(byCode.CHEM1070.requirementGroups.join(' '), /CHEM1070 or CHEM1072/);
+  assert.match(byCode.PHYS1002.requirementGroups.join(' '), /PHYS1002 or PHYS1004/);
+  assert.equal(byCode.AIST3510.titleEn, byCode.SEEM3510.titleEn);
+  assert.equal(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Educational Technology' }).length, 1);
 });
 
 test('CUHK Insurance, Financial and Actuarial Analysis exposes the complete 57-code scope as browse-only', () => {
@@ -1432,7 +1559,7 @@ test('UG per-school coverage stays visible for setup validation', () => {
   assert.deepEqual(
     Object.fromEntries(Object.entries(coverage).map(([code, item]) => [code, [item.programmeCount, item.majorCount]])),
     {
-      HKU: [137, 146], CUHK: [84, 85], HKUST: [50, 64], POLYU: [46, 114],
+      HKU: [137, 146], CUHK: [84, 86], HKUST: [50, 64], POLYU: [46, 114],
       CITYU: [58, 183], HKBU: [22, 47], EDUHK: [25, 25], LINGNAN: [23, 23]
     }
   );

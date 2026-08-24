@@ -1,0 +1,547 @@
+{
+  "provider": "CUHK BMED Mathematics and Mathematics Education official Programme and Course List",
+  "academicYear": "Study Scheme applicable to students admitted in 2022-23 and thereafter; current Course List reviewed on 2026-08-24",
+  "sourceUrl": "https://www.fed.cuhk.edu.hk/bmed/about/course-list/",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/bmedn/",
+  "additionalSourceUrls": [
+    "https://www.fed.cuhk.edu.hk/bmed/about/our-programme/",
+    "https://www.math.cuhk.edu.hk/undergraduates/courses"
+  ],
+  "note": "The official BMED Programme page publishes a 147-unit degree for students admitted in 2022-23 and thereafter: 102 Major Programme units made up of 47 Mathematics Related Course units and 55 Faculty of Education Course units, plus 45 University Requirement units. The Programme-specific Course List publishes 75 unique code-title-unit rows in five named areas: seven Educational Studies, nine Pedagogy Courses, two Research Experience, 55 Subject Knowledge and two Teaching Practice courses. The downloaded Course List HTML was 80,167 bytes with SHA-256 beaff312f53b4ede9136ff1b50177e0c61e4473737b8461f999f253f291be67b; the Programme HTML was 67,277 bytes with SHA-256 8fc0b361a34930f30b52f3bbe370456307522e6080b1e3b4d959f56d93fd1590. The 75 published rows total 225 units, far above the 102-unit Major requirement, and the public pages do not identify the closed per-course required/alternative/elective choices, the Science Faculty Package codes, or Year/Term placement. Every row is therefore exposed only under its official list area, not treated as individually required; totalCreditRequired remains 0 so no graduation completion percentage is produced. The source spellings are preserved exactly, including BMED3011 'Basic Theoryand Practice', MATH3320 'Foundation of Data Analysis' and MATH4280 'Innovation and Design in Big Data Analysis', rather than silently replacing them with similarly named Mathematics-department catalogue wording. University/College General Education, Languages, constitutional-order requirements, Digital Literacy, Physical Education and open Free Electives are not expanded.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "BMEDN",
+      "jupasCode": "JS4361",
+      "programmeId": "CUHK-UG-BMEDN-35",
+      "majorId": "CUHK-UG-BMEDN-35-M1",
+      "courses": [
+        {
+          "code": "EDUC2120",
+          "title": "Principles and Implementation of Curriculum and Instructional Design",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Educational Studies"
+        },
+        {
+          "code": "EDUC2140",
+          "title": "Artificial Intelligence and Data Sciences in Education",
+          "credits": 2,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Educational Studies"
+        },
+        {
+          "code": "EDUC2240",
+          "title": "Understanding Schooling and Education Policy in Hong Kong",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Educational Studies"
+        },
+        {
+          "code": "EDUC3160",
+          "title": "Education for Sustainable Development (ESD): Curriculum, Pedagogies and Practices",
+          "credits": 2,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Educational Studies"
+        },
+        {
+          "code": "EDUC3201",
+          "title": "Ethics and Professional Standards for Teachers",
+          "credits": 2,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Educational Studies"
+        },
+        {
+          "code": "EDUC3330",
+          "title": "Optimizing Learning and Development for Students with Diverse Needs I",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Educational Studies"
+        },
+        {
+          "code": "EDUC4360",
+          "title": "Optimizing Learning and Development for Students with Diverse Needs II",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Educational Studies"
+        },
+        {
+          "code": "BMED3011",
+          "title": "Mathematics Curriculum and Teaching: Basic Theoryand Practice",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Pedagogy Courses"
+        },
+        {
+          "code": "BMED3021",
+          "title": "Mathematics Curriculum and Teaching: Instructional Technology and Design of STEM Learning Activities",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Pedagogy Courses"
+        },
+        {
+          "code": "BMED3031",
+          "title": "Mathematical Literacy and Problem Solving",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Pedagogy Courses"
+        },
+        {
+          "code": "BMED3051",
+          "title": "The Teaching of Number and Algebra",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Pedagogy Courses"
+        },
+        {
+          "code": "BMED3071",
+          "title": "The Teaching of Probability and Statistics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Pedagogy Courses"
+        },
+        {
+          "code": "BMED3081",
+          "title": "The Teaching of Spatial Sense and Geometry",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Pedagogy Courses"
+        },
+        {
+          "code": "BMED3091",
+          "title": "Contemporary Issues in Mathematics Education",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Pedagogy Courses"
+        },
+        {
+          "code": "BMED4910",
+          "title": "Independent Study I",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Pedagogy Courses"
+        },
+        {
+          "code": "BMED4920",
+          "title": "Independent Study II",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Pedagogy Courses"
+        },
+        {
+          "code": "BMED4510",
+          "title": "Action Research in Mathematics Classroom",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Official BMED Course List · Research Experience"
+        },
+        {
+          "code": "BMED4520",
+          "title": "Mathematics Teaching Project Report",
+          "credits": 3,
+          "courseType": "capstone",
+          "group": "Official BMED Course List · Research Experience"
+        },
+        {
+          "code": "MATH1010",
+          "title": "University Mathematics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH1018",
+          "title": "Honours University Mathematics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH1025",
+          "title": "Essential Mathematical Methods",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH1028",
+          "title": "Honours Essential Mathematical Methods",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH1030",
+          "title": "Linear Algebra I",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH1038",
+          "title": "Honours Linear Algebra I",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH1090",
+          "title": "Introduction to Set Theory",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH1098",
+          "title": "Honours Introduction to Set Theory",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH2010",
+          "title": "Advanced Calculus I",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH2018",
+          "title": "Honours Advanced Calculus I",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH2020",
+          "title": "Advanced Calculus II",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH2028",
+          "title": "Honours Advanced Calculus II",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH2040",
+          "title": "Linear Algebra II",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH2048",
+          "title": "Honours Linear Algebra II",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH2050",
+          "title": "Mathematical Analysis I",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH2058",
+          "title": "Honours Mathematical Analysis I",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH2060",
+          "title": "Mathematical Analysis II",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH2068",
+          "title": "Honours Mathematical Analysis II",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH2070",
+          "title": "Algebraic Structures",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH2078",
+          "title": "Honours Algebraic Structures",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH2221",
+          "title": "Mathematics Laboratory II",
+          "credits": 2,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH2230",
+          "title": "Complex Variables with Applications",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH3020",
+          "title": "Axiomatic Set Theory and Applications",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH3030",
+          "title": "Abstract Algebra",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH3040",
+          "title": "Fields and Galois Theory",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH3060",
+          "title": "Mathematical Analysis III",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH3070",
+          "title": "Introduction to Topology",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH3080",
+          "title": "Number Theory",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH3093",
+          "title": "Fourier Analysis",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH3215",
+          "title": "Operations Research",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH3230",
+          "title": "Numerical Analysis",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH3240",
+          "title": "Numerical Methods for Differential Equations",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH3250",
+          "title": "Discrete Mathematics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH3260",
+          "title": "Graph Theory",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH3270",
+          "title": "Ordinary Differential Equations",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH3280",
+          "title": "Introductory Probability",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH3290",
+          "title": "Mathematical Modeling",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH3310",
+          "title": "Computational and Applied Mathematics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH3320",
+          "title": "Foundation of Data Analysis",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH3330",
+          "title": "Big Data Computing",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH3340",
+          "title": "Mathematics of Machine Learning",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH3360",
+          "title": "Mathematical Imaging",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH4010",
+          "title": "Functional Analysis",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH4020",
+          "title": "Calculus of Variations",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH4030",
+          "title": "Differential Geometry",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH4050",
+          "title": "Real Analysis",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH4060",
+          "title": "Complex Analysis",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH4080",
+          "title": "Modules and Representation Theory",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH4210",
+          "title": "Financial Mathematics",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH4220",
+          "title": "Partial Differential Equations",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH4230",
+          "title": "Optimization Theory",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH4240",
+          "title": "Stochastic Processes",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH4250",
+          "title": "Game Theory",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH4260",
+          "title": "Coding Theory and Cryptography",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "MATH4280",
+          "title": "Innovation and Design in Big Data Analysis",
+          "credits": 3,
+          "courseType": "major_elective",
+          "group": "Official BMED Course List · Subject Knowledge"
+        },
+        {
+          "code": "EDUC4030",
+          "title": "Teaching Practice I",
+          "credits": 5,
+          "courseType": "internship",
+          "group": "Official BMED Course List · Teaching Practice"
+        },
+        {
+          "code": "EDUC4040",
+          "title": "Teaching Practice II",
+          "credits": 5,
+          "courseType": "internship",
+          "group": "Official BMED Course List · Teaching Practice"
+        }
+      ]
+    }
+  ]
+}

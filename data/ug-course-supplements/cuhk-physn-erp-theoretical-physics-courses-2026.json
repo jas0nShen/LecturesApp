@@ -1,0 +1,74 @@
+{
+  "provider": "CUHK Department of Physics Enrichment Stream in Theoretical Physics curriculum",
+  "academicYear": "2026 entry; current pages reviewed on 2026-08-24",
+  "sourceUrl": "https://wp.phy.cuhk.edu.hk/undergraduate/curriculum/study-plan/enrichment-stream-in-theoretical-physics",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/physn%e2%80%90erp/",
+  "additionalSourceUrls": [
+    "https://wp.phy.cuhk.edu.hk/undergraduate-admissions/jupas/enrichment-stream-in-theoretical-physics",
+    "https://wp.phy.cuhk.edu.hk/undergraduate/curriculum/course-information",
+    "https://www.math.cuhk.edu.hk/undergraduates/courses",
+    "https://www.cse.cuhk.edu.hk/academics/ug-course-list/",
+    "https://www.qfin.cuhk.edu.hk/site/assets/files/1024/qfinn_eng_25.pdf",
+    "https://chem.cuhk.edu.hk/undergraduate/curriculum/bsc-chem/course-list-side-menu/"
+  ],
+  "note": "The official Recommended Course Pattern publishes the fixed Year/Term sequence and alternatives for the Enrichment Stream in Theoretical Physics. The Programme page separately publishes three optional Stream-specific elective structures: Astrophysics and Particle Physics, Artificial Intelligence and Computational Physics, and Quantum Science and Technology. The current Physics Course Information page closes code, title and units for all 36 imported PHYS courses; its downloaded HTML was 313,234 bytes with SHA-256 6bb948c47bd92106ada18dd8ae82731eaf436a25ed0c8ee25caa4b215680f6d2. The current Mathematics Course List closes MATH1010, MATH1018, MATH2010 and MATH2530 at 3 units each. The current CSE Course List closes CSCI3320 at 3 units, while the official QFIN 2025-26 Study Scheme closes STAT3006 at 3 units. The study-pattern HTML was 260,543 bytes with SHA-256 90818463a0adec0955634206b1159d5249237083a8407dcad5284aa006fe4bf7, and the Programme/Stream HTML was 266,522 bytes with SHA-256 70e232639afec2b6378bd611ddf59878db36858473e00bd2b85b5085488261d6. Nine explicitly named options are not imported because the reviewed public pages do not publish a directly verifiable per-course unit value: CHEM1070, CHEM1072, PHYS5061, PHYS5320, PHYS5430, PHYS5510, PHYS5550, PHYS5562 and PHYS5590. The open third Faculty Package choice, variable elective load, overlapping Stream pools, alternative PHYS3031/PHYS4031 path and unimported options prevent a closed graduation rule. This 42-course evidence-backed subset is therefore browse-only with totalCreditRequired=0 and no graduation completion percentage. PHYS4450 uses the current Course Information title Optical Physics rather than the shorter Optics wording on the Stream page.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "PHYSN-ERP",
+      "jupasCode": "JS4690",
+      "programmeId": "CUHK-UG-PHYSN-ERP-65",
+      "majorId": "CUHK-UG-PHYSN-ERP-65-M1",
+      "courses": [
+        { "code": "PHYS1111", "title": "Introduction to Mechanics, Fluids, and Waves (University Physics I)", "credits": 3, "recommendedYear": 1, "semester": "Term 1", "courseType": "foundation", "group": "Faculty Package · choose PHYS1111 or PHYS1113" },
+        { "code": "PHYS1113", "title": "Mechanics, Fluids and Waves (University Physics I)", "credits": 3, "recommendedYear": 1, "semester": "Term 1", "courseType": "foundation", "group": "Faculty Package · choose PHYS1111 or PHYS1113" },
+        { "code": "MATH1010", "title": "University Mathematics", "credits": 3, "recommendedYear": 1, "semester": "Term 1", "courseType": "foundation", "group": "Faculty Package · choose MATH1010 or MATH1018" },
+        { "code": "MATH1018", "title": "Honours University Mathematics", "credits": 3, "recommendedYear": 1, "semester": "Term 1", "courseType": "foundation", "group": "Faculty Package · choose MATH1010 or MATH1018" },
+        { "code": "PHYS2520", "title": "Student Centred Learning II", "credits": 1, "recommendedYear": 1, "semester": "Term 1", "courseType": "core", "group": "Major Required · fixed course" },
+
+        { "code": "MATH2010", "title": "Advanced Calculus I", "credits": 3, "recommendedYear": 1, "semester": "Term 2", "courseType": "core", "group": "Major Required · choose MATH2010 or MATH2530" },
+        { "code": "MATH2530", "title": "Advanced Calculus I for Physical Science and Engineering", "credits": 3, "recommendedYear": 1, "semester": "Term 2", "courseType": "core", "group": "Major Required · choose MATH2010 or MATH2530" },
+        { "code": "PHYS1122", "title": "University Physics II – Introduction to Optics and Modern Physics", "credits": 3, "recommendedYear": 1, "semester": "Term 2", "courseType": "core", "group": "Major Required · fixed course" },
+        { "code": "PHYS1712", "title": "Physics Laboratory I", "credits": 1, "recommendedYear": 1, "semester": "Term 2", "courseType": "core", "group": "Major Required · fixed course" },
+
+        { "code": "PHYS2041", "title": "University Physics III – Introduction to Heat and Electromagnetism", "credits": 3, "recommendedYear": 2, "semester": "Term 1", "courseType": "core", "group": "Major Required · fixed course" },
+        { "code": "PHYS2061", "title": "Basic Computational Physics", "credits": 3, "recommendedYear": 2, "semester": "Term 1", "courseType": "core", "group": "Major Required · fixed course; AI and Computational Physics Stream first pool · choose 2 of PHYS2061, PHYS3061 and PHYS4061" },
+        { "code": "PHYS2510", "title": "Student Centred Learning I", "credits": 1, "recommendedYear": 2, "semester": "Term 1", "courseType": "core", "group": "Major Required · fixed course" },
+        { "code": "PHYS2711", "title": "Physics Laboratory II", "credits": 2, "recommendedYear": 2, "semester": "Term 1", "courseType": "core", "group": "Major Required · fixed course" },
+        { "code": "PHYS2722", "title": "Physics Laboratory III", "credits": 1, "recommendedYear": 2, "semester": "Term 2", "courseType": "core", "group": "Major Required · fixed course" },
+        { "code": "PHYS3011", "title": "Classical Mechanics I", "credits": 3, "recommendedYear": 2, "semester": "Term 2", "courseType": "core", "group": "Major Required · fixed course" },
+        { "code": "PHYS3051", "title": "Methods in Theoretical Physics I", "credits": 3, "recommendedYear": 2, "semester": "Term 2", "courseType": "core", "group": "Major Required · fixed course" },
+
+        { "code": "PHYS3021", "title": "Quantum Mechanics I", "credits": 3, "recommendedYear": 3, "semester": "Term 1", "courseType": "core", "group": "Major Required · fixed course" },
+        { "code": "PHYS3041", "title": "Electromagnetic Theory I", "credits": 3, "recommendedYear": 3, "semester": "Term 1", "courseType": "core", "group": "Major Required · fixed course" },
+        { "code": "PHYS3710", "title": "Short Experimental Project I", "credits": 1, "recommendedYear": 3, "semester": "Term 1 / Term 2", "courseType": "core", "group": "Major Required · take in either Term 1 or Term 2" },
+        { "code": "PHYS3031", "title": "Thermodynamics and Statistical Physics", "credits": 3, "recommendedYear": 3, "semester": "Term 2", "courseType": "core", "group": "Major Required · choose PHYS3031 in Year 3 or PHYS4031 in Year 4" },
+        { "code": "PHYS4031", "title": "Statistical Mechanics", "credits": 3, "recommendedYear": 4, "semester": "Term 1", "courseType": "core", "group": "Major Required · choose PHYS3031 in Year 3 or PHYS4031 in Year 4; also appears in AI and Quantum Stream elective pools" },
+        { "code": "PHYS4610", "title": "Senior Project I", "credits": 3, "recommendedYear": 4, "semester": "Term 1", "courseType": "capstone", "group": "Major Required · fixed Senior Project" },
+        { "code": "PHYS4801", "title": "Seminar I", "credits": 1, "recommendedYear": 4, "semester": "Term 1", "courseType": "capstone", "group": "Major Required · fixed Seminar" },
+        { "code": "PHYS4620", "title": "Senior Project II", "credits": 3, "recommendedYear": 4, "semester": "Term 2", "courseType": "capstone", "group": "Major Required · fixed Senior Project" },
+        { "code": "PHYS4802", "title": "Seminar II", "credits": 1, "recommendedYear": 4, "semester": "Term 2", "courseType": "capstone", "group": "Major Required · fixed Seminar" },
+
+        { "code": "PHYS4430", "title": "Astrophysics", "credits": 3, "courseType": "major_elective", "group": "Astrophysics and Particle Physics Stream · fixed Stream course" },
+        { "code": "PHYS4470", "title": "Nuclear and Particle Physics", "credits": 3, "courseType": "major_elective", "group": "Astrophysics and Particle Physics Stream · fixed Stream course" },
+        { "code": "PHYS2401", "title": "Introduction to Astronomy and Astrophysics", "credits": 3, "courseType": "major_elective", "group": "Astrophysics and Particle Physics Stream · choose 2 from the published option pool" },
+        { "code": "PHYS3430", "title": "Radio Observational Astronomy", "credits": 2, "courseType": "major_elective", "group": "Astrophysics and Particle Physics Stream · choose 2 from the published option pool" },
+        { "code": "PHYS3440", "title": "Optical Observational Astronomy", "credits": 2, "courseType": "major_elective", "group": "Astrophysics and Particle Physics Stream · choose 2 from the published option pool" },
+        { "code": "PHYS3810", "title": "Short Theoretical Project I", "credits": 1, "courseType": "major_elective", "group": "Astrophysics and Particle Physics Stream · choose 2 from the published option pool" },
+        { "code": "PHYS4460", "title": "Relativity", "credits": 3, "courseType": "major_elective", "group": "Astrophysics and Particle Physics Stream · choose 2 from the published option pool" },
+
+        { "code": "PHYS3061", "title": "Physics Simulations with AI Tools", "credits": 3, "courseType": "major_elective", "group": "AI and Computational Physics Stream first pool · choose 2 of PHYS2061, PHYS3061 and PHYS4061" },
+        { "code": "PHYS4061", "title": "Computational Physics and Machine Learning", "credits": 3, "courseType": "major_elective", "group": "AI and Computational Physics Stream first pool · choose 2 of PHYS2061, PHYS3061 and PHYS4061" },
+        { "code": "CSCI3320", "title": "Fundamentals of Machine Learning", "credits": 3, "courseType": "major_elective", "group": "AI and Computational Physics Stream second pool · choose 2 from the published option pool" },
+        { "code": "STAT3006", "title": "Statistical Computing", "credits": 3, "courseType": "major_elective", "group": "AI and Computational Physics Stream second pool · choose 2 from the published option pool" },
+
+        { "code": "PHYS3022", "title": "Applied Quantum Mechanics", "credits": 3, "courseType": "major_elective", "group": "Quantum Science and Technology Stream · choose PHYS3022 or PHYS3023; the unused counterpart may also count in the option pool" },
+        { "code": "PHYS3023", "title": "Introduction to Quantum Information Physics", "credits": 3, "courseType": "major_elective", "group": "Quantum Science and Technology Stream · choose PHYS3022 or PHYS3023; the unused counterpart may also count in the option pool" },
+        { "code": "PHYS4021", "title": "Quantum Mechanics II", "credits": 3, "courseType": "major_elective", "group": "Quantum Science and Technology Stream · fixed Stream course" },
+        { "code": "PHYS4050", "title": "Solid State Physics", "credits": 3, "courseType": "major_elective", "group": "Quantum Science and Technology Stream · choose 2 from the published option pool" },
+        { "code": "PHYS4440", "title": "Topics in Nanoscience and Technology", "credits": 3, "courseType": "major_elective", "group": "Quantum Science and Technology Stream · choose 2 from the published option pool" },
+        { "code": "PHYS4450", "title": "Optical Physics", "credits": 3, "courseType": "major_elective", "group": "Quantum Science and Technology Stream · option paired with unimported PHYS5320" }
+      ]
+    }
+  ]
+}

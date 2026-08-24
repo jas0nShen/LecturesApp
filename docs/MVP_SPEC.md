@@ -14,7 +14,7 @@
 8. 提供数据状态、数据来源、数据与隐私说明，便于用户和微信审核理解数据边界；
 9. 体验版和正式版使用随包离线数据，不依赖开发环境服务。
 
-本次 `1.0.16` 数据批次新增 CUHK Biotechnology, Entrepreneurship and Healthcare Management 17 门、Journalism and Communication 114 门、Global Communication 137 门、Global Studies 38 门、Government and Public Administration 官方 2024-25 Course List 的 82 门 GPAD 课程，以及 Data Science and Policy Studies 官方 2023-24 Course List 中 61 门有代码与标题的课程。DSPS 的 26 个跨院 Faculty Package 候选缺少 Programme-specific 标题与逐课 units，`DSPS2730/2830` 标题及 `DSPS3202/3501` 的 Required/Elective 归属也存在官方页面内部冲突；GPAD 的六领域计数、非 GPAD 上限及多种 Capstone 路径同样未由规则引擎闭合。六个 Programme 均保持只读浏览，不生成毕业完成比例，也没有从组别总额或相似 Programme 猜测缺失代码、学分与规则。
+本次 `1.0.16` 数据批次继续新增 CUHK Computer Science and Engineering 两个 Major 共 73 门、Enrichment Stream in Theoretical Physics 42 门、Mathematics and Mathematics Education 75 门、Learning Design and Technology 42 门、Early Childhood Education 61 门，以及 English Studies and English Language Education 83 门官方课程。各 Programme 的开放课程池、替代路径、跨列课程、低学分组合或豁免规则尚未全部由本地规则引擎闭合，因此均保持只读浏览，不生成毕业完成比例，也没有从组别总额、相近 Programme 或无代码标题推测课程、学分与规则。
 
 ## 暂不做
 

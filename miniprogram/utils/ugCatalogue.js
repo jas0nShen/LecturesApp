@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-08-10T03:32:12.525Z",
+  "generatedAt": "2026-08-24T08:49:17.946Z",
   "universities": [
     {
       "id": "HKU",
@@ -3740,9 +3740,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/becen/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 61,
+      "codedCourseCount": 61,
+      "courseSourceUrl": "https://www.fed.cuhk.edu.hk/bece/en/curriculum-structure/course-list/"
     },
     {
       "id": "CUHK-UG-CHEDN-30",
@@ -3779,9 +3780,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/eledn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 83,
+      "codedCourseCount": 83,
+      "courseSourceUrl": "https://www.fed.cuhk.edu.hk/~ede4343/course-lists/"
     },
     {
       "id": "CUHK-UG-ESHEN-32",
@@ -3838,9 +3840,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/ldten/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 42,
+      "codedCourseCount": 42,
+      "courseSourceUrl": "https://www.fed.cuhk.edu.hk/ldte/"
     },
     {
       "id": "CUHK-UG-BMEDN-35",
@@ -3857,9 +3860,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/bmedn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 75,
+      "codedCourseCount": 75,
+      "courseSourceUrl": "https://www.fed.cuhk.edu.hk/bmed/about/course-list/"
     },
     {
       "id": "CUHK-UG-PESHN-36",
@@ -4015,9 +4019,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/bcsen/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 73,
+      "codedCourseCount": 73,
+      "courseSourceUrl": "https://www.cse.cuhk.edu.hk/wp-content/uploads/academics/ug/Academic-Counselling_BCSE_2026.pdf"
     },
     {
       "id": "CUHK-UG-ELEGN-44",
@@ -4443,9 +4448,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/physn%e2%80%90erp/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 42,
+      "codedCourseCount": 42,
+      "courseSourceUrl": "https://wp.phy.cuhk.edu.hk/undergraduate/curriculum/study-plan/enrichment-stream-in-theoretical-physics"
     },
     {
       "id": "CUHK-UG-NSCIN-66",
@@ -10904,8 +10910,8 @@ const catalogue = {
       "code": "EARLY-CHILDHOOD-EDUCATION",
       "nameEn": "Early Childhood Education",
       "nameZh": "Early Childhood Education",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 62,
+      "codedCourseCount": 61,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/becen/"
     },
     {
@@ -10924,8 +10930,8 @@ const catalogue = {
       "code": "ENGLISH-STUDIES-BA-AND-ENGLISH-LANGUAGE-EDUCATIO",
       "nameEn": "English Studies (BA) and English Language Education (BEd)",
       "nameZh": "English Studies (BA) and English Language Education (BEd)",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 84,
+      "codedCourseCount": 83,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/eledn/"
     },
     {
@@ -10954,8 +10960,8 @@ const catalogue = {
       "code": "LEARNING-DESIGN-AND-TECHNOLOGY",
       "nameEn": "Learning Design and Technology",
       "nameZh": "Learning Design and Technology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 43,
+      "codedCourseCount": 42,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/ldten/"
     },
     {
@@ -10964,8 +10970,8 @@ const catalogue = {
       "code": "MATHEMATICS-AND-MATHEMATICS-EDUCATION",
       "nameEn": "Mathematics and Mathematics Education",
       "nameZh": "Mathematics and Mathematics Education",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 76,
+      "codedCourseCount": 75,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/bmedn/"
     },
     {
@@ -11037,16 +11043,6 @@ const catalogue = {
       "courseCount": 69,
       "codedCourseCount": 69,
       "officialUrl": "https://www.cse.cuhk.edu.hk/academics/ug-course-list/"
-    },
-    {
-      "id": "CUHK-UG-BCSEN-43-M1",
-      "programmeId": "CUHK-UG-BCSEN-43",
-      "code": "COMPUTER-SCIENCE-AND-ENGINEERING",
-      "nameEn": "Computer Science and Engineering",
-      "nameZh": "Computer Science and Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://admission.cuhk.edu.hk/programme/bcsen/"
     },
     {
       "id": "CUHK-UG-ELEGN-44-M1",
@@ -11264,8 +11260,8 @@ const catalogue = {
       "code": "ENRICHMENT-STREAM-IN-THEORETICAL-PHYSICS",
       "nameEn": "Enrichment Stream in Theoretical Physics",
       "nameZh": "Enrichment Stream in Theoretical Physics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 43,
+      "codedCourseCount": 42,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/physn%e2%80%90erp/"
     },
     {
@@ -15959,6 +15955,26 @@ const catalogue = {
       "officialUrl": "https://www.cityu.edu.hk/en/mse/current-students/undergraduate/major"
     },
     {
+      "id": "CUHK-UG-BCSEN-43-M1",
+      "programmeId": "CUHK-UG-BCSEN-43",
+      "code": "CENGN",
+      "nameEn": "Computer Engineering",
+      "nameZh": "Computer Engineering",
+      "courseCount": 39,
+      "codedCourseCount": 39,
+      "officialUrl": "https://admission.cuhk.edu.hk/programme/bcsen/"
+    },
+    {
+      "id": "CUHK-UG-BCSEN-43-M2",
+      "programmeId": "CUHK-UG-BCSEN-43",
+      "code": "CSCIN",
+      "nameEn": "Computer Science",
+      "nameZh": "Computer Science",
+      "courseCount": 34,
+      "codedCourseCount": 34,
+      "officialUrl": "https://admission.cuhk.edu.hk/programme/bcsen/"
+    },
+    {
       "id": "CUHK-UG-CHESB-4-M1",
       "programmeId": "CUHK-UG-CHESB-4",
       "code": "INTERNATIONAL-STREAM",
@@ -16161,7 +16177,7 @@ const catalogue = {
   ],
   "courseShardCounts": {
     "CITYU": 3056,
-    "CUHK": 3221,
+    "CUHK": 3597,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
@@ -16169,7 +16185,7 @@ const catalogue = {
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 21123
+  "codedCourseCount": 21499
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,
