@@ -1,6 +1,6 @@
 # Codex 项目交接
 
-最后核验时间：2026-08-24（Asia/Shanghai）
+最后核验时间：2026-08-25（Asia/Shanghai）
 
 ## 当前项目目标
 
@@ -8,7 +8,7 @@
 
 当前产品边界是：先保证离线发布、数据可追溯和规则不误导，再继续补课程覆盖与规划能力。未经明确产品决定，不引入登录、云同步、统计、敏感权限或生产 API。
 
-当前仓库发布资料继续使用 `1.0.16`（`package.json`、运行时 `releaseInfo`、`docs/MVP_SPEC.md`、`docs/RELEASE_CHECKLIST.md`、`docs/REVIEW_SUBMISSION.md`）。2026-08-24 按用户指定的“同一天保持同一版本、跨天递增”规则继续使用 `1.0.16`。CUHK `BCSEN`、`PHYSN-ERP`、`BMEDN`、`LDTEN`、`BECEN`、`ELEDN` 课程补充及来源审查已由提交 `32bb953` 推送到 `origin/main`。微信官方 CLI 最后确认上传成功的仍是课程提交 `ba2e018`，备注为 `1.0.16: Expand CUHK global curricula`；本次上传前检查返回 `login:false`，官方二维码持续等待约 3 分钟未获手机端确认后停止，未执行实际 upload。没有提交审核或发布正式版。
+当前仓库发布资料仍为 `1.0.16`（`package.json`、运行时 `releaseInfo`、`docs/MVP_SPEC.md`、`docs/RELEASE_CHECKLIST.md`、`docs/REVIEW_SUBMISSION.md`）。2026-08-25 继续开发课程数据，因此按用户指定的“同一天保持同一版本、跨天递增”规则继续使用 `1.0.16`，不得回退到历史 `1.0.14`。当前 CUHK、HKUST 与 CityU 课程补充及来源审查已在工作区完成收口，尚未推送、未上传微信。微信官方 CLI 最后确认上传成功的仍是课程提交 `ba2e018`，备注为 `1.0.16: Expand CUHK global curricula`。没有提交审核或发布正式版。
 
 ## 可验证的仓库快照
 
@@ -27,8 +27,30 @@
 - `LDTEN` Elective 要求从含 1/2/3-unit 课程的官方池完成 7 units，且 `AIST3510/SEEM3510` 是同一门 cross-listed Human-computer Interaction；本地规则引擎不能证明所有低学分组合或防止 cross-list 双计，因此 42 门课程保持只读浏览，`totalCreditRequired=0`，不生成毕业完成百分比。University Core 与开放 Free Electives 未扩展。
 - 当前工作区新增 CUHK `BECEN Early Childhood Education (JS4372)` 官方 Course List 的全部 61 门唯一课程：3 门 Faculty Package、14 门 Core、2 门 Research Experience、2 门 Teaching Practice 与 40 门 Elective。两页 Study Scheme PDF 已完成文本提取和逐页渲染核验，明确 Major 最少 111 units；官方 6250×18613 Course List 长图已分段视觉核验并用 OCR 辅助转录，PDF 与长图的代码和学分一致。Elective 要求同时包含 pool (a) 最少 26 units、pool (b) 最少 11 units、pool (c) 最多 9 units 及总计 46 units，且混合 1/2/3-unit 课程，因此保持只读浏览，`totalCreditRequired=0`，不生成毕业完成百分比。
 - 当前工作区新增 CUHK `ELEDN English Studies and English Language Education (JS4343)` 适用于 2026-27 入学者的全部 83 门唯一课程：3 门 Faculty Package、49 门 Subject Knowledge、7 门 Language Enhancement、12 门 Language Teaching Methodology、2 门 Research Project、5 门 Educational Studies、2 门 Teaching Practicum 与 3 门 Immersion Experience。官网明确 118-unit Major；Language Enhancement 的 3-unit Elective 要求对应一个 3-unit 与三个 2-unit 候选，并另有 ELED1010-1030 完成后申请豁免 ELTU2013 课程但不豁免 units 的规则，现有规则引擎无法完整证明，故保持只读浏览且不生成毕业完成百分比。
+- 本批新增 CUHK `ARCHN Architectural Studies (JS4812)` 官方 2025-26 Study Scheme Course List 的全部 34 门 ARCH 课程，code/title/unit 已由四页 PDF 完整提取并逐页视觉核验。普通入学 Major 为 78 units，Associate Degree senior-entry 为 59 units，Higher Diploma senior-entry 为 56 units；Faculty Package 的外系候选只有代码、没有 Programme-specific 标题与逐课 units，且三条入学路径要求不同，因此 34 门 ARCH 课程保持只读浏览，`totalCreditRequired=0`，不生成毕业完成百分比。PDF 为 154,480 bytes，SHA-256 为 `9301ed316b20221fd3fdb938148e8030ec9ba9505094655d045feed3d6d2d8ea`。
+- 本批新增 CUHK `PSYCN Psychology (JS4862)` 当前官方 Courses 页的 55 门 Psychology Major Courses 与 23 条 Faculty Package rows，`PSYC1000`、`PSYC1630` 跨表去重后共 76 个 Programme-local code/title。页面没有逐课 units 或 55 门 Major 的 required/elective 归属，因此全部以 `credits=0` 表示未知并保持只读；`PSYC1630` 在 Major 与 Faculty Package 表中的标题差异已显式记录。当前 HTML 为 70,599 bytes，SHA-256 为 `06d483f0bbdd3940545a4a1166ec04c3e582e57b82263012aad78230f06cd755`。
+- 本批新增 CUHK `ECOTU Economics (CUHK-Tsinghua University Dual Undergraduate Degree Programme) (JS4824)` 官方 2026-2027 intake DDP Curriculum 的 131 门无歧义 Programme-local 课程：9 门 CUHK-side coded required-list entries（含额外 THU degree-fulfilment `MATH1550`）、28 门 Social Science Faculty Package 候选、41 门 CUHK Major Elective、4 门 THU Major Required alternatives、25 门 THU Major Elective 及 24 门 THU Student Self-development 课程。11 页 PDF 已完成全文提取和逐页渲染核验；PDF 为 1,015,815 bytes，SHA-256 为 `6378a739dc8065a30c3ed79870919c82a992d207489b2493a89c1d3ad71c2f1d`。
+- `ECOTU` 官方 Self-development 表将代码 `40512513` 同时用于 `Human-AI Interaction Design` 与 `Digital Operations and Business Simulation Gaming`，本地没有静默选择标题或制造新代码，两条歧义记录均排除。两条 Study Option、不同生源总学分与 Self-development 要求、跨校转学分及替代路径未由本地规则引擎闭合，因此保持只读浏览，`totalCreditRequired=0`，不生成毕业完成百分比；General Education、语言、Political Thinking、Physical Education 与 Practice Training 等非封闭 Programme-local 课程池未展开。
+- 本批新增 CUHK `BAJDN BBA(IBBA)-JD Double Degree Programme (JS4264)` 当前 Study Sequence 的 38 门唯一 Programme-local 课程。官网没有逐课 units，因此全部以 `credits=0` 表示未知；172-unit 总额包含开放 University Core、BBA electives、LAWS electives，六门本科 LAWS 课程对应 JD 阶段豁免，且 `LAWS6901/LAWS6902` 为二选一，规则未闭合，故保持只读浏览且不生成毕业完成百分比。
+- 本批新增 CUHK `BSSCN Social Science (Broad-based) (JS4801)` 2026-27 Faculty Package 的完整 31 门 code/title/3-unit 课程。首年按 intended Major 选择三门、其中另两门来自不同 Programme/Department/School，后续分流到独立 Major；没有把目的 Major 课程复制进 BSSCN，保持只读浏览，`totalCreditRequired=0`。
+- 本批新增 CUHK `BSCIN Science (JS4601)` 2026-27 Faculty Package 的 19 门 Science 课程，以及 Risk Management Science 明确允许的 4 门 Business Faculty Package 课程，共 23 门 code/title/3-unit 课程。官方 FAQ 明确这些课程不必全部在 Year 1 完成，故未虚构推荐学年；后续目的 Major 课程未合并，保持只读浏览，`totalCreditRequired=0`。
+- 本批完成 CUHK `NURSN Nursing (JS4513)` 与 `BCMEN Chinese Medicine (JS4542)` 官方来源审查。NURSN 官网和 2024 brochure 发布 112-unit Major、年度课程标题分组与临床结构；BCMEN 官网和 2025 leaflet 发布 157 Major units、145-unit required-title table、2-6 Major elective units、10 Faculty units 与 39 University Core units。两组材料均没有课程代码，因此记录为 `no_public_course_codes`，没有从标题映射代码或按组别总额推断逐课学分。
+- 本批完成 CUHK `INDAN Interdisciplinary Data Analytics & X Double Major (JS4760)` 与 `ASEIN Aerospace Science and Earth Informatics & X Double Major (JS4750)` 官方 brochure 的完整视觉核验。两份单页资料只发布参与 Major、跨校 Study Pattern 与 Co-op 选项，没有课程代码、逐课标题/学分或稳定 equivalency table，因此记录为 `no_public_course_codes`；没有把任何参与 Major 的课程复制进聚合双主修 Programme。
+- 本批完成 CUHK `DIPLN Diplomacy and International Studies (JS4898)`、`MEDUN MBChB (JS4501)` 与 `MEDUN-GPS (JS4502)` 官方来源审查。DIPLN 官网只发布跨法学/社会科学领域与 summer course、交换、实习安排；Medicine 的官方 Admission 页面、Programme 网站和 33 页 2026/27 booklet 只发布六年制 SMART/临床阶段、GET 主题与 GPS 培训活动。三者均没有稳定的 Programme-specific code/title/unit 表，记录为 `no_public_course_codes`，没有把领域、模块、考试或活动转成课程。
 - 提交 `32bb953` 的来源审查还包括 CUHK `JS4202 IBBAC`、`JS4903 LAWSN`、`JS4550 BMSCN`、`JS4537 PHPCN`、`JS4838 URSPN`、`JS4648 EESCN` 与 `JS4331 CLEDN`；官方公开材料没有稳定的 Programme-specific code/title/unit 表，均记录为 `no_public_course_codes`，没有按标题或组别总额推断课程。CLEDN 官网只发布 156-unit 双学位结构和大量课程标题；EESCN 官网和 2026 leaflet 可核验 72-unit 三层结构及四条路径，但 CUHK AQS Programme browser 在核验时返回 `System error`。
-- 2026-08-24 已运行 `npm run check:ship`：`1035/1035` 测试通过，`ready=true`；本科 444 Programme、687 Major、21,499 条 coded course records、325 个已开放 Programme；主包预估 1,847,005 bytes，23 个分包均低于 2 MB，敏感 API 为 0。CUHK 当前 84 个 Programme、86 个 Major、3,597 条 coded courses、61 个已开放 Programme；缺口为 23 个：10 个 reviewed-no-codes、13 个 no-source。
+- 本批新增 HKUST Individualized Interdisciplinary Major 的 13 门明确编码课程、Technology and Management 双学位的 9 门 TEMG 课程，以及 BBA in Eurasian Business 的 33 门明确编码课程；学生自定义课程池、基础 Major、开放商科选修与 Common Core 未伪造成封闭毕业结构，均保持只读浏览。
+- 本批将 HKUST Extended Major in AI、Digital Media and Creative Arts、Sustainability 拆为 Programme-local Major，并将 International Research Enrichment 拆为六条 Science Major、Science Group A + AI 拆为四条 base-Major 组合；课程状态按 Programme/Major 隔离，复杂路径均保持 `totalCreditRequired=0`。
+- HKUST World Bachelor in Business 的官方 catalogue 与 pathway 仅公开课程标题，没有稳定课程代码、逐课学分或三校映射，已按 Programme 名称记录为 `no_public_course_codes`，未从相似标题推断代码。覆盖报告现支持无代码 Programme 的精确规范化名称匹配。
+- 本批新增 CityU `JS1216 Intelligent Manufacturing Engineering` 当前 2026/27 normative curriculum 的 64 个唯一代码，以及 `JS1219 Innovation and Enterprise Engineering` 的 44 个唯一代码。两个 Programme 均将招生页面误解析的 5 个 Feature 占位 Major 合并为单一正式 Major；开放 GE / Free Elective 池、Capstone 替代、可选 placement 和跨专业路径未闭合，保持只读。
+- 本批新增 CityU `JS1211 Biomedical Engineering` 当前 2026/27 normative curriculum 的 60 个唯一代码，并将 Medical Technology、Bioinstrumentation、Cell and Tissue Engineering、Biomedical Robotics 四个 Feature 占位项合并为单一正式 Major。121/128-credit 路径中的开放 GE、Integrative Bioscience and Bioengineering Stream、BMS3101 跨组角色及 Elective 层级要求未闭合，`totalCreditRequired=0`。
+- 本批新增 CityU `JS1806 Biological Sciences` 当前 normative curriculum 的 67 个唯一代码，并将六个 Feature 占位项合并为单一正式 Major。官方结构为 121/128 graduation credits、57-credit Core、可选 7-credit Integrative Bioscience and Bioengineering Stream、15-credit Human and Artificial Intelligence Stream 与 15-credit Elective；Stream/Elective 跨组不得重复计数，且 HAI Stream 不需 Elective，因此保持 `totalCreditRequired=0`。
+- 本批新增 CityU `JS1807 Biomedical Sciences` 当前 normative curriculum 的 50 个唯一代码，并将五个 Feature 占位项合并为单一正式 Major。官方结构为 121/128 graduation credits、90-credit Core 与可选 7-credit Integrative Bioscience and Bioengineering Stream；开放 GE 与 Stream 选择未闭合，因此保持 `totalCreditRequired=0`。
+- 本批新增 CityU `JS1805 Biomedical Sciences` 未定 Major 入学路径，并按官网说明保留 `BSc Biological Sciences` 与 `BSc Biomedical Sciences` 两条独立 Major。学生在完成首年 Semester A 与 B 后选择或获分配 Major；本地分别复用 JS1806 的 67 门与 JS1807 的 50 门已核验 Catalogue 课程，不合并两条 Major 的用户状态或毕业规则。
+- 本批新增 CityU `JS1201 Architecture and Civil Engineering` 三条 current normative Major：Architectural Engineering 41 个唯一代码、Civil Engineering 55 个、Architecture and Surveying 64 个。三条路径共享 13 个已命名 GE / College / departmental first-year 代码；Civil Engineering 的 Structural Engineering 与 Infrastructure and Smart City，以及 Architecture and Surveying 的 ARC / SUI 均作为 Major 内部 Stream 保留，不拆成额外 Major。开放 GE、数学替代、Stream 选择与专业认证 top-up 未闭合，三条路径均保持 `totalCreditRequired=0`。
+- 本批新增 CityU `JS1207 Mechanical Engineering` 三条 current normative Major：Aerospace Engineering 65 个唯一代码、Mechanical Engineering 61 个、Nuclear and Risk Engineering 78 个。三条路径共享 11 个已命名 GE / College 代码；Aerospace Materials / Systems 与 Mechanical Engineering 三个 Stream 均保留为 Major 内部路径，0-credit workshop/graphics、替代 Project 及 optional placements 按官网值保留。开放 GE、Stream 组合、选修与专业认可规则未闭合，三条路径均保持 `totalCreditRequired=0`。
+- 本批新增 CityU `JS1221 BSc Computer Science and BSc Computational Finance and Financial Technology` 双学位的 17 个 Programme-specific 明确代码，并将 Corporate Accounting & Economics、Computational Finance、Advanced Statistics、Financial Technologies 四个 Feature 占位 Major 合并为一个正式双学位 Major。招生页明确五年制、最低 151 credits，以及 22-credit University/Distributional、18-credit College-specified、12-credit College/School 和 99-credit Major 结构；但只点名前 17 个唯一代码，没有发布 33-credit CS core、30-credit CFFT core、33-credit cross-credit 与 3-credit CS elective 对应清单。官方两页 brochure 同样没有课程表，因此未把 standalone CS/CFFT 课程池拼入双学位；17 门部分清单保持 `totalCreditRequired=0`，不生成毕业完成百分比。
+- 本批新增 CityU `JS1300 Integrative Bioscience & Bioengineering Programme (Bio3)` 的三条正式 Major：BEng Biomedical Engineering 60 门、BSc Biological Sciences 67 门、BSc Biomedical Sciences 50 门，共 177 条 Programme-local 记录。官网明确学生在接受 offer 时选择 Major，并从 Year 1 起注册该 Major；Bio3 在对应现有 curriculum 之上要求 `CBM4000 Research Seminar`（1 credit）、`CBM4001 Overseas Research Project`（3 credits）及指定跨部门清单中的一门课程。三份当前 Catalogue curriculum 已分别保留这些 Integrative Stream 角色，因此按 Major 复用并保持用户状态隔离；开放 GE、Stream/elective 组合及跨组计数仍保持 `totalCreditRequired=0`。
+- 2026-08-25 当前生成结果为本科 444 Programme、666 Major、24,308 条 coded course records、352 个已开放 Programme；CUHK 为 84 个 Programme、86 个 Major、3,930 条 coded courses、67 个已开放 Programme；HKUST 为 50 个 Programme、74 个 Major、3,445 条 coded courses、49 个已开放 Programme；CityU 为 58 个 Programme、152 个 Major、4,287 条 coded courses、54 个已开放 Programme。完整 `npm run check:ship` 结果见后文测试记录。
 - 本批已由提交 `32bb953` 推送到 GitHub；微信二维码登录未完成，因此尚未上传微信。`.playwright-cli/` 继续保持用户本地未跟踪诊断产物。
 - 当前 Git 课程提交为 `32bb953`，微信最后明确确认的开发版为 `1.0.16`，对应课程提交 `ba2e018`。
 - 当前 Git 代码已包含 CUHK `JASPN Japanese Studies` 58 门 Major-assigned JASP 课程；标准、Local、Stream、senior-entry 与 double-Major 路径未完整闭合，因此保持只读浏览，不生成毕业完成百分比。
@@ -210,7 +232,7 @@ df91815 Add PolyU Design curriculum and source evidence
 - PolyU `POLYU-TPG-074 Master of Science in Advanced Physiotherapy` 继续 `blocked`：同一 Programme 的 2026/27 官方页面明确 `RS567 Project Study` 为 6 credits，但 2027/28 Programme 页面、现行 2026-or-after Curriculum 图和 v14 leaflet 都未重申代码，且没有公开的当前 51069 PRD/SDF；不跨学年搬运 `RS567`。
 - PolyU `POLYU-TPG-011 Master of Science in Low-altitude Economy` 继续 `blocked`：2027 Programme 页面已闭合 8 门 Core、7 门 Elective 和两条 31-credit 路径，但官方 PRD、当前 AAE Subject List 及 2026/27 leaflet 均未发布 9-credit Dissertation 的课程代码；不从其他 Programme 类推 Dissertation code。
 - 已补充 HKU `HKU-TPG-055 Master of Public Administration` 当前 60-credit 结构：4 门 Compulsory 共 24 credits、24 门内部 Elective 通常选 4 门共 24 credits，以及 12-credit `POLI8012 Dissertation` / `POLI8028 Capstone project` 二选一，共 30 个唯一代码。正式 Regulations 与专用 Course Descriptions 均确认 `POLI8032` 为 6 credits；最多 6 credits 的获批 MIPA 替代及完成路径继续标记 `manual_review_required`。
-- 当前工作区 UG：8 所学校、444 个 Programme、686 个 Major/Track、Programme/Major-local 带代码课程共 21,062 条；318 个 Programme 已开放课程代码。
+- 当前工作区 UG：8 所学校、444 个 Programme、687 个 Major/Track、Programme/Major-local 带代码课程共 21,609 条；327 个 Programme 已开放课程代码。
 - 当前工作区新增 CUHK `FTECN Financial Technology` 85 门唯一课程：35 门 Core、46 门 Major Elective、2 门 Capstone 和 2 门 Internship/Practicum。2025 Programme leaflet 第 2 页明确 Major Programme Requirement 为 75 units，但大部分课程未逐课直接标注学分，斜线替代、选修组合、跨院获批课程及 SJTU/PKU 双学位和 IBBA 双主修路径也未闭合，因此逐课未明示学分保守保存为 0，Programme 保持只读浏览且不生成毕业完成百分比。Leaflet 中截断的 `ENGG110` 与 `ACCT211` 已分别由 CUHK Information Engineering 课程页及 CUHK Business handbook 交叉核验为 `ENGG1110` 与 `ACCT2111`。
 - 当前工作区新增 CUHK `BMEGN Biomedical Engineering` 官方 2025-26 Study Scheme 第 16-17 页明确列出的 53 门 Course List：21 门 Core、29 门 Major Elective、2 门 Capstone 和 1 门 Hospital Experience and Engineering Practicum，全部保留官方代码、标题与 units；前三类 Biomedical Engineering Stream 的重叠课程角色也按第 1-15 页要求表保留。Faculty Package、PHYS/CHEM/LSCI/SBMS/STAT、CMBI、ELEG/ESTR3200、MAEG、MBTE、开放 CSCI、ELITE 替代、54/51-unit senior-entry 及 BME-BBA 双学位路径没有从相似 Programme 拼接，因此该 53 门清单保持只读浏览，不生成毕业完成百分比。
 - 当前工作区新增 CUHK `CDASN Computational Data Science` 官方 Curriculum 页面明确列出的 33 门唯一代码课程：16 门 Faculty Package / Foundation、15 门 Required 和 2 门 Final Year Project。当前页面标明只适用于 2025 entry，并发布 75-unit Major 分组；抓取页面为 68,936 bytes，SHA-256 为 `4700380909ddd6836b5e4366f69da0f8382372e8a1f6901ae1e6bf5ecdf4baff`。四条 18-unit elective option 只发布方向名称，没有封闭代码表，因此未从其他 Programme 复制选修课；Recommended Course Pattern 单处写 `STAT4010`，但 Course List 与 curriculum overview 均写 `STAT3010 Optimization for Statistics and Data Science`，本地保留 `STAT3010` 并显式记录冲突。该 33 门清单保持只读浏览，不生成毕业完成百分比。
@@ -347,7 +369,7 @@ df91815 Add PolyU Design curriculum and source evidence
 - 2026-08-10 提交 `1b506e5` 的 CUHK `GPADN Government and Public Administration` 82 门课程已推送到 GitHub。以备注 `1.0.16: Add CUHK public administration curriculum` 上传时先因登录失效返回 `code 10`，随后官方 CLI 已成功生成二维码，但未收到手机端确认并返回 `code 25` 超时，因此微信开发版仍停留在课程提交 `ba2e018`。
 - 2026-08-10 提交 `1567094` 的 CUHK `DSPSN Data Science and Policy Studies` 61 门课程已推送到 GitHub。微信官方 CLI 登录状态为 `false`；两次生成新的图片二维码后均未收到手机端确认，第一次返回 `code 25`，第二次在继续等待后手动停止，因此未执行实际 upload，微信开发版仍停留在课程提交 `ba2e018`。
 - 2026-08-24 提交 `32bb953` 的 CUHK `BCSEN`、`PHYSN-ERP`、`BMEDN`、`LDTEN`、`BECEN`、`ELEDN` 课程补充及来源审查已推送到 GitHub。微信官方 CLI 返回 `login:false`；生成官方二维码后持续等待约 3 分钟仍未收到手机端确认，随后停止登录流程，因此没有执行实际 upload，微信开发版仍停留在课程提交 `ba2e018`。
-- 当前工作区完整检查：1035/1035 测试通过、`ready=true`、21,499 条 UG coded courses、325 个已开放 Programme、主包预估 1,847,005 bytes、总估算包体 24,576,899 bytes，所有 23 个分包低于 2 MB，敏感 API 为 0。
+- 当前工作区完整检查：1039/1039 测试通过、`ready=true`、21,609 条 UG coded courses、327 个已开放 Programme、主包预估 1,847,215 bytes、总估算包体 24,674,490 bytes，所有 23 个分包低于 2 MB，敏感 API 为 0。
 - 微信开发者工具确认 PolyU Computer Science 可加载 83 门课程，首页入口序号为 `01 / 02 / 03 / 04`；模拟器测试结束后已恢复原 Architectural Studies 资料，`plannedUgCourseKeys`、`ugCoursePlanAssignments`、`completedUgCourseKeys` 均为空。
 - 微信官方 automation 已完成普通 `POLYU-TPG-090` 闭环：36 门课程、`COMP5521` 加入计划、列表状态、官方分组、标记已修、复制与移除均通过。
 - 多 Track `HKU-TPG-031` 验收通过：Generalist 计 1 门，Chinese Language Education 计 2 门；两条记录均保留，旧 Track 课程不计入 Generalist 当前统计。
@@ -477,7 +499,7 @@ npm run status:ug-sources -- --missing-only --priority launch --missing-limit 10
 
 ## 当前工作区
 
-BCSEN、PHYSN-ERP、BMEDN、LDTEN、BECEN、ELEDN 课程补充及 CUHK 来源审查已由提交 `32bb953` 推送到 `origin/main`。课程提交 `ba2e018` 是最后明确成功上传的微信 `1.0.16` 开发版；本次官方 CLI 二维码登录未收到手机端确认，未执行实际 upload。当前仅保留下列用户诊断目录未跟踪：
+本批 CUHK ARCHN、PSYCN、ECOTU、BAJDN、BSCIN、BSSCN，HKUST IIM、Extended Majors、T&M、Eurasian Business、IRE、Science Group A + AI，以及 CityU JS1050、JS1052、JS1053、JS1200、JS1201、JS1207、JS1211、JS1216、JS1219、JS1221、JS1300、JS1805、JS1806、JS1807 课程补充、对应测试、生成 catalogue/shards、来源审查与本交接文档已完成收口。课程提交 `ba2e018` 仍是最后明确成功上传的微信 `1.0.16` 开发版；本批尚未推送或上传微信。除项目改动外，继续保留用户诊断目录：
 
 ```text
 ?? .playwright-cli/
@@ -487,7 +509,7 @@ BCSEN、PHYSN-ERP、BMEDN、LDTEN、BECEN、ELEDN 课程补充及 CUHK 来源审
 
 ## 已运行的测试及结果
 
-2026-08-24 在当前 BCSEN、PHYSN-ERP、BMEDN、LDTEN、BECEN、ELEDN、CUHK 来源审查、`1.0.16` 发布资料与 CUHK 双分包工作区重新运行：
+2026-08-25 在当前 CUHK、HKUST 与 CityU 课程补充、来源审查、`1.0.16` 发布资料及生成分包工作区重新运行：
 
 ```text
 npm run check:ship: PASS
@@ -496,24 +518,24 @@ npm run check:ship: PASS
   check:tpg-course-sync: PASS (250 files, 448 Programmes)
   check:tpg-catalog-sync: PASS (8 schools, 448 Programmes, 8 packages, 347 browsable course structures)
   seed/data validation: PASS
-  UG supplement validation: PASS (380 supplements)
+  UG supplement validation: PASS (433 supplements)
   directory audit: PASS, blockingErrors=[]
   server --check: PASS
-  Node tests: PASS, 1035/1035
+  Node tests: PASS (1081/1081)
   check:release: PASS, ready=true
 
 git diff --check: PASS
 npm run status:tpg-courses -- --school=HKU: PASS (448/448 reviewed, 0 unreviewed)
-npm run status:ug-sources -- --missing-only --missing-summary --missing-limit 0: PASS (119 Programme-level source gaps: 35 index-only, 32 reviewed-no-codes, 52 no-source)
-npm run status:ug-sources -- --school cuhk --missing-only --missing-summary --missing-limit 0: PASS (23 CUHK gaps: 10 reviewed-no-codes, 13 no-source)
+npm run status:ug-sources -- --school hkust --missing-only --missing-summary --missing-limit 100: PASS (1 HKUST gap: 1 reviewed-no-codes, 0 no-source)
+npm run status:ug-sources -- --school cityu --missing-only --missing-summary --missing-limit 30: PASS (4 CityU gaps: 3 index-only, 1 reviewed-no-codes)
 ```
 
 发布指标：
 
-- 当前代码主包预估：1,847,005 bytes。
-- 当前代码总估算包体：24,576,899 bytes，201 个上传文件。
+- 当前代码主包预估：1,844,874 bytes。
+- 当前代码总估算包体：27,132,712 bytes，201 个上传文件。
 - 最新上传 1.0.16 的 CLI 实际包：19,105,118 bytes；实际主包 1,486,323 bytes。
-- 当前 23 个 UG/TPG 分包均低于 2 MB；`ug-data-cuhk-a` 为 1,582,595 bytes，`ug-data-cuhk-b` 为 1,611,513 bytes，最大分包为 `ug-data-hku-a` 1,869,435 bytes。
+- 当前 23 个 UG/TPG 分包均低于 2 MB；`ug-data-hkust-a` 为 1,612,501 bytes，`ug-data-hkust-b` 为 1,597,285 bytes，最大分包为 `ug-data-hku-a` 1,869,435 bytes。
 - 页面：17；敏感 API：0。
 - release warnings 仅为人工微信后台检查尚需完成，以及未配置生产 HTTPS（体验/正式版按设计离线）。
 

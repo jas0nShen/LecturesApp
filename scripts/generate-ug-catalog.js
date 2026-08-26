@@ -590,7 +590,23 @@ function getSupplementCourses(supplement, allSupplements) {
     return Array.isArray(candidate.courses);
   });
 
-  return template ? template.courses.map((course) => ({ ...course })) : [];
+  if (!template) return [];
+
+  const sourceMajorId = String(copyFrom.sourceMajorId || '').trim();
+  return template.courses
+    .filter((course) => {
+      if (!sourceMajorId) return true;
+      const majorIds = Array.isArray(course.majorIds) ? course.majorIds : [];
+      return !majorIds.length || majorIds.includes(sourceMajorId);
+    })
+    .map((course) => {
+      const copiedCourse = { ...course };
+      if (sourceMajorId) {
+        delete copiedCourse.majorIds;
+        delete copiedCourse.majorNames;
+      }
+      return copiedCourse;
+    });
 }
 
 function courseAppliesToMajor(course, major) {

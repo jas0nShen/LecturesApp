@@ -1,0 +1,64 @@
+{
+  "provider": "CUHK BBA-JD Double Degree Programme current Study Sequence",
+  "academicYear": "Applicable to students admitted in 2022-23 and thereafter; reviewed on 2026-08-24",
+  "sourceUrl": "https://bba-jd.bschool.cuhk.edu.hk/en/curriculum-study-sequence",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/bajdn/",
+  "additionalSourceUrls": [
+    "https://bba-jd.bschool.cuhk.edu.hk/en/curriculum-programme-structure",
+    "https://bba-jd.bschool.cuhk.edu.hk/storage/media/Admissions/BBA-JD_Brochure_2026.pdf"
+  ],
+  "note": "The official current Study Sequence applies to students admitted in 2022-23 and thereafter and publishes 38 unique Programme-local code-title entries across Years 1-5, including LAWS6089 as the explicit alternative to LAWS6006 and both LAWS6901/LAWS6902 research alternatives. The downloaded 107,909-byte HTML snapshot had SHA-256 b82a135017cb3b854d453a27ca86a1e0cddeede52ff6574cf291877b73b72d27. The page states that the DSME subject-area code changed to DOTE from 2024-25, so the five bracketed DOTE[DSME] rows use the current DOTE codes while retaining the legacy-code evidence in their group labels. The complete visually reviewed eight-page 2026 brochure was 16,630,823 bytes with SHA-256 5c3d8beb75ee59dea5e6105df694d97dfd572fdfd62c50316d7a537f914db606 and confirms the 172-unit five-year structure. The annual totals include unnamed University Core courses and variable BBA/LAWS elective slots, and neither source publishes per-course units or the closed elective pools. The six undergraduate LAWS courses also exempt LAWS6001, LAWS6021 and LAWS6023 in the JD phase, while Year 4 progression requirements remain external. Therefore all 38 coded entries keep credits=0 as unknown and the Programme remains browse-only with totalCreditRequired=0 and no graduation completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "BAJDN",
+      "jupasCode": "JS4264",
+      "programmeId": "CUHK-UG-BAJDN-17",
+      "majorId": "CUHK-UG-BAJDN-17-M1",
+      "courses": [
+        { "code": "DOTE1030", "title": "Economics for Business Studies I", "credits": 0, "recommendedYear": 1, "semester": "1", "courseType": "programme_course", "group": "Year 1 Term 1 study sequence · current DOTE code; official page also shows legacy DSME1030" },
+        { "code": "MGNT1020", "title": "Management", "credits": 0, "recommendedYear": 1, "semester": "1", "courseType": "programme_course", "group": "Year 1 Term 1 study sequence · official page does not publish per-course units" },
+        { "code": "LAWS1020", "title": "Hong Kong Legal System", "credits": 0, "recommendedYear": 1, "semester": "1", "courseType": "programme_course", "group": "Year 1 Term 1 study sequence · one of six undergraduate LAWS courses used for JD exemptions" },
+        { "code": "DOTE1040", "title": "Economics for Business Studies II", "credits": 0, "recommendedYear": 1, "semester": "2", "courseType": "programme_course", "group": "Year 1 Term 2 study sequence · current DOTE code; official page also shows legacy DSME1040" },
+        { "code": "MKTG2010", "title": "Marketing Management", "credits": 0, "recommendedYear": 1, "semester": "2", "courseType": "programme_course", "group": "Year 1 Term 2 study sequence · official page does not publish per-course units" },
+        { "code": "MGNT2511", "title": "Global Experiential Learning I", "credits": 0, "recommendedYear": 1, "semester": "2", "courseType": "programme_course", "group": "Year 1 Term 2 study sequence · official page does not publish per-course units" },
+        { "code": "LAWS1030", "title": "Legal System of the PRC", "credits": 0, "recommendedYear": 1, "semester": "2", "courseType": "programme_course", "group": "Year 1 Term 2 study sequence · one of six undergraduate LAWS courses used for JD exemptions" },
+
+        { "code": "ACCT2111", "title": "Introductory Financial Accounting", "credits": 0, "recommendedYear": 2, "semester": "1", "courseType": "programme_course", "group": "Year 2 Term 1 study sequence · official page does not publish per-course units" },
+        { "code": "DOTE2011", "title": "Statistical Analysis for Business Decisions", "credits": 0, "recommendedYear": 2, "semester": "1", "courseType": "programme_course", "group": "Year 2 Term 1 study sequence · current DOTE code; official page also shows legacy DSME2011" },
+        { "code": "IBBA3040", "title": "Business Lecture Series", "credits": 0, "recommendedYear": 2, "semester": "1", "courseType": "programme_course", "group": "Year 2 Term 1 study sequence · official page does not publish per-course units" },
+        { "code": "LAWS1041", "title": "Contract I", "credits": 0, "recommendedYear": 2, "semester": "1", "courseType": "programme_course", "group": "Year 2 Term 1 study sequence · one of six undergraduate LAWS courses used for JD exemptions" },
+        { "code": "ACCT2121", "title": "Introductory Management Accounting", "credits": 0, "recommendedYear": 2, "semester": "2", "courseType": "programme_course", "group": "Year 2 Term 2 study sequence · official page does not publish per-course units" },
+        { "code": "FINA2010", "title": "Financial Management", "credits": 0, "recommendedYear": 2, "semester": "2", "courseType": "programme_course", "group": "Year 2 Term 2 study sequence · official page does not publish per-course units" },
+        { "code": "LAWS1042", "title": "Contract II", "credits": 0, "recommendedYear": 2, "semester": "2", "courseType": "programme_course", "group": "Year 2 Term 2 study sequence · one of six undergraduate LAWS courses used for JD exemptions" },
+
+        { "code": "DOTE2030", "title": "Operations Management", "credits": 0, "recommendedYear": 3, "semester": "1", "courseType": "programme_course", "group": "Year 3 Term 1 study sequence · current DOTE code; official page also shows legacy DSME2030" },
+        { "code": "LAWS2131", "title": "Tort I", "credits": 0, "recommendedYear": 3, "semester": "1", "courseType": "programme_course", "group": "Year 3 Term 1 study sequence · one of six undergraduate LAWS courses used for JD exemptions" },
+        { "code": "DOTE2051", "title": "Business Information Systems", "credits": 0, "recommendedYear": 3, "semester": "2", "courseType": "programme_course", "group": "Year 3 Term 2 study sequence · current DOTE code; official page also shows legacy DSME2051" },
+        { "code": "LAWS2132", "title": "Tort II", "credits": 0, "recommendedYear": 3, "semester": "2", "courseType": "programme_course", "group": "Year 3 Term 2 study sequence · one of six undergraduate LAWS courses used for JD exemptions" },
+
+        { "code": "MGNT4010", "title": "Strategic Management", "credits": 0, "recommendedYear": 4, "semester": "1", "courseType": "programme_course", "group": "Year 4 Term 1 study sequence · official page does not publish per-course units" },
+        { "code": "MGNT2512", "title": "Global Experiential Learning II", "credits": 0, "recommendedYear": 4, "semester": "1", "courseType": "programme_course", "group": "Year 4 Term 1 study sequence · official page does not publish per-course units" },
+        { "code": "LAWS6001", "title": "Legal System", "credits": 0, "recommendedYear": 4, "semester": "1", "courseType": "programme_course", "group": "Year 4 Term 1 study sequence · exempted after completing the six listed undergraduate LAWS courses" },
+        { "code": "LAWS6004", "title": "Legal Research, Analysis and Writing", "credits": 0, "recommendedYear": 4, "semester": "1", "courseType": "programme_course", "group": "Year 4 Term 1 study sequence · official page does not publish per-course units" },
+        { "code": "LAWS6015", "title": "Principles of Constitutional Law", "credits": 0, "recommendedYear": 4, "semester": "1", "courseType": "programme_course", "group": "Year 4 Term 1 study sequence · marked as a PCLL admission prerequisite elective" },
+        { "code": "LAWS6021", "title": "Principles of Contract", "credits": 0, "recommendedYear": 4, "semester": "1", "courseType": "programme_course", "group": "Year 4 Term 1 study sequence · exempted after the six undergraduate LAWS courses · PCLL prerequisite" },
+        { "code": "LAWS6022", "title": "Principles of Criminal Law", "credits": 0, "recommendedYear": 4, "semester": "1", "courseType": "programme_course", "group": "Year 4 Term 1 study sequence · marked as a PCLL admission prerequisite elective" },
+        { "code": "LAWS6018", "title": "Principles of Equity and Trusts", "credits": 0, "recommendedYear": 4, "semester": "2", "courseType": "programme_course", "group": "Year 4 Term 2 study sequence · marked as a PCLL admission prerequisite elective" },
+        { "code": "LAWS6020", "title": "Principle of Administrative Law", "credits": 0, "recommendedYear": 4, "semester": "2", "courseType": "programme_course", "group": "Year 4 Term 2 study sequence · marked as a PCLL admission prerequisite elective" },
+        { "code": "LAWS6023", "title": "Principles of Tort", "credits": 0, "recommendedYear": 4, "semester": "2", "courseType": "programme_course", "group": "Year 4 Term 2 study sequence · exempted after the six undergraduate LAWS courses · PCLL prerequisite" },
+        { "code": "LAWS6006", "title": "Comparative Legal Studies", "credits": 0, "recommendedYear": 4, "semester": "Summer", "courseType": "programme_course", "group": "Year 4 Summer study sequence · official alternative is LAWS6089 Legal Technologies" },
+        { "code": "LAWS6089", "title": "Legal Technologies", "credits": 0, "recommendedYear": 4, "semester": "Summer", "courseType": "programme_course", "group": "Year 4 Summer study sequence · explicit substitute for LAWS6006 Comparative Legal Studies" },
+
+        { "code": "LAWS6011", "title": "Principles of Company Law", "credits": 0, "recommendedYear": 5, "semester": "1", "courseType": "programme_course", "group": "Year 5 Term 1 study sequence · marked as a PCLL admission prerequisite elective" },
+        { "code": "LAWS6019", "title": "Principles of Land Law", "credits": 0, "recommendedYear": 5, "semester": "1", "courseType": "programme_course", "group": "Year 5 Term 1 study sequence · marked as a PCLL admission prerequisite elective" },
+        { "code": "LAWS6007", "title": "Ethics and Jurisprudence", "credits": 0, "recommendedYear": 5, "semester": "2", "courseType": "programme_course", "group": "Year 5 Term 2 study sequence · official page does not publish per-course units" },
+        { "code": "LAWS6013", "title": "Principles of Evidence", "credits": 0, "recommendedYear": 5, "semester": "2", "courseType": "programme_course", "group": "Year 5 Term 2 study sequence · marked as a PCLL admission prerequisite elective" },
+        { "code": "LAWS6017", "title": "Principles of Commercial Law", "credits": 0, "recommendedYear": 5, "semester": "2", "courseType": "programme_course", "group": "Year 5 Term 2 study sequence · marked as a PCLL admission prerequisite elective" },
+        { "code": "LAWS6901", "title": "Independent Research", "credits": 0, "recommendedYear": 5, "semester": "2", "courseType": "programme_course", "group": "Year 5 Term 2 study sequence · choose LAWS6901 or LAWS6902" },
+        { "code": "LAWS6902", "title": "Independent Research Dissertation", "credits": 0, "recommendedYear": 5, "semester": "2", "courseType": "programme_course", "group": "Year 5 Term 2 study sequence · choose LAWS6901 or LAWS6902" },
+        { "code": "LAWS6024", "title": "Principles of Property Law", "credits": 0, "recommendedYear": 5, "semester": "Summer", "courseType": "programme_course", "group": "Year 5 Summer study sequence · marked as a PCLL admission prerequisite elective" }
+      ]
+    }
+  ]
+}

@@ -2,7 +2,7 @@
 const courseShards = require('./ugCourseShards');
 const catalogue = {
   "generatedFrom": "programme_year_semester_courses_2026",
-  "generatedAt": "2026-08-24T08:49:17.946Z",
+  "generatedAt": "2026-08-24T17:32:14.783Z",
   "universities": [
     {
       "id": "HKU",
@@ -3504,9 +3504,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/bajdn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 38,
+      "codedCourseCount": 38,
+      "courseSourceUrl": "https://bba-jd.bschool.cuhk.edu.hk/en/curriculum-study-sequence"
     },
     {
       "id": "CUHK-UG-BEHMN-18",
@@ -4508,9 +4509,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/bscin/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 23,
+      "codedCourseCount": 23,
+      "courseSourceUrl": "https://rgsntl.rgs.cuhk.edu.hk/aqs_prd_applx/Public/Handbook/document.aspx?id=1793&tv=T&lang=en"
     },
     {
       "id": "CUHK-UG-ARCHN-69",
@@ -4527,9 +4529,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/archn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 34,
+      "codedCourseCount": 34,
+      "courseSourceUrl": "https://www.arch.cuhk.edu.hk/storage/documents/0f712b0e-292e-4bf3-8177-3da487a681d7.pdf"
     },
     {
       "id": "CUHK-UG-DSPSN-70",
@@ -4586,9 +4589,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/ecotu/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 131,
+      "codedCourseCount": 131,
+      "courseSourceUrl": "https://admission.econ.cuhk.edu.hk/ug/wp-content/uploads/2026/08/DDP-Curriculum-2026-2027-Intake.pdf"
     },
     {
       "id": "CUHK-UG-GDRSN-73",
@@ -4725,9 +4729,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/psycn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 76,
+      "codedCourseCount": 76,
+      "courseSourceUrl": "https://www.psy.cuhk.edu.hk/en/undergraduate/courses.html"
     },
     {
       "id": "CUHK-UG-BSSCN-80",
@@ -4744,9 +4749,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://admission.cuhk.edu.hk/programme/bsscn/",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 31,
+      "codedCourseCount": 31,
+      "courseSourceUrl": "https://socsc.cuhk.edu.hk/wp-content/uploads/Social_Science_BroadBase/02_Faculty-Package_2026-27.pdf"
     },
     {
       "id": "CUHK-UG-SOWKN-81",
@@ -4982,9 +4988,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-business-and-management/business-with-an-extended-major-in-ai-dmca",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 216,
+      "codedCourseCount": 216,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/EXTM-SUST"
     },
     {
       "id": "HKUST-UG-JS5220-DEPARTMENT-OF-CHEMICAL-AND-BIOLOGICAL-ENG-9",
@@ -5181,9 +5188,10 @@ const catalogue = {
       "studyPeriod": "5Y",
       "type": "BEng/BSc & BBA Dual Degree Program in Technology & Management",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/academy-of-interdisciplinary-studies/dual-degree-program-in-technology-and-management",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 27,
+      "codedCourseCount": 27,
+      "courseSourceUrl": "https://join.hkust.edu.hk/our-programs/academy-of-interdisciplinary-studies/dual-degree-program-in-technology-and-management"
     },
     {
       "id": "HKUST-UG-JS5311-19",
@@ -5280,9 +5288,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BEng in one of the engineering disciplines with Extended Major in Artificial Intelligence",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-engineering/engineering-with-an-extended-major-in-artificial-intelligence",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 75,
+      "codedCourseCount": 75,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/EXTM-AI"
     },
     {
       "id": "HKUST-UG-JS5812-24",
@@ -5319,9 +5328,10 @@ const catalogue = {
       "studyPeriod": "",
       "type": "",
       "officialUrl": "https://join.hkust.edu.hk/taxonomy/term/46839",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 33,
+      "codedCourseCount": 33,
+      "courseSourceUrl": "https://eabu.hkust.edu.hk/curriculum-requirements"
     },
     {
       "id": "HKUST-UG-JS5312-26",
@@ -5438,9 +5448,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BSc in Individualized Interdisciplinary Major",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/academy-of-interdisciplinary-studies/individualized-interdisciplinary-major",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 13,
+      "codedCourseCount": 13,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/IIM"
     },
     {
       "id": "HKUST-UG-JS5260-DEPARTMENT-OF-INDUSTRIAL-ENGINEERING-AND--32",
@@ -5497,9 +5508,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BSc in Biochemistry and Cell Biology BSc in Biotechnology BSc in Chemistry BSc in Mathematics BSc in Ocean Science and Technology BSc in Physics",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-science/international-research-enrichment",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 339,
+      "codedCourseCount": 339,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/PHYS"
     },
     {
       "id": "HKUST-UG-JS5315-35",
@@ -5776,9 +5788,10 @@ const catalogue = {
       "studyPeriod": "4Y",
       "type": "BSc in Chemistry (with Extended Major in Artificial Intelligence) BSc in Mathematics (with Extended Major in Artificial Intelligence) BSc in Physics (with Extended Major in Artificial Intelligence) BSc in Ocean Science and Technology (with Extended Major in Artificial Intelligence)",
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-science/science-group-a-with-an-extended-major-in-artificial-intelligence",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 542,
+      "codedCourseCount": 542,
+      "courseSourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/EXTM-AI"
     },
     {
       "id": "HKUST-UG-JS5822-BSC-IN-SUSTAINABLE-AND-GREEN-FINANCE-49",
@@ -7096,9 +7109,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1050",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 30,
+      "codedCourseCount": 30,
+      "courseSourceUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1050"
     },
     {
       "id": "CITYU-UG-SEE-20",
@@ -7135,9 +7149,10 @@ const catalogue = {
       "studyPeriod": "5 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1052",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 74,
+      "codedCourseCount": 74,
+      "courseSourceUrl": "https://www.cityu.edu.hk/see/programmes/undergraduate-programmes/BEngEVEBBAFIN"
     },
     {
       "id": "CITYU-UG-BSCESB-22",
@@ -7154,9 +7169,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1053",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 58,
+      "codedCourseCount": 58,
+      "courseSourceUrl": "https://www.cityu.edu.hk/see/programmes/undergraduate-programmes/bachelor-of-science-in-environment-and-sustainable-business"
     },
     {
       "id": "CITYU-UG-LLB-23",
@@ -7491,9 +7507,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1200",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 109,
+      "codedCourseCount": 109,
+      "courseSourceUrl": "https://www.cityu.edu.hk/phy_portal/download/1_BScAP/3_Recommended%20Study%20Plan/admitted%20to%20the%20major%20in%20202526/Normative%204-year%202526.pdf"
     },
     {
       "id": "CITYU-UG-ACE-40",
@@ -7510,9 +7527,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1201",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 160,
+      "codedCourseCount": 160,
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_ARSV-1.htm"
     },
     {
       "id": "CITYU-UG-BSCCHEM-41",
@@ -7609,9 +7627,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1207",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 204,
+      "codedCourseCount": 204,
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BENG1_NRE-1.htm"
     },
     {
       "id": "CITYU-UG-BSCPHY-46",
@@ -7668,9 +7687,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1211",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 60,
+      "codedCourseCount": 60,
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BENG1_BME-1.htm"
     },
     {
       "id": "CITYU-UG-BENGITME-49",
@@ -7687,9 +7707,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1216",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 64,
+      "codedCourseCount": 64,
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BENG1_ITME-1.htm"
     },
     {
       "id": "CITYU-UG-PRIME-50",
@@ -7745,9 +7766,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1219",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 44,
+      "codedCourseCount": 44,
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BENG1_IEEG-1.htm"
     },
     {
       "id": "CITYU-UG-BSCCS-BSCCFFT-53",
@@ -7764,9 +7786,10 @@ const catalogue = {
       "studyPeriod": "5 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1221",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 17,
+      "codedCourseCount": 17,
+      "courseSourceUrl": "https://www.cityu.edu.hk/admo/programmes/bachelor-science-computer-science-and-bachelor-science-computational-finance-and"
     },
     {
       "id": "CITYU-UG-BIO3-54",
@@ -7783,9 +7806,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1300",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 177,
+      "codedCourseCount": 177,
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_BMS-1.htm"
     },
     {
       "id": "CITYU-UG-BVM-55",
@@ -7821,9 +7845,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1805",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 117,
+      "codedCourseCount": 117,
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_BMS-1.htm"
     },
     {
       "id": "CITYU-UG-BSCBISI-57",
@@ -7840,9 +7865,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1806",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 67,
+      "codedCourseCount": 67,
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_BISI-1.htm"
     },
     {
       "id": "CITYU-UG-BSCBMS-58",
@@ -7859,9 +7885,10 @@ const catalogue = {
       "studyPeriod": "4 years",
       "type": "Bachelor's Degree",
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1807",
-      "sourceStatus": "programme_summary_only",
-      "courseCount": 1,
-      "codedCourseCount": 0
+      "sourceStatus": "course_codes_available",
+      "courseCount": 50,
+      "codedCourseCount": 50,
+      "courseSourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_BMS-1.htm"
     },
     {
       "id": "HKBU-UG-BA-1",
@@ -10790,8 +10817,8 @@ const catalogue = {
       "code": "BBA-IBBA-JD-DOUBLE-DEGREE-PROGRAMME",
       "nameEn": "BBA(IBBA)-JD Double Degree Programme",
       "nameZh": "BBA(IBBA)-JD Double Degree Programme",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 39,
+      "codedCourseCount": 38,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/bajdn/"
     },
     {
@@ -11290,8 +11317,8 @@ const catalogue = {
       "code": "SCIENCE",
       "nameEn": "Science",
       "nameZh": "Science",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 24,
+      "codedCourseCount": 23,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/bscin/"
     },
     {
@@ -11300,8 +11327,8 @@ const catalogue = {
       "code": "ARCHITECTURAL-STUDIES",
       "nameEn": "Architectural Studies",
       "nameZh": "Architectural Studies",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 35,
+      "codedCourseCount": 34,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/archn/"
     },
     {
@@ -11330,8 +11357,8 @@ const catalogue = {
       "code": "ECONOMICS-CUHK-TSINGHUA-UNIVERSITY-DUAL-UNDERGRA",
       "nameEn": "Economics (CUHK-Tsinghua University Dual Undergraduate Degree Programme)",
       "nameZh": "Economics (CUHK-Tsinghua University Dual Undergraduate Degree Programme)",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 132,
+      "codedCourseCount": 131,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/ecotu/"
     },
     {
@@ -11400,8 +11427,8 @@ const catalogue = {
       "code": "PSYCHOLOGY",
       "nameEn": "Psychology",
       "nameZh": "Psychology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 77,
+      "codedCourseCount": 76,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/psycn/"
     },
     {
@@ -11410,8 +11437,8 @@ const catalogue = {
       "code": "SOCIAL-SCIENCE-BROAD-BASED",
       "nameEn": "Social Science (Broad-based)",
       "nameZh": "Social Science (Broad-based)",
-      "courseCount": 1,
-      "codedCourseCount": 0,
+      "courseCount": 32,
+      "codedCourseCount": 31,
       "officialUrl": "https://admission.cuhk.edu.hk/programme/bsscn/"
     },
     {
@@ -11525,16 +11552,6 @@ const catalogue = {
       "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26bibu.pdf"
     },
     {
-      "id": "HKUST-UG-BUSINESS-WITH-EXTENDED-MAJOR-IN-ARTIFICIAL-INTEL-8-M1",
-      "programmeId": "HKUST-UG-BUSINESS-WITH-EXTENDED-MAJOR-IN-ARTIFICIAL-INTEL-8",
-      "code": "BUSINESS-WITH-EXTENDED-MAJOR-IN-ARTIFICIAL-INTEL",
-      "nameEn": "Business with Extended Major in Artificial Intelligence / Digital Media and Creative Arts / Sustainability",
-      "nameZh": "Business with Extended Major in Artificial Intelligence / Digital Media and Creative Arts / Sustainability",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-business-and-management/business-with-an-extended-major-in-ai-dmca"
-    },
-    {
       "id": "HKUST-UG-JS5220-DEPARTMENT-OF-CHEMICAL-AND-BIOLOGICAL-ENG-9-M1",
       "programmeId": "HKUST-UG-JS5220-DEPARTMENT-OF-CHEMICAL-AND-BIOLOGICAL-ENG-9",
       "code": "BENG-IN-CHEMICAL-ENGINEERING",
@@ -11640,9 +11657,9 @@ const catalogue = {
       "code": "DUAL-DEGREE-PROGRAM-IN-TECHNOLOGY-MANAGEMENT",
       "nameEn": "Dual Degree Program in Technology & Management",
       "nameZh": "Dual Degree Program in Technology & Management",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/academy-of-interdisciplinary-studies/dual-degree-program-in-technology-and-management"
+      "courseCount": 10,
+      "codedCourseCount": 9,
+      "officialUrl": "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/TEMG"
     },
     {
       "id": "HKUST-UG-JS5901-18-M2",
@@ -11650,9 +11667,9 @@ const catalogue = {
       "code": "BENG-BSC-OPTIONS",
       "nameEn": "BEng/BSc Options*:",
       "nameZh": "BEng/BSc Options*:",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/academy-of-interdisciplinary-studies/dual-degree-program-in-technology-and-management"
+      "courseCount": 10,
+      "codedCourseCount": 9,
+      "officialUrl": "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/TEMG"
     },
     {
       "id": "HKUST-UG-JS5901-18-M3",
@@ -11660,9 +11677,9 @@ const catalogue = {
       "code": "BBA-OPTIONS",
       "nameEn": "BBA Options:",
       "nameZh": "BBA Options:",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/academy-of-interdisciplinary-studies/dual-degree-program-in-technology-and-management"
+      "courseCount": 10,
+      "codedCourseCount": 9,
+      "officialUrl": "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/TEMG"
     },
     {
       "id": "HKUST-UG-JS5311-19-M1",
@@ -11730,9 +11747,9 @@ const catalogue = {
       "code": "ENGINEERING-WITH-EXTENDED-MAJOR-IN-ARTIFICIAL-IN",
       "nameEn": "Engineering with Extended Major in Artificial Intelligence",
       "nameZh": "Engineering with Extended Major in Artificial Intelligence",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-engineering/engineering-with-an-extended-major-in-artificial-intelligence"
+      "courseCount": 76,
+      "codedCourseCount": 75,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26extm-ai.pdf"
     },
     {
       "id": "HKUST-UG-JS5812-24-M1",
@@ -11750,9 +11767,9 @@ const catalogue = {
       "code": "BBA-IN-EURASIAN-BUSINESS",
       "nameEn": "BBA in Eurasian Business",
       "nameZh": "BBA in Eurasian Business",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/taxonomy/term/46839"
+      "courseCount": 34,
+      "codedCourseCount": 33,
+      "officialUrl": "https://eabu.hkust.edu.hk/eabu-courses"
     },
     {
       "id": "HKUST-UG-JS5312-26-M1",
@@ -11830,9 +11847,9 @@ const catalogue = {
       "code": "BSC-IN-INDIVIDUALIZED-INTERDISCIPLINARY-MAJOR",
       "nameEn": "BSc in Individualized Interdisciplinary Major",
       "nameZh": "BSc in Individualized Interdisciplinary Major",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/academy-of-interdisciplinary-studies/individualized-interdisciplinary-major"
+      "courseCount": 14,
+      "codedCourseCount": 13,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26iim.pdf"
     },
     {
       "id": "HKUST-UG-JS5260-DEPARTMENT-OF-INDUSTRIAL-ENGINEERING-AND--32-M1",
@@ -11863,16 +11880,6 @@ const catalogue = {
       "courseCount": 1,
       "codedCourseCount": 0,
       "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-business-and-management/information-systems"
-    },
-    {
-      "id": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34-M1",
-      "programmeId": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34",
-      "code": "INTERNATIONAL-RESEARCH-ENRICHMENT",
-      "nameEn": "International Research Enrichment",
-      "nameZh": "International Research Enrichment",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-science/international-research-enrichment"
     },
     {
       "id": "HKUST-UG-JS5315-35-M1",
@@ -12063,16 +12070,6 @@ const catalogue = {
       "courseCount": 1,
       "codedCourseCount": 0,
       "officialUrl": "https://join.hkust.edu.hk/our-programs/joint-school-program/risk-management-and-business-intelligence"
-    },
-    {
-      "id": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48-M1",
-      "programmeId": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48",
-      "code": "SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-ARTIFICIA",
-      "nameEn": "Science (Group A) with Extended Major in Artificial Intelligence",
-      "nameZh": "Science (Group A) with Extended Major in Artificial Intelligence",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://join.hkust.edu.hk/our-programs/school-of-science/science-group-a-with-an-extended-major-in-artificial-intelligence"
     },
     {
       "id": "HKUST-UG-JS5822-BSC-IN-SUSTAINABLE-AND-GREEN-FINANCE-49-M1",
@@ -13805,36 +13802,6 @@ const catalogue = {
       "officialUrl": "https://www.scm.cityu.edu.hk/en/programmes/undergraduate/bas"
     },
     {
-      "id": "CITYU-UG-INSPIRE-19-M1",
-      "programmeId": "CITYU-UG-INSPIRE-19",
-      "code": "BENG-ENERGY-SCIENCE-ENGINEERING",
-      "nameEn": "BEng Energy Science & Engineering",
-      "nameZh": "BEng Energy Science & Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1050"
-    },
-    {
-      "id": "CITYU-UG-INSPIRE-19-M2",
-      "programmeId": "CITYU-UG-INSPIRE-19",
-      "code": "BENG-ENVIRONMENTAL-SCIENCE-ENGINEERING-FEATURES-",
-      "nameEn": "BEng Environmental Science & Engineering +Features: Global Focus",
-      "nameZh": "BEng Environmental Science & Engineering +Features: Global Focus",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1050"
-    },
-    {
-      "id": "CITYU-UG-INSPIRE-19-M3",
-      "programmeId": "CITYU-UG-INSPIRE-19",
-      "code": "GLOBAL-FOCUS",
-      "nameEn": "Global Focus",
-      "nameZh": "Global Focus",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1050"
-    },
-    {
       "id": "CITYU-UG-SEE-20-M1",
       "programmeId": "CITYU-UG-SEE-20",
       "code": "BENG-ENERGY-SCIENCE-AND-ENGINEERING",
@@ -13853,96 +13820,6 @@ const catalogue = {
       "courseCount": 16,
       "codedCourseCount": 15,
       "officialUrl": "https://www.cityu.edu.hk/admo/programmes/school-energy-and-environment-options-beng-energy-science-and-engineering-beng"
-    },
-    {
-      "id": "CITYU-UG-BENGESE-BBAFIN-21-M1",
-      "programmeId": "CITYU-UG-BENGESE-BBAFIN-21",
-      "code": "ENVIRONMENTAL",
-      "nameEn": "Environmental",
-      "nameZh": "Environmental",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1052"
-    },
-    {
-      "id": "CITYU-UG-BENGESE-BBAFIN-21-M2",
-      "programmeId": "CITYU-UG-BENGESE-BBAFIN-21",
-      "code": "SOCIAL-GOVERNANCE-ESG",
-      "nameEn": "Social & Governance (ESG)",
-      "nameZh": "Social & Governance (ESG)",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1052"
-    },
-    {
-      "id": "CITYU-UG-BENGESE-BBAFIN-21-M3",
-      "programmeId": "CITYU-UG-BENGESE-BBAFIN-21",
-      "code": "GREEN-FINANCE",
-      "nameEn": "Green Finance",
-      "nameZh": "Green Finance",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1052"
-    },
-    {
-      "id": "CITYU-UG-BENGESE-BBAFIN-21-M4",
-      "programmeId": "CITYU-UG-BENGESE-BBAFIN-21",
-      "code": "ENVIRONMENTAL-TECHNOLOGY",
-      "nameEn": "Environmental Technology",
-      "nameZh": "Environmental Technology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1052"
-    },
-    {
-      "id": "CITYU-UG-BENGESE-BBAFIN-21-M5",
-      "programmeId": "CITYU-UG-BENGESE-BBAFIN-21",
-      "code": "INTERDISCIPLINARY-EDUCATION",
-      "nameEn": "Interdisciplinary Education",
-      "nameZh": "Interdisciplinary Education",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1052"
-    },
-    {
-      "id": "CITYU-UG-BSCESB-22-M1",
-      "programmeId": "CITYU-UG-BSCESB-22",
-      "code": "ENVIRONMENTAL-SCIENCE",
-      "nameEn": "Environmental Science",
-      "nameZh": "Environmental Science",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1053"
-    },
-    {
-      "id": "CITYU-UG-BSCESB-22-M2",
-      "programmeId": "CITYU-UG-BSCESB-22",
-      "code": "BUSINESS-SUSTAINABILITY",
-      "nameEn": "Business Sustainability",
-      "nameZh": "Business Sustainability",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1053"
-    },
-    {
-      "id": "CITYU-UG-BSCESB-22-M3",
-      "programmeId": "CITYU-UG-BSCESB-22",
-      "code": "ENVIRONMENTAL",
-      "nameEn": "Environmental",
-      "nameZh": "Environmental",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1053"
-    },
-    {
-      "id": "CITYU-UG-BSCESB-22-M4",
-      "programmeId": "CITYU-UG-BSCESB-22",
-      "code": "SOCIAL-GOVERNANCE-ESG",
-      "nameEn": "Social & Governance (ESG)",
-      "nameZh": "Social & Governance (ESG)",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1053"
     },
     {
       "id": "CITYU-UG-LLB-23-M1",
@@ -14195,44 +14072,14 @@ const catalogue = {
       "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1123"
     },
     {
-      "id": "CITYU-UG-GREAT-39-M1",
-      "programmeId": "CITYU-UG-GREAT-39",
-      "code": "BSC-CHEMISTRY",
-      "nameEn": "BSc Chemistry",
-      "nameZh": "BSc Chemistry",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1200"
-    },
-    {
-      "id": "CITYU-UG-GREAT-39-M2",
-      "programmeId": "CITYU-UG-GREAT-39",
-      "code": "BSC-COMPUTING-MATHEMATICS",
-      "nameEn": "BSc Computing Mathematics",
-      "nameZh": "BSc Computing Mathematics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1200"
-    },
-    {
-      "id": "CITYU-UG-GREAT-39-M3",
-      "programmeId": "CITYU-UG-GREAT-39",
-      "code": "BSC-PHYSICS-GLOBAL-RESEARCH-ENRICHMENT-AND-TECHN",
-      "nameEn": "BSc Physics + Global Research Enrichment and Technopreneurship (GREAT)]",
-      "nameZh": "BSc Physics + Global Research Enrichment and Technopreneurship (GREAT)]",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1200"
-    },
-    {
       "id": "CITYU-UG-ACE-40-M1",
       "programmeId": "CITYU-UG-ACE-40",
       "code": "BENG-ARCHITECTURAL-ENGINEERING",
       "nameEn": "BEng Architectural Engineering",
       "nameZh": "BEng Architectural Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1201"
+      "courseCount": 42,
+      "codedCourseCount": 41,
+      "officialUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BENG1_ARCE-1.htm"
     },
     {
       "id": "CITYU-UG-ACE-40-M2",
@@ -14240,9 +14087,9 @@ const catalogue = {
       "code": "BENG-CIVIL-ENGINEERING",
       "nameEn": "BEng Civil Engineering",
       "nameZh": "BEng Civil Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1201"
+      "courseCount": 56,
+      "codedCourseCount": 55,
+      "officialUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BENG1_CEG-1.htm"
     },
     {
       "id": "CITYU-UG-ACE-40-M3",
@@ -14250,9 +14097,9 @@ const catalogue = {
       "code": "BSC-ARCHITECTURE-AND-SURVEYING",
       "nameEn": "BSc Architecture and Surveying",
       "nameZh": "BSc Architecture and Surveying",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1201"
+      "courseCount": 65,
+      "codedCourseCount": 64,
+      "officialUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_ARSV-1.htm"
     },
     {
       "id": "CITYU-UG-BSCCHEM-41-M1",
@@ -14420,9 +14267,9 @@ const catalogue = {
       "code": "BENG-AEROSPACE-ENGINEERING",
       "nameEn": "BEng Aerospace Engineering",
       "nameZh": "BEng Aerospace Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1207"
+      "courseCount": 66,
+      "codedCourseCount": 65,
+      "officialUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BENG1_A.E.-1.htm"
     },
     {
       "id": "CITYU-UG-MNE-45-M2",
@@ -14430,9 +14277,9 @@ const catalogue = {
       "code": "BENG-MECHANICAL-ENGINEERING",
       "nameEn": "BEng Mechanical Engineering",
       "nameZh": "BEng Mechanical Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1207"
+      "courseCount": 62,
+      "codedCourseCount": 61,
+      "officialUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BENG1_M.E.-1.htm"
     },
     {
       "id": "CITYU-UG-MNE-45-M3",
@@ -14440,9 +14287,9 @@ const catalogue = {
       "code": "BENG-NUCLEAR-AND-RISK-ENGINEERING",
       "nameEn": "BEng Nuclear and Risk Engineering",
       "nameZh": "BEng Nuclear and Risk Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1207"
+      "courseCount": 79,
+      "codedCourseCount": 78,
+      "officialUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BENG1_NRE-1.htm"
     },
     {
       "id": "CITYU-UG-BSCPHY-46-M1",
@@ -14505,96 +14352,6 @@ const catalogue = {
       "officialUrl": "https://www.cityu.edu.hk/phy_portal/download/1_BScAP/3_Recommended%20Study%20Plan/admitted%20to%20the%20major%20in%20202526/Normative%204-year%202526.pdf"
     },
     {
-      "id": "CITYU-UG-BENGBME-48-M1",
-      "programmeId": "CITYU-UG-BENGBME-48",
-      "code": "MEDICAL-TECHNOLOGY",
-      "nameEn": "Medical Technology",
-      "nameZh": "Medical Technology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1211"
-    },
-    {
-      "id": "CITYU-UG-BENGBME-48-M2",
-      "programmeId": "CITYU-UG-BENGBME-48",
-      "code": "BIOINSTRUMENTATION",
-      "nameEn": "Bioinstrumentation",
-      "nameZh": "Bioinstrumentation",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1211"
-    },
-    {
-      "id": "CITYU-UG-BENGBME-48-M3",
-      "programmeId": "CITYU-UG-BENGBME-48",
-      "code": "CELL-AND-TISSUE-ENGINEERING",
-      "nameEn": "Cell and Tissue Engineering",
-      "nameZh": "Cell and Tissue Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1211"
-    },
-    {
-      "id": "CITYU-UG-BENGBME-48-M4",
-      "programmeId": "CITYU-UG-BENGBME-48",
-      "code": "BIOMEDICAL-ROBOTICS",
-      "nameEn": "Biomedical Robotics",
-      "nameZh": "Biomedical Robotics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1211"
-    },
-    {
-      "id": "CITYU-UG-BENGITME-49-M1",
-      "programmeId": "CITYU-UG-BENGITME-49",
-      "code": "INDUSTRIAL-INTERNET-OF-THINGS",
-      "nameEn": "Industrial Internet-of-Things",
-      "nameZh": "Industrial Internet-of-Things",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1216"
-    },
-    {
-      "id": "CITYU-UG-BENGITME-49-M2",
-      "programmeId": "CITYU-UG-BENGITME-49",
-      "code": "INDUSTRIAL-BIG-DATA",
-      "nameEn": "Industrial Big Data",
-      "nameZh": "Industrial Big Data",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1216"
-    },
-    {
-      "id": "CITYU-UG-BENGITME-49-M3",
-      "programmeId": "CITYU-UG-BENGITME-49",
-      "code": "ROBOTICS-AND-AUTOMATION",
-      "nameEn": "Robotics and Automation",
-      "nameZh": "Robotics and Automation",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1216"
-    },
-    {
-      "id": "CITYU-UG-BENGITME-49-M4",
-      "programmeId": "CITYU-UG-BENGITME-49",
-      "code": "LOGISTICS-AND-SUPPLY-CHAIN",
-      "nameEn": "Logistics and Supply Chain",
-      "nameZh": "Logistics and Supply Chain",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1216"
-    },
-    {
-      "id": "CITYU-UG-BENGITME-49-M5",
-      "programmeId": "CITYU-UG-BENGITME-49",
-      "code": "SMART-CITY-ENGINEERING",
-      "nameEn": "Smart City Engineering",
-      "nameZh": "Smart City Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1216"
-    },
-    {
       "id": "CITYU-UG-PRIME-50-M1",
       "programmeId": "CITYU-UG-PRIME-50",
       "code": "PATHWAY-FOR-RESEARCH-INNOVATION-AND-MULTINATIONA",
@@ -14655,126 +14412,6 @@ const catalogue = {
       "officialUrl": "https://www.cs.cityu.edu.hk/en/academic-programmes/bsc-cybersecurity/curriculum/sample-study-schedule"
     },
     {
-      "id": "CITYU-UG-BENGIEEG-52-M1",
-      "programmeId": "CITYU-UG-BENGIEEG-52",
-      "code": "ENGINEERING",
-      "nameEn": "Engineering",
-      "nameZh": "Engineering",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1219"
-    },
-    {
-      "id": "CITYU-UG-BENGIEEG-52-M2",
-      "programmeId": "CITYU-UG-BENGIEEG-52",
-      "code": "TECHNOLOGY",
-      "nameEn": "Technology",
-      "nameZh": "Technology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1219"
-    },
-    {
-      "id": "CITYU-UG-BENGIEEG-52-M3",
-      "programmeId": "CITYU-UG-BENGIEEG-52",
-      "code": "INNOVATION",
-      "nameEn": "Innovation",
-      "nameZh": "Innovation",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1219"
-    },
-    {
-      "id": "CITYU-UG-BENGIEEG-52-M4",
-      "programmeId": "CITYU-UG-BENGIEEG-52",
-      "code": "ENTERPRISE",
-      "nameEn": "Enterprise",
-      "nameZh": "Enterprise",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1219"
-    },
-    {
-      "id": "CITYU-UG-BENGIEEG-52-M5",
-      "programmeId": "CITYU-UG-BENGIEEG-52",
-      "code": "ENTREPRENEURSHIP",
-      "nameEn": "Entrepreneurship",
-      "nameZh": "Entrepreneurship",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1219"
-    },
-    {
-      "id": "CITYU-UG-BSCCS-BSCCFFT-53-M1",
-      "programmeId": "CITYU-UG-BSCCS-BSCCFFT-53",
-      "code": "CORPORATE-ACCOUNTING-ECONOMICS",
-      "nameEn": "Corporate Accounting & Economics",
-      "nameZh": "Corporate Accounting & Economics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1221"
-    },
-    {
-      "id": "CITYU-UG-BSCCS-BSCCFFT-53-M2",
-      "programmeId": "CITYU-UG-BSCCS-BSCCFFT-53",
-      "code": "COMPUTATIONAL-FINANCE",
-      "nameEn": "Computational Finance",
-      "nameZh": "Computational Finance",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1221"
-    },
-    {
-      "id": "CITYU-UG-BSCCS-BSCCFFT-53-M3",
-      "programmeId": "CITYU-UG-BSCCS-BSCCFFT-53",
-      "code": "ADVANCED-STATISTICS",
-      "nameEn": "Advanced Statistics",
-      "nameZh": "Advanced Statistics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1221"
-    },
-    {
-      "id": "CITYU-UG-BSCCS-BSCCFFT-53-M4",
-      "programmeId": "CITYU-UG-BSCCS-BSCCFFT-53",
-      "code": "FINANCIAL-TECHNOLOGIES",
-      "nameEn": "Financial Technologies",
-      "nameZh": "Financial Technologies",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1221"
-    },
-    {
-      "id": "CITYU-UG-BIO3-54-M1",
-      "programmeId": "CITYU-UG-BIO3-54",
-      "code": "FREE-CHOICE-OF-MAJOR",
-      "nameEn": "Free Choice of Major",
-      "nameZh": "Free Choice of Major",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1300"
-    },
-    {
-      "id": "CITYU-UG-BIO3-54-M2",
-      "programmeId": "CITYU-UG-BIO3-54",
-      "code": "OVERSEAS-RESEARCH-OPPORTUNITIES",
-      "nameEn": "Overseas Research Opportunities",
-      "nameZh": "Overseas Research Opportunities",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1300"
-    },
-    {
-      "id": "CITYU-UG-BIO3-54-M3",
-      "programmeId": "CITYU-UG-BIO3-54",
-      "code": "INTERDISCIPLINARY",
-      "nameEn": "Interdisciplinary",
-      "nameZh": "Interdisciplinary",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1300"
-    },
-    {
       "id": "CITYU-UG-BVM-55-M1",
       "programmeId": "CITYU-UG-BVM-55",
       "code": "ONE-HEALTH",
@@ -14820,9 +14457,9 @@ const catalogue = {
       "code": "BSC-BIOLOGICAL-SCIENCES",
       "nameEn": "BSc Biological Sciences",
       "nameZh": "BSc Biological Sciences",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1805"
+      "courseCount": 68,
+      "codedCourseCount": 67,
+      "officialUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_BISI-1.htm"
     },
     {
       "id": "CITYU-UG-BMS-56-M2",
@@ -14830,119 +14467,9 @@ const catalogue = {
       "code": "BSC-BIOMEDICAL-SCIENCES",
       "nameEn": "BSc Biomedical Sciences",
       "nameZh": "BSc Biomedical Sciences",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1805"
-    },
-    {
-      "id": "CITYU-UG-BSCBISI-57-M1",
-      "programmeId": "CITYU-UG-BSCBISI-57",
-      "code": "BIOINFORMATICS",
-      "nameEn": "Bioinformatics",
-      "nameZh": "Bioinformatics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1806"
-    },
-    {
-      "id": "CITYU-UG-BSCBISI-57-M2",
-      "programmeId": "CITYU-UG-BSCBISI-57",
-      "code": "BIOCHEMISTRY",
-      "nameEn": "Biochemistry",
-      "nameZh": "Biochemistry",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1806"
-    },
-    {
-      "id": "CITYU-UG-BSCBISI-57-M3",
-      "programmeId": "CITYU-UG-BSCBISI-57",
-      "code": "GENETICS",
-      "nameEn": "Genetics",
-      "nameZh": "Genetics",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1806"
-    },
-    {
-      "id": "CITYU-UG-BSCBISI-57-M4",
-      "programmeId": "CITYU-UG-BSCBISI-57",
-      "code": "CELLULAR-MOLECULAR-BIOLOGY",
-      "nameEn": "Cellular & Molecular Biology",
-      "nameZh": "Cellular & Molecular Biology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1806"
-    },
-    {
-      "id": "CITYU-UG-BSCBISI-57-M5",
-      "programmeId": "CITYU-UG-BSCBISI-57",
-      "code": "IMMUNOLOGY",
-      "nameEn": "Immunology",
-      "nameZh": "Immunology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1806"
-    },
-    {
-      "id": "CITYU-UG-BSCBISI-57-M6",
-      "programmeId": "CITYU-UG-BSCBISI-57",
-      "code": "RESEARCH-ROTATION-PROJECTS-FOR-HANDS-ON-EXPERIEN",
-      "nameEn": "Research Rotation Projects for Hands-on Experience",
-      "nameZh": "Research Rotation Projects for Hands-on Experience",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1806"
-    },
-    {
-      "id": "CITYU-UG-BSCBMS-58-M1",
-      "programmeId": "CITYU-UG-BSCBMS-58",
-      "code": "CLINICAL-CHEMISTRY",
-      "nameEn": "Clinical Chemistry",
-      "nameZh": "Clinical Chemistry",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1807"
-    },
-    {
-      "id": "CITYU-UG-BSCBMS-58-M2",
-      "programmeId": "CITYU-UG-BSCBMS-58",
-      "code": "HEMATOLOGY",
-      "nameEn": "Hematology",
-      "nameZh": "Hematology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1807"
-    },
-    {
-      "id": "CITYU-UG-BSCBMS-58-M3",
-      "programmeId": "CITYU-UG-BSCBMS-58",
-      "code": "MICROBIOLOGY-AND-PATHOLOGY",
-      "nameEn": "Microbiology and Pathology",
-      "nameZh": "Microbiology and Pathology",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1807"
-    },
-    {
-      "id": "CITYU-UG-BSCBMS-58-M4",
-      "programmeId": "CITYU-UG-BSCBMS-58",
-      "code": "CLINICAL-OR-INDUSTRIAL-ATTACHMENT",
-      "nameEn": "Clinical or Industrial Attachment",
-      "nameZh": "Clinical or Industrial Attachment",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1807"
-    },
-    {
-      "id": "CITYU-UG-BSCBMS-58-M5",
-      "programmeId": "CITYU-UG-BSCBMS-58",
-      "code": "INTENSIVE-LABORATORY-EXPERIENCE",
-      "nameEn": "Intensive Laboratory Experience",
-      "nameZh": "Intensive Laboratory Experience",
-      "courseCount": 1,
-      "codedCourseCount": 0,
-      "officialUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1807"
+      "courseCount": 51,
+      "codedCourseCount": 50,
+      "officialUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_BMS-1.htm"
     },
     {
       "id": "HKBU-UG-BA-1-M1",
@@ -15885,6 +15412,46 @@ const catalogue = {
       "officialUrl": "https://www.ln.edu.hk/admissions/ug/programme/jupas-applicants/film-and-visual-arts"
     },
     {
+      "id": "CITYU-UG-INSPIRE-19-M1",
+      "programmeId": "CITYU-UG-INSPIRE-19",
+      "code": "BENG-ENERGY-SCIENCE-AND-ENGINEERING-INSPIRE",
+      "nameEn": "BEng Energy Science and Engineering (INSPIRE)",
+      "nameZh": "BEng Energy Science and Engineering (INSPIRE)",
+      "courseCount": 15,
+      "codedCourseCount": 15,
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/school-energy-and-environment-options-beng-energy-science-and-engineering-beng"
+    },
+    {
+      "id": "CITYU-UG-INSPIRE-19-M2",
+      "programmeId": "CITYU-UG-INSPIRE-19",
+      "code": "BENG-ENVIRONMENTAL-SCIENCE-AND-ENGINEERING-INSPIRE",
+      "nameEn": "BEng Environmental Science and Engineering (INSPIRE)",
+      "nameZh": "BEng Environmental Science and Engineering (INSPIRE)",
+      "courseCount": 15,
+      "codedCourseCount": 15,
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/school-energy-and-environment-options-beng-energy-science-and-engineering-beng"
+    },
+    {
+      "id": "CITYU-UG-BENGESE-BBAFIN-21-M1",
+      "programmeId": "CITYU-UG-BENGESE-BBAFIN-21",
+      "code": "BENG-ENVIRONMENTAL-SCIENCE-ENGINEERING-BBA-FINANCE",
+      "nameEn": "BEng Environmental Science and Engineering and BBA Finance",
+      "nameZh": "BEng Environmental Science and Engineering and BBA Finance",
+      "courseCount": 74,
+      "codedCourseCount": 74,
+      "officialUrl": "https://www.cityu.edu.hk/see/programmes/undergraduate-programmes/BEngEVEBBAFIN"
+    },
+    {
+      "id": "CITYU-UG-BSCESB-22-M1",
+      "programmeId": "CITYU-UG-BSCESB-22",
+      "code": "BSC-ENVIRONMENT-AND-SUSTAINABLE-BUSINESS",
+      "nameEn": "BSc Environment and Sustainable Business",
+      "nameZh": "BSc Environment and Sustainable Business",
+      "courseCount": 58,
+      "codedCourseCount": 58,
+      "officialUrl": "https://www.cityu.edu.hk/see/programmes/undergraduate-programmes/bachelor-of-science-in-environment-and-sustainable-business"
+    },
+    {
       "id": "CITYU-UG-BSOCSCIRGA-29-M1",
       "programmeId": "CITYU-UG-BSOCSCIRGA-29",
       "code": "INTERNATIONAL-RELATIONS-AND-GLOBAL-AFFAIRS",
@@ -15945,6 +15512,36 @@ const catalogue = {
       "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bsocsc-social-work"
     },
     {
+      "id": "CITYU-UG-GREAT-39-M1",
+      "programmeId": "CITYU-UG-GREAT-39",
+      "code": "BSC-CHEMISTRY-GREAT",
+      "nameEn": "BSc Chemistry (GREAT)",
+      "nameZh": "BSc Chemistry (GREAT)",
+      "courseCount": 72,
+      "codedCourseCount": 72,
+      "officialUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_CHEM-1.htm"
+    },
+    {
+      "id": "CITYU-UG-GREAT-39-M2",
+      "programmeId": "CITYU-UG-GREAT-39",
+      "code": "BSC-COMPUTING-MATHEMATICS-GREAT",
+      "nameEn": "BSc Computing Mathematics (GREAT)",
+      "nameZh": "BSc Computing Mathematics (GREAT)",
+      "courseCount": 23,
+      "codedCourseCount": 23,
+      "officialUrl": "https://www.cityu.edu.hk/ma/programmes/undergraduate/bsc-computing-mathematics/curriculum/10991"
+    },
+    {
+      "id": "CITYU-UG-GREAT-39-M3",
+      "programmeId": "CITYU-UG-GREAT-39",
+      "code": "BSC-PHYSICS-GREAT",
+      "nameEn": "BSc Physics (GREAT)",
+      "nameZh": "BSc Physics (GREAT)",
+      "courseCount": 14,
+      "codedCourseCount": 14,
+      "officialUrl": "https://www.cityu.edu.hk/phy_portal/download/1_BScAP/3_Recommended%20Study%20Plan/admitted%20to%20the%20major%20in%20202526/Normative%204-year%202526.pdf"
+    },
+    {
       "id": "CITYU-UG-BENGMASE-47-M1",
       "programmeId": "CITYU-UG-BENGMASE-47",
       "code": "MATERIALS-SCIENCE-AND-ENGINEERING",
@@ -15953,6 +15550,96 @@ const catalogue = {
       "courseCount": 50,
       "codedCourseCount": 50,
       "officialUrl": "https://www.cityu.edu.hk/en/mse/current-students/undergraduate/major"
+    },
+    {
+      "id": "CITYU-UG-BENGBME-48-M1",
+      "programmeId": "CITYU-UG-BENGBME-48",
+      "code": "BENG-BIOMEDICAL-ENGINEERING",
+      "nameEn": "BEng Biomedical Engineering",
+      "nameZh": "BEng Biomedical Engineering",
+      "courseCount": 60,
+      "codedCourseCount": 60,
+      "officialUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BENG1_BME-1.htm"
+    },
+    {
+      "id": "CITYU-UG-BENGITME-49-M1",
+      "programmeId": "CITYU-UG-BENGITME-49",
+      "code": "BENG-INTELLIGENT-MANUFACTURING-ENGINEERING",
+      "nameEn": "BEng Intelligent Manufacturing Engineering",
+      "nameZh": "BEng Intelligent Manufacturing Engineering",
+      "courseCount": 64,
+      "codedCourseCount": 64,
+      "officialUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BENG1_ITME-1.htm"
+    },
+    {
+      "id": "CITYU-UG-BENGIEEG-52-M1",
+      "programmeId": "CITYU-UG-BENGIEEG-52",
+      "code": "BENG-INNOVATION-AND-ENTERPRISE-ENGINEERING",
+      "nameEn": "BEng Innovation and Enterprise Engineering",
+      "nameZh": "BEng Innovation and Enterprise Engineering",
+      "courseCount": 44,
+      "codedCourseCount": 44,
+      "officialUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BENG1_IEEG-1.htm"
+    },
+    {
+      "id": "CITYU-UG-BSCCS-BSCCFFT-53-M1",
+      "programmeId": "CITYU-UG-BSCCS-BSCCFFT-53",
+      "code": "BSC-CS-CFFT-DOUBLE-DEGREE",
+      "nameEn": "BSc Computer Science and BSc Computational Finance and Financial Technology",
+      "nameZh": "BSc Computer Science and BSc Computational Finance and Financial Technology",
+      "courseCount": 17,
+      "codedCourseCount": 17,
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bachelor-science-computer-science-and-bachelor-science-computational-finance-and"
+    },
+    {
+      "id": "CITYU-UG-BIO3-54-M1",
+      "programmeId": "CITYU-UG-BIO3-54",
+      "code": "BENG-BIOMEDICAL-ENGINEERING-BIO3",
+      "nameEn": "BEng Biomedical Engineering",
+      "nameZh": "BEng Biomedical Engineering",
+      "courseCount": 60,
+      "codedCourseCount": 60,
+      "officialUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BENG1_BME-1.htm"
+    },
+    {
+      "id": "CITYU-UG-BIO3-54-M2",
+      "programmeId": "CITYU-UG-BIO3-54",
+      "code": "BSC-BIOLOGICAL-SCIENCES-BIO3",
+      "nameEn": "BSc Biological Sciences",
+      "nameZh": "BSc Biological Sciences",
+      "courseCount": 67,
+      "codedCourseCount": 67,
+      "officialUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_BISI-1.htm"
+    },
+    {
+      "id": "CITYU-UG-BIO3-54-M3",
+      "programmeId": "CITYU-UG-BIO3-54",
+      "code": "BSC-BIOMEDICAL-SCIENCES-BIO3",
+      "nameEn": "BSc Biomedical Sciences",
+      "nameZh": "BSc Biomedical Sciences",
+      "courseCount": 50,
+      "codedCourseCount": 50,
+      "officialUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_BMS-1.htm"
+    },
+    {
+      "id": "CITYU-UG-BSCBISI-57-M1",
+      "programmeId": "CITYU-UG-BSCBISI-57",
+      "code": "BSC-BIOLOGICAL-SCIENCES",
+      "nameEn": "BSc Biological Sciences",
+      "nameZh": "BSc Biological Sciences",
+      "courseCount": 67,
+      "codedCourseCount": 67,
+      "officialUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_BISI-1.htm"
+    },
+    {
+      "id": "CITYU-UG-BSCBMS-58-M1",
+      "programmeId": "CITYU-UG-BSCBMS-58",
+      "code": "BSC-BIOMEDICAL-SCIENCES",
+      "nameEn": "BSc Biomedical Sciences",
+      "nameZh": "BSc Biomedical Sciences",
+      "courseCount": 50,
+      "codedCourseCount": 50,
+      "officialUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_BMS-1.htm"
     },
     {
       "id": "CUHK-UG-BCSEN-43-M1",
@@ -16125,6 +15812,136 @@ const catalogue = {
       "officialUrl": "https://admissions.hku.hk/programmes/undergraduate-programmes/bachelor-of-engineering-computer-engineering-electrical"
     },
     {
+      "id": "HKUST-UG-BUSINESS-WITH-EXTENDED-MAJOR-IN-ARTIFICIAL-INTEL-8-M1",
+      "programmeId": "HKUST-UG-BUSINESS-WITH-EXTENDED-MAJOR-IN-ARTIFICIAL-INTEL-8",
+      "code": "EXTENDED-MAJOR-IN-ARTIFICIAL-INTELLIGENCE",
+      "nameEn": "Extended Major in Artificial Intelligence",
+      "nameZh": "Extended Major in Artificial Intelligence",
+      "courseCount": 75,
+      "codedCourseCount": 75,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26extm-ai.pdf"
+    },
+    {
+      "id": "HKUST-UG-BUSINESS-WITH-EXTENDED-MAJOR-IN-ARTIFICIAL-INTEL-8-M2",
+      "programmeId": "HKUST-UG-BUSINESS-WITH-EXTENDED-MAJOR-IN-ARTIFICIAL-INTEL-8",
+      "code": "EXTENDED-MAJOR-IN-DIGITAL-MEDIA-AND-CREATIVE-ARTS",
+      "nameEn": "Extended Major in Digital Media and Creative Arts",
+      "nameZh": "Extended Major in Digital Media and Creative Arts",
+      "courseCount": 86,
+      "codedCourseCount": 86,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202627/pdf/25-26extm-dmca.pdf"
+    },
+    {
+      "id": "HKUST-UG-BUSINESS-WITH-EXTENDED-MAJOR-IN-ARTIFICIAL-INTEL-8-M3",
+      "programmeId": "HKUST-UG-BUSINESS-WITH-EXTENDED-MAJOR-IN-ARTIFICIAL-INTEL-8",
+      "code": "EXTENDED-MAJOR-IN-SUSTAINABILITY",
+      "nameEn": "Extended Major in Sustainability",
+      "nameZh": "Extended Major in Sustainability",
+      "courseCount": 55,
+      "codedCourseCount": 55,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202627/pdf/25-26extm-sust.pdf"
+    },
+    {
+      "id": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34-M1",
+      "programmeId": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34",
+      "code": "BIOCHEMISTRY-AND-CELL-BIOLOGY-IRE",
+      "nameEn": "Biochemistry and Cell Biology (International Research Enrichment)",
+      "nameZh": "Biochemistry and Cell Biology (International Research Enrichment)",
+      "courseCount": 37,
+      "codedCourseCount": 37,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26bcb.pdf"
+    },
+    {
+      "id": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34-M2",
+      "programmeId": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34",
+      "code": "BIOTECHNOLOGY-IRE",
+      "nameEn": "Biotechnology (International Research Enrichment)",
+      "nameZh": "Biotechnology (International Research Enrichment)",
+      "courseCount": 52,
+      "codedCourseCount": 52,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26biot.pdf"
+    },
+    {
+      "id": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34-M3",
+      "programmeId": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34",
+      "code": "CHEMISTRY-IRE",
+      "nameEn": "Chemistry (International Research Enrichment)",
+      "nameZh": "Chemistry (International Research Enrichment)",
+      "courseCount": 57,
+      "codedCourseCount": 57,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26chem.pdf"
+    },
+    {
+      "id": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34-M4",
+      "programmeId": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34",
+      "code": "MATHEMATICS-IRE",
+      "nameEn": "Mathematics (International Research Enrichment)",
+      "nameZh": "Mathematics (International Research Enrichment)",
+      "courseCount": 85,
+      "codedCourseCount": 85,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26math.pdf"
+    },
+    {
+      "id": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34-M5",
+      "programmeId": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34",
+      "code": "OCEAN-SCIENCE-AND-TECHNOLOGY-IRE",
+      "nameEn": "Ocean Science and Technology (International Research Enrichment)",
+      "nameZh": "Ocean Science and Technology (International Research Enrichment)",
+      "courseCount": 52,
+      "codedCourseCount": 52,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26ost.pdf"
+    },
+    {
+      "id": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34-M6",
+      "programmeId": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34",
+      "code": "PHYSICS-IRE",
+      "nameEn": "Physics (International Research Enrichment)",
+      "nameZh": "Physics (International Research Enrichment)",
+      "courseCount": 56,
+      "codedCourseCount": 56,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26phys.pdf"
+    },
+    {
+      "id": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48-M1",
+      "programmeId": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48",
+      "code": "CHEMISTRY-WITH-EXTENDED-MAJOR-IN-AI",
+      "nameEn": "Chemistry with Extended Major in Artificial Intelligence",
+      "nameZh": "Chemistry with Extended Major in Artificial Intelligence",
+      "courseCount": 132,
+      "codedCourseCount": 132,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26extm-ai.pdf"
+    },
+    {
+      "id": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48-M2",
+      "programmeId": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48",
+      "code": "MATHEMATICS-WITH-EXTENDED-MAJOR-IN-AI",
+      "nameEn": "Mathematics with Extended Major in Artificial Intelligence",
+      "nameZh": "Mathematics with Extended Major in Artificial Intelligence",
+      "courseCount": 154,
+      "codedCourseCount": 154,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26extm-ai.pdf"
+    },
+    {
+      "id": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48-M3",
+      "programmeId": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48",
+      "code": "OCEAN-SCIENCE-AND-TECHNOLOGY-WITH-EXTENDED-MAJOR-IN-AI",
+      "nameEn": "Ocean Science and Technology with Extended Major in Artificial Intelligence",
+      "nameZh": "Ocean Science and Technology with Extended Major in Artificial Intelligence",
+      "courseCount": 126,
+      "codedCourseCount": 126,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26extm-ai.pdf"
+    },
+    {
+      "id": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48-M4",
+      "programmeId": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48",
+      "code": "PHYSICS-WITH-EXTENDED-MAJOR-IN-AI",
+      "nameEn": "Physics with Extended Major in Artificial Intelligence",
+      "nameZh": "Physics with Extended Major in Artificial Intelligence",
+      "courseCount": 130,
+      "codedCourseCount": 130,
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26extm-ai.pdf"
+    },
+    {
       "id": "POLYU-UG-JS3789-46-M1",
       "programmeId": "POLYU-UG-JS3789-46",
       "code": "BUILDING-SURVEYING",
@@ -16176,16 +15993,16 @@ const catalogue = {
     }
   ],
   "courseShardCounts": {
-    "CITYU": 3056,
-    "CUHK": 3597,
+    "CITYU": 4287,
+    "CUHK": 3930,
     "EDUHK": 547,
     "HKBU": 2664,
     "HKU": 6033,
-    "HKUST": 2200,
+    "HKUST": 3445,
     "LINGNAN": 721,
     "POLYU": 2681
   },
-  "codedCourseCount": 21499
+  "codedCourseCount": 24308
 };
 Object.defineProperty(catalogue, 'courses', {
   enumerable: true,

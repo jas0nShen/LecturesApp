@@ -14,7 +14,7 @@
 8. 提供数据状态、数据来源、数据与隐私说明，便于用户和微信审核理解数据边界；
 9. 体验版和正式版使用随包离线数据，不依赖开发环境服务。
 
-本次 `1.0.16` 数据批次继续新增 CUHK Computer Science and Engineering 两个 Major 共 73 门、Enrichment Stream in Theoretical Physics 42 门、Mathematics and Mathematics Education 75 门、Learning Design and Technology 42 门、Early Childhood Education 61 门，以及 English Studies and English Language Education 83 门官方课程。各 Programme 的开放课程池、替代路径、跨列课程、低学分组合或豁免规则尚未全部由本地规则引擎闭合，因此均保持只读浏览，不生成毕业完成比例，也没有从组别总额、相近 Programme 或无代码标题推测课程、学分与规则。
+本次 `1.0.16` 数据批次继续新增 CUHK Architectural Studies、Psychology、CUHK-Tsinghua Economics、BBA-JD、Social Science 与 Science 课程，HKUST Individualized Interdisciplinary Major、Extended Majors、Technology and Management、Eurasian Business、International Research Enrichment 与 Science Group A + AI 课程，以及 CityU INSPIRE、Environmental Engineering and Finance、Environment and Sustainable Business 与 GREAT 课程。各 Programme 的开放课程池、替代路径、跨校学分、分流与重复计算规则尚未全部由本地规则引擎闭合，因此均保持只读浏览，不生成毕业完成比例，也没有从组别总额、相近 Programme 或无代码标题推测课程、学分与规则。
 
 ## 暂不做
 

@@ -1,0 +1,76 @@
+{
+  "provider": "CityUHK Global Research Enrichment and Technopreneurship Major choices",
+  "academicYear": "2026/27 admissions; current Major curricula",
+  "sourceUrl": "https://www.cityu.edu.hk/admo/programmes/global-research-enrichment-and-technopreneurship-great",
+  "officialUrl": "https://www.cityu.edu.hk/admo/programmes/global-research-enrichment-and-technopreneurship-great",
+  "additionalSourceUrls": [
+    "https://www.jupas.edu.hk/en/programme/cityuhk/JS1200",
+    "https://www.cityu.edu.hk/catalogue/ug/current/catalogue/catalogue_UC.htm?page=B/Introduction.htm"
+  ],
+  "note": "The official GREAT admissions page states that students complete a tailored common first year and then freely choose a GREAT Stream in Chemistry, Computing Mathematics or Physics; its Curriculum Structure section directs readers to the Undergraduate Catalogue for the respective Major curricula. This supplement replaces the aggregate placeholder with three isolated Programme-local GREAT Major choices. Chemistry reuses only the 72 rows applicable to the explicitly modelled GREAT Stream in the current 2026/27 Chemistry catalogue and excludes rows restricted to non-GREAT Streams. Computing Mathematics reuses the 23-course verified normative curriculum currently available locally, while Physics reuses the 14-course verified first-year plan; those two lists do not claim complete GREAT-specific upper-year coverage. Research, entrepreneurship, overseas exchange, placement and internship components are not converted into courses unless a stable code is present in the underlying Major source. All three choices remain browse-only with totalCreditRequired=0 and must not produce a graduation-completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "CITYU",
+      "programmeId": "CITYU-UG-GREAT-39",
+      "programmeName": "Global Research Enrichment and Technopreneurship (GREAT) [Majors: BSc Chemistry / BSc Computing Mathematics / BSc Physics + Global Research Enrichment and Technopreneurship (GREAT)]",
+      "majorId": "CITYU-UG-GREAT-39-M1",
+      "majorName": "BSc Chemistry (GREAT)",
+      "majorOverride": {
+        "expectedMajorIds": [
+          "CITYU-UG-GREAT-39-M1",
+          "CITYU-UG-GREAT-39-M2",
+          "CITYU-UG-GREAT-39-M3"
+        ],
+        "id": "CITYU-UG-GREAT-39-M1",
+        "code": "BSC-CHEMISTRY-GREAT",
+        "nameEn": "BSc Chemistry (GREAT)",
+        "nameZh": "BSc Chemistry (GREAT)"
+      },
+      "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_CHEM-1.htm",
+      "officialUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_CHEM-1.htm",
+      "copyCoursesFrom": {
+        "universityCode": "CITYU",
+        "jupasCode": "JS1202",
+        "sourceMajorId": "CITYU-UG-BSCCHEM-41-M4"
+      }
+    },
+    {
+      "universityCode": "CITYU",
+      "programmeId": "CITYU-UG-GREAT-39",
+      "programmeName": "Global Research Enrichment and Technopreneurship (GREAT) [Majors: BSc Chemistry / BSc Computing Mathematics / BSc Physics + Global Research Enrichment and Technopreneurship (GREAT)]",
+      "majorId": "CITYU-UG-GREAT-39-M2",
+      "majorName": "BSc Computing Mathematics (GREAT)",
+      "createMajor": {
+        "id": "CITYU-UG-GREAT-39-M2",
+        "code": "BSC-COMPUTING-MATHEMATICS-GREAT",
+        "nameEn": "BSc Computing Mathematics (GREAT)",
+        "nameZh": "BSc Computing Mathematics (GREAT)"
+      },
+      "sourceUrl": "https://www.cityu.edu.hk/ma/programmes/undergraduate/bsc-computing-mathematics/curriculum/10991",
+      "officialUrl": "https://www.cityu.edu.hk/ma/programmes/undergraduate/bsc-computing-mathematics/curriculum/10991",
+      "copyCoursesFrom": {
+        "universityCode": "CITYU",
+        "jupasCode": "JS1206"
+      }
+    },
+    {
+      "universityCode": "CITYU",
+      "programmeId": "CITYU-UG-GREAT-39",
+      "programmeName": "Global Research Enrichment and Technopreneurship (GREAT) [Majors: BSc Chemistry / BSc Computing Mathematics / BSc Physics + Global Research Enrichment and Technopreneurship (GREAT)]",
+      "majorId": "CITYU-UG-GREAT-39-M3",
+      "majorName": "BSc Physics (GREAT)",
+      "createMajor": {
+        "id": "CITYU-UG-GREAT-39-M3",
+        "code": "BSC-PHYSICS-GREAT",
+        "nameEn": "BSc Physics (GREAT)",
+        "nameZh": "BSc Physics (GREAT)"
+      },
+      "sourceUrl": "https://www.cityu.edu.hk/phy_portal/download/1_BScAP/3_Recommended%20Study%20Plan/admitted%20to%20the%20major%20in%20202526/Normative%204-year%202526.pdf",
+      "officialUrl": "https://www.cityu.edu.hk/phy_portal/download/1_BScAP/3_Recommended%20Study%20Plan/admitted%20to%20the%20major%20in%20202526/Normative%204-year%202526.pdf",
+      "copyCoursesFrom": {
+        "universityCode": "CITYU",
+        "jupasCode": "JS1208"
+      }
+    }
+  ]
+}

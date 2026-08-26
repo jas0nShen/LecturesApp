@@ -1,0 +1,42 @@
+{
+  "provider": "CityUHK JS1805 Biomedical Sciences undeclared-major admission route",
+  "academicYear": "2026/27 admission; Major curricula follow the current CityUHK Undergraduate Catalogue",
+  "sourceUrl": "https://www.cityu.edu.hk/admo/programmes/department-biomedical-sciences-options-bsc-biological-sciences-bsc-biomedical-sciences",
+  "officialUrl": "https://www.cityu.edu.hk/admo/programmes/department-biomedical-sciences-options-bsc-biological-sciences-bsc-biomedical-sciences",
+  "additionalSourceUrls": [
+    "https://www.jupas.edu.hk/en/programme/cityuhk/JS1805",
+    "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_BISI-1.htm",
+    "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_BMS-1.htm"
+  ],
+  "note": "The official admissions page states that JS1805 students enter the Department of Biomedical Sciences without a declared Major and choose or are allocated after Semester A and Semester B of Year 1 between BSc Biological Sciences and BSc Biomedical Sciences. This supplement keeps the two official Major identities separate and reuses the corresponding current CityUHK Catalogue course universes already verified for JS1806 and JS1807. It does not merge completion state across Majors or treat admission-route allocation as a graduation rule. Both copied curricula remain browse-only with totalCreditRequired=0 because open GE, optional Streams, mixed-credit electives and cross-group counting rules are not fully closed by the local rule engine.",
+  "supplements": [
+    {
+      "universityCode": "CITYU",
+      "programmeId": "CITYU-UG-BMS-56",
+      "programmeName": "Biomedical Sciences (Majors: BSc Biological Sciences / BSc Biomedical Sciences)",
+      "majorId": "CITYU-UG-BMS-56-M1",
+      "majorName": "BSc Biological Sciences",
+      "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_BISI-1.htm",
+      "officialUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_BISI-1.htm",
+      "copyCoursesFrom": {
+        "universityCode": "CITYU",
+        "programmeId": "CITYU-UG-BSCBISI-57",
+        "majorName": "BSc Biological Sciences"
+      }
+    },
+    {
+      "universityCode": "CITYU",
+      "programmeId": "CITYU-UG-BMS-56",
+      "programmeName": "Biomedical Sciences (Majors: BSc Biological Sciences / BSc Biomedical Sciences)",
+      "majorId": "CITYU-UG-BMS-56-M2",
+      "majorName": "BSc Biomedical Sciences",
+      "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_BMS-1.htm",
+      "officialUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_BMS-1.htm",
+      "copyCoursesFrom": {
+        "universityCode": "CITYU",
+        "programmeId": "CITYU-UG-BSCBMS-58",
+        "majorName": "BSc Biomedical Sciences"
+      }
+    }
+  ]
+}

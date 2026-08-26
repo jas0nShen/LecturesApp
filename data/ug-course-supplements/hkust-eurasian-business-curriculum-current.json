@@ -1,0 +1,53 @@
+{
+  "provider": "HKUST and Nazarbayev University BBA in Eurasian Business curriculum",
+  "academicYear": "current curriculum accessed 2026-08-25",
+  "sourceUrl": "https://eabu.hkust.edu.hk/curriculum-requirements",
+  "officialUrl": "https://eabu.hkust.edu.hk/eabu-courses",
+  "note": "The official joint-program curriculum publishes a 120-credit structure: 47 Business Core credits, 23 Business Major credits, 12 Business Elective credits, 27 University Common Core credits, 11 Free Elective credits and 0-credit Legal Education. This supplement records 33 unique explicit codes: all 16 Business Core rows, the ten individually named Major candidates from the curriculum and EABU course page, the six bounded Nazarbayev University business-elective candidates converted from 6 NU ECTS credits to 3 HKUST credits as the official table instructs, and LEGL 1000. The Major language rule is two Kazakh courses or one Kazakh plus one Russian; KAZ 150, KAZ 201, KAZ 202 and RFL 103 are the complete named language candidates published on the EABU course page. The requirement table names EABU 3040 and EABU 3050 with 'Eurasia', while their detailed course cards use 'Asia'; the requirement-table titles are retained and the conflict remains a manual source check. The open requirement for any three 2000-4000-level HKUST School of Business and Management courses, generic Common Core areas, free electives and uncoded communication choices are not expanded into fabricated closed lists. The published rows remain a read-only planning subset with totalCreditRequired=0 and must not produce a graduation-completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "HKUST",
+      "programmeId": "HKUST-UG-BBA-IN-EURASIAN-BUSINESS-25",
+      "programmeName": "BBA in Eurasian Business",
+      "sourceUrl": "https://eabu.hkust.edu.hk/curriculum-requirements",
+      "officialUrl": "https://eabu.hkust.edu.hk/eabu-courses",
+      "courses": [
+        { "code": "ACCT201", "title": "Introduction to Accounting", "credits": 3, "group": "business core · NUGSB" },
+        { "code": "ACCT2200", "title": "Principles of Accounting II", "credits": 3, "group": "business core · HKUST SBM" },
+        { "code": "FIN201", "title": "Principles of Finance", "credits": 3, "group": "business core · NUGSB" },
+        { "code": "ECON101", "title": "Introduction to Microeconomics", "credits": 3, "group": "business core · NUGSB" },
+        { "code": "ECON102", "title": "Introduction to Macroeconomics", "credits": 3, "group": "business core · NUGSB" },
+        { "code": "BBA201", "title": "Management and Organizations", "credits": 3, "group": "business core · NUGSB" },
+        { "code": "BBA210", "title": "Fundamentals of Marketing", "credits": 3, "group": "business core · NUGSB" },
+        { "code": "ISOM2700", "title": "Operations Management", "credits": 3, "group": "business core · HKUST SBM" },
+        { "code": "ISOM2010", "title": "Introduction to Information Systems", "credits": 3, "group": "business core · HKUST SBM" },
+        { "code": "ISOM2600", "title": "Introduction to Business Analytics", "credits": 1, "group": "business core · HKUST SBM" },
+        { "code": "MATH161", "title": "Calculus I", "credits": 4, "group": "business core · NUGSB" },
+        { "code": "ISOM2500", "title": "Statistics", "credits": 3, "group": "business core · HKUST SBM" },
+        { "code": "CSCI115", "title": "Programming Fundamentals", "credits": 4, "group": "business core · NUGSB" },
+        { "code": "BBA203", "title": "Responsible Leadership (Ethics)", "credits": 3, "group": "business core · NUGSB" },
+        { "code": "MGMT2130", "title": "Business Ethics and Social Responsibility", "credits": 2, "group": "business core · HKUST SBM" },
+        { "code": "BBA202", "title": "Business Communication", "credits": 3, "group": "business core · NUGSB" },
+
+        { "code": "BUS101", "title": "Fundamentals of Business", "credits": 3, "group": "business major required · NUGSB" },
+        { "code": "KAZ150", "title": "Basic Kazakh", "credits": 3, "group": "business major language candidate · NUGSB" },
+        { "code": "KAZ201", "title": "Academic Kazakh I", "credits": 3, "group": "business major language candidate · NUGSB" },
+        { "code": "KAZ202", "title": "Academic Kazakh II", "credits": 3, "group": "business major language candidate · NUGSB" },
+        { "code": "RFL103", "title": "Beginning Russian", "credits": 3, "group": "business major language candidate · NUGSB" },
+        { "code": "BBA240", "title": "Strategy", "credits": 3, "group": "business major required · NUGSB" },
+        { "code": "MGMT4220", "title": "Entrepreneurship and Innovation", "credits": 4, "group": "business major required · HKUST SBM" },
+        { "code": "EABU3000", "title": "Eurasian Leadership Development", "credits": 1, "group": "business major required · HKUST SBM" },
+        { "code": "EABU3040", "title": "Business and ESG Management for Eurasia and Emerging Markets", "credits": 3, "group": "business major alternative · HKUST SBM · detailed course card says Asia rather than Eurasia" },
+        { "code": "EABU3050", "title": "Deal Making in Eurasia and Emerging Markets", "credits": 3, "group": "business major alternative · HKUST SBM · detailed course card says Asia rather than Eurasia" },
+
+        { "code": "BBA341", "title": "Corporate Finance", "credits": 3, "group": "bounded NUGSB business elective candidate · official 6 NU ECTS converted to 3 HKUST credits" },
+        { "code": "BBA343", "title": "International Finance and Trade", "credits": 3, "group": "bounded NUGSB business elective candidate · official 6 NU ECTS converted to 3 HKUST credits" },
+        { "code": "BBA345", "title": "Trading and Investments", "credits": 3, "group": "bounded NUGSB business elective candidate · official 6 NU ECTS converted to 3 HKUST credits" },
+        { "code": "BBA441", "title": "Commercial Banking", "credits": 3, "group": "bounded NUGSB business elective candidate · official 6 NU ECTS converted to 3 HKUST credits" },
+        { "code": "BBA351", "title": "International Management", "credits": 3, "group": "bounded NUGSB business elective candidate · official 6 NU ECTS converted to 3 HKUST credits" },
+        { "code": "BBA451", "title": "Multinational Enterprise Strategy", "credits": 3, "group": "bounded NUGSB business elective candidate · official 6 NU ECTS converted to 3 HKUST credits" },
+        { "code": "LEGL1000", "title": "A Self-paced Online Course on PRC/HKSAR Laws and Legal System Relevant to Business and Society", "credits": 0, "group": "legal education required" }
+      ]
+    }
+  ]
+}

@@ -250,25 +250,46 @@ function getSourceProgrammeMap(sourceSummary = null) {
     ? sourceSummary.schools
     : sourceSummary
       ? [sourceSummary]
-      : [];
+    : [];
   sourceSchools.forEach((school) => {
     (school.programmeRows || []).forEach((programme) => {
-      if (!programme.programmeCode) return;
       const sourceStatus = programme.importableCodedCourseCount > 0
         ? 'source_importable_rows'
         : programme.codedCourseCount > 0
           ? 'source_coded_rows_not_importable'
           : 'source_index_only';
-      bySchoolAndCode.set(`${school.code}::${programme.programmeCode}`, {
+      const sourceRecord = {
         sourceStatus,
         sourceCourseRowCount: programme.courseRowCount,
         sourceCodedCourseCount: programme.codedCourseCount,
         sourceImportableCodedCourseCount: programme.importableCodedCourseCount,
         sourceOfficialUrl: programme.officialUrl || ''
-      });
+      };
+      if (programme.programmeCode) {
+        bySchoolAndCode.set(`${school.code}::${programme.programmeCode}`, sourceRecord);
+      }
+      if (programme.programmeName) {
+        bySchoolAndCode.set(`${school.code}::NAME::${normalizeProgrammeName(programme.programmeName)}`, sourceRecord);
+      }
     });
   });
   return bySchoolAndCode;
+}
+
+function normalizeProgrammeName(value = '') {
+  return String(value || '')
+    .toLowerCase()
+    .replace(/&/g, 'and')
+    .replace(/[^a-z0-9]+/g, ' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+}
+
+function getProgrammeMapEntry(map, schoolCode, programmeCode, programmeName) {
+  if (programmeCode && map.has(`${schoolCode}::${programmeCode}`)) {
+    return map.get(`${schoolCode}::${programmeCode}`);
+  }
+  return map.get(`${schoolCode}::NAME::${normalizeProgrammeName(programmeName)}`);
 }
 
 function loadSourceReviews(filePath = DEFAULT_SOURCE_REVIEW_FILE) {
@@ -277,9 +298,18 @@ function loadSourceReviews(filePath = DEFAULT_SOURCE_REVIEW_FILE) {
 }
 
 function getSourceReviewMap(sourceReviews = loadSourceReviews()) {
-  return new Map(sourceReviews
-    .filter((review) => review.universityCode && review.programmeCode)
-    .map((review) => [`${String(review.universityCode).trim().toUpperCase()}::${String(review.programmeCode).trim()}`, review]));
+  const reviews = new Map();
+  sourceReviews.forEach((review) => {
+    const schoolCode = String(review.universityCode || '').trim().toUpperCase();
+    if (!schoolCode) return;
+    if (review.programmeCode) {
+      reviews.set(`${schoolCode}::${String(review.programmeCode).trim()}`, review);
+    }
+    if (review.programmeName) {
+      reviews.set(`${schoolCode}::NAME::${normalizeProgrammeName(review.programmeName)}`, review);
+    }
+  });
+  return reviews;
 }
 
 function summarizeSources(sourceDir, options = {}) {
@@ -453,9 +483,19 @@ function summarizeGeneratedCatalogue(options = {}) {
         faculty: programme.faculty || '',
         curriculumYear: programme.curriculumYear || '',
         officialUrl: programme.officialUrl || '',
-        ...(sourceProgrammes.get(`${university.code}::${programme.jupasCode || programme.code}`) || {}),
+        ...(getProgrammeMapEntry(
+          sourceProgrammes,
+          university.code,
+          programme.jupasCode || programme.code,
+          programme.nameEn
+        ) || {}),
         ...(() => {
-          const review = sourceReviews.get(`${university.code}::${programme.jupasCode || programme.code}`);
+          const review = getProgrammeMapEntry(
+            sourceReviews,
+            university.code,
+            programme.jupasCode || programme.code,
+            programme.nameEn
+          );
           return review ? {
             sourceReviewStatus: review.status,
             sourceReviewDate: review.reviewedAt || '',

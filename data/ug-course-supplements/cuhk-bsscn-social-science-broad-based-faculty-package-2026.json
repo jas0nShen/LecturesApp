@@ -1,0 +1,53 @@
+{
+  "provider": "CUHK Social Science Broad-based 2026-27 Faculty Package",
+  "academicYear": "Applicable to students admitted in 2026-27; reviewed on 2026-08-24",
+  "sourceUrl": "https://socsc.cuhk.edu.hk/wp-content/uploads/Social_Science_BroadBase/02_Faculty-Package_2026-27.pdf",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/bsscn/",
+  "additionalSourceUrls": [
+    "https://socsc.cuhk.edu.hk/social-science-broad-based/current-student/study-scheme/",
+    "https://socsc.cuhk.edu.hk/wp-content/uploads/Social_Science_BroadBase/01_BSSCN-Study-Scheme_2026-27.pdf"
+  ],
+  "note": "The official three-page Social Science Faculty Package PDF applies to students admitted in 2026-27 and publishes a complete 31-row code-title-unit Course List. The downloaded PDF was 36,090 bytes with SHA-256 564bc61ce0d8814a63c53a147f9779dfdebd26d5fb59add65900ac7c823e86de and was verified through full text extraction and visual review of every rendered page. Each listed course carries 3 units. Students complete a 9-unit Faculty Package consisting of the course prescribed for their intended Major plus two courses offered by two different other Programmes, Departments or Schools. The companion six-page 2026-entry Study Scheme was 220,703 bytes with SHA-256 e8450623ce4cb4e7e776ef193c8d8ec06f3d391f22dcf80d57717c52617937ec and was also fully extracted and visually reviewed. It confirms separate standard, Advanced Standing and Mainland Gaokao paths and twelve or thirteen downstream Major choices with different Major totals. The aggregate BSSCN Programme does not define one shared post-declaration Major curriculum, and the open University Core, College GE and free-elective pools are not closed Programme-local lists. Therefore only the complete 31-course Faculty Package is exposed for browse-only planning with totalCreditRequired=0 and no graduation completion percentage; courses from the selectable destination Majors are not copied into this aggregate Programme.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "BSSCN",
+      "jupasCode": "JS4801",
+      "programmeId": "CUHK-UG-BSSCN-80",
+      "majorId": "CUHK-UG-BSSCN-80-M1",
+      "courses": [
+        { "code": "ARCH1001", "title": "Introduction to Architecture", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "ARCH1002", "title": "Understanding Cities", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "ARCH1003", "title": "Visual Studies", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "COMM1110", "title": "Media and Everyday Life", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "COMM1120", "title": "Development of Media and Communication", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "COMM1150", "title": "Introduction to Media Industries and Practices", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "COMM1500", "title": "Perspectives in Global Communication", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "DSPS1001", "title": "Introduction to Policy Sciences", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "DSPS1003", "title": "Foundation of Data Science", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "DSPS1004", "title": "Statistics for Data Science and Policy Studies", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "ECON1210", "title": "Economics and Society", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "ECON1220", "title": "Contemporary Economic Thinking", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "ECON2011", "title": "Basic Microeconomics", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "GLSD1001", "title": "Theoretical Perspectives on Globalization", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "GPAD1020", "title": "Fundamentals of Government", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "GPAD1076", "title": "Thinking Politically", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "GPAD1077", "title": "Critical Debates in Hong Kong", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "GRMD1302", "title": "People, Space and Place", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "GRMD1401", "title": "A World of Diversity", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "GRMD1402", "title": "Global Change and Environmental Sustainability", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "PSYC1000", "title": "General Psychology", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "PSYC1630", "title": "Communication for Healthy Relationship", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · preserve the title printed in the official package list" },
+        { "code": "SOCI1001", "title": "Introduction to Sociology", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "SOCI1201", "title": "Hong Kong Society: Identities and Boundaries", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "SOSC1001", "title": "Design Thinking in Social Innovation", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "SOSC1002", "title": "Managing Creativity and Group Dynamics in Innovation Teams", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "SOSC1003", "title": "Introduction to Art Tech Design and Interactivity", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "SOWK1001", "title": "Introduction to Social Work and Social Welfare", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "SOWK1113", "title": "Self-Development in the Changing Society", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "SOWK1114", "title": "From Understanding to Empowering the Socially Disadvantaged", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" },
+        { "code": "URSP1001", "title": "Introduction to Urban Studies", "credits": 3, "recommendedYear": 1, "courseType": "foundation", "group": "2026-27 Social Science Faculty Package · select 9 units according to intended-Major and cross-Programme rules" }
+      ]
+    }
+  ]
+}

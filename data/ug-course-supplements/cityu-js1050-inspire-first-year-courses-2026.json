@@ -1,0 +1,55 @@
+{
+  "provider": "CityUHK JS1050 INSPIRE and School of Energy and Environment curriculum",
+  "academicYear": "2026/27",
+  "sourceUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1050",
+  "officialUrl": "https://www.cityu.edu.hk/see/",
+  "additionalSourceUrls": [
+    "https://www.cityu.edu.hk/admo/programmes/school-energy-and-environment-options-beng-energy-science-and-engineering-beng"
+  ],
+  "note": "The official 2026 JUPAS page states that INSPIRE expands the existing Energy Science and Engineering and Environmental Science and Engineering programmes and retains their specialized curriculum while adding overseas study, internships, research, mentorship and entrepreneurial training. This supplement therefore exposes the already verified 15-course common first-year curriculum separately under the two named Programme-local Majors. It replaces the three feature-derived placeholder Majors so Global Focus is not misrepresented as a Major. The added INSPIRE experiences have no stable public course-code table and are not converted into courses. Only the bounded common first-year list is published; later-year Major requirements and the INSPIRE enrichment path remain open, so totalCreditRequired remains 0 and no graduation-completion percentage may be produced.",
+  "supplements": [
+    {
+      "universityCode": "CITYU",
+      "programmeId": "CITYU-UG-INSPIRE-19",
+      "programmeName": "International Sustainability Programme for Innovation, Research & Entrepreneurship(INSPIRE) (Majors: BEng Energy Science & Engineering/BEng Environmental Science & Engineering +Features: Global Focus)",
+      "majorId": "CITYU-UG-INSPIRE-19-M1",
+      "majorName": "BEng Energy Science and Engineering (INSPIRE)",
+      "majorOverride": {
+        "expectedMajorIds": [
+          "CITYU-UG-INSPIRE-19-M1",
+          "CITYU-UG-INSPIRE-19-M2",
+          "CITYU-UG-INSPIRE-19-M3"
+        ],
+        "id": "CITYU-UG-INSPIRE-19-M1",
+        "code": "BENG-ENERGY-SCIENCE-AND-ENGINEERING-INSPIRE",
+        "nameEn": "BEng Energy Science and Engineering (INSPIRE)",
+        "nameZh": "BEng Energy Science and Engineering (INSPIRE)"
+      },
+      "sourceUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1050",
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/school-energy-and-environment-options-beng-energy-science-and-engineering-beng",
+      "copyCoursesFrom": {
+        "universityCode": "CITYU",
+        "jupasCode": "JS1051"
+      }
+    },
+    {
+      "universityCode": "CITYU",
+      "programmeId": "CITYU-UG-INSPIRE-19",
+      "programmeName": "International Sustainability Programme for Innovation, Research & Entrepreneurship(INSPIRE) (Majors: BEng Energy Science & Engineering/BEng Environmental Science & Engineering +Features: Global Focus)",
+      "majorId": "CITYU-UG-INSPIRE-19-M2",
+      "majorName": "BEng Environmental Science and Engineering (INSPIRE)",
+      "createMajor": {
+        "id": "CITYU-UG-INSPIRE-19-M2",
+        "code": "BENG-ENVIRONMENTAL-SCIENCE-AND-ENGINEERING-INSPIRE",
+        "nameEn": "BEng Environmental Science and Engineering (INSPIRE)",
+        "nameZh": "BEng Environmental Science and Engineering (INSPIRE)"
+      },
+      "sourceUrl": "https://www.jupas.edu.hk/en/programme/cityuhk/JS1050",
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/school-energy-and-environment-options-beng-energy-science-and-engineering-beng",
+      "copyCoursesFrom": {
+        "universityCode": "CITYU",
+        "jupasCode": "JS1051"
+      }
+    }
+  ]
+}

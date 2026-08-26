@@ -1,0 +1,84 @@
+{
+  "provider": "CityUHK Department of Systems Engineering BEng Innovation and Enterprise Engineering catalogue",
+  "academicYear": "Semester A 2026/27; normative four-year degree",
+  "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BENG1_IEEG-1.htm",
+  "officialUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BENG1_IEEG-1.htm",
+  "additionalSourceUrls": [
+    "https://www.cityu.edu.hk/sye/bengieeg.htm",
+    "https://www.jupas.edu.hk/en/programme/cityuhk/JS1219"
+  ],
+  "note": "The current official Semester A 2026/27 normative curriculum publishes a 121-credit structure: 31 Gateway Education credits, 6 College credits, a 48-credit Major requirement comprising 27 Core and 21 Elective credits, and 36 Free Elective credits. This supplement exposes all 44 unique stable course codes named in the curriculum and optional-course table. It excludes the open 12-credit GE distributional pool and does not fill the 36-credit Free Elective allowance from unrelated programmes. SYE4068, SYE4068C and SYE4116 are separate 6-credit elective capstone alternatives, while optional placements may sit outside the fixed path. Because the open GE and Free Elective pools, capstone choice, optional placements and possible transfer to another CENG major are not closed by the local rule engine, the list remains browse-only with totalCreditRequired=0 and must not produce a graduation-completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "CITYU",
+      "programmeId": "CITYU-UG-BENGIEEG-52",
+      "programmeName": "BEng Innovation and Enterprise Engineering (Features: Engineering / Technology / Innovation / Enterprise / Entrepreneurship)",
+      "majorId": "CITYU-UG-BENGIEEG-52-M1",
+      "majorName": "BEng Innovation and Enterprise Engineering",
+      "majorOverride": {
+        "expectedMajorIds": [
+          "CITYU-UG-BENGIEEG-52-M1",
+          "CITYU-UG-BENGIEEG-52-M2",
+          "CITYU-UG-BENGIEEG-52-M3",
+          "CITYU-UG-BENGIEEG-52-M4",
+          "CITYU-UG-BENGIEEG-52-M5"
+        ],
+        "id": "CITYU-UG-BENGIEEG-52-M1",
+        "code": "BENG-INNOVATION-AND-ENTERPRISE-ENGINEERING",
+        "nameEn": "BEng Innovation and Enterprise Engineering",
+        "nameZh": "BEng Innovation and Enterprise Engineering"
+      },
+      "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BENG1_IEEG-1.htm",
+      "officialUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BENG1_IEEG-1.htm",
+      "courses": [
+        { "code": "GE1401", "title": "University English", "credits": 3, "courseType": "foundation", "group": "Gateway Education · University Requirement" },
+        { "code": "GE2410", "title": "English for Engineering", "credits": 3, "courseType": "foundation", "group": "Gateway Education · University Requirement" },
+        { "code": "GE1501", "title": "Chinese Civilisation - History and Philosophy", "credits": 3, "courseType": "foundation", "group": "Gateway Education · University Requirement" },
+        { "code": "GE1601", "title": "Whole-Person Development", "credits": 1, "courseType": "foundation", "group": "Gateway Education · University Requirement" },
+        { "code": "MA1200", "title": "Calculus and Basic Linear Algebra I", "credits": 3, "courseType": "foundation", "group": "Gateway Education · College-specified · MA1200 or MA1300" },
+        { "code": "MA1300", "title": "Enhanced Calculus and Linear Algebra I", "credits": 3, "courseType": "foundation", "group": "Gateway Education · College-specified · MA1200 or MA1300" },
+        { "code": "MA1201", "title": "Calculus and Basic Linear Algebra II", "credits": 3, "courseType": "foundation", "group": "Gateway Education · College-specified · MA1201 or MA1301" },
+        { "code": "MA1301", "title": "Enhanced Calculus and Linear Algebra II", "credits": 3, "courseType": "foundation", "group": "Gateway Education · College-specified · MA1201 or MA1301" },
+        { "code": "SYE2066", "title": "Professional Engineering Practice", "credits": 3, "courseType": "foundation", "group": "Gateway Education · College-specified" },
+        { "code": "CS1302", "title": "Introduction to Computer Programming", "credits": 3, "courseType": "foundation", "group": "College Requirement" },
+        { "code": "PHY1201", "title": "General Physics I", "credits": 3, "courseType": "foundation", "group": "College Requirement" },
+
+        { "code": "SYE1001", "title": "Introduction of Engineering Disciplines", "credits": 0, "courseType": "core", "group": "Major Core · 27 credits" },
+        { "code": "CS2402", "title": "Introduction to Computational Probability Modeling", "credits": 3, "courseType": "core", "group": "Major Core · 27 credits" },
+        { "code": "GE2304", "title": "Foundations of Innovation and Entrepreneurship", "credits": 3, "courseType": "core", "group": "Major Core · 27 credits" },
+        { "code": "FS2003", "title": "Introduction to Intellectual Property", "credits": 3, "courseType": "core", "group": "Major Core · 27 credits" },
+        { "code": "SYE2046", "title": "Numerical Computation for Manufacturing and Systems Engineers", "credits": 3, "courseType": "core", "group": "Major Core · 27 credits" },
+        { "code": "FS3002", "title": "Industrial Attachment Scheme", "credits": 3, "courseType": "core", "group": "Major Core · 27 credits · internship/consultancy/research requirement" },
+        { "code": "SYE3060", "title": "Operations Research", "credits": 3, "courseType": "core", "group": "Major Core · 27 credits" },
+        { "code": "SYE4024", "title": "Project Management", "credits": 3, "courseType": "core", "group": "Major Core · 27 credits" },
+        { "code": "SYE4047", "title": "Directed Studies", "credits": 3, "courseType": "core", "group": "Major Core · 27 credits" },
+        { "code": "SYE4108", "title": "Product Development and Innovation", "credits": 3, "courseType": "core", "group": "Major Core · 27 credits" },
+
+        { "code": "GE1138", "title": "Exploring Hong Kong: History, Culture and Society", "credits": 3, "courseType": "major_elective", "group": "Major Elective · choose 21 credits" },
+        { "code": "GE1337", "title": "Urban Green City: Pollution and Solution", "credits": 3, "courseType": "major_elective", "group": "Major Elective · choose 21 credits" },
+        { "code": "GE2213", "title": "Understanding Uncertainty and Statistical Reasoning", "credits": 3, "courseType": "major_elective", "group": "Major Elective · choose 21 credits" },
+        { "code": "GE2223", "title": "Interpersonal Skills and Positive Personal Development", "credits": 3, "courseType": "major_elective", "group": "Major Elective · choose 21 credits" },
+        { "code": "GE2226", "title": "Ageing Society: Hong Kong and Beyond", "credits": 3, "courseType": "major_elective", "group": "Major Elective · choose 21 credits" },
+        { "code": "GE2230", "title": "Innovation and Entrepreneurship in Global Business", "credits": 3, "courseType": "major_elective", "group": "Major Elective · choose 21 credits" },
+        { "code": "GE2234", "title": "Social Networks for Media, Business and Technological Applications", "credits": 3, "courseType": "major_elective", "group": "Major Elective · choose 21 credits" },
+        { "code": "SYE2000", "title": "Additive Manufacturing and Innovative Prototyping", "credits": 3, "courseType": "major_elective", "group": "Major Elective · choose 21 credits" },
+        { "code": "MGT2324", "title": "Introduction to Entrepreneurship", "credits": 3, "courseType": "major_elective", "group": "Major Elective · choose 21 credits" },
+        { "code": "SYE3004", "title": "Production Planning and Control", "credits": 3, "courseType": "major_elective", "group": "Major Elective · choose 21 credits" },
+        { "code": "CA4192", "title": "Sustainable Urbanism", "credits": 3, "courseType": "major_elective", "group": "Major Elective · choose 21 credits" },
+        { "code": "CA4457", "title": "Infrastructure Asset Management", "credits": 3, "courseType": "major_elective", "group": "Major Elective · choose 21 credits" },
+        { "code": "FS4002", "title": "Industrial Attachment Scheme", "credits": 3, "courseType": "major_elective", "group": "Major Elective · choose 21 credits · also listed as optional minimum-6-week placement" },
+        { "code": "MGT4305", "title": "Developing and Presenting a Business Plan", "credits": 3, "courseType": "major_elective", "group": "Major Elective · choose 21 credits" },
+        { "code": "SYE4001", "title": "Digital Manufacturing and Operations", "credits": 3, "courseType": "major_elective", "group": "Major Elective · choose 21 credits" },
+        { "code": "SYE4005", "title": "Industrial Data and Manufacturing Analytics", "credits": 3, "courseType": "major_elective", "group": "Major Elective · choose 21 credits" },
+        { "code": "SYE4007", "title": "eLogistics and Supply Chain Management", "credits": 3, "courseType": "major_elective", "group": "Major Elective · choose 21 credits" },
+        { "code": "SYE4008", "title": "Smart Production Systems Engineering", "credits": 3, "courseType": "major_elective", "group": "Major Elective · choose 21 credits" },
+        { "code": "SYE4068", "title": "Final Year Project", "credits": 6, "courseType": "capstone", "group": "Major Elective · 6-credit capstone alternative" },
+        { "code": "SYE4068C", "title": "Final Year Project", "credits": 6, "courseType": "capstone", "group": "Major Elective · 6-credit capstone alternative" },
+        { "code": "SYE4116", "title": "Capstone Project II", "credits": 6, "courseType": "capstone", "group": "Major Elective · 6-credit capstone alternative" },
+
+        { "code": "FS2002", "title": "Industrial Attachment Scheme", "credits": 3, "courseType": "free_elective", "group": "Optional Course · minimum 6 weeks" },
+        { "code": "FS4001", "title": "Co-operative Education Scheme (CES)", "credits": 8, "courseType": "free_elective", "group": "Optional Course · internship 8 to 12 months" }
+      ]
+    }
+  ]
+}

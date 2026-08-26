@@ -1,0 +1,31 @@
+{
+  "provider": "HKUST 2025/26 BSc Individualized Interdisciplinary Major curriculum framework",
+  "academicYear": "2025/26",
+  "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/IIM",
+  "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26iim.pdf",
+  "note": "The official framework is headed 2026-27 requirements for the 2025-26 intake. It publishes 13 unique coded rows: one of four computing fundamentals, one of six mathematics fundamentals, the 0-credit IIMP 2000 course, and one of the two 6-credit IIMP project alternatives. The remaining Major curriculum is individualized: students design at least 48 required credits and 18 elective credits, subject to committee endorsement and University approval, with level minima that do not identify a closed coded course pool. COMP 1022P remains because the intake-specific PDF lists it while noting that it was last offered in 2024-25 and deleted subsequently. This supplement therefore exposes only the 13 published codes for read-only browsing and must keep totalCreditRequired=0; it cannot be used to calculate a graduation-completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "HKUST",
+      "programmeId": "HKUST-UG-N-A-31",
+      "programmeName": "BSc in Individualized Interdisciplinary Major",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/IIM",
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26iim.pdf",
+      "courses": [
+        { "code": "COMP1021", "title": "Introduction to Computer Science", "credits": 3, "group": "computing fundamental alternative" },
+        { "code": "COMP1022P", "title": "Introduction to Computing with Java", "credits": 3, "group": "computing fundamental alternative; last offered in 2024-25 and deleted subsequently" },
+        { "code": "COMP1023", "title": "Introduction to Python Programming", "credits": 3, "group": "computing fundamental alternative" },
+        { "code": "ISOM2010", "title": "Introduction to Information Systems", "credits": 3, "group": "computing fundamental alternative" },
+        { "code": "MATH1003", "title": "Calculus and Linear Algebra", "credits": 3, "group": "mathematics fundamental alternative" },
+        { "code": "MATH1005", "title": "Calculus and Statistics", "credits": 4, "group": "mathematics fundamental alternative" },
+        { "code": "MATH1006", "title": "Calculus, Vectors, and Matrices", "credits": 4, "group": "mathematics fundamental alternative" },
+        { "code": "MATH1013", "title": "Calculus I", "credits": 3, "group": "mathematics fundamental alternative" },
+        { "code": "MATH1020", "title": "Accelerated Calculus", "credits": 4, "group": "mathematics fundamental alternative" },
+        { "code": "MATH1023", "title": "Honors Calculus I", "credits": 3, "group": "mathematics fundamental alternative" },
+        { "code": "IIMP2000", "title": "Academic and Professional Development", "credits": 0, "group": "major required" },
+        { "code": "IIMP4970", "title": "Interdisciplinary Industrial Project", "credits": 6, "group": "capstone alternative" },
+        { "code": "IIMP4991", "title": "Interdisciplinary Capstone Project", "credits": 6, "group": "capstone alternative" }
+      ]
+    }
+  ]
+}

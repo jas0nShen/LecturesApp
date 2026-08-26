@@ -1,0 +1,97 @@
+{
+  "provider": "CityUHK School of Energy and Environment BSc Environment and Sustainable Business curriculum",
+  "academicYear": "2025 cohort; reviewed 2026-08-25",
+  "sourceUrl": "https://www.cityu.edu.hk/see/programmes/undergraduate-programmes/bachelor-of-science-in-environment-and-sustainable-business",
+  "officialUrl": "https://www.cityu.edu.hk/see/programmes/undergraduate-programmes/bachelor-of-science-in-environment-and-sustainable-business",
+  "additionalSourceUrls": [
+    "https://www.jupas.edu.hk/en/programme/cityuhk/JS1053"
+  ],
+  "note": "The official 2025-cohort Programme page publishes 58 unique course codes across named Gateway Education and School courses, the 15-credit School Requirement, 76 credits of SEE and College of Business core courses, and an 18-course elective pool from which 9 credits are required. The page metadata states a 131-credit graduation minimum while the curriculum introduction says 130 credits; the visible component headings total 31, 15 and 85 credits, but this conflict is not resolved by arithmetic inference. Distributional Gateway Education remains open and the MA alternatives and elective selection require manual review. The complete coded union is browse-only with totalCreditRequired=0 and must not produce a graduation-completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "CITYU",
+      "programmeId": "CITYU-UG-BSCESB-22",
+      "programmeName": "BSc Environment and Sustainable Business (Features: Environmental Science / Business Sustainability / Environmental, Social & Governance (ESG))",
+      "majorId": "CITYU-UG-BSCESB-22-M1",
+      "majorName": "BSc Environment and Sustainable Business",
+      "majorOverride": {
+        "expectedMajorIds": [
+          "CITYU-UG-BSCESB-22-M1",
+          "CITYU-UG-BSCESB-22-M2",
+          "CITYU-UG-BSCESB-22-M3",
+          "CITYU-UG-BSCESB-22-M4"
+        ],
+        "id": "CITYU-UG-BSCESB-22-M1",
+        "code": "BSC-ENVIRONMENT-AND-SUSTAINABLE-BUSINESS",
+        "nameEn": "BSc Environment and Sustainable Business",
+        "nameZh": "BSc Environment and Sustainable Business"
+      },
+      "sourceUrl": "https://www.cityu.edu.hk/see/programmes/undergraduate-programmes/bachelor-of-science-in-environment-and-sustainable-business",
+      "officialUrl": "https://www.cityu.edu.hk/see/programmes/undergraduate-programmes/bachelor-of-science-in-environment-and-sustainable-business",
+      "courses": [
+        { "code": "GE1401", "title": "University English", "credits": 3, "group": "Gateway Education · University Requirement" },
+        { "code": "GE2401", "title": "English for Science", "credits": 3, "group": "Gateway Education · University Requirement" },
+        { "code": "GE1501", "title": "Chinese Civilisation - History and Philosophy", "credits": 3, "group": "Gateway Education · University Requirement" },
+        { "code": "GE1601", "title": "Whole-Person Development", "credits": 1, "group": "Gateway Education · University Requirement" },
+        { "code": "SEE1005", "title": "Global Sustainable Technologies and Finance", "credits": 3, "group": "Gateway Education · School-specified" },
+        { "code": "SEE2003", "title": "Introduction to Energy and Environmental Data Analysis", "credits": 3, "group": "Gateway Education · School-specified" },
+        { "code": "SEE3001", "title": "Energy and Environmental Policy", "credits": 3, "group": "Gateway Education · School-specified" },
+
+        { "code": "CHEM1300", "title": "Principles of General Chemistry", "credits": 3, "recommendedYear": 1, "group": "School Requirement" },
+        { "code": "MA1200", "title": "Calculus and Basic Linear Algebra I", "credits": 3, "recommendedYear": 1, "group": "School Requirement · MA1200 or MA1300" },
+        { "code": "MA1300", "title": "Enhanced Calculus and Linear Algebra I", "credits": 3, "recommendedYear": 1, "group": "School Requirement · MA1200 or MA1300" },
+        { "code": "MA1201", "title": "Calculus and Basic Linear Algebra II", "credits": 3, "recommendedYear": 1, "group": "School Requirement · MA1201 or MA1301" },
+        { "code": "MA1301", "title": "Enhanced Calculus and Linear Algebra II", "credits": 3, "recommendedYear": 1, "group": "School Requirement · MA1201 or MA1301" },
+        { "code": "PHY1201", "title": "General Physics I", "credits": 3, "recommendedYear": 1, "group": "School Requirement" },
+        { "code": "SEE1002", "title": "Introduction to Computing for Energy and Environment", "credits": 3, "recommendedYear": 1, "group": "School Requirement" },
+        { "code": "SEE1006", "title": "Professional Development: ESB Career Planning Workshop", "credits": 0, "recommendedYear": 1, "group": "School Requirement" },
+        { "code": "SEE2000", "title": "Professional Development I", "credits": 0, "recommendedYear": 2, "group": "School Requirement" },
+        { "code": "SEE4000", "title": "Professional Development II", "credits": 0, "recommendedYear": 4, "group": "School Requirement" },
+
+        { "code": "SEE2002", "title": "Chemical Sciences for Energy and Environmental Engineers", "credits": 4, "recommendedYear": 2, "group": "Major Core · School of Energy and Environment" },
+        { "code": "SEE2203", "title": "Environmental, Safety, and Occupational Health Management", "credits": 3, "recommendedYear": 2, "group": "Major Core · School of Energy and Environment" },
+        { "code": "SEE2204", "title": "Principles of Sustainability", "credits": 3, "recommendedYear": 2, "group": "Major Core · School of Energy and Environment" },
+        { "code": "SEE3003", "title": "Climate Change and Adaptation Strategies", "credits": 3, "recommendedYear": 3, "group": "Major Core · School of Energy and Environment" },
+        { "code": "SEE3203", "title": "Air Pollution", "credits": 3, "recommendedYear": 3, "group": "Major Core · School of Energy and Environment" },
+        { "code": "SEE3206", "title": "Environmental Social Governance", "credits": 3, "recommendedYear": 3, "group": "Major Core · School of Energy and Environment" },
+        { "code": "SEE4116", "title": "Energy and Carbon Auditing", "credits": 3, "recommendedYear": 4, "group": "Major Core · School of Energy and Environment" },
+        { "code": "SEE4217", "title": "Waste and Wastewater Treatment Engineering", "credits": 3, "recommendedYear": 4, "group": "Major Core · School of Energy and Environment" },
+        { "code": "SEE4218", "title": "Water and Water Resource Engineering", "credits": 3, "recommendedYear": 4, "group": "Major Core · School of Energy and Environment" },
+        { "code": "SEE4992", "title": "Final Year Project on Sustainability", "credits": 6, "recommendedYear": 4, "group": "Major Core · School of Energy and Environment · Capstone" },
+
+        { "code": "AC3393", "title": "Sustainability Reporting and Disclosure Practices", "credits": 3, "recommendedYear": 3, "group": "Major Core · College of Business" },
+        { "code": "CB2100", "title": "Introduction to Financial Accounting", "credits": 3, "recommendedYear": 2, "group": "Major Core · College of Business" },
+        { "code": "CB2201", "title": "Operations Management", "credits": 3, "recommendedYear": 2, "group": "Major Core · College of Business" },
+        { "code": "CB2300", "title": "Management", "credits": 3, "recommendedYear": 2, "group": "Major Core · College of Business" },
+        { "code": "CB2400", "title": "Microeconomics", "credits": 3, "recommendedYear": 2, "group": "Major Core · College of Business" },
+        { "code": "CB2601", "title": "Marketing", "credits": 3, "recommendedYear": 3, "group": "Major Core · College of Business" },
+        { "code": "CB3410", "title": "Financial Management", "credits": 3, "recommendedYear": 3, "group": "Major Core · College of Business" },
+        { "code": "CB4605", "title": "Business Consultancy Project", "credits": 6, "recommendedYear": 4, "group": "Major Core · College of Business · Capstone" },
+        { "code": "EF3043", "title": "Economics for Sustainability", "credits": 3, "recommendedYear": 3, "group": "Major Core · College of Business" },
+        { "code": "EF3320", "title": "Security Analysis and Portfolio Management", "credits": 3, "recommendedYear": 3, "group": "Major Core · College of Business" },
+        { "code": "EF4010", "title": "Sustainable Finance", "credits": 3, "recommendedYear": 4, "group": "Major Core · College of Business" },
+        { "code": "EF4313", "title": "Corporate Finance", "credits": 3, "recommendedYear": 4, "group": "Major Core · College of Business" },
+        { "code": "MS3124", "title": "Global Supply Chain Management", "credits": 3, "recommendedYear": 3, "group": "Major Core · College of Business" },
+
+        { "code": "SEE3103", "title": "Energy Efficiency for Buildings", "credits": 3, "recommendedYear": 3, "group": "Major Elective · choose 9 credits · School of Energy and Environment" },
+        { "code": "SEE3205", "title": "Urban Sustainability", "credits": 3, "recommendedYear": 3, "group": "Major Elective · choose 9 credits · School of Energy and Environment" },
+        { "code": "SEE4004", "title": "Environmental Impact Assessment for Sustainable Development", "credits": 4, "recommendedYear": 4, "group": "Major Elective · choose 9 credits · School of Energy and Environment" },
+        { "code": "SEE4202", "title": "Atmospheric Chemistry", "credits": 3, "recommendedYear": 4, "group": "Major Elective · choose 9 credits · School of Energy and Environment" },
+        { "code": "SEE4203", "title": "Advanced Treatment and Management of Solid and Municipal Waste", "credits": 3, "recommendedYear": 4, "group": "Major Elective · choose 9 credits · School of Energy and Environment" },
+        { "code": "SEE4205", "title": "Design of Smart Cities and Sustainable Building", "credits": 3, "recommendedYear": 4, "group": "Major Elective · choose 9 credits · School of Energy and Environment" },
+        { "code": "SYE4024", "title": "Project Management", "credits": 3, "recommendedYear": 4, "group": "Major Elective · choose 9 credits · School of Energy and Environment" },
+        { "code": "CB2101", "title": "Introduction to Managerial Accounting", "credits": 3, "recommendedYear": 2, "group": "Major Elective · choose 9 credits · College of Business" },
+        { "code": "CB2200", "title": "Business Statistics", "credits": 3, "recommendedYear": 2, "group": "Major Elective · choose 9 credits · College of Business" },
+        { "code": "CB2402", "title": "Macroeconomics", "credits": 3, "recommendedYear": 2, "group": "Major Elective · choose 9 credits · College of Business" },
+        { "code": "CB2500", "title": "Information Management", "credits": 3, "recommendedYear": 2, "group": "Major Elective · choose 9 credits · College of Business" },
+        { "code": "CB3043", "title": "Business Case Analysis and Communication", "credits": 3, "recommendedYear": 3, "group": "Major Elective · choose 9 credits · College of Business" },
+        { "code": "CB4303", "title": "Strategic Management", "credits": 3, "recommendedYear": 4, "group": "Major Elective · choose 9 credits · College of Business" },
+        { "code": "EF4314", "title": "Corporate Valuation", "credits": 3, "recommendedYear": 4, "group": "Major Elective · choose 9 credits · College of Business" },
+        { "code": "EF4321", "title": "Derivatives and Risk Management", "credits": 3, "recommendedYear": 4, "group": "Major Elective · choose 9 credits · College of Business" },
+        { "code": "EF4327", "title": "Fixed Income Securities", "credits": 3, "recommendedYear": 4, "group": "Major Elective · choose 9 credits · College of Business" },
+        { "code": "EF4328", "title": "Asset Management", "credits": 3, "recommendedYear": 4, "group": "Major Elective · choose 9 credits · College of Business" },
+        { "code": "LW4625", "title": "Environmental Law", "credits": 3, "recommendedYear": 4, "group": "Major Elective · choose 9 credits · School of Law" }
+      ]
+    }
+  ]
+}

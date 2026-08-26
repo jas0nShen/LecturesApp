@@ -1,5 +1,13 @@
 [
   {
+    "universityCode": "HKUST",
+    "programmeName": "World Bachelor in Business",
+    "reviewedAt": "2026-08-25",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/WBB",
+    "note": "The official HKUST Program and Course Catalog confirms the 2025-26 BBA in World Business and identifies it as a self-financed joint programme with HKUST, the University of Southern California and Bocconi University. Its official pathway at https://wbb.hkust.edu.hk/wbb-academics.html publishes four years of course titles and institutions, including the HKUST Year 2 subjects, but no stable course codes, per-course credits, cross-institution equivalence table or closed Year 4 elective list. Do not infer HKUST codes from similar titles or copy the standalone Global Business curriculum. Keep this Programme as index/source-only until an official coded WBB curriculum is published."
+  },
+  {
     "universityCode": "HKU",
     "programmeCode": "6092",
     "reviewedAt": "2026-07-10",
@@ -326,5 +334,69 @@
     "status": "no_public_course_codes",
     "officialUrl": "https://www.fed.cuhk.edu.hk/cled/zh-hk/subjects/",
     "note": "The official current CLED Programme site publishes a 156-unit double-degree structure and extensive required/elective subject-title lists across Chinese Language and Literature and Chinese Language Education. It does not publish individual course codes or per-course units. Its Major-GPA note identifies CHLL, CHLT, CLED and EDUC prefixes at level 2000 or above but does not map those prefixes to the listed titles. Do not infer codes from titles, copy similarly named Chinese-department courses or divide group totals across rows. Keep JS4331 index/source-only until the Programme publishes a current code-title-unit table."
+  },
+  {
+    "universityCode": "CUHK",
+    "programmeCode": "JS4513",
+    "reviewedAt": "2026-08-24",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://www.nur.cuhk.edu.hk/education/undergraduate-programmes/bachelor-of-nursing/",
+    "note": "The official Bachelor of Nursing Programme page and the complete visually reviewed 2024 CUHK BN brochure publish the five-year curriculum, 112-unit Major, annual course-title groups and clinical education structure. The brochure was downloaded as a current official source with SHA-256 d4aa1ebcacb2e373176991857a6c05f6247e11191dce47fe016420e864724638. Neither source publishes course codes, so the titles cannot be matched to NURS codes without inference. Do not import title-only rows, reuse codes from another Nursing curriculum or divide annual/group totals across courses. Keep JS4513 index/source-only until the School publishes a current Programme-specific code-title-unit table."
+  },
+  {
+    "universityCode": "CUHK",
+    "programmeCode": "JS4542",
+    "reviewedAt": "2026-08-24",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://scm.cuhk.edu.hk/en-gb/programs/bachelor-of-chinese-medicine/bachelor-of-chinese-medicine/",
+    "note": "The official School of Chinese Medicine Programme page and the complete visually reviewed 2025 Programme leaflet publish the six-year structure: 157 Major units, a 145-unit required-course title table, 2-6 Major elective units, 10 Faculty units and 39 University Core units. The leaflet was downloaded as an official source with SHA-256 1713c18ded9d07c3ebdbc06da5fad1e1302226b6a8d8879c41362c70eecb685b. Neither source publishes course codes, so the named courses cannot be converted into stable Programme-local records without inference. Do not fabricate codes from titles, copy similarly named Medicine courses or infer per-course credits from group totals. Keep JS4542 index/source-only until the School publishes a current Programme-specific code-title-unit table."
+  },
+  {
+    "universityCode": "CUHK",
+    "programmeCode": "JS4760",
+    "reviewedAt": "2026-08-24",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://admission.cuhk.edu.hk/programme/indan/",
+    "note": "The complete visually reviewed official one-page CUHK-CUHK(Shenzhen) Interdisciplinary Data Analytics & X Double Major Programme brochure publishes the first-major theme, nine participating second-major choices, two-campus study pattern and optional Co-op pattern. The brochure was downloaded as a 3,470,647-byte PDF with SHA-256 6a54f6e39c416bec3e1bd6d9250765d1a6744672a35c4d7d1e3c8f0e483c8ae7. It publishes no course codes, per-course titles, units or stable equivalency table. Do not copy courses from the participating CUHK or CUHK(Shenzhen) Majors into this aggregate Programme or treat a component Major as the complete double-major curriculum. Keep JS4760 index/source-only until a current Programme-specific coded structure is public."
+  },
+  {
+    "universityCode": "CUHK",
+    "programmeCode": "JS4750",
+    "reviewedAt": "2026-08-24",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://admission.cuhk.edu.hk/programme/asein/",
+    "note": "The complete visually reviewed official one-page CUHK-CUHK(Shenzhen) Aerospace Science and Earth Informatics & X Double Major Programme brochure publishes the ASEI theme, participating Major choices at both campuses, two-campus study pattern and optional Co-op pattern. The brochure was downloaded as a 3,940,238-byte PDF with SHA-256 f014f531aaeb544d309b93ad40181aa5e8616f47804c2a4f6cce452bf32487ef. It publishes no course codes, per-course titles, units or stable equivalency table. Do not copy courses from Earth and Environmental Sciences, Energy and Environmental Engineering, Mechanical and Automation Engineering or another participating Major into this aggregate Programme. Keep JS4750 index/source-only until a current Programme-specific coded structure is public."
+  },
+  {
+    "universityCode": "CUHK",
+    "programmeCode": "JS4898",
+    "reviewedAt": "2026-08-24",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://socsc.cuhk.edu.hk/diplomacy-and-international-studies/",
+    "note": "The official Diplomacy and International Studies Programme site and CUHK Undergraduate Admissions page publish the four-year Law and Social Science interdisciplinary scope, including international relations, national security, international political economy, regional geopolitics, cultural and political psychology, mediation and conflict resolution, international public law and international economic law. They also describe required summer course experience at China Foreign Affairs University, exchange and internship opportunities. The reviewed Programme Features, FAQ and linked public resources do not publish a Programme-specific course-code, title and unit table. Do not convert subject areas or experiential activities into courses, copy similarly named LAWS or Social Science courses, or infer codes and units. Keep JS4898 index/source-only until a current coded curriculum is public."
+  },
+  {
+    "universityCode": "CUHK",
+    "programmeCode": "JS4501",
+    "reviewedAt": "2026-08-24",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://admission.cuhk.edu.hk/programme/medun/",
+    "note": "The official CUHK Undergraduate Admissions page, Faculty MBChB Programme site and complete visually reviewed 33-page CU Medicine 2026/27 booklet publish the six-year SMART curriculum, CU Medicine Plus learning framework, clinical-stage themes and a separate four-year Graduate Entry Track outline. The booklet was downloaded as a 25,314,286-byte PDF with SHA-256 7eefd29eaacc9282ee6f17a48b000ff7b8aacf7d47c63cb1fd5af98d2d910a0a. These sources do not publish stable Programme-specific course codes or per-course units. Do not treat GET preparatory modules, clinical themes, examinations or CU Medicine Plus activities as coded courses, and do not infer credits from stages. Keep JS4501 index/source-only until a current code-title-unit curriculum is public."
+  },
+  {
+    "universityCode": "CUHK",
+    "programmeCode": "JS4502",
+    "reviewedAt": "2026-08-24",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://admission.cuhk.edu.hk/programme/medun-gps/",
+    "note": "The official CUHK Undergraduate Admissions page, Faculty MBChB-GPS Programme site and complete visually reviewed 33-page CU Medicine 2026/27 booklet publish the shared six-year MBChB curriculum plus Global Physician-Leadership Stream leadership training, mentorship, research, humanitarian service, public-health administration, international exchange and internship opportunities. The booklet was downloaded as a 25,314,286-byte PDF with SHA-256 7eefd29eaacc9282ee6f17a48b000ff7b8aacf7d47c63cb1fd5af98d2d910a0a. These sources do not publish stable Programme-specific course codes or per-course units for either the shared medical curriculum or GPS additions. Do not turn GPS activities, training themes or clinical stages into courses or copy inferred MBChB codes. Keep JS4502 index/source-only until a current code-title-unit curriculum is public."
+  },
+  {
+    "universityCode": "CITYU",
+    "programmeCode": "JS1123",
+    "reviewedAt": "2026-08-25",
+    "status": "no_public_course_codes",
+    "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bsocsc-crime-science-and-bachelor-laws",
+    "note": "The official CityUHK double-degree page publishes the 151-credit structure: 31 Gateway Education credits, 39 Crime Science core credits, 9 Crime Science elective credits, 57 Laws core credits, 3 Laws elective credits and an optional 12-credit PCLL/minor/free-elective block. The current page contains no Programme-specific course codes beyond the JUPAS code JS1123. Standalone Crime Science and LLB pages have coded curricula, but they do not establish which courses, substitutions or electives apply inside this integrated double degree. Do not copy either standalone list into JS1123 or infer codes from the group totals. Keep JS1123 index/source-only until CityUHK publishes a Programme-specific coded curriculum."
   }
 ]

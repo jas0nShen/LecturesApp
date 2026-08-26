@@ -1,0 +1,46 @@
+{
+  "provider": "CUHK Science 2026-27 Faculty Package",
+  "academicYear": "Applicable to students admitted in 2026-27; reviewed on 2026-08-24",
+  "sourceUrl": "https://rgsntl.rgs.cuhk.edu.hk/aqs_prd_applx/Public/Handbook/document.aspx?id=1793&tv=T&lang=en",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/bscin/",
+  "additionalSourceUrls": [
+    "https://www.sci.cuhk.edu.hk/academic/undergraduate-studies/curriculum/faculty-package/",
+    "https://rgsntl.rgs.cuhk.edu.hk/aqs_prd_applx/Public/Handbook/document.aspx?id=1789&tv=T&lang=en",
+    "https://www.sci.cuhk.edu.hk/wp-content/uploads/cuhk-sci-ug.pdf"
+  ],
+  "note": "The official CUHK Undergraduate Student Handbook Science Faculty Package applies to students admitted in 2026-27 and publishes 19 Science code-title-unit rows across Life Sciences, Chemistry, Mathematics, Physics and Statistics. Its 111,950-byte rendered document body had SHA-256 354c657ab1830edf11e52ea73e51e87de70af03495d4231a11361bc64aade390. Every listed course carries 3 units. The Science requirement explicitly permits Risk Management Science students to use one of DOTE1031, DOTE1040, HTMG1010 or MGNT1020 from the Business Administration Faculty Package; the current official Business Package document supplies those four titles and 3-unit values, and its 28,482-byte rendered body had SHA-256 698aa21751188f8dc145bc88ee5c2f41d47a9c64177af3ec1ee2bdce3d014eb7. The Faculty page states that broad-based students take at least three Faculty Package courses according to their desired Major and cross-group rules, while its FAQ explains that the courses are not formally confined to Year 1. The complete visually reviewed 19-page Science undergraduate brochure was 10,447,082 bytes with SHA-256 9ad63621cfcf66783d25f7f8557f0408be9c08c2ce7396292ce729e04bb8112a and confirms that students explore before declaring a Major. Because the aggregate BSCIN route branches into separate Major Programmes with different requirements, only the complete 23-course Faculty Package scope is exposed for browse-only planning with totalCreditRequired=0 and no graduation completion percentage; destination-Major curricula are not copied into this aggregate Programme.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "BSCIN",
+      "jupasCode": "JS4601",
+      "programmeId": "CUHK-UG-BSCIN-68",
+      "majorId": "CUHK-UG-BSCIN-68-M1",
+      "courses": [
+        { "code": "LSCI1001", "title": "Basic Concepts in Biological Sciences", "credits": 3, "courseType": "foundation", "group": "2026-27 Science Faculty Package · Group A Life Sciences" },
+        { "code": "LSCI1002", "title": "Introduction to Biological Sciences", "credits": 3, "courseType": "foundation", "group": "2026-27 Science Faculty Package · Group A Life Sciences" },
+        { "code": "LSCI1012", "title": "Introduction to Life Forms in Biosphere", "credits": 3, "courseType": "foundation", "group": "2026-27 Science Faculty Package · Group A Life Sciences" },
+        { "code": "CHEM1070", "title": "Principles of Modern Chemistry", "credits": 3, "courseType": "foundation", "group": "2026-27 Science Faculty Package · Group B Chemistry" },
+        { "code": "CHEM1072", "title": "General Chemistry", "credits": 3, "courseType": "foundation", "group": "2026-27 Science Faculty Package · Group B Chemistry" },
+        { "code": "CHEM1280", "title": "Introduction to Organic Chemistry and Biomolecules", "credits": 3, "courseType": "foundation", "group": "2026-27 Science Faculty Package · Group B Chemistry" },
+        { "code": "MATH1010", "title": "University Mathematics", "credits": 3, "courseType": "foundation", "group": "2026-27 Science Faculty Package · Group C Mathematics" },
+        { "code": "MATH1018", "title": "Honours University Mathematics", "credits": 3, "courseType": "foundation", "group": "2026-27 Science Faculty Package · Group C Mathematics" },
+        { "code": "MATH1030", "title": "Linear Algebra I", "credits": 3, "courseType": "foundation", "group": "2026-27 Science Faculty Package · Group C Mathematics" },
+        { "code": "MATH1038", "title": "Honours Linear Algebra I", "credits": 3, "courseType": "foundation", "group": "2026-27 Science Faculty Package · Group C Mathematics" },
+        { "code": "MATH1520", "title": "University Mathematics for Applications", "credits": 3, "courseType": "foundation", "group": "2026-27 Science Faculty Package · Group C Mathematics" },
+        { "code": "MATH1525", "title": "Basic Mathematics for Science and Technology", "credits": 3, "courseType": "foundation", "group": "2026-27 Science Faculty Package · Group C Mathematics" },
+        { "code": "MATH1550", "title": "Methods of Matrices and Linear Algebra", "credits": 3, "courseType": "foundation", "group": "2026-27 Science Faculty Package · Group C Mathematics" },
+        { "code": "PHYS1001", "title": "Essential Physics", "credits": 3, "courseType": "foundation", "group": "2026-27 Science Faculty Package · Group D Physics" },
+        { "code": "PHYS1002", "title": "General Physics", "credits": 3, "courseType": "foundation", "group": "2026-27 Science Faculty Package · Group D Physics" },
+        { "code": "PHYS1111", "title": "Introduction to Mechanics, Fluids, and Waves (University Physics I)", "credits": 3, "courseType": "foundation", "group": "2026-27 Science Faculty Package · Group D Physics" },
+        { "code": "PHYS1113", "title": "Mechanics, Fluids and Waves (University Physics I)", "credits": 3, "courseType": "foundation", "group": "2026-27 Science Faculty Package · Group D Physics" },
+        { "code": "STAT1011", "title": "Introduction to Statistics", "credits": 3, "courseType": "foundation", "group": "2026-27 Science Faculty Package · Group E Statistics" },
+        { "code": "STAT1012", "title": "Statistics for Life Sciences", "credits": 3, "courseType": "foundation", "group": "2026-27 Science Faculty Package · Group E Statistics" },
+        { "code": "DOTE1031", "title": "Basic Economics for the Hospitality and Tourism Industry", "credits": 3, "courseType": "foundation", "group": "Risk Management Science Faculty Package option · official Business Administration Package", "sourceUrl": "https://rgsntl.rgs.cuhk.edu.hk/aqs_prd_applx/Public/Handbook/document.aspx?id=1789&tv=T&lang=en" },
+        { "code": "DOTE1040", "title": "Economics for Business Studies II", "credits": 3, "courseType": "foundation", "group": "Risk Management Science Faculty Package option · official Business Administration Package", "sourceUrl": "https://rgsntl.rgs.cuhk.edu.hk/aqs_prd_applx/Public/Handbook/document.aspx?id=1789&tv=T&lang=en" },
+        { "code": "HTMG1010", "title": "Management of Hospitality and Real Estate Businesses", "credits": 3, "courseType": "foundation", "group": "Risk Management Science Faculty Package option · official Business Administration Package", "sourceUrl": "https://rgsntl.rgs.cuhk.edu.hk/aqs_prd_applx/Public/Handbook/document.aspx?id=1789&tv=T&lang=en" },
+        { "code": "MGNT1020", "title": "Management", "credits": 3, "courseType": "foundation", "group": "Risk Management Science Faculty Package option · official Business Administration Package", "sourceUrl": "https://rgsntl.rgs.cuhk.edu.hk/aqs_prd_applx/Public/Handbook/document.aspx?id=1789&tv=T&lang=en" }
+      ]
+    }
+  ]
+}

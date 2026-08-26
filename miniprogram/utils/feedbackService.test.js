@@ -94,18 +94,18 @@ test('feedback template highlights missing undergraduate course lists for data c
   const template = feedbackService.buildFeedbackTemplate({
     profileType: 'undergraduate',
     universityCode: 'CITYU',
-    programmeId: 'CITYU-UG-INSPIRE-19',
-    programmeName: 'International Sustainability Programme for Innovation, Research & Entrepreneurship(INSPIRE)',
-    majorId: 'CITYU-UG-INSPIRE-19-M1',
-    majorName: 'BEng Energy Science & Engineering',
+    programmeId: 'CITYU-UG-ACT-25',
+    programmeName: 'AI, Computing and Transformation (ACT)',
+    majorId: 'CITYU-UG-ACT-25-M1',
+    majorName: 'Free Choice of Major',
     curriculumYear: '2026'
   });
 
   assert(template.includes('学校：香港城市大学'));
   assert(template.includes('课程清单待开放'));
-  assert(template.includes('- 当前 Programme / Major：International Sustainability Programme for Innovation, Research & Entrepreneurship(INSPIRE)'));
-  assert(template.includes('/ BEng Energy Science & Engineering'));
+  assert(template.includes('- 当前 Programme / Major：AI, Computing and Transformation (ACT)'));
+  assert(template.includes('/ Free Choice of Major'));
   assert(template.includes('- 资料采集方向：已有 Programme 官方入口，优先补课程代码、课程名、学分、Year/Semester 和课程类别。'));
   assert(template.includes('- 需要补充的课程代码 / 课程名：这个 Programme 课程清单待开放，请补充官方课程表'));
-  assert(template.includes('- 官方链接 / 截图来源：https://www.jupas.edu.hk/en/programme/cityuhk/JS1050'));
+  assert(template.includes('- 官方链接 / 截图来源：https://www.jupas.edu.hk/en/programme/cityuhk/JS1070'));
 });

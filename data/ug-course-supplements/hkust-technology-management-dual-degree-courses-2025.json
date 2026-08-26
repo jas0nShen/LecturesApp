@@ -1,0 +1,27 @@
+{
+  "provider": "HKUST 2025/26 Dual Degree Program in Technology and Management admissions and TEMG course catalog",
+  "academicYear": "2025/26",
+  "sourceUrl": "https://join.hkust.edu.hk/our-programs/academy-of-interdisciplinary-studies/dual-degree-program-in-technology-and-management",
+  "officialUrl": "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/TEMG",
+  "note": "The official admissions page lists five annual T&M Professional Activities courses and four named signature project/innovation courses. The 2025-26 TEMG catalogue confirms their codes, titles and credits. TEMG 4940 and TEMG 4950 carry 3-5 variable credits and TEMG 4970 carries 1-5, so each uses local credits 0 instead of assuming an endpoint. Students must pair one of 14 listed BEng/BSc options with one of six listed BBA options; each component Major has its own requirements, while waivers, substitutions and approved deviations may apply. This supplement exposes only the nine Programme-specific TEMG rows and does not copy or merge every component Major into a fabricated single curriculum. It remains a partial read-only list with totalCreditRequired=0 and must not produce a graduation-completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "HKUST",
+      "programmeId": "HKUST-UG-JS5901-18",
+      "programmeName": "Dual Degree Program in Technology & Management",
+      "sourceUrl": "https://join.hkust.edu.hk/our-programs/academy-of-interdisciplinary-studies/dual-degree-program-in-technology-and-management",
+      "officialUrl": "https://prog-crs.hkust.edu.hk/ugcourse/2025-26/TEMG",
+      "courses": [
+        { "code": "TEMG1011", "title": "T&M Professional Activities I", "credits": 0, "year": 1, "group": "programme required" },
+        { "code": "TEMG1012", "title": "T&M Professional Activities II", "credits": 0, "year": 2, "group": "programme required" },
+        { "code": "TEMG1013", "title": "T&M Professional Activities III", "credits": 0, "year": 3, "group": "programme required" },
+        { "code": "TEMG1014", "title": "T&M Professional Activities IV", "credits": 0, "year": 4, "group": "programme required" },
+        { "code": "TEMG1015", "title": "T&M Professional Activities V", "credits": 0, "year": 5, "group": "programme required" },
+        { "code": "TEMG3950", "title": "T&M Case Analysis and Product Innovation", "credits": 3, "group": "programme signature course" },
+        { "code": "TEMG4940", "title": "T&M Prototyping and Research Project", "credits": 0, "group": "programme signature project; official credit range 3-5" },
+        { "code": "TEMG4950", "title": "T&M Corporate Consulting Project", "credits": 0, "group": "programme signature project; official credit range 3-5" },
+        { "code": "TEMG4970", "title": "T&M IBPC Startup Project", "credits": 0, "group": "programme signature project; official credit range 1-5" }
+      ]
+    }
+  ]
+}

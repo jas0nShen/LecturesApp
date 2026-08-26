@@ -48,17 +48,17 @@ test('UG catalogue summarizes current undergraduate seed data', () => {
   assert.equal(summary.universityCount, 8);
   assert.equal(summary.facultyCount, 70);
   assert.equal(summary.programmeCount, 445);
-  assert.equal(summary.majorCount, 688);
+  assert.equal(summary.majorCount, 667);
   assert.equal(summary.requirementCount, 4);
-  assert.equal(summary.courseCount, 21513);
+  assert.equal(summary.courseCount, 24322);
   assert.equal(summary.sourceProgrammeCount, 444);
-  assert.equal(summary.codedCourseCount, 21499);
-  assert.equal(summary.programmeWithCoursesCount, 325);
-  assert.equal(summary.pendingProgrammeCount, 119);
+  assert.equal(summary.codedCourseCount, 24308);
+  assert.equal(summary.programmeWithCoursesCount, 352);
+  assert.equal(summary.pendingProgrammeCount, 92);
   assert.equal(summary.sourceReadiness.indexOnly + summary.sourceReadiness.noSource, summary.pendingProgrammeCount);
   assert(summary.sourceReadiness.indexOnly > 0);
   assert.match(summary.sourceReadinessLabel, /仅索引 \/ 来源/);
-  assert.equal(summary.coveragePercent, 73);
+  assert.equal(summary.coveragePercent, 79);
   assert.match(summary.generatedAt, /^\d{4}-\d{2}-\d{2}T/);
   assert.match(summary.generatedDate, /^\d{4}-\d{2}-\d{2}$/);
 });
@@ -525,6 +525,84 @@ test('CUHK Computational Data Science exposes the official 33-code required scop
   assert.equal(byCode.CDAS4999.courseType, 'capstone');
   assert.match(byCode.MATH1030.requirementGroups.join(' '), /Faculty Package/);
   assert.equal(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Machine Learning' }).length, 2);
+});
+
+test('CUHK Architectural Studies exposes the complete 2025-26 ARCH Course List as browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'ARCHN');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-ARCHN-69-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.jupasCode, 'JS4812');
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 34);
+  assert.equal(courses.length, 34);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 34);
+  assert.equal(courses.filter((course) => course.courseType === 'foundation').length, 1);
+  assert.equal(courses.filter((course) => course.courseType === 'core').length, 16);
+  assert.equal(courses.filter((course) => course.courseType === 'capstone').length, 1);
+  assert.equal(courses.filter((course) => course.courseType === 'major_elective').length, 14);
+  assert.equal(courses.filter((course) => course.courseType === 'programme_course').length, 2);
+  assert.equal(byCode.ARCH4116.courseType, 'capstone');
+  assert.equal(byCode.ARCH5931.credits, 1);
+  assert.match(byCode.ARCH1002.requirementGroups.join(' '), /not listed in the 2025-26 Major requirement/);
+  assert.deepEqual([byCode.ARCH1003.recommendedYear, byCode.ARCH1003.semester], [1, '1']);
+  assert.deepEqual([byCode.ARCH4116.recommendedYear, byCode.ARCH4116.semester], [4, '2']);
+  assert.equal(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Computational Design' }).length, 2);
+});
+
+test('CUHK Psychology exposes the current Major and Faculty Package lists with unknown units', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'PSYCN');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-PSYCN-79-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.jupasCode, 'JS4862');
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 76);
+  assert.equal(courses.length, 76);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 76);
+  assert.equal(courses.filter((course) => course.courseType === 'programme_course').length, 55);
+  assert.equal(courses.filter((course) => course.courseType === 'foundation').length, 21);
+  assert(courses.every((course) => course.credits === 0));
+  assert.equal(byCode.PSYC1630.titleEn, 'Positive Communication for Healthy Relationships');
+  assert.match(byCode.PSYC1630.requirementGroups.join(' '), /shorter title/);
+  assert.equal(byCode.GPAD1001.titleEn, 'Introduction to Global Studies I');
+  assert.equal(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Mental Health' }).length, 4);
+});
+
+test('CUHK-Tsinghua Economics DDP exposes 131 unambiguous 2026-27 courses as browse-only', () => {
+  const cuhk = ugService.listUniversities().find((item) => item.code === 'CUHK');
+  const programmes = ugService.listProgrammes({ universityId: cuhk.id, degreeLevel: 'undergraduate' });
+  const programme = programmes.find((item) => item.code === 'ECOTU');
+  const major = ugService.listMajors(programme.id).find((item) => item.id === 'CUHK-UG-ECOTU-72-M1');
+  const profile = ugService.getMajorProfile(programme.id, major.id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, major.id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.jupasCode, 'JS4824');
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(profile.codedCourseCount, 131);
+  assert.equal(courses.length, 131);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 131);
+  assert.equal(courses.filter((course) => course.courseType === 'core').length, 41);
+  assert.equal(courses.filter((course) => course.courseType === 'major_elective').length, 66);
+  assert.equal(courses.filter((course) => course.courseType === 'free_elective').length, 24);
+  assert.equal(byCode['40512513'], undefined);
+  assert.equal(byCode.MATH1550.titleEn, 'Methods of Matrices & Linear Algebra');
+  assert.equal(byCode['00701601'].credits, 1);
+  assert.equal(byCode['00030272'].titleEn, 'Transportation for Tommorrow(C-Campus Course)');
+  assert.match(byCode['40512423'].requirementGroups.join(' '), /non-Chinese-speaking/);
+  assert.equal(ugService.listMajorCourses(programme.id, major.id, { keyword: 'Econometrics' }).length, 2);
 });
 
 test('CUHK BCSE keeps the 2026 CENG and CSCI allocated Majors isolated and browse-only', () => {
@@ -1559,8 +1637,8 @@ test('UG per-school coverage stays visible for setup validation', () => {
   assert.deepEqual(
     Object.fromEntries(Object.entries(coverage).map(([code, item]) => [code, [item.programmeCount, item.majorCount]])),
     {
-      HKU: [137, 146], CUHK: [84, 86], HKUST: [50, 64], POLYU: [46, 114],
-      CITYU: [58, 183], HKBU: [22, 47], EDUHK: [25, 25], LINGNAN: [23, 23]
+      HKU: [137, 146], CUHK: [84, 86], HKUST: [50, 74], POLYU: [46, 114],
+      CITYU: [58, 152], HKBU: [22, 47], EDUHK: [25, 25], LINGNAN: [23, 23]
     }
   );
   assert(coverage.HKU.codedCourseCount >= 1842);
@@ -1601,10 +1679,10 @@ test('UG school coverage summarizes imported source data for the status page', (
   assert.equal(polyu.codedCourseCount, 2681);
   assert.equal(polyu.badge, 'COURSES');
   assert.equal(polyu.sourceReadiness.indexOnly, polyu.pendingProgrammeCount);
-  assert.equal(cityu.programmeWithCoursesCount, 40);
-  assert.equal(cityu.pendingProgrammeCount, 18);
-  assert.equal(cityu.coveragePercent, 69);
-  assert.equal(cityu.codedCourseCount, 3056);
+  assert.equal(cityu.programmeWithCoursesCount, 54);
+  assert.equal(cityu.pendingProgrammeCount, 4);
+  assert.equal(cityu.coveragePercent, 93);
+  assert.equal(cityu.codedCourseCount, 4287);
   assert.equal(cityu.badge, 'COURSES');
   assert.equal(hkbu.programmeWithCoursesCount, 22);
   assert.equal(hkbu.pendingProgrammeCount, 0);
@@ -4824,6 +4902,247 @@ test('CityU Psychology keeps optional Streams inside one 63-credit Major structu
   assert(courses.some((course) => course.courseCode === 'PIA3207' && !course.requirementGroups.some((group) => group.includes('Major Electives'))));
   assert(courses.some((course) => course.courseCode === 'LT3234' && /cannot fulfil both/.test(course.description)));
   assert(courses.every((course) => course.recommendedYear === 0 && course.semester === ''));
+});
+
+test('CityU Intelligent Manufacturing Engineering replaces feature labels with the current 2026/27 Major', () => {
+  const cityu = ugService.listUniversities().find((item) => item.code === 'CITYU');
+  const programme = ugService.listProgrammes({ universityId: cityu.id, degreeLevel: 'undergraduate' })
+    .find((item) => item.jupasCode === 'JS1216');
+  const majors = ugService.listMajors(programme.id);
+  const profile = ugService.getMajorProfile(programme.id, majors[0].id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, majors[0].id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.deepEqual(majors.map((major) => major.nameEn), ['BEng Intelligent Manufacturing Engineering']);
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(courses.length, 64);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 64);
+  assert.equal(byCode.SYE2016.credits, 0);
+  assert.equal(byCode.SYE4068.credits, 6);
+  assert.equal(byCode.SYE4116.courseType, 'capstone');
+  assert.equal(byCode.FS4001.credits, 8);
+  assert.equal(byCode.SYE5009, undefined);
+});
+
+test('CityU Innovation and Enterprise Engineering exposes its current 2026/27 coded curriculum as browse-only', () => {
+  const cityu = ugService.listUniversities().find((item) => item.code === 'CITYU');
+  const programme = ugService.listProgrammes({ universityId: cityu.id, degreeLevel: 'undergraduate' })
+    .find((item) => item.jupasCode === 'JS1219');
+  const majors = ugService.listMajors(programme.id);
+  const profile = ugService.getMajorProfile(programme.id, majors[0].id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, majors[0].id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.deepEqual(majors.map((major) => major.nameEn), ['BEng Innovation and Enterprise Engineering']);
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(courses.length, 44);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 44);
+  assert.equal(byCode.SYE1001.credits, 0);
+  assert.equal(byCode.FS3002.courseType, 'core');
+  assert.equal(byCode.FS4002.courseType, 'major_elective');
+  assert.equal(byCode.SYE4068C.credits, 6);
+  assert.equal(byCode.FS4001.credits, 8);
+});
+
+test('CityU Biomedical Engineering replaces feature labels with its current 2026/27 Major', () => {
+  const cityu = ugService.listUniversities().find((item) => item.code === 'CITYU');
+  const programme = ugService.listProgrammes({ universityId: cityu.id, degreeLevel: 'undergraduate' })
+    .find((item) => item.jupasCode === 'JS1211');
+  const majors = ugService.listMajors(programme.id);
+  const profile = ugService.getMajorProfile(programme.id, majors[0].id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, majors[0].id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.deepEqual(majors.map((major) => major.nameEn), ['BEng Biomedical Engineering']);
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(courses.length, 60);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 60);
+  assert.equal(byCode.BME4102.credits, 9);
+  assert.equal(byCode.BME4102.courseType, 'capstone');
+  assert.equal(byCode.BME3200.courseType, 'internship');
+  assert.equal(byCode.CBM4000.credits, 1);
+  assert.match(byCode.BMS3101.requirementGroups[0], /also B3 Major Elective/);
+});
+
+test('CityU JS1201 preserves three ACE Major curricula and their Stream-local roles', () => {
+  const cityu = ugService.listUniversities().find((item) => item.code === 'CITYU');
+  const programme = ugService.listProgrammes({ universityId: cityu.id, degreeLevel: 'undergraduate' })
+    .find((item) => item.jupasCode === 'JS1201');
+  const majors = ugService.listMajors(programme.id);
+  const coursesByMajor = Object.fromEntries(majors.map((major) => [
+    major.nameEn,
+    ugService.listMajorCourses(programme.id, major.id)
+  ]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(programme.codedCourseCount, 160);
+  assert.deepEqual(majors.map((major) => major.nameEn), [
+    'BEng Architectural Engineering',
+    'BEng Civil Engineering',
+    'BSc Architecture and Surveying'
+  ]);
+  assert.deepEqual(Object.fromEntries(Object.entries(coursesByMajor).map(([name, courses]) => [name, courses.length])), {
+    'BEng Architectural Engineering': 41,
+    'BEng Civil Engineering': 55,
+    'BSc Architecture and Surveying': 64
+  });
+  majors.forEach((major) => assert.equal(ugService.getMajorProfile(programme.id, major.id, '2026').totalCreditRequired, 0));
+  assert(coursesByMajor['BEng Architectural Engineering'].some((course) => course.courseCode === 'CA4749' && course.courseType === 'capstone'));
+  assert(coursesByMajor['BEng Civil Engineering'].some((course) => course.courseCode === 'CA3560' && /Infrastructure and Smart City/.test(course.requirementGroups[0])));
+  assert(coursesByMajor['BSc Architecture and Surveying'].some((course) => course.courseCode === 'CA4539' && course.courseType === 'capstone'));
+  assert(coursesByMajor['BSc Architecture and Surveying'].some((course) => course.courseCode === 'CA3508' && course.courseType === 'internship'));
+});
+
+test('CityU JS1207 preserves three Mechanical Engineering Major curricula and optional Streams', () => {
+  const cityu = ugService.listUniversities().find((item) => item.code === 'CITYU');
+  const programme = ugService.listProgrammes({ universityId: cityu.id, degreeLevel: 'undergraduate' })
+    .find((item) => item.jupasCode === 'JS1207');
+  const majors = ugService.listMajors(programme.id);
+  const coursesByMajor = Object.fromEntries(majors.map((major) => [
+    major.nameEn,
+    ugService.listMajorCourses(programme.id, major.id)
+  ]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(programme.codedCourseCount, 204);
+  assert.deepEqual(majors.map((major) => major.nameEn), [
+    'BEng Aerospace Engineering',
+    'BEng Mechanical Engineering',
+    'BEng Nuclear and Risk Engineering'
+  ]);
+  assert.deepEqual(Object.fromEntries(Object.entries(coursesByMajor).map(([name, courses]) => [name, courses.length])), {
+    'BEng Aerospace Engineering': 65,
+    'BEng Mechanical Engineering': 61,
+    'BEng Nuclear and Risk Engineering': 78
+  });
+  majors.forEach((major) => assert.equal(ugService.getMajorProfile(programme.id, major.id, '2026').totalCreditRequired, 0));
+  assert(coursesByMajor['BEng Aerospace Engineering'].some((course) => course.courseCode === 'MNE2020' && course.credits === 0));
+  assert(coursesByMajor['BEng Aerospace Engineering'].some((course) => course.courseCode === 'MNE4068' && course.courseType === 'capstone'));
+  assert(coursesByMajor['BEng Mechanical Engineering'].some((course) => course.courseCode === 'MNE3123' && course.courseType === 'internship'));
+  assert(coursesByMajor['BEng Nuclear and Risk Engineering'].some((course) => course.courseCode === 'MNE4118' && course.credits === 6));
+});
+
+test('CityU JS1221 replaces feature labels with one partial browse-only double-degree Major', () => {
+  const cityu = ugService.listUniversities().find((item) => item.code === 'CITYU');
+  const programme = ugService.listProgrammes({ universityId: cityu.id, degreeLevel: 'undergraduate' })
+    .find((item) => item.jupasCode === 'JS1221');
+  const majors = ugService.listMajors(programme.id);
+  const profile = ugService.getMajorProfile(programme.id, majors[0].id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, majors[0].id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(programme.codedCourseCount, 17);
+  assert.deepEqual(majors.map((major) => major.nameEn), [
+    'BSc Computer Science and BSc Computational Finance and Financial Technology'
+  ]);
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(courses.length, 17);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 17);
+  assert.equal(byCode.GE1601.credits, 1);
+  assert.match(byCode.GE2410.requirementGroups[0], /GE2410 or GE2402/);
+  assert.match(byCode.CS2204.requirementGroups[0], /in lieu of CB2240/);
+  assert.match(byCode.CB2400.requirementGroups[0], /shared between the two degrees/);
+});
+
+test('CityU JS1300 keeps the three Bio3 constituent Major curricula isolated', () => {
+  const cityu = ugService.listUniversities().find((item) => item.code === 'CITYU');
+  const programme = ugService.listProgrammes({ universityId: cityu.id, degreeLevel: 'undergraduate' })
+    .find((item) => item.jupasCode === 'JS1300');
+  const majors = ugService.listMajors(programme.id);
+  const coursesByMajor = Object.fromEntries(majors.map((major) => [
+    major.nameEn,
+    ugService.listMajorCourses(programme.id, major.id)
+  ]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(programme.codedCourseCount, 177);
+  assert.deepEqual(majors.map((major) => major.nameEn), [
+    'BEng Biomedical Engineering',
+    'BSc Biological Sciences',
+    'BSc Biomedical Sciences'
+  ]);
+  assert.deepEqual(Object.fromEntries(Object.entries(coursesByMajor).map(([name, courses]) => [name, courses.length])), {
+    'BEng Biomedical Engineering': 60,
+    'BSc Biological Sciences': 67,
+    'BSc Biomedical Sciences': 50
+  });
+  majors.forEach((major) => assert.equal(ugService.getMajorProfile(programme.id, major.id, '2026').totalCreditRequired, 0));
+  Object.values(coursesByMajor).forEach((courses) => {
+    assert(courses.some((course) => course.courseCode === 'CBM4000' && course.credits === 1));
+    assert(courses.some((course) => course.courseCode === 'CBM4001' && course.credits === 3));
+  });
+  assert(coursesByMajor['BEng Biomedical Engineering'].every((course) => course.majorId === majors[0].id));
+  assert(coursesByMajor['BSc Biological Sciences'].every((course) => course.majorId === majors[1].id));
+  assert(coursesByMajor['BSc Biomedical Sciences'].every((course) => course.majorId === majors[2].id));
+});
+
+test('CityU JS1805 keeps Biological Sciences and Biomedical Sciences isolated after Year 1 allocation', () => {
+  const cityu = ugService.listUniversities().find((item) => item.code === 'CITYU');
+  const programme = ugService.listProgrammes({ universityId: cityu.id, degreeLevel: 'undergraduate' })
+    .find((item) => item.jupasCode === 'JS1805');
+  const majors = ugService.listMajors(programme.id);
+  const biological = majors.find((major) => major.nameEn === 'BSc Biological Sciences');
+  const biomedical = majors.find((major) => major.nameEn === 'BSc Biomedical Sciences');
+  const biologicalProfile = ugService.getMajorProfile(programme.id, biological.id, '2026');
+  const biomedicalProfile = ugService.getMajorProfile(programme.id, biomedical.id, '2026');
+  const biologicalCourses = ugService.listMajorCourses(programme.id, biological.id);
+  const biomedicalCourses = ugService.listMajorCourses(programme.id, biomedical.id);
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.equal(programme.codedCourseCount, 117);
+  assert.deepEqual(majors.map((major) => major.nameEn), ['BSc Biological Sciences', 'BSc Biomedical Sciences']);
+  assert.equal(biologicalProfile.totalCreditRequired, 0);
+  assert.equal(biomedicalProfile.totalCreditRequired, 0);
+  assert.equal(biologicalCourses.length, 67);
+  assert.equal(biomedicalCourses.length, 50);
+  assert(biologicalCourses.some((course) => course.courseCode === 'BMS4206' && course.courseType === 'capstone'));
+  assert(biomedicalCourses.some((course) => course.courseCode === 'BMS3009' && course.courseType === 'internship'));
+  assert(biologicalCourses.every((course) => course.majorId === biological.id));
+  assert(biomedicalCourses.every((course) => course.majorId === biomedical.id));
+});
+
+test('CityU Biological Sciences replaces feature labels with one browse-only Major', () => {
+  const cityu = ugService.listUniversities().find((item) => item.code === 'CITYU');
+  const programme = ugService.listProgrammes({ universityId: cityu.id, degreeLevel: 'undergraduate' })
+    .find((item) => item.jupasCode === 'JS1806');
+  const majors = ugService.listMajors(programme.id);
+  const profile = ugService.getMajorProfile(programme.id, majors[0].id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, majors[0].id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.deepEqual(majors.map((major) => major.nameEn), ['BSc Biological Sciences']);
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(courses.length, 67);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 67);
+  assert.equal(byCode.BMS2205.credits, 4);
+  assert.equal(byCode.BMS4206.courseType, 'capstone');
+  assert.equal(byCode.BMS4304.courseType, 'internship');
+  assert.match(byCode.NS2003.requirementGroups[0], /no double-counting/);
+});
+
+test('CityU Biomedical Sciences replaces feature labels with one browse-only Major', () => {
+  const cityu = ugService.listUniversities().find((item) => item.code === 'CITYU');
+  const programme = ugService.listProgrammes({ universityId: cityu.id, degreeLevel: 'undergraduate' })
+    .find((item) => item.jupasCode === 'JS1807');
+  const majors = ugService.listMajors(programme.id);
+  const profile = ugService.getMajorProfile(programme.id, majors[0].id, '2026');
+  const courses = ugService.listMajorCourses(programme.id, majors[0].id);
+  const byCode = Object.fromEntries(courses.map((course) => [course.courseCode, course]));
+
+  assert.equal(programme.sourceStatus, 'course_codes_available');
+  assert.deepEqual(majors.map((major) => major.nameEn), ['BSc Biomedical Sciences']);
+  assert.equal(profile.totalCreditRequired, 0);
+  assert.equal(courses.length, 50);
+  assert.equal(new Set(courses.map((course) => course.courseCode)).size, 50);
+  assert.equal(byCode.BMS3009.credits, 9);
+  assert.equal(byCode.BMS3009.courseType, 'internship');
+  assert.equal(byCode.BMS4006.courseType, 'capstone');
+  assert.equal(byCode.CBM4000.credits, 1);
 });
 
 test('catalogue course detail resolves only the requested university shard', () => {

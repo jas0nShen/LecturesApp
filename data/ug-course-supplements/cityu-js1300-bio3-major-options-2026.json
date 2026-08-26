@@ -1,0 +1,82 @@
+{
+  "provider": "CityUHK JS1300 Integrative Bioscience and Bioengineering Programme (Bio3)",
+  "academicYear": "2026/27 admission; Major curricula follow the current CityUHK Undergraduate Catalogue",
+  "sourceUrl": "https://www.cityu.edu.hk/admo/programmes/integrative-bioscience-bioengineering-programme-bio3",
+  "officialUrl": "https://www.cityu.edu.hk/admo/programmes/integrative-bioscience-bioengineering-programme-bio3",
+  "additionalSourceUrls": [
+    "https://www.jupas.edu.hk/en/programme/cityuhk/JS1300",
+    "https://www.cityu.edu.hk/cbm/undergraduate-programmes-bio3.htm",
+    "https://www.cityu.edu.hk/cbm/fi/Bio3_Leaflet.pdf",
+    "https://www.cityu.edu.hk/catalogue/ug/current/Major/BENG1_BME-1.htm",
+    "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_BISI-1.htm",
+    "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_BMS-1.htm"
+  ],
+  "note": "The official 2026/27 admissions page states that JS1300 students choose upon offer acceptance among BEng Biomedical Engineering, BSc Biological Sciences and BSc Biomedical Sciences and are enrolled in that Major in Year 1. The College of Biomedicine Bio3 page states that, on top of the existing constituent Major curriculum, every Bio3 student takes CBM4000 Research Seminar (1 credit unit across two consecutive semesters), CBM4001 Overseas Research Project (3 credit units), and one additional course from a designated cross-department list. The three current Catalogue curricula already preserve CBM4000, CBM4001 and the designated Integrative Bioscience and Bioengineering Stream candidates, so this supplement reuses those verified Programme-local course universes without merging Major identities or user state. Open GE, optional Stream/elective combinations and cross-group counting remain browse-only with totalCreditRequired=0 and must not produce a graduation-completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "CITYU",
+      "programmeId": "CITYU-UG-BIO3-54",
+      "programmeName": "Integrative Bioscience & Bioengineering Programme (Bio3) (Features: Free Choice of Major / Overseas Research Opportunities / Interdisciplinary)",
+      "majorId": "CITYU-UG-BIO3-54-M1",
+      "majorName": "BEng Biomedical Engineering",
+      "majorOverride": {
+        "expectedMajorIds": [
+          "CITYU-UG-BIO3-54-M1",
+          "CITYU-UG-BIO3-54-M2",
+          "CITYU-UG-BIO3-54-M3"
+        ],
+        "id": "CITYU-UG-BIO3-54-M1",
+        "code": "BENG-BIOMEDICAL-ENGINEERING-BIO3",
+        "nameEn": "BEng Biomedical Engineering",
+        "nameZh": "BEng Biomedical Engineering"
+      },
+      "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BENG1_BME-1.htm",
+      "officialUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BENG1_BME-1.htm",
+      "copyCoursesFrom": {
+        "universityCode": "CITYU",
+        "programmeId": "CITYU-UG-BENGBME-48",
+        "majorName": "BEng Biomedical Engineering"
+      }
+    },
+    {
+      "universityCode": "CITYU",
+      "programmeId": "CITYU-UG-BIO3-54",
+      "programmeName": "Integrative Bioscience & Bioengineering Programme (Bio3) (Features: Free Choice of Major / Overseas Research Opportunities / Interdisciplinary)",
+      "majorId": "CITYU-UG-BIO3-54-M2",
+      "majorName": "BSc Biological Sciences",
+      "createMajor": {
+        "id": "CITYU-UG-BIO3-54-M2",
+        "code": "BSC-BIOLOGICAL-SCIENCES-BIO3",
+        "nameEn": "BSc Biological Sciences",
+        "nameZh": "BSc Biological Sciences"
+      },
+      "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_BISI-1.htm",
+      "officialUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_BISI-1.htm",
+      "copyCoursesFrom": {
+        "universityCode": "CITYU",
+        "programmeId": "CITYU-UG-BSCBISI-57",
+        "majorName": "BSc Biological Sciences"
+      }
+    },
+    {
+      "universityCode": "CITYU",
+      "programmeId": "CITYU-UG-BIO3-54",
+      "programmeName": "Integrative Bioscience & Bioengineering Programme (Bio3) (Features: Free Choice of Major / Overseas Research Opportunities / Interdisciplinary)",
+      "majorId": "CITYU-UG-BIO3-54-M3",
+      "majorName": "BSc Biomedical Sciences",
+      "createMajor": {
+        "id": "CITYU-UG-BIO3-54-M3",
+        "code": "BSC-BIOMEDICAL-SCIENCES-BIO3",
+        "nameEn": "BSc Biomedical Sciences",
+        "nameZh": "BSc Biomedical Sciences"
+      },
+      "sourceUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_BMS-1.htm",
+      "officialUrl": "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_BMS-1.htm",
+      "copyCoursesFrom": {
+        "universityCode": "CITYU",
+        "programmeId": "CITYU-UG-BSCBMS-58",
+        "majorName": "BSc Biomedical Sciences"
+      }
+    }
+  ]
+}

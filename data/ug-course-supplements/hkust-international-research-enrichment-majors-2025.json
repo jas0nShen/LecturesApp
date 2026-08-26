@@ -1,0 +1,106 @@
+{
+  "provider": "HKUST 2025/26 International Research Enrichment Major choices",
+  "academicYear": "2025/26",
+  "sourceUrl": "https://join.hkust.edu.hk/our-programs/school-of-science/international-research-enrichment",
+  "officialUrl": "https://science.hkust.edu.hk/programs/ire_program",
+  "note": "The official admissions page states that International Research Enrichment students choose freely among Biochemistry and Cell Biology, Biotechnology, Chemistry, Mathematics, Ocean Science and Technology, and Physics. The six intake-specific Major PDFs already used by this catalogue explicitly retain their IRE Track courses, research-project alternatives and Track-specific rules. This supplement replaces the aggregate placeholder with six isolated Programme-local Major choices and reuses each corresponding official coded course universe; it does not merge the six disciplines into one list. Each copied list remains a browse-only union because open subject-level electives, approval-dependent choices, Track alternatives, School requirements and University Common Core requirements are not all closed by the local rule engine. totalCreditRequired remains 0 and no graduation-completion percentage may be produced.",
+  "supplements": [
+    {
+      "universityCode": "HKUST",
+      "programmeId": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34",
+      "programmeName": "International Research Enrichment",
+      "majorId": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34-M1",
+      "majorName": "Biochemistry and Cell Biology (International Research Enrichment)",
+      "majorOverride": {
+        "expectedMajorIds": ["HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34-M1"],
+        "id": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34-M1",
+        "code": "BIOCHEMISTRY-AND-CELL-BIOLOGY-IRE",
+        "nameEn": "Biochemistry and Cell Biology (International Research Enrichment)",
+        "nameZh": "Biochemistry and Cell Biology (International Research Enrichment)"
+      },
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/BCB",
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26bcb.pdf",
+      "copyCoursesFrom": { "universityCode": "HKUST", "programmeName": "BSc in Biochemistry and Cell Biology" }
+    },
+    {
+      "universityCode": "HKUST",
+      "programmeId": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34",
+      "programmeName": "International Research Enrichment",
+      "majorId": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34-M2",
+      "majorName": "Biotechnology (International Research Enrichment)",
+      "createMajor": {
+        "id": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34-M2",
+        "code": "BIOTECHNOLOGY-IRE",
+        "nameEn": "Biotechnology (International Research Enrichment)",
+        "nameZh": "Biotechnology (International Research Enrichment)"
+      },
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/BIOT",
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26biot.pdf",
+      "copyCoursesFrom": { "universityCode": "HKUST", "programmeName": "BSc in Biotechnology" }
+    },
+    {
+      "universityCode": "HKUST",
+      "programmeId": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34",
+      "programmeName": "International Research Enrichment",
+      "majorId": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34-M3",
+      "majorName": "Chemistry (International Research Enrichment)",
+      "createMajor": {
+        "id": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34-M3",
+        "code": "CHEMISTRY-IRE",
+        "nameEn": "Chemistry (International Research Enrichment)",
+        "nameZh": "Chemistry (International Research Enrichment)"
+      },
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/CHEM",
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26chem.pdf",
+      "copyCoursesFrom": { "universityCode": "HKUST", "programmeName": "BSc in Chemistry" }
+    },
+    {
+      "universityCode": "HKUST",
+      "programmeId": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34",
+      "programmeName": "International Research Enrichment",
+      "majorId": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34-M4",
+      "majorName": "Mathematics (International Research Enrichment)",
+      "createMajor": {
+        "id": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34-M4",
+        "code": "MATHEMATICS-IRE",
+        "nameEn": "Mathematics (International Research Enrichment)",
+        "nameZh": "Mathematics (International Research Enrichment)"
+      },
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/MATH",
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26math.pdf",
+      "copyCoursesFrom": { "universityCode": "HKUST", "programmeName": "BSc in Mathematics" }
+    },
+    {
+      "universityCode": "HKUST",
+      "programmeId": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34",
+      "programmeName": "International Research Enrichment",
+      "majorId": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34-M5",
+      "majorName": "Ocean Science and Technology (International Research Enrichment)",
+      "createMajor": {
+        "id": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34-M5",
+        "code": "OCEAN-SCIENCE-AND-TECHNOLOGY-IRE",
+        "nameEn": "Ocean Science and Technology (International Research Enrichment)",
+        "nameZh": "Ocean Science and Technology (International Research Enrichment)"
+      },
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/OST",
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26ost.pdf",
+      "copyCoursesFrom": { "universityCode": "HKUST", "programmeName": "BSc in Ocean Science and Technology" }
+    },
+    {
+      "universityCode": "HKUST",
+      "programmeId": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34",
+      "programmeName": "International Research Enrichment",
+      "majorId": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34-M6",
+      "majorName": "Physics (International Research Enrichment)",
+      "createMajor": {
+        "id": "HKUST-UG-JS5101-INTERNATIONAL-RESEARCH-ENRICHMENT-34-M6",
+        "code": "PHYSICS-IRE",
+        "nameEn": "Physics (International Research Enrichment)",
+        "nameZh": "Physics (International Research Enrichment)"
+      },
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/PHYS",
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26phys.pdf",
+      "copyCoursesFrom": { "universityCode": "HKUST", "programmeName": "BSc in Physics" }
+    }
+  ]
+}

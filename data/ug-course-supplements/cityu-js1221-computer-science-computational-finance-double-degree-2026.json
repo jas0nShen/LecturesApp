@@ -1,0 +1,57 @@
+{
+  "provider": "CityUHK JS1221 BSc Computer Science and BSc Computational Finance and Financial Technology double degree curriculum",
+  "academicYear": "current curriculum reviewed 2026-08-25",
+  "sourceUrl": "https://www.cityu.edu.hk/admo/programmes/bachelor-science-computer-science-and-bachelor-science-computational-finance-and",
+  "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bachelor-science-computer-science-and-bachelor-science-computational-finance-and",
+  "additionalSourceUrls": [
+    "https://www.jupas.edu.hk/en/programme/cityuhk/JS1221",
+    "https://www.cs.cityu.edu.hk/academic-programmes/double-degree-programme/bsc-computer-science-and-bsc-computational-finance",
+    "https://www.cs.cityu.edu.hk/-/media/project/cityuhk/academic/cs/pdf/3_double_degree_leaflet.pdf?rev=22900400ebee49bf90f73a861c80b6f4&hash=EE3DE58BB78F10647A3861F09F811FB4",
+    "https://www.cityu.edu.hk/catalogue/ug/current/Major/BSC1_CFFT-1.htm"
+  ],
+  "note": "The official JS1221 admissions page publishes a five-year, 151-credit double-degree structure and names 17 unique coded University, College-specified and College/School courses. It separately requires 99 Major credits: 33 from CS core, 30 from CFFT core, 33 serving as Core or Electives for both Majors, and one 3-credit CS elective, but does not publish the corresponding double-degree Major course list. The current CFFT catalogue corroborates titles and individual credits for the named CFFT-side and University courses; the official two-page double-degree leaflet confirms the Programme identity and duration but contains no curriculum table. Standalone CS and CFFT Major pools are not copied into the double degree. The verified 17-course partial list is therefore browse-only with totalCreditRequired=0 and must not produce a graduation-completion percentage.",
+  "supplements": [
+    {
+      "universityCode": "CITYU",
+      "programmeId": "CITYU-UG-BSCCS-BSCCFFT-53",
+      "programmeName": "BSc Computer Science and BSc Computational Finance and Financial Technology(Double Degree;Features:Corporate Accounting & Economics/Computational Finance/Advanced Statistics/Financial Technologies)",
+      "majorId": "CITYU-UG-BSCCS-BSCCFFT-53-M1",
+      "majorName": "BSc Computer Science and BSc Computational Finance and Financial Technology",
+      "majorOverride": {
+        "expectedMajorIds": [
+          "CITYU-UG-BSCCS-BSCCFFT-53-M1",
+          "CITYU-UG-BSCCS-BSCCFFT-53-M2",
+          "CITYU-UG-BSCCS-BSCCFFT-53-M3",
+          "CITYU-UG-BSCCS-BSCCFFT-53-M4"
+        ],
+        "id": "CITYU-UG-BSCCS-BSCCFFT-53-M1",
+        "code": "BSC-CS-CFFT-DOUBLE-DEGREE",
+        "nameEn": "BSc Computer Science and BSc Computational Finance and Financial Technology",
+        "nameZh": "BSc Computer Science and BSc Computational Finance and Financial Technology"
+      },
+      "sourceUrl": "https://www.cityu.edu.hk/admo/programmes/bachelor-science-computer-science-and-bachelor-science-computational-finance-and",
+      "officialUrl": "https://www.cityu.edu.hk/admo/programmes/bachelor-science-computer-science-and-bachelor-science-computational-finance-and",
+      "courses": [
+        { "code": "GE1401", "title": "University English", "credits": 3, "group": "University and Distributional Requirements · University English" },
+        { "code": "GE2410", "title": "English for Engineering", "credits": 3, "group": "University and Distributional Requirements · discipline-specific English · GE2410 or GE2402" },
+        { "code": "GE2402", "title": "English for Business Communication", "credits": 3, "group": "University and Distributional Requirements · discipline-specific English · GE2410 or GE2402" },
+        { "code": "GE1501", "title": "Chinese Civilisation - History and Philosophy", "credits": 3, "group": "University and Distributional Requirements" },
+        { "code": "GE1601", "title": "Whole-Person Development", "credits": 1, "group": "University and Distributional Requirements" },
+
+        { "code": "MA1200", "title": "Calculus and Basic Linear Algebra I", "credits": 3, "group": "College-specified Courses · CENG · MA1200 or MA1300" },
+        { "code": "MA1300", "title": "Enhanced Calculus and Linear Algebra I", "credits": 3, "group": "College-specified Courses · CENG · MA1200 or MA1300" },
+        { "code": "MA1201", "title": "Calculus and Basic Linear Algebra II", "credits": 3, "group": "College-specified Courses · CENG · MA1201 or MA1301" },
+        { "code": "MA1301", "title": "Enhanced Calculus and Linear Algebra II", "credits": 3, "group": "College-specified Courses · CENG · MA1201 or MA1301" },
+        { "code": "JC2066", "title": "IT Professionals: Ethical, Legal and Social Issues", "credits": 3, "group": "College-specified Courses · CENG" },
+        { "code": "CS2204", "title": "Fundamentals of Internet Applications Development", "credits": 3, "group": "College-specified Courses · CB · in lieu of CB2240" },
+        { "code": "CS3334", "title": "Data Structures", "credits": 3, "group": "College-specified Courses · CB" },
+        { "code": "MA3525", "title": "Elementary Numerical Methods", "credits": 3, "group": "College-specified Courses · CB" },
+
+        { "code": "CS1302", "title": "Introduction to Computer Programming", "credits": 3, "group": "College/School Requirement · Computer Science" },
+        { "code": "CB2400", "title": "Microeconomics", "credits": 3, "group": "College/School Requirement · shared between the two degrees" },
+        { "code": "CB2100", "title": "Introduction to Financial Accounting", "credits": 3, "group": "College/School Requirement · Computational Finance and Financial Technology" },
+        { "code": "CB3410", "title": "Financial Management", "credits": 3, "group": "College/School Requirement · Computational Finance and Financial Technology" }
+      ]
+    }
+  ]
+}

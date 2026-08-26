@@ -526,7 +526,7 @@ test('UG source coverage report can focus missing programme work by school', () 
   assert(summary.totals.programmeWithCoursesCount >= 26);
   assert(summary.totals.missingProgrammeCount <= 32);
   assert(summary.schools[0].missingProgrammeCount <= 32);
-  assert.equal(summary.schools[0].missingProgrammes.length, 5);
+  assert.equal(summary.schools[0].missingProgrammes.length, 4);
   assert.equal(filterSchools(summary.schools, 'HKU').length, 0);
 });
 
@@ -588,18 +588,13 @@ test('UG source coverage report can filter missing programmes by source readines
   assert.equal(normalizeReadinessFilter('all'), '');
   assert.throws(() => normalizeReadinessFilter('maybe'), /Unknown --readiness/);
   assert.equal(hku.missingProgrammeCount, Object.values(hku.sourceReadiness).reduce((sum, count) => sum + count, 0));
-  assert.equal(hku.filteredMissingProgrammeCount, 9);
-  assert.equal(hku.missingProgrammes.length, 3);
-  assert(hku.missingProgrammes.every((programme) => !programme.sourceStatus));
-  assert.deepEqual(hku.missingProgrammes.map((programme) => programme.name), [
-    'HKU-Cambridge Joint Recruitment Scheme (Engineering)',
-    'HKU-Geneva Graduate Institute Dual Degree Programme',
-    'HKU-PKU Dual Degree Programme'
-  ]);
+  assert.equal(hku.filteredMissingProgrammeCount, 0);
+  assert.equal(hku.missingProgrammes.length, 0);
+  assert.equal(hku.sourceReadiness.noSource, 0);
   const template = buildMissingCollectorTemplate(summary, args);
   assert(template.includes(`待补 Programme：${hku.missingProgrammeCount}`));
   assert.match(template, new RegExp(`当前筛选：no-source · ${hku.filteredMissingProgrammeCount} 个`));
-  assert.match(template, /1\. HKU · 无代码 · HKU-Cambridge Joint Recruitment Scheme \(Engineering\)/);
+  assert.doesNotMatch(template, /1\. HKU/);
 });
 
 test('UG source coverage report supports machine-readable JSON mode', () => {
@@ -612,8 +607,8 @@ test('UG source coverage report supports machine-readable JSON mode', () => {
   assert.deepEqual(summary.schools.map((school) => school.code), ['CITYU']);
   assert(summary.schools[0].missingProgrammeCount <= 32);
   assert.equal(summary.schools[0].missingProgrammes.length, 3);
-  assert.equal(summary.schools[0].missingProgrammes[0].code, 'JS1050');
-  assert.match(summary.schools[0].missingProgrammes[0].officialUrl, /jupas\.edu\.hk\/en\/programme\/cityuhk\/JS1050/);
+  assert.equal(summary.schools[0].missingProgrammes[0].code, 'JS1070');
+  assert.match(summary.schools[0].missingProgrammes[0].officialUrl, /jupas\.edu\.hk\/en\/programme\/cityuhk\/JS1070/);
   assert(summary.totals.codedCourseCount > 0);
 });
 
@@ -667,9 +662,9 @@ test('UG source coverage report can build a grouped missing data batch plan', ()
 
   assert.equal(args.batchPlan, true);
   assert(groups.sourceIndexOnly.length > 0);
-  assert.equal(groups.reviewedNoCourseCodes.length, 32);
+  assert.equal(groups.reviewedNoCourseCodes.length, 41);
   assert(groups.noSource.length <= 165);
-  assert.equal(groups.sourceIndexOnly[0].schoolCode, 'HKU');
+  assert(groups.sourceIndexOnly[0].schoolCode);
   assert(groups.sourceIndexOnly[0].code);
   assert.equal(groups.sourceIndexOnly[0].sourceStatus, 'source_index_only');
   assert.equal(groups.reviewedNoCourseCodes[0].code, 'JS3011');
@@ -687,6 +682,26 @@ test('UG source coverage report can build a grouped missing data batch plan', ()
   assert(groups.reviewedNoCourseCodes.some((programme) => (
     programme.schoolCode === 'HKU'
     && programme.code === '6602'
+    && programme.sourceReviewStatus === 'no_public_course_codes'
+  )));
+  assert(groups.reviewedNoCourseCodes.some((programme) => (
+    programme.schoolCode === 'CUHK'
+    && programme.code === 'JS4513'
+    && programme.sourceReviewStatus === 'no_public_course_codes'
+  )));
+  assert(groups.reviewedNoCourseCodes.some((programme) => (
+    programme.schoolCode === 'CUHK'
+    && programme.code === 'JS4542'
+    && programme.sourceReviewStatus === 'no_public_course_codes'
+  )));
+  assert(groups.reviewedNoCourseCodes.some((programme) => (
+    programme.schoolCode === 'CUHK'
+    && programme.code === 'JS4760'
+    && programme.sourceReviewStatus === 'no_public_course_codes'
+  )));
+  assert(groups.reviewedNoCourseCodes.some((programme) => (
+    programme.schoolCode === 'CUHK'
+    && programme.code === 'JS4750'
     && programme.sourceReviewStatus === 'no_public_course_codes'
   )));
   assert.match(plan, /【本科课程补数批次计划】/);

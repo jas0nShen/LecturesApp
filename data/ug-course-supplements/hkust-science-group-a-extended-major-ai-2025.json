@@ -1,0 +1,114 @@
+{
+  "provider": "HKUST 2025/26 Science Group A with Extended Major in Artificial Intelligence",
+  "academicYear": "2025/26",
+  "sourceUrl": "https://join.hkust.edu.hk/our-programs/school-of-science/science-group-a-with-an-extended-major-in-artificial-intelligence",
+  "officialUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/EXTM-AI",
+  "note": "The official admissions page states that students select Chemistry, Mathematics, Ocean Science and Technology, or Physics after Year 1 and complete that discipline together with the Extended Major in Artificial Intelligence. This supplement replaces the aggregate placeholder with four isolated Programme-local Major choices. Each choice reuses its intake-specific base Major course universe and the 75-row EXTM-AI component; duplicate codes within a choice remain one course record. The lists remain read-only because each base Major contains Track, Option, open-pool or approval-dependent rules and the Extended Major adds alternative capstones, elective minima, single-counting and no-reuse constraints that the local rule engine cannot close automatically. totalCreditRequired remains 0 and no graduation-completion percentage may be produced.",
+  "supplements": [
+    {
+      "universityCode": "HKUST",
+      "programmeId": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48",
+      "programmeName": "Science (Group A) with Extended Major in Artificial Intelligence",
+      "majorId": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48-M1",
+      "majorName": "Chemistry with Extended Major in Artificial Intelligence",
+      "majorOverride": {
+        "expectedMajorIds": ["HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48-M1"],
+        "id": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48-M1",
+        "code": "CHEMISTRY-WITH-EXTENDED-MAJOR-IN-AI",
+        "nameEn": "Chemistry with Extended Major in Artificial Intelligence",
+        "nameZh": "Chemistry with Extended Major in Artificial Intelligence"
+      },
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/CHEM",
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26chem.pdf",
+      "copyCoursesFrom": { "universityCode": "HKUST", "programmeName": "BSc in Chemistry" }
+    },
+    {
+      "universityCode": "HKUST",
+      "programmeId": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48",
+      "programmeName": "Science (Group A) with Extended Major in Artificial Intelligence",
+      "majorId": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48-M1",
+      "majorName": "Chemistry with Extended Major in Artificial Intelligence",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/EXTM-AI",
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26extm-ai.pdf",
+      "copyCoursesFrom": { "universityCode": "HKUST", "programmeId": "HKUST-UG-JS5282-ENGINEERING-WITH-EXTENDED-MAJOR-IN-ARTIFI-23" }
+    },
+    {
+      "universityCode": "HKUST",
+      "programmeId": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48",
+      "programmeName": "Science (Group A) with Extended Major in Artificial Intelligence",
+      "majorId": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48-M2",
+      "majorName": "Mathematics with Extended Major in Artificial Intelligence",
+      "createMajor": {
+        "id": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48-M2",
+        "code": "MATHEMATICS-WITH-EXTENDED-MAJOR-IN-AI",
+        "nameEn": "Mathematics with Extended Major in Artificial Intelligence",
+        "nameZh": "Mathematics with Extended Major in Artificial Intelligence"
+      },
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/MATH",
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26math.pdf",
+      "copyCoursesFrom": { "universityCode": "HKUST", "programmeName": "BSc in Mathematics" }
+    },
+    {
+      "universityCode": "HKUST",
+      "programmeId": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48",
+      "programmeName": "Science (Group A) with Extended Major in Artificial Intelligence",
+      "majorId": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48-M2",
+      "majorName": "Mathematics with Extended Major in Artificial Intelligence",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/EXTM-AI",
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26extm-ai.pdf",
+      "copyCoursesFrom": { "universityCode": "HKUST", "programmeId": "HKUST-UG-JS5282-ENGINEERING-WITH-EXTENDED-MAJOR-IN-ARTIFI-23" }
+    },
+    {
+      "universityCode": "HKUST",
+      "programmeId": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48",
+      "programmeName": "Science (Group A) with Extended Major in Artificial Intelligence",
+      "majorId": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48-M3",
+      "majorName": "Ocean Science and Technology with Extended Major in Artificial Intelligence",
+      "createMajor": {
+        "id": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48-M3",
+        "code": "OCEAN-SCIENCE-AND-TECHNOLOGY-WITH-EXTENDED-MAJOR-IN-AI",
+        "nameEn": "Ocean Science and Technology with Extended Major in Artificial Intelligence",
+        "nameZh": "Ocean Science and Technology with Extended Major in Artificial Intelligence"
+      },
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/OST",
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26ost.pdf",
+      "copyCoursesFrom": { "universityCode": "HKUST", "programmeName": "BSc in Ocean Science and Technology" }
+    },
+    {
+      "universityCode": "HKUST",
+      "programmeId": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48",
+      "programmeName": "Science (Group A) with Extended Major in Artificial Intelligence",
+      "majorId": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48-M3",
+      "majorName": "Ocean Science and Technology with Extended Major in Artificial Intelligence",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/EXTM-AI",
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26extm-ai.pdf",
+      "copyCoursesFrom": { "universityCode": "HKUST", "programmeId": "HKUST-UG-JS5282-ENGINEERING-WITH-EXTENDED-MAJOR-IN-ARTIFI-23" }
+    },
+    {
+      "universityCode": "HKUST",
+      "programmeId": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48",
+      "programmeName": "Science (Group A) with Extended Major in Artificial Intelligence",
+      "majorId": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48-M4",
+      "majorName": "Physics with Extended Major in Artificial Intelligence",
+      "createMajor": {
+        "id": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48-M4",
+        "code": "PHYSICS-WITH-EXTENDED-MAJOR-IN-AI",
+        "nameEn": "Physics with Extended Major in Artificial Intelligence",
+        "nameZh": "Physics with Extended Major in Artificial Intelligence"
+      },
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/PHYS",
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26phys.pdf",
+      "copyCoursesFrom": { "universityCode": "HKUST", "programmeName": "BSc in Physics" }
+    },
+    {
+      "universityCode": "HKUST",
+      "programmeId": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48",
+      "programmeName": "Science (Group A) with Extended Major in Artificial Intelligence",
+      "majorId": "HKUST-UG-JS5181-SCIENCE-GROUP-A-WITH-EXTENDED-MAJOR-IN-AR-48-M4",
+      "majorName": "Physics with Extended Major in Artificial Intelligence",
+      "sourceUrl": "https://prog-crs.hkust.edu.hk/ugprog/2025-26/EXTM-AI",
+      "officialUrl": "https://ugadmin.hkust.edu.hk/prog_crs/ug/202526/pdf/25-26extm-ai.pdf",
+      "copyCoursesFrom": { "universityCode": "HKUST", "programmeId": "HKUST-UG-JS5282-ENGINEERING-WITH-EXTENDED-MAJOR-IN-ARTIFI-23" }
+    }
+  ]
+}

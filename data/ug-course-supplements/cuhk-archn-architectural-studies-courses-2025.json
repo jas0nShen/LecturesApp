@@ -1,0 +1,58 @@
+{
+  "provider": "CUHK Architectural Studies 2025-26 Study Scheme",
+  "academicYear": "Applicable to students admitted in 2025-26; reviewed on 2026-08-24",
+  "sourceUrl": "https://www.arch.cuhk.edu.hk/storage/documents/0f712b0e-292e-4bf3-8177-3da487a681d7.pdf",
+  "officialUrl": "https://admission.cuhk.edu.hk/programme/archn/",
+  "additionalSourceUrls": [
+    "https://www.arch.cuhk.edu.hk/programmes/degrees/bssc-as"
+  ],
+  "note": "The official four-page Architectural Studies Study Scheme explicitly applies to students admitted in 2025-26 and publishes 34 unique ARCH code-title-unit rows. The downloaded PDF was 154,480 bytes with SHA-256 9301ed316b20221fd3fdb938148e8030ec9ba9505094655d045feed3d6d2d8ea and was verified through full text extraction and visual review of every rendered page. The standard-entry Major requires 78 units: 9 Faculty Package units, 30 Studio units, 33 Other Required units and at least 6 Elective units with at least one three-unit course. Separate senior-entry paths require 59 units for Associate Degree holders and 56 units for Higher Diploma holders, each using a narrower 11-course elective pool. The Faculty Package lists external course codes without their Programme-specific titles or per-course units, and the three entry paths have different requirements. Therefore only the complete official ARCH Course List is exposed for browse-only planning with totalCreditRequired=0 and no graduation completion percentage. ARCH1002 and ARCH1320 appear in the official Course List but not in the published 2025-26 Major requirement, so they remain labelled as additional Programme courses rather than inferred electives.",
+  "supplements": [
+    {
+      "universityCode": "CUHK",
+      "programmeCode": "ARCHN",
+      "jupasCode": "JS4812",
+      "programmeId": "CUHK-UG-ARCHN-69",
+      "majorId": "CUHK-UG-ARCHN-69-M1",
+      "courses": [
+        { "code": "ARCH1001", "title": "Introduction to Architecture", "credits": 3, "courseType": "foundation", "group": "Faculty Package · required ARCH course; complete two additional courses from two different external Programme/Department/School pools" },
+        { "code": "ARCH1002", "title": "Understanding Cities", "credits": 3, "courseType": "programme_course", "group": "Official Course List · not listed in the 2025-26 Major requirement" },
+        { "code": "ARCH1003", "title": "Visual Studies", "credits": 3, "courseType": "core", "group": "Other Required Courses · standard-entry path", "recommendedYear": 1, "semester": "1" },
+        { "code": "ARCH1320", "title": "Experiencing Architecture", "credits": 3, "courseType": "programme_course", "group": "Official Course List · not listed in the 2025-26 Major requirement" },
+
+        { "code": "ARCH2111", "title": "Introduction to Architectural Design I", "credits": 5, "courseType": "core", "group": "Studio Courses · standard-entry path", "recommendedYear": 2, "semester": "1" },
+        { "code": "ARCH2112", "title": "Introduction to Architectural Design II", "credits": 5, "courseType": "core", "group": "Studio Courses · standard-entry path", "recommendedYear": 2, "semester": "2" },
+        { "code": "ARCH2222", "title": "Digital Media", "credits": 3, "courseType": "core", "group": "Other Required Courses · all published entry paths", "recommendedYear": 2, "semester": "2" },
+        { "code": "ARCH2322", "title": "Cultural Contexts I", "credits": 3, "courseType": "core", "group": "Other Required Courses · all published entry paths", "recommendedYear": 2, "semester": "1" },
+        { "code": "ARCH2323", "title": "Cultural Contexts II", "credits": 3, "courseType": "core", "group": "Other Required Courses · all published entry paths", "recommendedYear": 2, "semester": "2" },
+        { "code": "ARCH2413", "title": "Building Technology I: Materials and Construction", "credits": 3, "courseType": "core", "group": "Other Required Courses · all published entry paths", "recommendedYear": 2, "semester": "1" },
+        { "code": "ARCH2422", "title": "Building Technology II: Materials and Construction", "credits": 3, "courseType": "core", "group": "Other Required Courses · standard-entry path", "recommendedYear": 2, "semester": "2" },
+
+        { "code": "ARCH3113", "title": "Architectural Design Studio I", "credits": 5, "courseType": "core", "group": "Studio Courses · all published entry paths", "recommendedYear": 3, "semester": "1" },
+        { "code": "ARCH3114", "title": "Architectural Design Studio II", "credits": 5, "courseType": "core", "group": "Studio Courses · all published entry paths", "recommendedYear": 3, "semester": "2" },
+        { "code": "ARCH3321", "title": "Architecture and Global Culture", "credits": 3, "courseType": "core", "group": "Other Required Courses · all published entry paths", "recommendedYear": 3, "semester": "2" },
+        { "code": "ARCH3424", "title": "Building Technology III: Environmental Technology", "credits": 3, "courseType": "core", "group": "Other Required Courses · all published entry paths", "recommendedYear": 3, "semester": "2" },
+        { "code": "ARCH3721", "title": "Land and City", "credits": 3, "courseType": "core", "group": "Other Required Courses · all published entry paths", "recommendedYear": 3, "semester": "1" },
+
+        { "code": "ARCH4115", "title": "Architectural Design Studio III", "credits": 5, "courseType": "core", "group": "Studio Courses · all published entry paths", "recommendedYear": 4, "semester": "1" },
+        { "code": "ARCH4116", "title": "Architectural Design Studio IV", "credits": 5, "courseType": "capstone", "group": "Studio Courses · official capstone course · all published entry paths", "recommendedYear": 4, "semester": "2" },
+        { "code": "ARCH4131", "title": "Topical Studies in Design Theory", "credits": 3, "courseType": "major_elective", "group": "Elective Courses · standard and senior-entry pools" },
+        { "code": "ARCH4231", "title": "Topical Studies in Computational Design", "credits": 3, "courseType": "major_elective", "group": "Elective Courses · standard and senior-entry pools" },
+        { "code": "ARCH4331", "title": "Topical Studies in History, Theory and Criticism", "credits": 3, "courseType": "major_elective", "group": "Elective Courses · standard and senior-entry pools" },
+        { "code": "ARCH4425", "title": "Building Systems Integration", "credits": 3, "courseType": "core", "group": "Other Required Courses · all published entry paths", "recommendedYear": 4, "semester": "1" },
+        { "code": "ARCH4426", "title": "Future Practice and Sustainable Response", "credits": 3, "courseType": "core", "group": "Other Required Courses · standard-entry path", "recommendedYear": 4, "semester": "2" },
+        { "code": "ARCH4431", "title": "Topical Studies in Building Technology", "credits": 3, "courseType": "major_elective", "group": "Elective Courses · standard and senior-entry pools" },
+        { "code": "ARCH4531", "title": "Topical Studies in Professional Practice Management", "credits": 3, "courseType": "major_elective", "group": "Elective Courses · standard and senior-entry pools" },
+        { "code": "ARCH4731", "title": "Topical Studies of Cities", "credits": 3, "courseType": "major_elective", "group": "Elective Courses · standard and senior-entry pools" },
+        { "code": "ARCH5131", "title": "Topical Studies in Design Theory", "credits": 3, "courseType": "major_elective", "group": "Elective Courses · standard and senior-entry pools" },
+        { "code": "ARCH5231", "title": "Topical Studies in Computational Design", "credits": 3, "courseType": "major_elective", "group": "Elective Courses · standard and senior-entry pools" },
+        { "code": "ARCH5331", "title": "Topical Studies in History, Theory and Criticism", "credits": 3, "courseType": "major_elective", "group": "Elective Courses · standard and senior-entry pools" },
+        { "code": "ARCH5431", "title": "Topical Studies in Building Technology", "credits": 3, "courseType": "major_elective", "group": "Elective Courses · standard and senior-entry pools" },
+        { "code": "ARCH5531", "title": "Topical Studies in Professional Practice Management", "credits": 3, "courseType": "major_elective", "group": "Elective Courses · standard-entry pool only" },
+        { "code": "ARCH5631", "title": "Topical Studies in Sustainable Design", "credits": 3, "courseType": "major_elective", "group": "Elective Courses · standard-entry pool only" },
+        { "code": "ARCH5731", "title": "Topical Studies in Urbanism", "credits": 3, "courseType": "major_elective", "group": "Elective Courses · standard and senior-entry pools" },
+        { "code": "ARCH5931", "title": "Topical Studies in Design, Theory, and Practice Methods", "credits": 1, "courseType": "major_elective", "group": "Elective Courses · standard-entry pool only · at least one three-unit elective is required" }
+      ]
+    }
+  ]
+}
