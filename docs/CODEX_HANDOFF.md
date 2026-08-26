@@ -1,6 +1,6 @@
 # Codex 项目交接
 
-最后核验时间：2026-08-25（Asia/Shanghai）
+最后核验时间：2026-08-26（Asia/Shanghai）
 
 ## 当前项目目标
 
@@ -8,7 +8,7 @@
 
 当前产品边界是：先保证离线发布、数据可追溯和规则不误导，再继续补课程覆盖与规划能力。未经明确产品决定，不引入登录、云同步、统计、敏感权限或生产 API。
 
-当前仓库发布资料仍为 `1.0.16`（`package.json`、运行时 `releaseInfo`、`docs/MVP_SPEC.md`、`docs/RELEASE_CHECKLIST.md`、`docs/REVIEW_SUBMISSION.md`）。2026-08-25 继续开发课程数据，因此按用户指定的“同一天保持同一版本、跨天递增”规则继续使用 `1.0.16`，不得回退到历史 `1.0.14`。当前 CUHK、HKUST 与 CityU 课程补充及来源审查已在工作区完成收口，尚未推送、未上传微信。微信官方 CLI 最后确认上传成功的仍是课程提交 `ba2e018`，备注为 `1.0.16: Expand CUHK global curricula`。没有提交审核或发布正式版。
+当前仓库发布资料仍为 `1.0.16`（`package.json`、运行时 `releaseInfo`、`docs/MVP_SPEC.md`、`docs/RELEASE_CHECKLIST.md`、`docs/REVIEW_SUBMISSION.md`）。2026-08-26 用户明确指定本批继续使用 `1.0.16`。当前 CUHK、HKUST 与 CityU 课程补充及来源审查已由课程提交 `e57517e` 推送到 GitHub，并通过微信官方 CLI 上传，备注为 `1.0.16: Expand verified CUHK, HKUST and CityU curricula`，命令返回 `✔ upload`。没有提交审核或发布正式版。
 
 ## 可验证的仓库快照
 
@@ -51,8 +51,8 @@
 - 本批新增 CityU `JS1221 BSc Computer Science and BSc Computational Finance and Financial Technology` 双学位的 17 个 Programme-specific 明确代码，并将 Corporate Accounting & Economics、Computational Finance、Advanced Statistics、Financial Technologies 四个 Feature 占位 Major 合并为一个正式双学位 Major。招生页明确五年制、最低 151 credits，以及 22-credit University/Distributional、18-credit College-specified、12-credit College/School 和 99-credit Major 结构；但只点名前 17 个唯一代码，没有发布 33-credit CS core、30-credit CFFT core、33-credit cross-credit 与 3-credit CS elective 对应清单。官方两页 brochure 同样没有课程表，因此未把 standalone CS/CFFT 课程池拼入双学位；17 门部分清单保持 `totalCreditRequired=0`，不生成毕业完成百分比。
 - 本批新增 CityU `JS1300 Integrative Bioscience & Bioengineering Programme (Bio3)` 的三条正式 Major：BEng Biomedical Engineering 60 门、BSc Biological Sciences 67 门、BSc Biomedical Sciences 50 门，共 177 条 Programme-local 记录。官网明确学生在接受 offer 时选择 Major，并从 Year 1 起注册该 Major；Bio3 在对应现有 curriculum 之上要求 `CBM4000 Research Seminar`（1 credit）、`CBM4001 Overseas Research Project`（3 credits）及指定跨部门清单中的一门课程。三份当前 Catalogue curriculum 已分别保留这些 Integrative Stream 角色，因此按 Major 复用并保持用户状态隔离；开放 GE、Stream/elective 组合及跨组计数仍保持 `totalCreditRequired=0`。
 - 2026-08-25 当前生成结果为本科 444 Programme、666 Major、24,308 条 coded course records、352 个已开放 Programme；CUHK 为 84 个 Programme、86 个 Major、3,930 条 coded courses、67 个已开放 Programme；HKUST 为 50 个 Programme、74 个 Major、3,445 条 coded courses、49 个已开放 Programme；CityU 为 58 个 Programme、152 个 Major、4,287 条 coded courses、54 个已开放 Programme。完整 `npm run check:ship` 结果见后文测试记录。
-- 本批已由提交 `32bb953` 推送到 GitHub；微信二维码登录未完成，因此尚未上传微信。`.playwright-cli/` 继续保持用户本地未跟踪诊断产物。
-- 当前 Git 课程提交为 `32bb953`，微信最后明确确认的开发版为 `1.0.16`，对应课程提交 `ba2e018`。
+- 本批已由课程提交 `e57517e` 推送到 GitHub，并成功上传微信 `1.0.16` 开发版。`.playwright-cli/` 继续保持用户本地未跟踪诊断产物。
+- 当前 Git 课程提交为 `e57517e`，微信最后明确确认的开发版为 `1.0.16`，对应同一课程提交。
 - 当前 Git 代码已包含 CUHK `JASPN Japanese Studies` 58 门 Major-assigned JASP 课程；标准、Local、Stream、senior-entry 与 double-Major 路径未完整闭合，因此保持只读浏览，不生成毕业完成百分比。
 - 当前 Git 代码也已包含 CUHK `RELSN Religious Studies` 63 门 Religious Studies Area 课程；标准与 senior-entry 路径因 Cultural Studies 和跨院 Concentration 开放池未闭合而保持只读浏览。
 - 当前 Git 代码还包含 CUHK `PUHSN Public Humanities` 88 门 2025-26 intake-specific 课程；标准与 senior-entry 路径、外系 Faculty Package、Religious Studies Areas、Concentration 替代及课程复用规则未闭合，因此保持只读浏览，不生成毕业完成百分比。
@@ -369,7 +369,8 @@ df91815 Add PolyU Design curriculum and source evidence
 - 2026-08-10 提交 `1b506e5` 的 CUHK `GPADN Government and Public Administration` 82 门课程已推送到 GitHub。以备注 `1.0.16: Add CUHK public administration curriculum` 上传时先因登录失效返回 `code 10`，随后官方 CLI 已成功生成二维码，但未收到手机端确认并返回 `code 25` 超时，因此微信开发版仍停留在课程提交 `ba2e018`。
 - 2026-08-10 提交 `1567094` 的 CUHK `DSPSN Data Science and Policy Studies` 61 门课程已推送到 GitHub。微信官方 CLI 登录状态为 `false`；两次生成新的图片二维码后均未收到手机端确认，第一次返回 `code 25`，第二次在继续等待后手动停止，因此未执行实际 upload，微信开发版仍停留在课程提交 `ba2e018`。
 - 2026-08-24 提交 `32bb953` 的 CUHK `BCSEN`、`PHYSN-ERP`、`BMEDN`、`LDTEN`、`BECEN`、`ELEDN` 课程补充及来源审查已推送到 GitHub。微信官方 CLI 返回 `login:false`；生成官方二维码后持续等待约 3 分钟仍未收到手机端确认，随后停止登录流程，因此没有执行实际 upload，微信开发版仍停留在课程提交 `ba2e018`。
-- 当前工作区完整检查：1039/1039 测试通过、`ready=true`、21,609 条 UG coded courses、327 个已开放 Programme、主包预估 1,847,215 bytes、总估算包体 24,674,490 bytes，所有 23 个分包低于 2 MB，敏感 API 为 0。
+- 2026-08-26 课程提交 `e57517e` 已推送到 GitHub，并以备注 `1.0.16: Expand verified CUHK, HKUST and CityU curricula` 成功覆盖上传微信开发版，命令返回 `✔ upload`；实际上传包 21,595,641 bytes、主包 1,486,735 bytes，所有 23 个分包均低于 2 MB。
+- 当前工作区完整检查：1081/1081 测试通过、`ready=true`、24,308 条 UG coded courses、352 个已开放 Programme、主包预估 1,844,874 bytes、总估算包体 27,132,712 bytes，所有 23 个分包低于 2 MB，敏感 API 为 0。
 - 微信开发者工具确认 PolyU Computer Science 可加载 83 门课程，首页入口序号为 `01 / 02 / 03 / 04`；模拟器测试结束后已恢复原 Architectural Studies 资料，`plannedUgCourseKeys`、`ugCoursePlanAssignments`、`completedUgCourseKeys` 均为空。
 - 微信官方 automation 已完成普通 `POLYU-TPG-090` 闭环：36 门课程、`COMP5521` 加入计划、列表状态、官方分组、标记已修、复制与移除均通过。
 - 多 Track `HKU-TPG-031` 验收通过：Generalist 计 1 门，Chinese Language Education 计 2 门；两条记录均保留，旧 Track 课程不计入 Generalist 当前统计。
@@ -499,7 +500,7 @@ npm run status:ug-sources -- --missing-only --priority launch --missing-limit 10
 
 ## 当前工作区
 
-本批 CUHK ARCHN、PSYCN、ECOTU、BAJDN、BSCIN、BSSCN，HKUST IIM、Extended Majors、T&M、Eurasian Business、IRE、Science Group A + AI，以及 CityU JS1050、JS1052、JS1053、JS1200、JS1201、JS1207、JS1211、JS1216、JS1219、JS1221、JS1300、JS1805、JS1806、JS1807 课程补充、对应测试、生成 catalogue/shards、来源审查与本交接文档已完成收口。课程提交 `ba2e018` 仍是最后明确成功上传的微信 `1.0.16` 开发版；本批尚未推送或上传微信。除项目改动外，继续保留用户诊断目录：
+本批 CUHK ARCHN、PSYCN、ECOTU、BAJDN、BSCIN、BSSCN，HKUST IIM、Extended Majors、T&M、Eurasian Business、IRE、Science Group A + AI，以及 CityU JS1050、JS1052、JS1053、JS1200、JS1201、JS1207、JS1211、JS1216、JS1219、JS1221、JS1300、JS1805、JS1806、JS1807 课程补充、对应测试、生成 catalogue/shards、来源审查与本交接文档已完成收口。课程提交 `e57517e` 已推送并成功上传微信 `1.0.16` 开发版。除项目改动外，继续保留用户诊断目录：
 
 ```text
 ?? .playwright-cli/
@@ -534,7 +535,7 @@ npm run status:ug-sources -- --school cityu --missing-only --missing-summary --m
 
 - 当前代码主包预估：1,844,874 bytes。
 - 当前代码总估算包体：27,132,712 bytes，201 个上传文件。
-- 最新上传 1.0.16 的 CLI 实际包：19,105,118 bytes；实际主包 1,486,323 bytes。
+- 最新上传 1.0.16 的 CLI 实际包：21,595,641 bytes；实际主包 1,486,735 bytes。
 - 当前 23 个 UG/TPG 分包均低于 2 MB；`ug-data-hkust-a` 为 1,612,501 bytes，`ug-data-hkust-b` 为 1,597,285 bytes，最大分包为 `ug-data-hku-a` 1,869,435 bytes。
 - 页面：17；敏感 API：0。
 - release warnings 仅为人工微信后台检查尚需完成，以及未配置生产 HTTPS（体验/正式版按设计离线）。
@@ -543,7 +544,7 @@ npm run status:ug-sources -- --school cityu --missing-only --missing-summary --m
 
 ## 已知问题、风险和不要做的事情
 
-- 微信已通过官方 CLI 用课程提交 `ba2e018` 上传 `1.0.16`，命令返回 `✔ upload`；此后直至提交 `32bb953` 的 Git 代码均已推送，但微信登录/二维码确认未完成，因此这些后续批次均未上传。这些状态均不等于已提审或已发布。
+- 微信已通过官方 CLI 用课程提交 `e57517e` 上传 `1.0.16`，命令返回 `✔ upload`。该状态不等于已提审或已发布。
 - 不要把“上传成功”写成“已提审”或“已发布”。这两个外部动作尚未执行。
 - 不要删除或提交 `.playwright-cli/`，除非用户明确决定如何处理该诊断目录。
 - 不要手改生成的 catalogue、course shard 或 loader；从 source/supplement 和 builder 修改后重新生成。
